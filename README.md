@@ -4,8 +4,7 @@
 
 > A curated list of boat tech stuff.
 
-Boat tech includes NMEA0183, NMEA2000, Seatalk 1 and NG, OpenCPN, SignalK, Kip, OpenSeamap and the various vendor products
-that support open networks such as Shipmodul, Yacht Devices, Actisense, Digital Yacht etc.
+Boat tech includes all things NMEA and Seatalk, marine internet, open source projects, hardware vendors, educational resources, blogs, vlogs and forums.
 
 
 ## Contents
