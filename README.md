@@ -67,6 +67,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [CAN Boat](https://github.com/canboat/canboat) - NMEA2000 and NMEA 0183 CLI utilities.
 - [d3kOS](https://github.com/SkipperDon/d3kOS) - Raspberry Pi based navigation and automation platform.
 - [DiscoTime](https://github.com/cr/discotime/) - Time and lat/long dashboard for long distance passages.
+- [Galadriel Plotter](https://github.com/VladimirKalachikhin/Galadriel-map) - Raster based chartplotter for low power servers.
 - [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
 - [GWeatherRouting](https://gweatherrouting.org) - Navigation and automated routing, Python/GTK4.
 - [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
@@ -192,6 +193,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Navigation Laptops](https://navigationlaptops.com) - Laptops setup for navigation with instrument packages.
 - [Orca](https://getorca.com/orca-core/) - Data hub for NMEA, auto-pilot, radar with chart plotter and remote monitoring.
 - [PredictWind DataHub](https://www.predictwind.com/datahub) - Data logging, remote monitoring, internet data, NMEA and auto-pilot interface.
+- [Raspmarine](https://raspmarine.dk) - Danish. Raspberry Pi based integration.
 - [Renogy](https://www.renogy.com/) - Power management and monitoring.
 - [Sensar Marine](https://sensarmarine.com) - Subscription-based remote monitoring with app, SMS and NMEA integration.
 - [Siren Marine](https://sirenmarine.com/) - Remote boat monitoring.
