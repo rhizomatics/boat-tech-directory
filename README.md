@@ -166,7 +166,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 
 ### Marine PCs and Components
 
-- [Austral](https://austral-eng.com/) - Marinized Raspberr Pi, sensors, apps including racing auto-pilot.
+- [Austral](https://austral-eng.com/) - Marinized Raspberry Pi, sensors, apps including racing auto-pilot.
 - [Beetronics](https://www.beetronics.co.uk/c-marine?_gl=1*1f0b82j*_up*MQ..*_gs*MQ..&gbraid=0AAAAADm9gnpX9qEe0DYsgTxrXqGaGG_4d) - Marine monitors and touchscreens.
 - [Bluestone](https://www.bluestonetechnology.co.uk/) - Marine LCD displays.
 - [BVM](https://www.bvm.co.uk/industries-2/transport-solutions/marine-solutions/) - Marine displays and PCs.

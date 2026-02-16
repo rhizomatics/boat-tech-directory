@@ -1,0 +1,7 @@
+    mkdocs
+    mkdocs-material
+    mkdocs-minify-plugin
+    pymdown-extensions
+    mkdocs-meta-descriptions-plugin
+    mkdocs-htmlproofer-plugin
+    mkdocs-material[imaging]
