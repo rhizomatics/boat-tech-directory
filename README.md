@@ -177,6 +177,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 
 ### Instruments and Autopilots
 
+- [em-trak](https://em-trak.com) - VHF and AIS.
 - [ICOM](https://www.icomamerica.com/lineup/marine/) - Marine VHF, SSB, GMDSS, AIS, radar.
 - [LCJ Capteurs](https://lcjcapteurs.com/en/categorie-girouette-anemometres-capteur-vent/marine-en/) - Wind and weather instruments, StatMETEO wind data recording software.
 - [NASA Marine](https://www.nasamarine.com) - Instruments, monitors, AIS, displays.
