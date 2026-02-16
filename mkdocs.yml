@@ -31,7 +31,6 @@ plugins:
       cards_layout_options:
         background_color: blue
         background_image: docs/images/social-preview.jpg
-  - optimize
   - minify:
       minify_html: true
 
@@ -49,7 +48,6 @@ validation:
   omitted_files: warn
   absolute_links: warn
   unrecognized_links: warn
-  anchors: warn
 
 extra:
   social:
