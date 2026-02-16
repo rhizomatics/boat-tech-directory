@@ -232,6 +232,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 
 - [Nautibus](https://nautibus.de) - NMEA2000 design, testing, installation. German and English.
 - [Francis Fustier](https://francis-fustier.fr) - France. Training, advice and integration. News and articles, focused on Apple products onboard.
+- [Pacific Yacht Systems](https://www.pysystems.com) - Electrical and electronics consultancy, retail and educational articles & videos.
 - [Seatech Systems](https://seatech.systems) - Marine electronics consultancy, with free advice articles on marine internet.
 - [Tweeds Marine](https://tweedsmarine.nz/) - New Zealand. Consultancy plus free articles, news and calculators online.
 
