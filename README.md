@@ -14,6 +14,7 @@ Boat tech includes all things NMEA and Seatalk, marine internet, open source pro
 - [Vlogs](#vlogs)
 - [Charts](#charts)
 - [Open Source Projects](#open-source-projects)
+- [Protocols](#protocols)
 - [Hardware Vendors](#hardware-vendors)
 - [Software Vendors](#software-vendors)
 - [Consultants](#consultants)
@@ -124,6 +125,19 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 
 - [NMEAParser](https://github.com/sindreoyen/NMEAParser) - iOS and macOS NMEA 0183 parser and validator.
 
+## Protocols
+
+- [Garmin BlueNet](https://www8.garmin.com/manuals/webhelp/GUID-C3D5DCE9-C0FF-4AC4-B759-D5B34E1EB78E/EN-US/GUID-A1161F2C-CEB3-4E87-9388-EE6F69DFD026.html) - Current Ethernet based netwoking, with proprietary connector.
+- [Garmin Marine Network](https://www.garmin.com/en-GB/c/networking-hardware/) - Previous generation of Ethernet networking, using RJ45 connectors.
+- [IEC61162](https://en.wikipedia.org/wiki/IEC_61162) - International Electrotechnical Commission standards, partly wrapping NMEA standards (IEC 61162-1 is NMEA0183 and IEC 61162-3 is NMEA2000).
+- [NMEA0183](https://en.wikipedia.org/wiki/NMEA_0183) - RS-422 based wiring layer with proprietary information protocol.
+- [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K.
+- [NMEA OneNet](https://www.nmea.org/nmea-onenet.html) - IPv6 Ethernet based wiring with proprietary information protocol, using M12 connectors.
+- [Nexus](https://support.garmin.com/en-US/?productID=165155&tab=manuals) - Sensor protocol, acquired by Garmin and used for their wind instruments and depth transducer, with NMEA2000 bridge.
+- [Seatalk 1](https://www.raymarine.com/en-us/our-products/networking-and-accessories/seatalk) - Raymarine proprietary daisy-chain combined data and power, ubiquitously deployed with ST60 instruments.
+- [Seatalk NG](https://www.raymarine.com/en-gb/our-products/networking-and-accessories/seatalk-ng-and-nmea-2000) - Raymarine's implementation of NMEA2000, compatible at data layer with a proprietary 6 pin connection to incorporate SeaTalk 1 data.
+- [Shielded Twisted Pair Ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair) - Computing industry standard, commonly used for radars and other high bandwidth marine applications.
+
 ## Hardware Vendors
 
 ### Full Integration
@@ -132,6 +146,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - [Garmin](https://www.garmin.com/) - Sensors, plotters, radars, sonar, displays, auto-pilots, charts, cameras and integration.
 - [Humminbird](https://humminbird.johnsonoutdoors.com/us) - Plotter, sonar, charts, apps, One-Boat network.
 - [Lowrance](https://www.lowrance.com) - Plotters, transducers, charts, trolling motors.
+- [Pixel Sur Mer](https://www.pixelsurmer.com/en) - Racing oriented plotters, auto-pilot, data integration, voice, 3D sail scanning and safety management.
 - [Raymarine](https://www.raymarine.com) - Sensors, radars, plotters, displays, VHF, AIS and Seatalk NG.
 - [Simrad](https://www.simrad-yachting.com) - Plotters, auto-pilots, sonar, radar, AIS, VHF, transducers, charts, apps.
 - [SI-TEX](https://www.si-tex.com) - Plotters, sonar, AIS, radar, autopilot, sensors.
@@ -176,12 +191,14 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 
 ### Instruments and Autopilots
 
+- [Cyclops Marine](https://www.cyclopsmarine.com) - Smart load sensors and displays.
 - [em-trak](https://em-trak.com) - VHF and AIS.
 - [ICOM](https://www.icomamerica.com/lineup/marine/) - Marine VHF, SSB, GMDSS, AIS, radar.
 - [LCJ Capteurs](https://lcjcapteurs.com/en/categorie-girouette-anemometres-capteur-vent/marine-en/) - Wind and weather instruments, StatMETEO wind data recording software.
 - [NASA Marine](https://www.nasamarine.com) - Instruments, monitors, AIS, displays.
 - [Nautinect](https://nautinect.com) - Open source hardware design and mobile app, controller with wheel or tiller drive.
 - [Safiery](https://safiery.com/marine-new/) - Digital switching, monitoring, Victron and NMEA integration.
+- [Vakaros](https://www.vakaros.com) - Racing oriented instruments.
 - [Veratron](https://veratron.com/pages/marine) - NMEA instruments, gateways and sensors, displays.
 
 ### Boat Integration and Remote Monitoring
@@ -221,6 +238,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [NMEA 2000 Solutions](https://www.nmea2000solutions.com) - NMEA BridgeBuilder and NMEA Gateway packages, consultancy.
 - [Rose Point](https://www.rosepoint.com) - Navigation software, North America gazatteer, NMEA gateway.
 - [Sail Logger](https://saillogger.com) - Logbook for mobiles, with NMEA integration.
+- [Sailing Performance](https://www.sailingperformance.com) - Racing performance analysis.
 - [SailTrack](https://www.angelnav.co.uk) - **AngelNav** plotter app for mobile and PC with charts and traditional charting techniques and NMEA integration.
 - [SavvyNavvy](https://www.savvy-navvy.com) - Plotter app for mobile with integrated weather, AIS, charting and NMEA integration.
 - [SeaIQ](https://seaiq.com) - Navigation for pilots, on Windows, macOS, iOS, iPadOS. Lower price version for recreational sailors.
