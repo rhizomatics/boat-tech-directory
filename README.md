@@ -134,9 +134,12 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K.
 - [NMEA OneNet](https://www.nmea.org/nmea-onenet.html) - IPv6 Ethernet based wiring with proprietary information protocol, using M12 connectors.
 - [Nexus](https://support.garmin.com/en-US/?productID=165155&tab=manuals) - Sensor protocol, acquired by Garmin and used for their wind instruments and depth transducer, with NMEA2000 bridge.
+- [SAE J1939](https://en.wikipedia.org/wiki/SAE_J1939) - CAN Bus standard, using Deutsch connectors, commonly used for engines and engine instruments, including Volvo Penta and Yanmar.
 - [Seatalk 1](https://www.raymarine.com/en-us/our-products/networking-and-accessories/seatalk) - Raymarine proprietary daisy-chain combined data and power, ubiquitously deployed with ST60 instruments.
 - [Seatalk NG](https://www.raymarine.com/en-gb/our-products/networking-and-accessories/seatalk-ng-and-nmea-2000) - Raymarine's implementation of NMEA2000, compatible at data layer with a proprietary 6 pin connection to incorporate SeaTalk 1 data.
 - [Shielded Twisted Pair Ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair) - Computing industry standard, commonly used for radars and other high bandwidth marine applications.
+- [SignalK](https://signalk.org/specification/1.7.0/doc/) - Open source JSON based standard using HTTP and Websockets as transport layer and able to model NMEA0183 and NMEA2000 data.
+- [SimNet](https://www.simrad-yachting.com/help--support/?contentTitle=Whats-the-difference-between-SimNet-and-NMEA2000&contentId=023_008-016) - Simrad variant of NMEA2000 with different connectors and supporting daisy chaining.
 
 ## Hardware Vendors
 
