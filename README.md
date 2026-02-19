@@ -133,6 +133,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - [NMEA0183](https://en.wikipedia.org/wiki/NMEA_0183) - RS-422 based wiring layer with proprietary information protocol.
 - [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K.
 - [NMEA OneNet](https://www.nmea.org/nmea-onenet.html) - IPv6 Ethernet based wiring with proprietary information protocol, using M12 connectors.
+- [NMEA over IP](https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:manual_basic:set_options:connections:advanced) - Informal standard (with a formal IANA port assigned, `10110`) provided by several vendor and open source products, and consumed by Navionics, AngelNav, SavvyNavvy and more.
 - [Nexus](https://support.garmin.com/en-US/?productID=165155&tab=manuals) - Sensor protocol, acquired by Garmin and used for their wind instruments and depth transducer, with NMEA2000 bridge.
 - [SAE J1939](https://en.wikipedia.org/wiki/SAE_J1939) - CAN Bus standard, using Deutsch connectors, commonly used for engines and engine instruments, including Volvo Penta and Yanmar.
 - [Seatalk 1](https://www.raymarine.com/en-us/our-products/networking-and-accessories/seatalk) - Raymarine proprietary daisy-chain combined data and power, ubiquitously deployed with ST60 instruments.
