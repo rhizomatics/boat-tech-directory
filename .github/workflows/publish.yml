@@ -13,10 +13,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: npx awesome-lint
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - run: npx awesome-lint
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
