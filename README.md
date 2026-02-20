@@ -203,8 +203,9 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [NASA Marine](https://www.nasamarine.com) - Instruments, monitors, AIS, displays.
 - [Nautinect](https://nautinect.com) - Open source hardware design and mobile app, controller with wheel or tiller drive.
 - [Safiery](https://safiery.com/marine-new/) - Digital switching, monitoring, Victron and NMEA integration.
-- [Vakaros](https://www.vakaros.com) - Racing oriented instruments.
+- [Vakaros](https://www.vakaros.com) - Racing oriented instruments. Instruction videos on [YouTube channel](https://www.youtube.com/@Safiery).
 - [Veratron](https://veratron.com/pages/marine) - NMEA instruments, gateways and sensors, displays.
+- [Wema](https://wema.co.uk) - NMEA instruments, gauges, bridges, analog to digital converters.
 
 ### Boat Integration and Remote Monitoring
 
