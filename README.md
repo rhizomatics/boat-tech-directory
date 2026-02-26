@@ -221,6 +221,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Navigation Laptops](https://navigationlaptops.com) - Laptops setup for navigation with instrument packages.
 - [Orca](https://getorca.com/orca-core/) - Data hub for NMEA, auto-pilot, radar with chart plotter and remote monitoring.
 - [PAJ GPS](https://www.paj-gps.co.uk) - UK remote GPS tracking hardware and app.
+- [Philippi](https://www.philippi-online.de/) - German supplier of monitoring, sensors and electrical power components, including refit panels for Bavaria yachts.
 - [PredictWind DataHub](https://www.predictwind.com/datahub) - Data logging, remote monitoring, internet data, NMEA and auto-pilot interface.
 - [Raspmarine](https://raspmarine.dk) - Danish. Raspberry Pi based integration.
 - [Renogy](https://www.renogy.com/) - Power management and monitoring.
@@ -230,7 +231,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Victron](https://www.victronenergy.com) - Power devices with associated monitoring, integration, power sensors, displays.
 - [Vircru](https://www.vircru.com) - Remote boat monitoring with mobile app.
 
-### Accessories
+### Audio, Electrical, Accessories
 
 - [Aquatic AV](https://www.aquaticav.com/pages/environments-marine) - Speakers, amplifiers, head units.
 - [Cruising Solutions](https://www.cruisingsolutions.com/collections/communication) - 'Marriage Savers' intercom headsets.
