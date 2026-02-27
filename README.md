@@ -231,7 +231,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Victron](https://www.victronenergy.com) - Power devices with associated monitoring, integration, power sensors, displays.
 - [Vircru](https://www.vircru.com) - Remote boat monitoring with mobile app.
 
-### Audio, Electrical, Accessories
+### Audio, Electrical, Safety, Accessories
 
 - [Aquatic AV](https://www.aquaticav.com/pages/environments-marine) - Speakers, amplifiers, head units.
 - [Blue Sea](https://www.bluesea.com) - Electrical components, meters, cable glands and enclosures, on-line and mobile calculators, monitoring.
@@ -253,6 +253,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Navimetrix](https://navimetrix.com) - Integrated navigation, weather, charting, routing for Android, Windows, iOS and macOS.
 - [Navstation](https://navstation.net) - **MacENCx64Integrate** plotting, navigation, charts and NMEA integration for macOS.
 - [NMEA 2000 Solutions](https://www.nmea2000solutions.com) - NMEA BridgeBuilder and NMEA Gateway packages, consultancy.
+- [Ocean Signal](https://oceansignal.com) - PLBs, EPIRBs, AIS alarms, VHF and radar transponders.
 - [Rose Point](https://www.rosepoint.com) - Navigation software, North America gazatteer, NMEA gateway.
 - [Sail Logger](https://saillogger.com) - Logbook for mobiles, with NMEA integration.
 - [Sailing Performance](https://www.sailingperformance.com) - Racing performance analysis.
