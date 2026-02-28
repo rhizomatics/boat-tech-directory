@@ -43,8 +43,10 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [Zapped Myself](https://zappedmyself.com/projects/nmea2000/) - NMEA2000, AIS, ESP32 projects.
 
 ## Vlogs
+- [8-bit Sailing](https://www.youtube.com/@8bitsailing/) - Raspberry Pi, OpenPlotter and Raymarine.
 - [Boating with the Baileys](https://www.youtube.com/@BoatingwiththeBaileys) -  Electrical and electronics projects on a 2000s Bavaria 36, including SignalK, KIP, Node-RED, OpenPlotter and SensESP.
 - [Boats and Bits](https://www.youtube.com/@boatsandbits) - DIY boat tech, Raymarine networking, electrics, 3D printing.
+- [DIY Onboard](https://www.youtube.com/@DIYonboard-e4i) - Raspberry Pi and OpenPlotter.
 - [Gary Woodruff](https://www.youtube.com/@garrywoodruff960) - Boat projects and HowTo guides for boat electrics and electronics, focus on Lowrance equipment.
 - [Out Chasing Stars](https://www.youtube.com/@OutChasingStars) - OpenCPN and general boat electrics, electronics.
 - [Pacific Yacht Systems](https://www.youtube.com/@PacificYachtSystems) - Last active in 2023, large back catalogue of instructional videos on marine electrics, electronics and networking.
