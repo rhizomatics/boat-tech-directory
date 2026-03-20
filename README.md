@@ -184,6 +184,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [SK Pang Electronics](https://www.skpang.co.uk) - Raspberry Pi boards and HATs for CAN-Bus integration, NMEA2000 simulators, GPS modules, LCD displays.
 - [Tinley](https://www.tinleyelectronics.com/) - NMEA interfaces, sensors, multiplexers, converters.
 - [Veinland](https://veinland.net) - German vendor, with English info, of commercial NMEA multiplexers, embedded PCs and instruments.
+- [Vela Navgea](https://www.vela-navega.com) - Portuguese sailor who builds *NMEA4Wifi* range of multiplexers for NMEA0183, N2K and Seatalk.
 - [Wegmatt](https://wegmatt.com) - *dAISy* AIS receivers and NMEA0183 interfacing.
 - [Yacht Devices](https://www.yachtd.com) - NMEA bridges, gateways and sensors.
 - [Yakbitz](https://yakbitz.com) - Seatalk, NMEA, AIS and Autopilot interfaces.
@@ -197,6 +198,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Cybernet](https://www.cybernetman.com/) - Marine rackmount and mini PCs.
 - [Impulse](https://www.impulse-embedded.co.uk/solutions/industrial-computing-solutions/marine-and-subsea) - Marine PCs and displays.
 - [Marine Data Solutions](https://marinedatasolutions.com) - Satellite and mobile internet integration, *MDS Blender* marine router.
+- [Poynting](https://poynting.tech/marine-coastal-antennas/) - Marine antennas for 4G/5G/Wifi.
 
 ### Instruments and Autopilots
 
