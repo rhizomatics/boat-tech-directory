@@ -155,6 +155,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - [Garmin](https://www.garmin.com/) - Sensors, plotters, radars, sonar, displays, auto-pilots, charts, cameras and integration.
 - [Humminbird](https://humminbird.johnsonoutdoors.com/us) - Plotter, sonar, charts, apps, One-Boat network.
 - [Lowrance](https://www.lowrance.com) - Plotters, transducers, charts, trolling motors.
+- [NKE](https://nke-marine-electronics.com/instruments/) - Plotters, AIS, autopilot, sensors for cruising and ocean racing.
 - [Pixel Sur Mer](https://www.pixelsurmer.com/en) - Racing oriented plotters, auto-pilot, data integration, voice, 3D sail scanning and safety management.
 - [Raymarine](https://www.raymarine.com) - Sensors, radars, plotters, displays, VHF, AIS and Seatalk NG.
 - [Simrad](https://www.simrad-yachting.com) - Plotters, auto-pilots, sonar, radar, AIS, VHF, transducers, charts, apps.
