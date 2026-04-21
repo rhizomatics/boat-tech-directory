@@ -317,4 +317,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Actisense Media](https://actisense.com/media/) - Vendor blog, with self-help and industry news.
 - [Panbo](https://panbo.com) - Marine tech news.
 
-(DISCLAIMER: the term 'awesome' is used here in its American sense, and because 'awesome list' is a thing, and not in its British sense of actually involving awe)
+<!--lint disable no-repeat-punctuation code-block-style-->
+??? DISCLAIMER
+
+    The term 'awesome' is used here in its American sense, and because 'awesome list' is a thing, and not in its British sense of actually involving awe)

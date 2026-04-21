@@ -1,0 +1,47 @@
+[project]
+site_name = "Awesome Boat Tech"
+site_url = "https://sy-sea-jade.github.io/awesome-boat-tech/"
+site_author = "Jey Burrows"
+site_description = "Awesome List for Boat Technology including NMEA, Marine Internet, Open Source Projects, Hardware Products, Blogs, Vlogs, Forums and more"
+
+docs_dir = "docs"
+site_dir = "site"
+
+repo_url = "https://github.com/SY-Sea-Jade/awesome-boat-tech"
+repo_name = "SY-Sea-Jade/awesome-boat-tech"
+
+copyright = "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. No Rights Reserved."
+
+nav = [
+  {"Home" = "index.md"},
+  {"Contributing" = "contributing.md"}
+]
+
+[project.theme]
+language = "en"
+features = [
+  "content.action.edit", # Edit this page
+  "content.action.view",  # View source of this page
+  "search.highlight",
+  "navigation.instant",
+  "navigation.tracking",
+  "navigation.sections",
+  "navigation.expand",
+  "navigation.path",
+  "toc.follow",
+  "toc.integrate",
+  "navigation.top"
+]
+
+[project.markdown_extensions.toc]
+permalink = true
+
+[project.markdown_extensions.pymdownx.snippets]
+
+[project.markdown_extensions.admonition]
+
+[project.markdown_extensions.attr_list]
+
+[project.markdown_extensions.pymdownx.details]
+
+[project.markdown_extensions.pymdownx.smartsymbols]

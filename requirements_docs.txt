@@ -1,6 +1,2 @@
-    mkdocs
-    mkdocs-material
-    mkdocs-minify-plugin
     pymdown-extensions
-    mkdocs-htmlproofer-plugin
-    mkdocs-material[imaging]
+    zensical
