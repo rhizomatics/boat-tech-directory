@@ -77,6 +77,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
 - [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
 - [KPlex](https://www.stripydog.com/kplex/) - NMEA0183 multiplexer for Linux, Unix, macOS and OpenWRT. ([Google Group](https://groups.google.com/g/kplex)).
+- [Maiana](https://github.com/peterantypas/maiana) - AIS Transponder open hardware/software.
 - [Marinux](https://marinux.tuxfamily.org) - *Muplex* NMEA multiplexer, *OSD Depth* echo-sounder display.
 - [nm2k](https://github.com/svalentinf/nm2k) - NMEA0183 and NMEA2000 web based visualization and analysis.
 - [OpenCPN](https://opencpn.org) - Chart Plotter for macOS, Windows, Linux, Raspi and Android.
@@ -174,6 +175,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [gedad](https://www.gedad.de) - German vendor, *Marine Control Server* for NMEA0183, NMEA2000 and i2c, with SignalK support.
 - [HAT Labs](https://hatlabs.fi) - Open Source NMEA2000, ESP32 and RasPi hardware.
 - [Luissa 351](https://www.ebay.co.uk/usr/luissa.351) - NMEA gateways, multiplexers and Wifi integration. Portugal selling internationally through eBay.
+- [Marine Control Server](https://open-boat-projects.org/en/marine-control-server/) - Raspberry Pi based NMEA 0183 and NMEA 2000 interface with OpenPlotter and SignalK integration.
 - [Matsutec](http://www.matsutec.cn) - Chinese supplier of NMEA hardware, testers, gateways plus AIS and auto-pilots.
 - [Nauti-Control](https://nauti-control.com) - Seatalk and NMEA2000 wifi bridges and remote controls. Also on [YouTube](https://www.youtube.com/@Nauti-Control).
 - [Oceanav](https://ocenav.com) - Spanish vendor, with English info, of NMEA wifi gateways and auto-pilot remote control.
@@ -236,6 +238,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Vesscomm](https://vesscomm.com) - Mobile data (2G/4G) based monitoring hubs and mobile apps.
 - [Victron](https://www.victronenergy.com) - Power devices with associated monitoring, integration, power sensors, displays.
 - [Vircru](https://www.vircru.com) - Remote boat monitoring with mobile app.
+- [Zigboat](https://www.zigboat.com) - Zigbee based remote boat sensors and monitoring with SMS and mobile app notifications by Glomex.
 
 ### Audio, Electrical, Safety, Accessories
 
@@ -245,7 +248,9 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Cruising Solutions](https://www.cruisingsolutions.com/collections/communication) - 'Marriage Savers' intercom headsets.
 - [Kicker Audio](https://kickeruk.com/pages/boat-audio) - Speakers, amplifiers, cables.
 - [Peplink](https://www.peplink.com/) - Marine antennas and routers for 5G.
+- [Sailor Hat for Raspberry Pi](https://docs.hatlabs.fi/sh-rpi/) - Power Pi from NMEA2000 bus, safe shutdown, glitch protection.
 - [Yacht Controller](https://www.yachtcontroller.com) - Handheld engine & steering remote control for docking.
+- [Weatherdock](https://www.easyais.com) - German supplier of AIS transceivers and splitters, personal trackers and beacons, boat monitoring.
 
 
 ## Software Vendors
