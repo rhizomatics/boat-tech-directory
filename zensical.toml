@@ -19,6 +19,7 @@ nav = [
 
 [project.theme]
 language = "en"
+logo = "images/logo.jpg"
 features = [
   "content.action.edit", # Edit this page
   "content.action.view",  # View source of this page
