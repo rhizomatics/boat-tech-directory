@@ -320,4 +320,4 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 <!--lint disable no-repeat-punctuation code-block-style-->
 ??? DISCLAIMER
 
-    The term 'awesome' is used here in its American sense, and because 'awesome list' is a thing, and not in its British sense of actually involving awe)
+    The term 'awesome' is used here in its American sense, and because 'awesome list' is a thing, and not in its British sense of actually involving awe.
