@@ -256,6 +256,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 ## Software Vendors
 
 - [Adrena](https://www.adrena-software.com) - Navigation and route optimization packages specialized for cruisers or racing.
+- [AggSoft](https://www.aggsoft.com) - Windows based data loggers/aggregators for NMEA, ModBus, GPS, USB etc.
 - [DeepBlue](https://deepblue.app/) - Yacht management app.
 - [Expedition Marine](https://www.expeditionmarine.com) - Windows-based navigation, weather routing and racing app, official supplier to The Volvo Ocean Race, Americas Cup, Sail GP etc.
 - [LuckGRIB](https://luckgrib.com) - Weather data download, view and routing.
