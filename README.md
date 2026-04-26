@@ -214,6 +214,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [LCJ Capteurs](https://lcjcapteurs.com/en/categorie-girouette-anemometres-capteur-vent/marine-en/) - Wind and weather instruments, StatMETEO wind data recording software.
 - [NASA Marine](https://www.nasamarine.com) - Instruments, monitors, AIS, displays.
 - [Nautinect](https://nautinect.com) - Open source hardware design and mobile app, controller with wheel or tiller drive.
+- [Navinet](https://www.navinet-autopilot.com/) - SmartSail autopilot with OpenCPN and NMEA integration.
 - [Safiery](https://safiery.com/marine-new/) - Digital switching, monitoring, Victron and NMEA integration.
 - [Vakaros](https://www.vakaros.com) - Racing oriented instruments. Instruction videos on [YouTube channel](https://www.youtube.com/@Safiery).
 - [Veratron](https://veratron.com/pages/marine) - NMEA instruments, gateways and sensors, displays.
