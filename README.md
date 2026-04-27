@@ -32,6 +32,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [BoatHackers](https://boathackers.com) - Leopard 45, projects with Home Assistant, Starlink, NMEA2000, Victron.
 - [Catalina 320 Log](https://www.yachtslog.com) - Raspberry Pi, NMEA, SignalK, VBA.
 - [Cricalix](https://www.cricalix.net) - Ireland, Victoria 34, NMEA, Python, Solar, Shipmodul Miniplex.
+- [Lille Ø](https://lille-oe.de/boat/) - German owner (English language site), Amigo 40, open source software and hardware projects, LoRa, videos.
 - [Navigation Mac & Co](https://www.navigation-mac.fr) - French, with English translation. News and articles, focus on weather data, macOS and iPad navigation.
 - [Nick Hayward](https://www.nick-hayward.co.uk/category/narrowboat/) - Narrowboat projects including Home Assistant, ESPHome, Victron.
 - [Ole W. Saastad](https://www.homelinux.no) - Raspberry Pi boat integration.
