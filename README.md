@@ -217,6 +217,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Nautinect](https://nautinect.com) - Open source hardware design and mobile app, controller with wheel or tiller drive.
 - [Navinet](https://www.navinet-autopilot.com/) - SmartSail autopilot with OpenCPN and NMEA integration.
 - [Safiery](https://safiery.com/marine-new/) - Digital switching, monitoring, Victron and NMEA integration.
+- [Scadys](https://go.scadys.io) - MDD400 TFT display for NMEA 2000, NMEA 0183 and Seatalk data, usable as ST60 replacements. Kickstarter project by cruising sailor.
 - [Vakaros](https://www.vakaros.com) - Racing oriented instruments. Instruction videos on [YouTube channel](https://www.youtube.com/@Safiery).
 - [Veratron](https://veratron.com/pages/marine) - NMEA instruments, gateways and sensors, displays.
 - [Wema](https://wema.co.uk) - NMEA instruments, gauges, bridges, analog to digital converters.
