@@ -2,8 +2,7 @@
 site_name = "Awesome Boat Tech"
 site_url = "https://sy-sea-jade.github.io/awesome-boat-tech/"
 site_author = "Jey Burrows"
-site_description = "A curated list of marine electronics, NMEA, SignalK, OpenCPN and
-other open source boat tech projects, vendor hardware and software, blogs and forums."
+site_description = "A curated list of marine electronics, NMEA, SignalK, OpenCPN and other open source boat tech projects, vendor hardware and software, blogs and forums."
 
 docs_dir = "docs"
 site_dir = "site"
