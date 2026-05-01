@@ -2,5 +2,7 @@
 > A curated directory of marine electronics software, hardware and
 > open source projects. Covers NMEA2000, SignalK, OpenCPN, OpenPlotter,
 > ESP32 marine projects, chart plotters, AIS, and boat tech blogs.
+> Follows the style of the common "Awesome List" format and uses
+> automated link checking / style linting to ensure the content is live.
 
 https://sy-sea-jade.github.io/awesome-boat-tech/
