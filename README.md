@@ -238,6 +238,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Renogy](https://www.renogy.com/) - Power management and monitoring.
 - [Sensar Marine](https://sensarmarine.com) - Subscription-based remote monitoring with app, SMS and NMEA integration.
 - [Siren Marine](https://sirenmarine.com/) - Remote boat monitoring.
+- [Smartboatia](https://smartboatia.com) - Smart boat hub with anchor alarm, remote monitoring, logging and AI-based trim suggestions.
 - [Vesscomm](https://vesscomm.com) - Mobile data (2G/4G) based monitoring hubs and mobile apps.
 - [Victron](https://www.victronenergy.com) - Power devices with associated monitoring, integration, power sensors, displays.
 - [Vircru](https://www.vircru.com) - Remote boat monitoring with mobile app.
