@@ -178,6 +178,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Luissa 351](https://www.ebay.co.uk/usr/luissa.351) - NMEA gateways, multiplexers and Wifi integration. Portugal selling internationally through eBay.
 - [Marine Control Server](https://open-boat-projects.org/en/marine-control-server/) - Raspberry Pi based NMEA 0183 and NMEA 2000 interface with OpenPlotter and SignalK integration.
 - [Matsutec](http://www.matsutec.cn) - Chinese supplier of NMEA hardware, testers, gateways plus AIS and auto-pilots.
+- [MySmartBoat](https://mysmartboat.com/) -  Monitoring and integration hardware, electrical components, MySmartApp unified dashboard.
 - [Nauti-Control](https://nauti-control.com) - Seatalk and NMEA2000 wifi bridges and remote controls. Also on [YouTube](https://www.youtube.com/@Nauti-Control).
 - [Oceanav](https://ocenav.com) - Spanish vendor, with English info, of NMEA wifi gateways and auto-pilot remote control.
 - [Onwa](https://www.onwamarine.com/NMEA_Devices.html) - NMEA converters and multiplexers, and general marine electronics.
@@ -274,6 +275,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Rose Point](https://www.rosepoint.com) - Navigation software, North America gazatteer, NMEA gateway.
 - [Sail Logger](https://saillogger.com) - Logbook for mobiles, with NMEA integration.
 - [Sailing Performance](https://www.sailingperformance.com) - Racing performance analysis.
+- [SailSense](https://sailsense.xyz) - Local GenAI assisted analysis, advice and alarms. SignalK based.
 - [SailTrack](https://www.angelnav.co.uk) - **AngelNav** plotter app for mobile and PC with charts and traditional charting techniques and NMEA integration.
 - [SavvyNavvy](https://www.savvy-navvy.com) - Plotter app for mobile with integrated weather, AIS, charting and NMEA integration.
 - [SeaIQ](https://seaiq.com) - Navigation for pilots, on Windows, macOS, iOS, iPadOS. Lower price version for recreational sailors.
