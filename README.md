@@ -306,6 +306,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 ## Education and Reference
 
 - [Actisense Hub](https://actisense.com/actisense-hub/) - Free tutorials, online books and reference from Actisense.
+- [AllThingzSailing](https://allthingzsailing.com/) - Catalog of sailing related websites, blogs, videos and apps.
 - [Attainable Adventure Cruising](https://www.morganscloud.com) - Articles on [electronics and software](https://www.morganscloud.com/category/electronics-software/) and [Navigation and Marine Electronics](https://www.morganscloud.com/category/navigation/book-navigation-electronics/) on-line book.
 - [Boat HowTo](https://boathowto.com) - Online courses and articles for marine electrics, NMEA networking and engines.
 - [GPS NMEA 0183 Messaging Protocol 101](https://docs.arduino.cc/learn/communication/gps-nmea-data-101/) - Arduino tutorial with general applicability.
