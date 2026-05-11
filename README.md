@@ -60,6 +60,8 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 ## Charts
 
 - [Antares Charts](https://www.antarescharts.co.uk) - Volunteer project for charting and pilotage of West Coast Scotland.
+- [Mapterhorn](https://mapterhorn.com) - Open Source terrain tiles for interactive web map visualizations.
+- [Nautical Chart Catalogs](https://chartcatalogs.github.io) - Machine readable index of free to use nautical charts.
 - [OpenSeaMap](https://www.openseamap.org/index.php?id=openseamap&L=1) - Open sourced charts, in English, German, Spanish, French, Italian, Russian and Arabic.
 
 ## Open Source Projects
