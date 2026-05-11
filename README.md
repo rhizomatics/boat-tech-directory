@@ -253,6 +253,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Aquatic AV](https://www.aquaticav.com/pages/environments-marine) - Speakers, amplifiers, head units.
 - [Avtex](https://avtex.co.uk) - 12V TVs popular on boats.
 - [Blue Sea](https://www.bluesea.com) - Electrical components, meters, cable glands and enclosures, on-line and mobile calculators, monitoring.
+- [Crimp](https://crimp.studio) - On-line DC diagram editor with simulation and validation.
 - [Cruising Solutions](https://www.cruisingsolutions.com/collections/communication) - 'Marriage Savers' intercom headsets.
 - [Kicker Audio](https://kickeruk.com/pages/boat-audio) - Speakers, amplifiers, cables.
 - [Peplink](https://www.peplink.com/) - Marine antennas and routers for 5G.
