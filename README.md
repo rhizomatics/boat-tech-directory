@@ -273,6 +273,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Navstation](https://navstation.net) - **MacENCx64Integrate** plotting, navigation, charts and NMEA integration for macOS.
 - [NMEA 2000 Solutions](https://www.nmea2000solutions.com) - NMEA BridgeBuilder and NMEA Gateway packages, consultancy.
 - [Ocean Signal](https://oceansignal.com) - PLBs, EPIRBs, AIS alarms, VHF and radar transponders.
+- [OsmAnd](https://osmand.net/) - Offline mobile apps for OpenStreetMap, with nautical support in Pro and higher.
 - [Rose Point](https://www.rosepoint.com) - Navigation software, North America gazatteer, NMEA gateway.
 - [Sail Logger](https://saillogger.com) - Logbook for mobiles, with NMEA integration.
 - [Sailing Performance](https://www.sailingperformance.com) - Racing performance analysis.
