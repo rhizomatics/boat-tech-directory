@@ -81,6 +81,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
 - [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
 - [KPlex](https://www.stripydog.com/kplex/) - NMEA0183 multiplexer for Linux, Unix, macOS and OpenWRT. ([Google Group](https://groups.google.com/g/kplex)).
+- [libWeatherRouting](https://dakk.github.io/libweatherrouting/) - Python weather routing library with linear iso-routing and shortest path routes.
 - [Maiana](https://github.com/peterantypas/maiana) - AIS Transponder open hardware/software.
 - [Marinux](https://marinux.tuxfamily.org) - *Muplex* NMEA multiplexer, *OSD Depth* echo-sounder display.
 - [nm2k](https://github.com/svalentinf/nm2k) - NMEA0183 and NMEA2000 web based visualization and analysis.
@@ -280,6 +281,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Rose Point](https://www.rosepoint.com) - Navigation software, North America gazatteer, NMEA gateway.
 - [Sail Logger](https://saillogger.com) - Logbook for mobiles, with NMEA integration.
 - [Sailing Performance](https://www.sailingperformance.com) - Racing performance analysis.
+- [SailRouter](http://81.217.94.235/sailrouter/) - AI based routing for onboard Raspberry Pi with NMEA and SignalK integration. Community Edition with planned commercial and SaaS versions.
 - [SailSense](https://sailsense.xyz) - Local GenAI assisted analysis, advice and alarms. SignalK based.
 - [SailTrack](https://www.angelnav.co.uk) - **AngelNav** plotter app for mobile and PC with charts and traditional charting techniques and NMEA integration.
 - [SavvyNavvy](https://www.savvy-navvy.com) - Plotter app for mobile with integrated weather, AIS, charting and NMEA integration.
