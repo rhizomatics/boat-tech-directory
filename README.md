@@ -218,6 +218,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [em-trak](https://em-trak.com) - VHF and AIS.
 - [ICOM](https://www.icomamerica.com/lineup/marine/) - Marine VHF, SSB, GMDSS, AIS, radar.
 - [LCJ Capteurs](https://lcjcapteurs.com/en/categorie-girouette-anemometres-capteur-vent/marine-en/) - Wind and weather instruments, StatMETEO wind data recording software.
+- [MAPTATTOO](https://www.maptattoo.com) - eInk chart plotter. 
 - [NASA Marine](https://www.nasamarine.com) - Instruments, monitors, AIS, displays.
 - [Nautinect](https://nautinect.com) - Open source hardware design and mobile app, controller with wheel or tiller drive.
 - [Navinet](https://www.navinet-autopilot.com/) - SmartSail autopilot with OpenCPN and NMEA integration.
