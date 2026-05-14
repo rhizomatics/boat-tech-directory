@@ -17,6 +17,7 @@ repos:
     rev: v1.1.0
     hooks:
       - id: awesome-lint
+        files: ^README\.md$
   - repo: https://github.com/lycheeverse/lychee.git
     rev: lychee-v0.24.2
     hooks:

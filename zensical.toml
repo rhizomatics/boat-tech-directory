@@ -14,6 +14,17 @@ copyright = "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. No Rights Res
 
 nav = [
   {"Home" = "index.md"},
+  {"Blogs" = "blogs.md"},
+  {"Vlogs" = "vlogs.md"},
+  {"Charts" = "charts.md"},
+  {"Open Source Projects" = "open-source-projects.md"},
+  {"Protocols" = "protocols.md"},
+  {"Hardware Vendors" = "hardware-vendors.md"},
+  {"Software Vendors" = "software-vendors.md"},
+  {"Consultants" = "consultants.md"},
+  {"Forums" = "forums.md"},
+  {"Education and Reference" = "education.md"},
+  {"News" = "news.md"},
   {"Contributing" = "contributing.md"}
 ]
 
