@@ -41,7 +41,7 @@ Personal sites for sailors and their boats with their tech projects. These are a
 - [Pyssel](https://pysselilivet.blogspot.com) - Boat projects and news, including Home Assistant, OpenPlotter, ESP32.
 - [Project Bob](https://www.projectbob.xyz) - Autonomous boat circumnavigation project.
 - [Seabits](https://seabits.com) - Pacific North West, Kristen 50 and Symbol Pilothouse motor yachts, SignalK, dashboards, Victron.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [SY Sea Jade Boatstuff](https://sy-sea-jade.github.io/boatstuff/) - Checklists, equipment choices and other tabular data.
+- <img src="https://github.com/favicon.ico" width="16" height="16"> [SY Sea Jade Boatstuff](https://sy-sea-jade.github.io/boatstuff/) - Checklists, equipment choices, passage planning templates and other tabular data.
 - [The Low Cost Sailor](https://www.thelowcostsailor.com) - Boat tech news and articles. English, French, Spanish. Also <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Spanish](https://www.youtube.com/@TheLowCostSailor) and <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [English](https://www.youtube.com/@lowcostsailor) YouTube channels.
 - [Zapped Myself](https://zappedmyself.com/projects/nmea2000/) - NMEA2000, AIS, ESP32 projects.
 
