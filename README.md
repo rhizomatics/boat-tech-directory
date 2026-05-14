@@ -158,6 +158,11 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [go-nmea](https://github.com/adrianmo/go-nmea) - NMEA 0183 sentence parser.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [nmea0183](https://github.com/martinmarsh/nmea0183) - NMEA 0183 sentence parser, with Actisense integration examples.
 
+#### JavaScript
+
+- <img src="https://github.com/favicon.ico" width="16" height="16"> [canboatjs](https://github.com/canboat/canboatjs) - Native CAN Bus / NMEA 2000 interfacing.
+- <img src="https://github.com/favicon.ico" width="16" height="16"> [nmea-simple](https://github.com/101100/nmea-simple) - NMEA 0183 sentence parser. Fork of the now deprecated `nmea` package.
+
 #### Python
 
 Lots more libraries and tools can be found on PyPI, for example [NMEA](https://pypi.org/search/?q=nmea)-related.
