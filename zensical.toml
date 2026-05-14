@@ -14,17 +14,14 @@ copyright = "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. No Rights Res
 
 nav = [
   {"Home" = "index.md"},
-  {"Blogs" = "blogs.md"},
-  {"Vlogs" = "vlogs.md"},
+  {"Social Media" = "social_media.md"},
   {"Charts" = "charts.md"},
   {"Open Source Projects" = "open-source-projects.md"},
   {"Protocols" = "protocols.md"},
   {"Hardware Vendors" = "hardware-vendors.md"},
   {"Software Vendors" = "software-vendors.md"},
   {"Consultants" = "consultants.md"},
-  {"Forums" = "forums.md"},
-  {"Education and Reference" = "education.md"},
-  {"News" = "news.md"},
+  {"News, Education and Reference" = "education.md"},
   {"Contributing" = "contributing.md"}
 ]
 
@@ -40,6 +37,7 @@ features = [
   "navigation.sections",
   "navigation.expand",
   "navigation.path",
+  "navigation.tabs",
   "toc.follow",
   "toc.integrate",
   "navigation.top"
@@ -51,6 +49,8 @@ permalink = true
 [project.markdown_extensions.pymdownx.snippets]
 
 [project.markdown_extensions.admonition]
+
+[project.markdown_extensions.pymdownx.superfences]
 
 [project.markdown_extensions.attr_list]
 

@@ -11,25 +11,24 @@ Boat tech includes all things NMEA and Seatalk, marine internet, open source pro
 ## Contents
 
 <!--lint disable double-link-->
-- [Blogs](#blogs)
-- [Vlogs](#vlogs)
+- [Social Media](#social-media)
 - [Charts](#charts)
 - [Open Source Projects](#open-source-projects)
 - [Protocols](#protocols)
 - [Hardware Vendors](#hardware-vendors)
 - [Software Vendors](#software-vendors)
 - [Consultants](#consultants)
-- [Forums](#forums)
-- [Education and Reference](#education-and-reference)
-- [News](#news)
+- [News, Education and Reference](#news-education-and-reference)
 <!--lint enable double-link-->
 
 ### Contribute
 
 Contributions welcome! Read the [contribution guidelines](contributing.md) first.
 
-<!-- --8<-- [start:blogs] -->
-## Blogs
+<!-- --8<-- [start:social_media] -->
+## Social Media
+
+### Blogs
 
 Personal sites for sailors and their boats with their tech projects. These are all reasonably live as of 2026.
 
@@ -47,10 +46,8 @@ Personal sites for sailors and their boats with their tech projects. These are a
 - [SY Sea Jade Boatstuff](https://sy-sea-jade.github.io/boatstuff/) - Checklists, equipment choices and other tabular data.
 - [The Low Cost Sailor](https://www.thelowcostsailor.com) - Boat tech news and articles. English, French, Spanish. Also [Spanish](https://www.youtube.com/@TheLowCostSailor) and [English](https://www.youtube.com/@lowcostsailor) YouTube channels.
 - [Zapped Myself](https://zappedmyself.com/projects/nmea2000/) - NMEA2000, AIS, ESP32 projects.
-<!-- --8<-- [end:blogs] -->
 
-<!-- --8<-- [start:vlogs] -->
-## Vlogs
+### Vlogs
 
 Video channels from YouTube and elsewhere for boat tech projects.
 
@@ -65,7 +62,21 @@ Video channels from YouTube and elsewhere for boat tech projects.
 - [SV Apres](https://www.youtube.com/playlist?list=PLqHa5JFKHBLwxeCuc6uaa5TzAXVeqTyiD) - OpenPlotter, NMEA2000 and general boat tech.
 - [The Florida Captain](https://www.youtube.com/@TheFloridaCaptain) - Open source boat network and apps.
 - [Tom Seahorse](https://www.youtube.com/@Tom-seahorse/videos) - UK. Catamaran. Raspberry Pi, OpenCPN, Home Assistant.
-<!-- --8<-- [end:vlogs] -->
+
+### Forums
+
+*All active as of 2026*
+
+- [boatdesign.net](https://www.boatdesign.net/forums/onboard-electronics-controls/) - Electronics and Controls forum.
+- [NMEA 2000 Support Group](https://www.facebook.com/groups/380510566227511/) - Public Facebook group.
+- [NMEA 2000 Technical Forum](https://www.facebook.com/groups/699562237256639/) - Private Facebook group.
+- [OpenMarine](https://forum.openmarine.net) - Marine electronics and networking, focus on Macarthur HAT, PyPilot, OpenPlotter and Node RED.
+- [Panbo](https://panbo.com/marineelectronicsforum/) -  Marine electronics and networking.
+- [Raspberry Pi for Boats](https://www.facebook.com/groups/1666364153609573/) - Private Facebook group.
+- [SignalK Google Group](https://groups.google.com/g/signalk) - Active as of end 2025.
+- [The Hull Truth](https://www.thehulltruth.com/marine-electronics-forum-19/) - Marine electronics forum.
+
+<!-- --8<-- [end:social_media] -->
 
 <!-- --8<-- [start:charts] -->
 ## Charts
@@ -118,6 +129,11 @@ Software projects for boats, with recent commits as of 2026.
 ### NMEA
 
 See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_software:nmea_instruments).
+
+<!--lint disable no-repeat-punctuation code-block-style-->
+!!! note "Not all NMEA is what it seems"
+    A tiny subset of NMEA 0183 is used for GPS integration on almost all devices that handle GPS, including mobile phones, and so has vastly more usage than marine NMEA use cases. Hence, not everything labelled 'NMEA' may be useful in a boating context.
+<!--lint enable no-repeat-punctuation code-block-style-->
 
 #### C and C++
 
@@ -335,23 +351,15 @@ See also [Open Source](#open-source-projects).
 - [Tweeds Marine](https://tweedsmarine.nz/) - New Zealand. Consultancy plus free articles, news and calculators online.
 <!-- --8<-- [end:consultants] -->
 
-<!-- --8<-- [start:forums] -->
-## Forums
-
-*All active as of 2026*
-
-- [boatdesign.net](https://www.boatdesign.net/forums/onboard-electronics-controls/) - Electronics and Controls forum.
-- [NMEA 2000 Support Group](https://www.facebook.com/groups/380510566227511/) - Public Facebook group.
-- [NMEA 2000 Technical Forum](https://www.facebook.com/groups/699562237256639/) - Private Facebook group.
-- [OpenMarine](https://forum.openmarine.net) - Marine electronics and networking, focus on Macarthur HAT, PyPilot, OpenPlotter and Node RED.
-- [Panbo](https://panbo.com/marineelectronicsforum/) -  Marine electronics and networking.
-- [Raspberry Pi for Boats](https://www.facebook.com/groups/1666364153609573/) - Private Facebook group.
-- [SignalK Google Group](https://groups.google.com/g/signalk) - Active as of end 2025.
-- [The Hull Truth](https://www.thehulltruth.com/marine-electronics-forum-19/) - Marine electronics forum.
-<!-- --8<-- [end:forums] -->
-
 <!-- --8<-- [start:education] -->
-## Education and Reference
+## News, Education and Reference
+
+### News
+
+- [Actisense Media](https://actisense.com/media/) - Vendor blog, with self-help and industry news.
+- [Panbo](https://panbo.com) - Marine tech news.
+
+### Education
 
 - [Actisense Hub](https://actisense.com/actisense-hub/) - Free tutorials, online books and reference from Actisense.
 - [AllThingzSailing](https://allthingzsailing.com/) - Catalog of sailing related websites, blogs, videos and apps.
@@ -362,21 +370,18 @@ See also [Open Source](#open-source-projects).
 - [Mr Lopez](https://www.mrlopezclasses.com) - Books and online classes on marine electrics, Spanish and English.
 - [NMEA Certification and Training](https://www.nmea.org/training.html) - Official NMEA organization courses.
 - [NMEA Conference and Expo](https://expo.nmea.org) - Annual vendor event in USA.
-- [NMEA FAQ](https://www.eoss.org/pubs/nmeafaq) - 2006 vintage, latest and remains relevant.
-- [NMEA Revealed](https://gpsd.gitlab.io/gpsd/NMEA.html) - Detailed technical reference for NMEA0183, part of the gpsd project.
 - [Ocean Science Technology](https://www.oceansciencetechnology.com/suppliers/data-communication-systems/) - NMEA 0183 and 2000 tutorials.
 - [Seably](https://www.seably.com/explore/topics/electronics-2) - Electronics courses, including Actisense accreditation.
+
+### Reference
+
+- [NMEA FAQ](https://www.eoss.org/pubs/nmeafaq) - 2006 vintage, latest and remains relevant.
+- [NMEA Revealed](https://gpsd.gitlab.io/gpsd/NMEA.html) - Detailed technical reference for NMEA0183, part of the gpsd project.
 - [Seatalk Technical Reference](http://www.thomasknauf.de/seatalk.htm) - Unofficial documentation of Seatalk 1 protocol.
+
 <!-- --8<-- [end:education] -->
 
-<!-- --8<-- [start:news] -->
-## News
-
-- [Actisense Media](https://actisense.com/media/) - Vendor blog, with self-help and industry news.
-- [Panbo](https://panbo.com) - Marine tech news.
-<!-- --8<-- [end:news] -->
-
 <!--lint disable no-repeat-punctuation code-block-style-->
-??? DISCLAIMER
+??? warning
 
     The term 'awesome' is used here in its American sense, and because 'awesome list' is a thing, and not in its British sense of actually involving awe.
