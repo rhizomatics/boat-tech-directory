@@ -1,5 +1,5 @@
 [project]
-site_name = "Awesome Boat Tech"
+site_name = "Boat Tech Directory"
 site_url = "https://awesome-boat-tech.rhizomatics.org.uk"
 site_author = "Jey Burrows"
 site_description = "A curated list of marine electronics, NMEA, SignalK, OpenCPN and other open source boat tech projects, vendor hardware and software, blogs and forums."
@@ -27,8 +27,6 @@ nav = [
 language = "en"
 logo = "images/logo.jpg"
 features = [
-  "content.action.edit", # Edit this page
-  "content.action.view",  # View source of this page
   "search.highlight",
   "navigation.instant",
   "navigation.tracking",
