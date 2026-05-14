@@ -41,6 +41,7 @@ Personal sites for sailors and their boats with their tech projects. These are a
 - [Pyssel](https://pysselilivet.blogspot.com) - Boat projects and news, including Home Assistant, OpenPlotter, ESP32.
 - [Project Bob](https://www.projectbob.xyz) - Autonomous boat circumnavigation project.
 - [Seabits](https://seabits.com) - Pacific North West, Kristen 50 and Symbol Pilothouse motor yachts, SignalK, dashboards, Victron.
+- [SY Bockra](https://corbin39.org/wp-content/uploads/2025/06/BOCKRA-nav-system-notes-Spring-2025-DS-06-06-25.pdf) - 1981 Corbin 39, OpenCPN, Open Boat Projects, AvNav. One-off summary document of experiences.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [SY Sea Jade Boatstuff](https://sy-sea-jade.github.io/boatstuff/) - Checklists, equipment choices, passage planning templates and other tabular data.
 - [The Low Cost Sailor](https://www.thelowcostsailor.com) - Boat tech news and articles. English, French, Spanish. Also <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Spanish](https://www.youtube.com/@TheLowCostSailor) and <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [English](https://www.youtube.com/@lowcostsailor) YouTube channels.
 - [Zapped Myself](https://zappedmyself.com/projects/nmea2000/) - NMEA2000, AIS, ESP32 projects.
@@ -96,7 +97,7 @@ Software projects for boats, with recent commits as of 2026.
 
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [AIS-catcher](https://github.com/jvde-github/AIS-catcher) - AIS receiver for software defined radio (SDR) dongles.
 - [AvNav](https://www.wellenvogel.net/software/avnav/docs/beschreibung.html?lang=en) - Plotter with Android app and SignalK integration. German with English docs.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc.
+- <img src="https://github.com/favicon.ico" width="16" height="16"> [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc plus open source hardware projects.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [BlueBridge](https://github.com/miniwinwm/BlueBridge) - Android app integration with NMEA data via MQTT and Bluetooth.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [BoatyPi](https://github.com/davedoesdemos/BoatyPi) - Open source hardware/software for boat ePaper display.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [BrineOMatic](https://github.com/hoeken/brineomatic) - Watermaker controller for ESP32.
