@@ -104,7 +104,7 @@ Software projects for boats, with recent commits as of 2026.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [d3kOS](https://github.com/SkipperDon/d3kOS) - Raspberry Pi based navigation and automation platform.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [DiscoTime](https://github.com/cr/discotime/) - Time and lat/long dashboard for long distance passages.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [Galadriel Plotter](https://github.com/VladimirKalachikhin/Galadriel-map) - Raster based chartplotter for low power servers.
-- [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
+- <img src="https://gitlab.com/favicon.ico" width="16" height="16"> [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
 - [GWeatherRouting](https://gweatherrouting.org) - Navigation and automated routing, Python/GTK4.
 - [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
@@ -163,7 +163,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 Lots more libraries and tools can be found on PyPI, for example [NMEA](https://pypi.org/search/?q=nmea)-related.
 
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [pynmea2](https://github.com/Knio/pynmea2) - NMEA 0183 sentence parser.
-- [nmeasim](https://gitlab.com/nmeasim/nmeasim) - NMEA/GNSS receiver simulator.
+- <img src="https://gitlab.com/favicon.ico" width="16" height="16"> [nmeasim](https://gitlab.com/nmeasim/nmeasim) - NMEA/GNSS receiver simulator.
 
 #### Rust
 
@@ -377,7 +377,7 @@ See also [Open Source](#open-source-projects).
 ### Reference
 
 - [NMEA FAQ](https://www.eoss.org/pubs/nmeafaq) - 2006 vintage, latest and remains relevant.
-- [NMEA Revealed](https://gpsd.gitlab.io/gpsd/NMEA.html) - Detailed technical reference for NMEA0183, part of the gpsd project.
+- <img src="https://gitlab.com/favicon.ico" width="16" height="16"> [NMEA Revealed](https://gpsd.gitlab.io/gpsd/NMEA.html) - Detailed technical reference for NMEA0183, part of the gpsd project.
 - [Seatalk Technical Reference](http://www.thomasknauf.de/seatalk.htm) - Unofficial documentation of Seatalk 1 protocol.
 
 <!-- --8<-- [end:education] -->
