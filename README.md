@@ -31,6 +31,8 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 <!-- --8<-- [start:blogs] -->
 ## Blogs
 
+Personal sites for sailors and their boats with their tech projects. These are all reasonably live as of 2026.
+
 - [BoatHackers](https://boathackers.com) - Leopard 45, projects with Home Assistant, Starlink, NMEA2000, Victron.
 - [Catalina 320 Log](https://www.yachtslog.com) - Raspberry Pi, NMEA, SignalK, VBA.
 - [Cricalix](https://www.cricalix.net) - Ireland, Victoria 34, NMEA, Python, Solar, Shipmodul Miniplex.
@@ -50,6 +52,8 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 <!-- --8<-- [start:vlogs] -->
 ## Vlogs
 
+Video channels from YouTube and elsewhere for boat tech projects.
+
 - [8-bit Sailing](https://www.youtube.com/@8bitsailing/) - Raspberry Pi, OpenPlotter and Raymarine.
 - [Boating with the Baileys](https://www.youtube.com/@BoatingwiththeBaileys) -  Electrical and electronics projects on a 2000s Bavaria 36, including SignalK, KIP, Node-RED, OpenPlotter and SensESP.
 - [Boats and Bits](https://www.youtube.com/@boatsandbits) - DIY boat tech, Raymarine networking, electrics, 3D printing.
@@ -66,6 +70,8 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 <!-- --8<-- [start:charts] -->
 ## Charts
 
+Open source, crowd-sourced and volunteer chart sources.
+
 - [Antares Charts](https://www.antarescharts.co.uk) - Volunteer project for charting and pilotage of West Coast Scotland.
 - [Mapterhorn](https://mapterhorn.com) - Open Source terrain tiles for interactive web map visualizations.
 - [Nautical Chart Catalogs](https://chartcatalogs.github.io) - Machine readable index of free to use nautical charts.
@@ -74,6 +80,8 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 <!-- --8<-- [start:open-source-projects] -->
 ## Open Source Projects
+
+Software projects for boats, with recent commits as of 2026.
 
 - [AIS-catcher](https://github.com/jvde-github/AIS-catcher) - AIS receiver for software defined radio (SDR) dongles.
 - [AvNav](https://www.wellenvogel.net/software/avnav/docs/beschreibung.html?lang=en) - Plotter with Android app and SignalK integration. German with English docs.
@@ -134,6 +142,8 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 
 #### Python
 
+Lots more libraries and tools can be found on PyPI, for example [NMEA](https://pypi.org/search/?q=nmea)-related.
+
 - [pynmea2](https://github.com/Knio/pynmea2) - NMEA 0183 sentence parser.
 - [nmeasim](https://gitlab.com/nmeasim/nmeasim) - NMEA/GNSS receiver simulator.
 
@@ -171,6 +181,8 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 ## Hardware Vendors
 
 ### Full Integration
+
+Vendors offering full suite of products for modern boats, including plotters, instruments and sensors.
 
 - [B&G](https://www.bandg.com) - Sensors, radars, plotters, displays for racing and cruising.
 - [Furono](https://www.furunousa.com/en) - Sensors, sonar, radar, plotters, autopilots.
@@ -282,6 +294,10 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 
 <!-- --8<-- [start:software-vendors] -->
 ## Software Vendors
+
+<!--lint disable double-link-->
+See also [Open Source](#open-source-projects).
+<!--lint enable double-link-->
 
 - [Adrena](https://www.adrena-software.com) - Navigation and route optimization packages specialized for cruisers or racing.
 - [AggSoft](https://www.aggsoft.com) - Windows based data loggers/aggregators for NMEA, ModBus, GPS, USB etc.
