@@ -66,11 +66,13 @@ Video channels from YouTube and elsewhere for boat tech projects.
 *All active as of 2026*
 
 - [boatdesign.net](https://www.boatdesign.net/forums/onboard-electronics-controls/) - Electronics and Controls forum.
-- [NMEA 2000 Support Group](https://www.facebook.com/groups/380510566227511/) - Public Facebook group.
-- [NMEA 2000 Technical Forum](https://www.facebook.com/groups/699562237256639/) - Private Facebook group.
+- <img src="https://www.facebook.com/favicon.ico" width="16" height="16"> [Boat Electrical and Electronic Q&A](https://www.facebook.com/groups/5844662375630348) - Private Facebook group, >70k members, avg post per day.
+- <img src="https://www.facebook.com/favicon.ico" width="16" height="16"> [NMEA 2000 Support Group](https://www.facebook.com/groups/380510566227511/) - Public Facebook group.
+- <img src="https://www.facebook.com/favicon.ico" width="16" height="16"> [NMEA 2000 Technical Forum](https://www.facebook.com/groups/699562237256639/) - Private Facebook group.
+- <img src="https://www.facebook.com/favicon.ico" width="16" height="16"> [OpenCPN Users](https://www.facebook.com/groups/2405863179652854/) - Private Facebook group, >12k members, dozen or two posts a month.
 - [OpenMarine](https://forum.openmarine.net) - Marine electronics and networking, focus on Macarthur HAT, PyPilot, OpenPlotter and Node RED.
 - [Panbo](https://panbo.com/marineelectronicsforum/) -  Marine electronics and networking.
-- [Raspberry Pi for Boats](https://www.facebook.com/groups/1666364153609573/) - Private Facebook group.
+- <img src="https://www.facebook.com/favicon.ico" width="16" height="16"> [Raspberry Pi for Boats](https://www.facebook.com/groups/1666364153609573/) - Private Facebook group, >17k members, couple dozen posts per month.
 - [SignalK Google Group](https://groups.google.com/g/signalk) - Active as of end 2025.
 - [The Hull Truth](https://www.thehulltruth.com/marine-electronics-forum-19/) - Marine electronics forum.
 
@@ -355,6 +357,7 @@ See also [Open Source](#open-source-projects).
 ### News
 
 - [Actisense Media](https://actisense.com/media/) - Vendor blog, with self-help and industry news.
+- [Marine Electronics Journal](https://www.marineelectronicsjournal-digital.com) - Digital magazine published by NMEA.
 - [Panbo](https://panbo.com) - Marine tech news.
 
 ### Education
