@@ -18,9 +18,7 @@ nav = [
   {"Charts" = "charts.md"},
   {"Open Source Projects" = "open-source-projects.md"},
   {"Protocols" = "protocols.md"},
-  {"Hardware Vendors" = "hardware-vendors.md"},
-  {"Software Vendors" = "software-vendors.md"},
-  {"Consultants" = "consultants.md"},
+  {"Vendors" = "vendors.md"},
   {"News, Education and Reference" = "education.md"},
   {"Contributing" = "contributing.md"}
 ]

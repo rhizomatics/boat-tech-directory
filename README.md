@@ -15,9 +15,7 @@ Boat tech includes all things NMEA and Seatalk, marine internet, open source pro
 - [Charts](#charts)
 - [Open Source Projects](#open-source-projects)
 - [Protocols](#protocols)
-- [Hardware Vendors](#hardware-vendors)
-- [Software Vendors](#software-vendors)
-- [Consultants](#consultants)
+- [Vendors](#vendors)
 - [News, Education and Reference](#news-education-and-reference)
 <!--lint enable double-link-->
 
@@ -193,10 +191,12 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 - [SimNet](https://www.simrad-yachting.com/help--support/?contentTitle=Whats-the-difference-between-SimNet-and-NMEA2000&contentId=023_008-016) - Simrad variant of NMEA2000 with different connectors and supporting daisy chaining.
 <!-- --8<-- [end:protocols] -->
 
-<!-- --8<-- [start:hardware-vendors] -->
-## Hardware Vendors
+<!-- --8<-- [start:vendors] -->
+## Vendors
 
-### Full Integration
+### Hardware
+
+#### Full Integration
 
 Vendors offering full suite of products for modern boats, including plotters, instruments and sensors.
 
@@ -211,7 +211,7 @@ Vendors offering full suite of products for modern boats, including plotters, in
 - [Simrad](https://www.simrad-yachting.com) - Plotters, auto-pilots, sonar, radar, AIS, VHF, transducers, charts, apps.
 - [SI-TEX](https://www.si-tex.com) - Plotters, sonar, AIS, radar, autopilot, sensors.
 
-### NMEA Interfacing
+#### NMEA Interfacing
 
 See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for comparison of available products.
 
@@ -243,7 +243,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Yacht Devices](https://www.yachtd.com) - NMEA bridges, gateways and sensors.
 - [Yakbitz](https://yakbitz.com) - Seatalk, NMEA, AIS and Autopilot interfaces.
 
-### Marine PCs and Components
+#### Marine PCs and Components
 
 - [Austral](https://austral-eng.com/) - Marinized Raspberry Pi, sensors, apps including racing auto-pilot.
 - [Beetronics](https://www.beetronics.co.uk/c-marine?_gl=1*1f0b82j*_up*MQ..*_gs*MQ..&gbraid=0AAAAADm9gnpX9qEe0DYsgTxrXqGaGG_4d) - Marine monitors and touchscreens.
@@ -254,7 +254,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Marine Data Solutions](https://marinedatasolutions.com) - Satellite and mobile internet integration, *MDS Blender* marine router.
 - [Poynting](https://poynting.tech/marine-coastal-antennas/) - Marine antennas for 4G/5G/Wifi.
 
-### Instruments and Autopilots
+#### Instruments and Autopilots
 
 - [Airmar](https://www.airmar.com/) - Transducers, sensors, NMEA bridging, weather instruments and apps.
 - [Cyclops Marine](https://www.cyclopsmarine.com) - Smart load sensors and displays.
@@ -272,7 +272,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Veratron](https://veratron.com/pages/marine) - NMEA instruments, gateways and sensors, displays.
 - [Wema](https://wema.co.uk) - NMEA instruments, gauges, bridges, analog to digital converters.
 
-### Boat Integration and Remote Monitoring
+#### Boat Integration and Remote Monitoring
 
 - [BoatMonitor32](https://www.boatmonitor32.co.uk) - Mobile app and boat hardware hub with Victron integration.
 - [Hello Sailor](https://hello-sailor.co.uk) - LTE/SMS based remote boat monitoring, subscription-free.
@@ -294,7 +294,7 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Vircru](https://www.vircru.com) - Remote boat monitoring with mobile app.
 - [Zigboat](https://www.zigboat.com) - Zigbee based remote boat sensors and monitoring with SMS and mobile app notifications by Glomex.
 
-### Audio, Electrical, Safety, Accessories
+#### Audio, Electrical, Safety, Accessories
 
 - [Aquatic AV](https://www.aquaticav.com/pages/environments-marine) - Speakers, amplifiers, head units.
 - [Avtex](https://avtex.co.uk) - 12V TVs popular on boats.
@@ -306,10 +306,8 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Sailor Hat for Raspberry Pi](https://docs.hatlabs.fi/sh-rpi/) - Power Pi from NMEA2000 bus, safe shutdown, glitch protection.
 - [Yacht Controller](https://www.yachtcontroller.com) - Handheld engine & steering remote control for docking.
 - [Weatherdock](https://www.easyais.com) - German supplier of AIS transceivers and splitters, personal trackers and beacons, boat monitoring.
-<!-- --8<-- [end:hardware-vendors] -->
 
-<!-- --8<-- [start:software-vendors] -->
-## Software Vendors
+### Software
 
 <!--lint disable double-link-->
 See also [Open Source](#open-source-projects).
@@ -339,17 +337,15 @@ See also [Open Source](#open-source-projects).
 - [Vessel Vault](https://vesselvault.app) - Boat maintenance management.
 - [WilhemSK](https://www.wilhelmsk.com) - SignalK dashboard app for iPhone, iPad, macOS, Apple Watch and Apple TV.
 - [Zapfware](https://www.zapfware.de) - Mobile apps including *NMEARemote* dashboard, *NMEAConnect* bridging and ORC racing.
-<!-- --8<-- [end:software-vendors] -->
 
-<!-- --8<-- [start:consultants] -->
-## Consultants
+### Consultants
 
 - [Nautibus](https://nautibus.de) - NMEA2000 design, testing, installation. German and English.
 - [Francis Fustier](https://francis-fustier.fr) - France. Training, advice and integration. News and articles, focused on Apple products onboard.
 - [Pacific Yacht Systems](https://www.pysystems.com) - Electrical and electronics consultancy, retail and educational articles & videos.
 - [Seatech Systems](https://seatech.systems) - Marine electronics consultancy, with free advice articles on marine internet.
 - [Tweeds Marine](https://tweedsmarine.nz/) - New Zealand. Consultancy plus free articles, news and calculators online.
-<!-- --8<-- [end:consultants] -->
+<!-- --8<-- [end:vendors] -->
 
 <!-- --8<-- [start:education] -->
 ## News, Education and Reference
