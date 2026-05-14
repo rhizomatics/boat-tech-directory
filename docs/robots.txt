@@ -3,4 +3,4 @@ Disallow: /search/  # Prevent search results from being indexed
 Disallow: /assets/  # Prevent indexing of static assets
 
 
-Sitemap: https://sy-sea-jade.github.io/awesome-boat-tech/sitemap.xml
+Sitemap: https://boat-tech-directory.rhizomatics.org.uk/sitemap.xml

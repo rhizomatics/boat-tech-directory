@@ -6,4 +6,4 @@
 > automated link checking / style linting to ensure the content is live.
 > Also available as an 'awesome' list.
 
-https://sy-sea-jade.github.io/awesome-boat-tech/
+https://boat-tech-directory.rhizomatics.org.uk

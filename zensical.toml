@@ -1,6 +1,6 @@
 [project]
 site_name = "Boat Tech Directory"
-site_url = "https://awesome-boat-tech.rhizomatics.org.uk"
+site_url = "https://boat-tech-directory.rhizomatics.org.uk"
 site_author = "Jey Burrows"
 site_description = "A curated list of marine electronics, NMEA, SignalK, OpenCPN and other open source boat tech projects, vendor hardware and software, blogs and forums."
 
