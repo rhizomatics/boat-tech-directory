@@ -183,25 +183,34 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 <!-- --8<-- [start:protocols] -->
 ## Protocols
 
-- [Garmin BlueNet](https://www8.garmin.com/manuals/webhelp/GUID-C3D5DCE9-C0FF-4AC4-B759-D5B34E1EB78E/EN-US/GUID-A1161F2C-CEB3-4E87-9388-EE6F69DFD026.html) - Current Ethernet based netwoking, with proprietary connector.
-- [Garmin Marine Network](https://www.garmin.com/en-GB/c/networking-hardware/) - Previous generation of Ethernet networking, using RJ45 connectors.
+### Industry Standards
+
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [IEC61162](https://en.wikipedia.org/wiki/IEC_61162) - International Electrotechnical Commission standards, partly wrapping NMEA standards (IEC 61162-1 is NMEA0183 and IEC 61162-3 is NMEA2000).
-<!--lint disable awesome-list-item-->
-- **MicroNet** - Raymarine owned proprietary wireless protocol for instrument telemetry, originally known as *TackTick* before the original vendor acquired. Gateways available for two-way interfacing to regular NMEA 0183.
-<!--lint enable awesome-list-item-->
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [NMEA0183](https://en.wikipedia.org/wiki/NMEA_0183) - RS-422 based wiring layer with proprietary information protocol.
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K.
 - [NMEA OneNet](https://www.nmea.org/nmea-onenet.html) - IPv6 Ethernet based wiring with proprietary information protocol, using M12 and RJ45 connectors.
 - [NMEA over IP](https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:manual_basic:set_options:connections:advanced) - Informal standard (with a formal IANA port assigned, `10110`) using TCP or UDP provided by several vendor and open source products, and consumed by Navionics, AngelNav, SavvyNavvy and more.
-- [Nexus](https://support.garmin.com/en-US/?productID=165155&tab=manuals) - Sensor protocol, acquired by Garmin and used for their wind instruments and depth transducer, with NMEA2000 bridge.
-- [RayNet](https://www.raymarine.com/en-gb/our-products/networking-and-accessories/raynet) - Raymarine's Ethernet implementation, using a proprietary connector.
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [SAE J1587/J1708](https://en.wikipedia.org/wiki/SAE_J1708) - Pair of older serial based engine networking standards, used by marine engines from 1990s and early 2000s.
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [SAE J1939](https://en.wikipedia.org/wiki/SAE_J1939) - CAN Bus standard, using Deutsch connectors, commonly used for engines and engine instruments, including Volvo Penta and Yanmar.
+- <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [Shielded Twisted Pair Ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair) - Computing industry standard, commonly used for radars and other high bandwidth marine applications.
+
+### Open Source
+
+- [SignalK](https://signalk.org/specification/1.7.0/doc/) - Open source JSON based standard using HTTP, OpenAPI and Websockets as transport layer and able to model NMEA0183 and NMEA2000 data.
+
+### Vendor Proprietary
+
+- [Garmin BlueNet](https://www8.garmin.com/manuals/webhelp/GUID-C3D5DCE9-C0FF-4AC4-B759-D5B34E1EB78E/EN-US/GUID-A1161F2C-CEB3-4E87-9388-EE6F69DFD026.html) - Current Ethernet based netwoking, with proprietary connector.
+- [Garmin Marine Network](https://www.garmin.com/en-GB/c/networking-hardware/) - Previous generation of Ethernet networking, using RJ45 connectors.
+<!--lint disable awesome-list-item-->
+- **MicroNet** - Raymarine owned proprietary wireless protocol for instrument telemetry, originally known as *TackTick* before the original vendor acquired. Gateways available for two-way interfacing to regular NMEA 0183.
+<!--lint enable awesome-list-item-->
+- [Nexus](https://support.garmin.com/en-US/?productID=165155&tab=manuals) - Sensor protocol, acquired by Garmin and used for their wind instruments and depth transducer, with NMEA2000 bridge.
+- [RayNet](https://www.raymarine.com/en-gb/our-products/networking-and-accessories/raynet) - Raymarine's Ethernet implementation, using a proprietary connector.
 - [Seatalk 1](https://www.raymarine.com/en-us/our-products/networking-and-accessories/seatalk) - Raymarine proprietary daisy-chain combined data and power, ubiquitously deployed with ST60 instruments.
 - [Seatalk NG](https://www.raymarine.com/en-gb/our-products/networking-and-accessories/seatalk-ng-and-nmea-2000) - Raymarine's implementation of NMEA2000, compatible at data layer with a proprietary 6 pin connection to incorporate SeaTalk 1 data.
-- <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [Shielded Twisted Pair Ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair) - Computing industry standard, commonly used for radars and other high bandwidth marine applications.
-- [SignalK](https://signalk.org/specification/1.7.0/doc/) - Open source JSON based standard using HTTP and Websockets as transport layer and able to model NMEA0183 and NMEA2000 data.
 - [SimNet](https://www.simrad-yachting.com/help--support/?contentTitle=Whats-the-difference-between-SimNet-and-NMEA2000&contentId=023_008-016) - Simrad variant of NMEA2000 with different connectors and supporting daisy chaining.
+
 <!-- --8<-- [end:protocols] -->
 
 <!-- --8<-- [start:vendors] -->
