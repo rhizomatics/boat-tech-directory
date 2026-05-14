@@ -186,6 +186,9 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 - [Garmin BlueNet](https://www8.garmin.com/manuals/webhelp/GUID-C3D5DCE9-C0FF-4AC4-B759-D5B34E1EB78E/EN-US/GUID-A1161F2C-CEB3-4E87-9388-EE6F69DFD026.html) - Current Ethernet based netwoking, with proprietary connector.
 - [Garmin Marine Network](https://www.garmin.com/en-GB/c/networking-hardware/) - Previous generation of Ethernet networking, using RJ45 connectors.
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [IEC61162](https://en.wikipedia.org/wiki/IEC_61162) - International Electrotechnical Commission standards, partly wrapping NMEA standards (IEC 61162-1 is NMEA0183 and IEC 61162-3 is NMEA2000).
+<!--lint disable awesome-list-item-->
+- **MicroNet** - Raymarine owned proprietary wireless protocol for instrument telemetry, originally known as *TackTick* before the original vendor acquired. Gateways available for two-way interfacing to regular NMEA 0183.
+<!--lint enable awesome-list-item-->
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [NMEA0183](https://en.wikipedia.org/wiki/NMEA_0183) - RS-422 based wiring layer with proprietary information protocol.
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K.
 - [NMEA OneNet](https://www.nmea.org/nmea-onenet.html) - IPv6 Ethernet based wiring with proprietary information protocol, using M12 and RJ45 connectors.
