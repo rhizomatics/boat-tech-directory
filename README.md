@@ -186,6 +186,7 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 ### Industry Standards
 
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [IEC61162](https://en.wikipedia.org/wiki/IEC_61162) - International Electrotechnical Commission standards, partly wrapping NMEA standards (IEC 61162-1 is NMEA0183 and IEC 61162-3 is NMEA2000).
+- [LoRaWan](https://lora-alliance.org) - Long range wireless networking for IoT devices, including remote boat monitoring.
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [NMEA0183](https://en.wikipedia.org/wiki/NMEA_0183) - RS-422 based wiring layer with proprietary information protocol.
 - <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K.
 - [NMEA OneNet](https://www.nmea.org/nmea-onenet.html) - IPv6 Ethernet based wiring with proprietary information protocol, using M12 and RJ45 connectors.
