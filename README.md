@@ -2,10 +2,11 @@
 # Awesome Boat Tech [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 <!--lint enable awesome-git-repo-age-->
 
+<!-- --8<-- [start:intro-text] -->
 > A curated list of boat tech stuff.
 
 Boat tech includes all things NMEA and Seatalk, marine internet, open source projects, hardware vendors, educational resources, blogs, vlogs and forums.
-
+<!-- --8<-- [end:intro-text] -->
 
 ## Contents
 
@@ -27,6 +28,7 @@ Boat tech includes all things NMEA and Seatalk, marine internet, open source pro
 
 Contributions welcome! Read the [contribution guidelines](contributing.md) first.
 
+<!-- --8<-- [start:blogs] -->
 ## Blogs
 
 - [BoatHackers](https://boathackers.com) - Leopard 45, projects with Home Assistant, Starlink, NMEA2000, Victron.
@@ -43,8 +45,11 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [SY Sea Jade Boatstuff](https://sy-sea-jade.github.io/boatstuff/) - Checklists, equipment choices and other tabular data.
 - [The Low Cost Sailor](https://www.thelowcostsailor.com) - Boat tech news and articles. English, French, Spanish. Also [Spanish](https://www.youtube.com/@TheLowCostSailor) and [English](https://www.youtube.com/@lowcostsailor) YouTube channels.
 - [Zapped Myself](https://zappedmyself.com/projects/nmea2000/) - NMEA2000, AIS, ESP32 projects.
+<!-- --8<-- [end:blogs] -->
 
+<!-- --8<-- [start:vlogs] -->
 ## Vlogs
+
 - [8-bit Sailing](https://www.youtube.com/@8bitsailing/) - Raspberry Pi, OpenPlotter and Raymarine.
 - [Boating with the Baileys](https://www.youtube.com/@BoatingwiththeBaileys) -  Electrical and electronics projects on a 2000s Bavaria 36, including SignalK, KIP, Node-RED, OpenPlotter and SensESP.
 - [Boats and Bits](https://www.youtube.com/@boatsandbits) - DIY boat tech, Raymarine networking, electrics, 3D printing.
@@ -56,14 +61,18 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [SV Apres](https://www.youtube.com/playlist?list=PLqHa5JFKHBLwxeCuc6uaa5TzAXVeqTyiD) - OpenPlotter, NMEA2000 and general boat tech.
 - [The Florida Captain](https://www.youtube.com/@TheFloridaCaptain) - Open source boat network and apps.
 - [Tom Seahorse](https://www.youtube.com/@Tom-seahorse/videos) - UK. Catamaran. Raspberry Pi, OpenCPN, Home Assistant.
+<!-- --8<-- [end:vlogs] -->
 
+<!-- --8<-- [start:charts] -->
 ## Charts
 
 - [Antares Charts](https://www.antarescharts.co.uk) - Volunteer project for charting and pilotage of West Coast Scotland.
 - [Mapterhorn](https://mapterhorn.com) - Open Source terrain tiles for interactive web map visualizations.
 - [Nautical Chart Catalogs](https://chartcatalogs.github.io) - Machine readable index of free to use nautical charts.
 - [OpenSeaMap](https://www.openseamap.org/index.php?id=openseamap&L=1) - Open sourced charts, in English, German, Spanish, French, Italian, Russian and Arabic.
+<!-- --8<-- [end:charts] -->
 
+<!-- --8<-- [start:open-source-projects] -->
 ## Open Source Projects
 
 - [AIS-catcher](https://github.com/jvde-github/AIS-catcher) - AIS receiver for software defined radio (SDR) dongles.
@@ -135,7 +144,9 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 #### Swift
 
 - [NMEAParser](https://github.com/sindreoyen/NMEAParser) - iOS and macOS NMEA 0183 parser and validator.
+<!-- --8<-- [end:open-source-projects] -->
 
+<!-- --8<-- [start:protocols] -->
 ## Protocols
 
 - [Garmin BlueNet](https://www8.garmin.com/manuals/webhelp/GUID-C3D5DCE9-C0FF-4AC4-B759-D5B34E1EB78E/EN-US/GUID-A1161F2C-CEB3-4E87-9388-EE6F69DFD026.html) - Current Ethernet based netwoking, with proprietary connector.
@@ -154,10 +165,13 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - [Shielded Twisted Pair Ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair) - Computing industry standard, commonly used for radars and other high bandwidth marine applications.
 - [SignalK](https://signalk.org/specification/1.7.0/doc/) - Open source JSON based standard using HTTP and Websockets as transport layer and able to model NMEA0183 and NMEA2000 data.
 - [SimNet](https://www.simrad-yachting.com/help--support/?contentTitle=Whats-the-difference-between-SimNet-and-NMEA2000&contentId=023_008-016) - Simrad variant of NMEA2000 with different connectors and supporting daisy chaining.
+<!-- --8<-- [end:protocols] -->
 
+<!-- --8<-- [start:hardware-vendors] -->
 ## Hardware Vendors
 
 ### Full Integration
+
 - [B&G](https://www.bandg.com) - Sensors, radars, plotters, displays for racing and cruising.
 - [Furono](https://www.furunousa.com/en) - Sensors, sonar, radar, plotters, autopilots.
 - [Garmin](https://www.garmin.com/) - Sensors, plotters, radars, sonar, displays, auto-pilots, charts, cameras and integration.
@@ -170,6 +184,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - [SI-TEX](https://www.si-tex.com) - Plotters, sonar, AIS, radar, autopilot, sensors.
 
 ### NMEA Interfacing
+
 See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for comparison of available products.
 
 - [Actisense](https://actisense.com) - NMEA bridges and gateways.
@@ -263,8 +278,9 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Sailor Hat for Raspberry Pi](https://docs.hatlabs.fi/sh-rpi/) - Power Pi from NMEA2000 bus, safe shutdown, glitch protection.
 - [Yacht Controller](https://www.yachtcontroller.com) - Handheld engine & steering remote control for docking.
 - [Weatherdock](https://www.easyais.com) - German supplier of AIS transceivers and splitters, personal trackers and beacons, boat monitoring.
+<!-- --8<-- [end:hardware-vendors] -->
 
-
+<!-- --8<-- [start:software-vendors] -->
 ## Software Vendors
 
 - [Adrena](https://www.adrena-software.com) - Navigation and route optimization packages specialized for cruisers or racing.
@@ -291,7 +307,9 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Vessel Vault](https://vesselvault.app) - Boat maintenance management.
 - [WilhemSK](https://www.wilhelmsk.com) - SignalK dashboard app for iPhone, iPad, macOS, Apple Watch and Apple TV.
 - [Zapfware](https://www.zapfware.de) - Mobile apps including *NMEARemote* dashboard, *NMEAConnect* bridging and ORC racing.
+<!-- --8<-- [end:software-vendors] -->
 
+<!-- --8<-- [start:consultants] -->
 ## Consultants
 
 - [Nautibus](https://nautibus.de) - NMEA2000 design, testing, installation. German and English.
@@ -299,8 +317,11 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Pacific Yacht Systems](https://www.pysystems.com) - Electrical and electronics consultancy, retail and educational articles & videos.
 - [Seatech Systems](https://seatech.systems) - Marine electronics consultancy, with free advice articles on marine internet.
 - [Tweeds Marine](https://tweedsmarine.nz/) - New Zealand. Consultancy plus free articles, news and calculators online.
+<!-- --8<-- [end:consultants] -->
 
+<!-- --8<-- [start:forums] -->
 ## Forums
+
 *All active as of 2026*
 
 - [boatdesign.net](https://www.boatdesign.net/forums/onboard-electronics-controls/) - Electronics and Controls forum.
@@ -311,7 +332,9 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Raspberry Pi for Boats](https://www.facebook.com/groups/1666364153609573/) - Private Facebook group.
 - [SignalK Google Group](https://groups.google.com/g/signalk) - Active as of end 2025.
 - [The Hull Truth](https://www.thehulltruth.com/marine-electronics-forum-19/) - Marine electronics forum.
+<!-- --8<-- [end:forums] -->
 
+<!-- --8<-- [start:education] -->
 ## Education and Reference
 
 - [Actisense Hub](https://actisense.com/actisense-hub/) - Free tutorials, online books and reference from Actisense.
@@ -328,11 +351,14 @@ See [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for c
 - [Ocean Science Technology](https://www.oceansciencetechnology.com/suppliers/data-communication-systems/) - NMEA 0183 and 2000 tutorials.
 - [Seably](https://www.seably.com/explore/topics/electronics-2) - Electronics courses, including Actisense accreditation.
 - [Seatalk Technical Reference](http://www.thomasknauf.de/seatalk.htm) - Unofficial documentation of Seatalk 1 protocol.
+<!-- --8<-- [end:education] -->
 
+<!-- --8<-- [start:news] -->
 ## News
 
 - [Actisense Media](https://actisense.com/media/) - Vendor blog, with self-help and industry news.
 - [Panbo](https://panbo.com) - Marine tech news.
+<!-- --8<-- [end:news] -->
 
 <!--lint disable no-repeat-punctuation code-block-style-->
 ??? DISCLAIMER
