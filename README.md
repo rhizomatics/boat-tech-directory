@@ -245,7 +245,7 @@ See <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA Wifi
 - [Digital Yacht](https://digitalyacht.co.uk) - NMEA multiplexers, sensors, gateways plus AIS and 4G/5G.
 - [Gadget Pool](http://www.gadgetpool.de) - German vendor, with English info, of NMEA and Seatalk interfaces and displays.
 - [gedad](https://www.gedad.de) - German vendor, *Marine Control Server* for NMEA0183, NMEA2000 and i2c, with SignalK support.
-- [HAT Labs](https://hatlabs.fi) - Open Source NMEA2000, ESP32 and RasPi hardware.
+- [HAT Labs](https://hatlabs.fi) - Open Source NMEA2000, ESP32 and RasPi hardware, including the [Halos](https://github.com/halos-org/halos) containerized marine OS for Raspberry Pi.
 - [Luissa 351](https://www.ebay.co.uk/usr/luissa.351) - NMEA gateways, multiplexers and Wifi integration. Portugal selling internationally through eBay.
 - [Marine Control Server](https://open-boat-projects.org/en/marine-control-server/) - Raspberry Pi based NMEA 0183 and NMEA 2000 interface with OpenPlotter and SignalK integration.
 - [Matsutec](http://www.matsutec.cn) - Chinese supplier of NMEA hardware, testers, gateways plus AIS and auto-pilots.
@@ -358,6 +358,7 @@ See also [Open Source](#open-source-projects).
 - [SailTrack](https://www.angelnav.co.uk) - **AngelNav** plotter app for mobile and PC with charts and traditional charting techniques and NMEA integration.
 - [SavvyNavvy](https://www.savvy-navvy.com) - Plotter app for mobile with integrated weather, AIS, charting and NMEA integration.
 - [SeaIQ](https://seaiq.com) - Navigation for pilots, on Windows, macOS, iOS, iPadOS. Lower price version for recreational sailors.
+- [SKipper](https://www.skipperapp.net) - SignalK instrumentation display app for iOS, Android, Linux, Windows, macOS and Raspberry Pi.
 - [Vessel Vault](https://vesselvault.app) - Boat maintenance management.
 - [WilhemSK](https://www.wilhelmsk.com) - SignalK dashboard app for iPhone, iPad, macOS, Apple Watch and Apple TV.
 - [Zapfware](https://www.zapfware.de) - Mobile apps including *NMEARemote* dashboard, *NMEAConnect* bridging and ORC racing.
