@@ -359,6 +359,7 @@ See also [Open Source](#open-source-projects).
 - [SavvyNavvy](https://www.savvy-navvy.com) - Plotter app for mobile with integrated weather, AIS, charting and NMEA integration.
 - [SeaIQ](https://seaiq.com) - Navigation for pilots, on Windows, macOS, iOS, iPadOS. Lower price version for recreational sailors.
 - [SKipper](https://www.skipperapp.net) - SignalK instrumentation display app for iOS, Android, Linux, Windows, macOS and Raspberry Pi.
+- [Skippo](https://www.skippo.se) - Swedish navigation app for iOS, Android and web.
 - [Vessel Vault](https://vesselvault.app) - Boat maintenance management.
 - [WilhemSK](https://www.wilhelmsk.com) - SignalK dashboard app for iPhone, iPad, macOS, Apple Watch and Apple TV.
 - [Zapfware](https://www.zapfware.de) - Mobile apps including *NMEARemote* dashboard, *NMEAConnect* bridging and ORC racing.
