@@ -353,7 +353,7 @@ See also [Open Source](#open-source-projects).
 - [Rose Point](https://www.rosepoint.com) - Navigation software, North America gazatteer, NMEA gateway.
 - [Sail Logger](https://saillogger.com) - Logbook for mobiles, with NMEA integration.
 - [Sailing Performance](https://www.sailingperformance.com) - Racing performance analysis.
-- [SailRouter](http://81.217.94.235/sailrouter/) - AI based routing for onboard Raspberry Pi with NMEA and SignalK integration. Community Edition with planned commercial and SaaS versions.
+- [SailRouter](https://sailrouter.org) - AI based routing for onboard Raspberry Pi with NMEA and SignalK integration. Community Edition with planned commercial and SaaS versions.
 - [SailSense](https://sailsense.xyz) - Local GenAI assisted analysis, advice and alarms. SignalK based.
 - [SailTrack](https://www.angelnav.co.uk) - **AngelNav** plotter app for mobile and PC with charts and traditional charting techniques and NMEA integration.
 - [SavvyNavvy](https://www.savvy-navvy.com) - Plotter app for mobile with integrated weather, AIS, charting and NMEA integration.
