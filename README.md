@@ -58,6 +58,7 @@ Video channels from YouTube and elsewhere for boat tech projects.
 - <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Out Chasing Stars](https://www.youtube.com/@OutChasingStars) - OpenCPN and general boat electrics, electronics.
 - <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Pacific Yacht Systems](https://www.youtube.com/@PacificYachtSystems) - Last active in 2023, large back catalogue of instructional videos on marine electrics, electronics and networking.
 - <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Raspberry for Sailing](https://www.youtube.com/@Sir-Real) - OpenPlotter, SignalK, KIP projects on Raspberry Pi.
+- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Smart Boat Innovations](https://www.youtube.com/@SmartBoatInnovations) - Raspberry Pi, HomeAssistant and SignalK boat projects.
 - <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [SV Apres](https://www.youtube.com/playlist?list=PLqHa5JFKHBLwxeCuc6uaa5TzAXVeqTyiD) - OpenPlotter, NMEA2000 and general boat tech.
 - <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [The Florida Captain](https://www.youtube.com/@TheFloridaCaptain) - Open source boat network and apps.
 - <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Tom Seahorse](https://www.youtube.com/@Tom-seahorse/videos) - UK. Catamaran. Raspberry Pi, OpenCPN, Home Assistant.
@@ -116,6 +117,7 @@ Software projects for boats, with recent commits as of 2026.
 - [Marinux](https://marinux.tuxfamily.org) - *Muplex* NMEA multiplexer, *OSD Depth* echo-sounder display.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [nm2k](https://github.com/svalentinf/nm2k) - NMEA0183 and NMEA2000 web based visualization and analysis.
 - [OpenCPN](https://opencpn.org) - Chart Plotter for macOS, Windows, Linux, Raspi and Android.
+- <img src="https://github.com/favicon.ico" width="16" height="16"> [Open Marine Systems](https://github.com/OpenMarineSystems) - Home Assistant add-ons for navigation and anchor watch, installed via HACS.
 - [Open Boat Projects](https://open-boat-projects.org/en/) - DIY hardware and open source projects, English and German.
 - [OpenPlotter](https://openplotter.readthedocs.io/) - Combined project of SignalK, OpenCPN, PyPilot etc.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [PyGPSClient](https://github.com/semuconsulting/PyGPSClient) - Python GPS/GNSS testing, diagnostic and configuration, incl NMEA integration.
