@@ -109,6 +109,7 @@ Software projects for boats, with recent commits as of 2026.
 - <img src="https://gitlab.com/favicon.ico" width="16" height="16"> [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
 - [GWeatherRouting](https://gweatherrouting.org) - Navigation and automated routing, Python/GTK4.
 - [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
+- <img src="https://gitlab.com/favicon.ico" width="16" height="16"> [imud](https://github.com/richcreations/imud) - IMU (Inertial Measurement Unit)/Magnetometer multiplexer with NMEA stream for chartplotters.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
 - [KPlex](https://www.stripydog.com/kplex/) - NMEA0183 multiplexer for Linux, Unix, macOS and OpenWRT. ([Google Group](https://groups.google.com/g/kplex)).
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [libWeatherRouting](https://dakk.github.io/libweatherrouting/) - Python weather routing library with linear iso-routing and shortest path routes.
@@ -123,6 +124,7 @@ Software projects for boats, with recent commits as of 2026.
 - [OpenPlotter](https://openplotter.readthedocs.io/) - Combined project of SignalK, OpenCPN, PyPilot etc.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [PyGPSClient](https://github.com/semuconsulting/PyGPSClient) - Python GPS/GNSS testing, diagnostic and configuration, incl NMEA integration.
 - [PyPilot](https://pypilot.org) - Python based auto-pilot.
+- <img src="https://github.com/favicon.ico" width="16" height="16">[Rhizomatics](https://github.com/rhizomatics) - SignalK and Home Assistant plug-ins and associated apps.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [ROB](https://github.com/OlivierLD/ROB) - Raspberry Pi On Board, Java and Python navigation utilities.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [Sail-O-Vision](https://github.com/adam-gol/sail-o-vision) - Obstacle and wildlife detection with camera and NVIDIA Jetson.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [Sailtrack](https://metisvela.github.io/sailtrack/) - Modular racing performance tracker using MQTT.
