@@ -328,8 +328,10 @@ See <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA Wifi
 - [Crimp](https://crimp.studio) - On-line DC diagram editor with simulation and validation.
 - [Cruising Solutions](https://www.cruisingsolutions.com/collections/communication) - 'Marriage Savers' intercom headsets.
 - [Kicker Audio](https://kickeruk.com/pages/boat-audio) - Speakers, amplifiers, cables.
+- [MarineDCAC](https://marinedcac.com) - Cruising sailor run, builds [BankManager](https://marinedcac.com/pages/bankmanager) for controlling traditional/lithium battery banks, and DC aircon.
 - [Peplink](https://www.peplink.com/) - Marine antennas and routers for 5G.
 - [Sailor Hat for Raspberry Pi](https://docs.hatlabs.fi/sh-rpi/) - Power Pi from NMEA2000 bus, safe shutdown, glitch protection.
+- [Simarine](https://simarine.net) - Slovenian company supplying battery monitors, control panels, switching, sensors and accessories.
 - [Yacht Controller](https://www.yachtcontroller.com) - Handheld engine & steering remote control for docking.
 - [Weatherdock](https://www.easyais.com) - German supplier of AIS transceivers and splitters, personal trackers and beacons, boat monitoring.
 
