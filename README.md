@@ -119,6 +119,7 @@ Software projects for boats, with recent commits as of 2026.
 - [OpenCPN](https://opencpn.org) - Chart Plotter for macOS, Windows, Linux, Raspi and Android.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [Open Marine Systems](https://github.com/OpenMarineSystems) - Home Assistant add-ons for navigation and anchor watch, installed via HACS.
 - [Open Boat Projects](https://open-boat-projects.org/en/) - DIY hardware and open source projects, English and German.
+- [OpenFairWind](https://github.com/OpenFairWind) - Alternative user interface for SignalK.
 - [OpenPlotter](https://openplotter.readthedocs.io/) - Combined project of SignalK, OpenCPN, PyPilot etc.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [PyGPSClient](https://github.com/semuconsulting/PyGPSClient) - Python GPS/GNSS testing, diagnostic and configuration, incl NMEA integration.
 - [PyPilot](https://pypilot.org) - Python based auto-pilot.
