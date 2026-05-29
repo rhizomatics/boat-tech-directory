@@ -388,6 +388,7 @@ See also [Open Source](#open-source-projects).
 - [Actisense Media](https://actisense.com/media/) - Vendor blog, with self-help and industry news.
 - [Marine Electronics Journal](https://www.marineelectronicsjournal-digital.com) - Digital magazine published by NMEA.
 - [Panbo](https://panbo.com) - Marine tech news.
+- [SmartBoats](https://smartboats.org) - Vendor directory and reviews.
 
 ### Education
 
