@@ -6,6 +6,9 @@
 > A curated list of boat tech stuff.
 
 Boat tech includes all things NMEA and Seatalk, marine internet, open source projects, hardware vendors, educational resources, blogs, vlogs and forums.
+
+This listing is presented as best endeavours and in the public domain (Creative Commons CC0 1.0 Universal licence), contains no advertisements, paid placements or referrals.
+
 <!-- --8<-- [end:intro-text] -->
 
 ## Contents
