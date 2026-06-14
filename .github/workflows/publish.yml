@@ -25,7 +25,7 @@ jobs:
           python-version: '3.14'
       - run: pip install -r requirements_docs.txt
       - run: npx awesome-lint README.md
-      - run: zensical build --clean
+      - run: zensical build --clean --strict
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
