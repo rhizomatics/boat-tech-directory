@@ -1,2 +1,2 @@
     pymdown-extensions
-    zensical>=0.0.45
+    zensical>=0.0.43
