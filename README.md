@@ -417,10 +417,13 @@ See also [Open Source](#open-source-projects).
 
 #### Checklists
 
-These are specific to boats, however useful as a starting point, reference or cross-check for your own.
+These are openly shared lists, specific to boats, however useful as a starting point, reference or cross-check for your own. See also the [World Cruising Wiki](https://www.cruiserswiki.org/wiki/Boat_Check_List) examples.
 
-- [Lille Ø](https://handbook.lille-oe.de) - Anchoring, before/after sailing, mast stepping etc plus boat documentation.
-- [Sea Jade](https://sy-sea-jade.github.io/boatstuff/) - Before/after sailing, storm prep etc plus navigation templates.
+- [Caladh](https://www.thesailingnomads.com/blog/pre-and-post-sailing-checklists/) - 1990 Victoria 34, British flagged. Pre and post sailing checklists.
+- [Lille Ø](https://handbook.lille-oe.de) - 1979 Amigo 40, German Flagged. Anchoring, before/after sailing, mast stepping etc plus boat documentation.
+- [Salty Lass](http://www.saltylass.co.uk/resources) - 2002 Bavaria 36, British flagged. Sailing, laying up, buying a boat checklists plus logbook template.
+- [Sea Jade](https://sy-sea-jade.github.io/boatstuff/) - 2011 Bavaria Cruiser 36, British flagged. Before/after sailing, storm prep etc plus navigation templates.
+
 
 <!-- --8<-- [end:education] -->
 
