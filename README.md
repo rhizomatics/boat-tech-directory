@@ -33,7 +33,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 Personal sites for sailors and their boats with their tech projects. These are all reasonably live as of 2026.
 
-- [Bergie](https://bergie.iki.fi) - Baltic sailor, boat projects and SignalK plugin developer ([meri-imperiumi](https://github.com/meri-imperiumi)).
+- [Bergie](https://bergie.iki.fi) - Baltic sailor, boat projects and SignalK plugin developer ([meri-imperiumi](https://github.com/meri-imperiumi)) and [boat handbook with checklists](https://handbook.lille-oe.de).
 - [BoatHackers](https://boathackers.com) - Leopard 45, projects with Home Assistant, Starlink, NMEA2000, Victron.
 - [Catalina 320 Log](https://www.yachtslog.com) - Raspberry Pi, NMEA, SignalK, VBA.
 - [Cricalix](https://www.cricalix.net) - Ireland, Victoria 34, NMEA, Python, Solar, Shipmodul Miniplex.
@@ -414,6 +414,13 @@ See also [Open Source](#open-source-projects).
 - [NMEA FAQ](https://www.eoss.org/pubs/nmeafaq) - 2006 vintage, latest and remains relevant.
 - <img src="https://gitlab.com/favicon.ico" width="16" height="16"> [NMEA Revealed](https://gpsd.gitlab.io/gpsd/NMEA.html) - Detailed technical reference for NMEA0183, part of the gpsd project.
 - [Seatalk Technical Reference](http://www.thomasknauf.de/seatalk.htm) - Unofficial documentation of Seatalk 1 protocol.
+
+#### Checklists
+
+These are specific to boats, however useful as a starting point, reference or cross-check for your own.
+
+- [Lille Ø](https://handbook.lille-oe.de) - Anchoring, before/after sailing, mast stepping etc plus boat documentation.
+- [Sea Jade](https://sy-sea-jade.github.io/boatstuff/) - Before/after sailing, storm prep etc plus navigation templates.
 
 <!-- --8<-- [end:education] -->
 
