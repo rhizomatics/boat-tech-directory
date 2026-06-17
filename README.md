@@ -33,6 +33,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 Personal sites for sailors and their boats with their tech projects. These are all reasonably live as of 2026.
 
+- [Bergie](https://bergie.iki.fi) - Baltic sailor, boat projects and SignalK plugin developer ([meri-imperiumi](https://github.com/meri-imperiumi)).
 - [BoatHackers](https://boathackers.com) - Leopard 45, projects with Home Assistant, Starlink, NMEA2000, Victron.
 - [Catalina 320 Log](https://www.yachtslog.com) - Raspberry Pi, NMEA, SignalK, VBA.
 - [Cricalix](https://www.cricalix.net) - Ireland, Victoria 34, NMEA, Python, Solar, Shipmodul Miniplex.
