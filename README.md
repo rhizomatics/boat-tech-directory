@@ -340,6 +340,7 @@ See <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA Wifi
 - [Peplink](https://www.peplink.com/) - Marine antennas and routers for 5G.
 - [Sailor Hat for Raspberry Pi](https://docs.hatlabs.fi/sh-rpi/) - Power Pi from NMEA2000 bus, safe shutdown, glitch protection.
 - [Simarine](https://simarine.net) - Slovenian company supplying battery monitors, control panels, switching, sensors and accessories.
+- [Topargee](https://www.topargee.com.au/) - Bluetooth enabled water and fuel flow meters, automated shut-off valves.
 - [Yacht Controller](https://www.yachtcontroller.com) - Handheld engine & steering remote control for docking.
 - [Weatherdock](https://www.easyais.com) - German supplier of AIS transceivers and splitters, personal trackers and beacons, boat monitoring.
 
