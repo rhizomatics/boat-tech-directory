@@ -105,7 +105,7 @@ Software projects for boats, with recent commits as of 2026.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc plus open source hardware projects.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [BlueBridge](https://github.com/miniwinwm/BlueBridge) - Android app integration with NMEA data via MQTT and Bluetooth.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [BoatyPi](https://github.com/davedoesdemos/BoatyPi) - Open source hardware/software for boat ePaper display.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [BrineOMatic](https://github.com/hoeken/brineomatic) - Watermaker controller for ESP32.
+- <img src="https://github.com/favicon.ico" width="16" height="16"> [BrineOMatic](https://github.com/hoeken/brineomatic) - Watermaker controller for ESP32, open source hardware and software, integrates with SignalK and Home Assistant.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [CAN Boat](https://github.com/canboat/canboat) - NMEA2000 and NMEA 0183 CLI utilities.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [d3kOS](https://github.com/SkipperDon/d3kOS) - Raspberry Pi based navigation and automation platform.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [DiscoTime](https://github.com/cr/discotime/) - Time and lat/long dashboard for long distance passages.
@@ -292,6 +292,7 @@ See <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA Wifi
 - [Airmar](https://www.airmar.com/) - Transducers, sensors, NMEA bridging, weather instruments and apps.
 - [Cyclops Marine](https://www.cyclopsmarine.com) - Smart load sensors and displays.
 - [Daniamant](https://daniamant.com) - Forward looking sonar (previously *EchoPilot*), alarms and other safety related products.
+- [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label.
 - [em-trak](https://em-trak.com) - VHF and AIS.
 - [ICOM](https://www.icomamerica.com/lineup/marine/) - Marine VHF, SSB, GMDSS, AIS, radar.
 - [LCJ Capteurs](https://lcjcapteurs.com/en/categorie-girouette-anemometres-capteur-vent/marine-en/) - Wind and weather instruments, StatMETEO wind data recording software.
