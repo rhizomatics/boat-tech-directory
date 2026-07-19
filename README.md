@@ -119,6 +119,7 @@ Software projects for boats, with recent commits as of 2026.
 - [KPlex](https://www.stripydog.com/kplex/) - NMEA0183 multiplexer for Linux, Unix, macOS and OpenWRT. ([Google Group](https://groups.google.com/g/kplex)).
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [libWeatherRouting](https://dakk.github.io/libweatherrouting/) - Python weather routing library with linear iso-routing and shortest path routes.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [Maiana](https://github.com/peterantypas/maiana) - AIS Transponder open hardware/software.
+- <img src="https://github.com/favicon.ico" width="16" height="16"> [Marine Chart Viewer](https://github.com/wholybee/chartplotter) - QT6 based chart plotter for Windows, Linux and MacOS. Displays ENC and CM93 charts and GSHHG basemap.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [MarineYachtRadar](https://github.com/MarineYachtRadar) - *MaYaRa* server, display, OpenCPN and SignalK integration as open alternative to commercial radar processing.
 - [Marinux](https://marinux.tuxfamily.org) - *Muplex* NMEA multiplexer, *OSD Depth* echo-sounder display.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [nm2k](https://github.com/svalentinf/nm2k) - NMEA0183 and NMEA2000 web based visualization and analysis.
