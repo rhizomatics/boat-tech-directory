@@ -119,14 +119,14 @@ Software projects for boats, with recent commits as of 2026.
 - [KPlex](https://www.stripydog.com/kplex/) - NMEA0183 multiplexer for Linux, Unix, macOS and OpenWRT. ([Google Group](https://groups.google.com/g/kplex)).
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [libWeatherRouting](https://dakk.github.io/libweatherrouting/) - Python weather routing library with linear iso-routing and shortest path routes.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [Maiana](https://github.com/peterantypas/maiana) - AIS Transponder open hardware/software.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Marine Chart Viewer](https://github.com/wholybee/chartplotter) - QT6 based chart plotter for Windows, Linux and MacOS. Displays ENC and CM93 charts and GSHHG basemap.
+- <img src="https://github.com/favicon.ico" width="16" height="16"> [Marine Chart Viewer](https://github.com/wholybee/chartplotter) - QT6 based chart plotter for Windows, Linux and macOS. Displays ENC and CM93 charts and GSHHG basemap.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [MarineYachtRadar](https://github.com/MarineYachtRadar) - *MaYaRa* server, display, OpenCPN and SignalK integration as open alternative to commercial radar processing.
 - [Marinux](https://marinux.tuxfamily.org) - *Muplex* NMEA multiplexer, *OSD Depth* echo-sounder display.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [nm2k](https://github.com/svalentinf/nm2k) - NMEA0183 and NMEA2000 web based visualization and analysis.
 - [OpenCPN](https://opencpn.org) - Chart Plotter for macOS, Windows, Linux, Raspi and Android.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [Open Marine Systems](https://github.com/OpenMarineSystems) - Home Assistant add-ons for navigation and anchor watch, installed via HACS.
 - [Open Boat Projects](https://open-boat-projects.org/en/) - DIY hardware and open source projects, English and German.
-- [OpenFairWind](https://github.com/OpenFairWind) - Alternative user interface, QT based, *FairwindSK* for SignalK on MacOS, Windows, Linux, Android, iPhoje and iPad.
+- [OpenFairWind](https://github.com/OpenFairWind) - Alternative user interface, QT based, *FairwindSK* for SignalK on macOS, Windows, Linux, Android, iPhoje and iPad.
 - [OpenPlotter](https://openplotter.readthedocs.io/) - Combined project of SignalK, OpenCPN, PyPilot etc.
 - <img src="https://github.com/favicon.ico" width="16" height="16"> [PyGPSClient](https://github.com/semuconsulting/PyGPSClient) - Python GPS/GNSS testing, diagnostic and configuration, incl NMEA integration.
 - [PyPilot](https://pypilot.org) - Python based auto-pilot.
@@ -268,7 +268,7 @@ See <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA Wifi
 - [Pitufino](https://pitufino.com) - Wifi gateway for NMEA0183 and NMEA2000 with optional Seatalk 1 and cloud access.
 - [Quark](https://www.quark-elec.com) - NMEA devices, sensors, internet gateways, gauges and remote monitoring.
 - [Rosuku](https://www.rusoku.com) - TouCAN Marine NMEA2000 USB adaptor.
-- [SailorGuard](https://www.sailorguard.com) - Micro-controller minimal implementation of SignalK for performance and low power, and windlass integration with mobile app ([AnchorGuard](https://www.sailorguard.com/anchor-guard))
+- [SailorGuard](https://www.sailorguard.com) - Micro-controller minimal implementation of SignalK for performance and low power, and windlass integration with mobile app ([AnchorGuard](https://www.sailorguard.com/anchor-guard)).
 - [See Sailing](https://www.see-sailing.com) - NMEA data visualization for yacht race analysis and NMEA to Bluetooth hardware.
 - [Shipmodul](https://shipmodul.com) - NMEA/Seatalk multiplexers and LAN gateways, macOS and Windows configuration client ([workaround for Linux](https://www.cricalix.net/2023/05/07/miniplex-and-linux/)).
 - [SK Pang Electronics](https://www.skpang.co.uk) - Raspberry Pi boards and HATs for CAN-Bus integration, NMEA2000 simulators, GPS modules, LCD displays.
@@ -425,7 +425,7 @@ See also [Open Source](#open-source-projects).
 These are openly shared lists, specific to boats, however useful as a starting point, reference or cross-check for your own. See also the [World Cruising Wiki](https://www.cruiserswiki.org/wiki/Boat_Check_List) examples.
 
 - [Caladh](https://www.thesailingnomads.com/blog/pre-and-post-sailing-checklists/) - 1990 Victoria 34, British flagged. Pre and post sailing checklists.
-- [Lille Ø](https://handbook.lille-oe.de) - 1979 Amigo 40, German Flagged. Anchoring, before/after sailing, mast stepping etc plus boat documentation.
+- [Lille Ø](https://handbook.lille-oe.de/checklists/01_before_sailing/) - 1979 Amigo 40, German Flagged. Anchoring, before/after sailing, mast stepping etc plus boat documentation.
 - [Salty Lass](http://www.saltylass.co.uk/resources) - 2002 Bavaria 36, British flagged. Sailing, laying up, buying a boat checklists plus logbook template.
 - [Sea Jade](https://sy-sea-jade.github.io/boatstuff/checklists) - 2011 Bavaria Cruiser 36, British flagged. Before/after sailing, storm prep etc plus navigation templates.
 
