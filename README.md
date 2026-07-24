@@ -379,6 +379,7 @@ See also [Open Source](#open-source-projects).
 - [TimeZero](https://mytimezero.com) - Software based full-featured chart plotter.
 - [Vessel Vault](https://vesselvault.app) - Boat maintenance management.
 - [WilhemSK](https://www.wilhelmsk.com) - SignalK dashboard app for iPhone, iPad, macOS, Apple Watch and Apple TV.
+- [Yachtara](https://yachtara.com) - Weather routing and boat management app for cruising sailors: multi-model weather comparison, weather routing, anchor watch, maintenance logs and manuals, crew management. Builds offline regional forecast packs.
 - [Zapfware](https://www.zapfware.de) - Mobile apps including *NMEARemote* dashboard, *NMEAConnect* bridging and ORC racing.
 
 ### Consultants
