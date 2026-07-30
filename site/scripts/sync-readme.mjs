@@ -33,11 +33,21 @@ function convertAdmonitions(markdown) {
   );
 }
 
+// README uses raw HTML `<img src="docs/images/...">` for inline favicons (e.g. the
+// GitHub/YouTube icons next to blog links). Astro's asset pipeline only optimizes/rewrites
+// markdown-syntax `![]()` images, not raw HTML, so these need a literal path that resolves
+// from wherever the generated page actually lives — `public/images/...` (raw, unhashed,
+// works the same under either `base`) reached via a plain relative `../` climb, not the
+// `src/assets` import path used for the markdown-syntax logo below.
+function rewriteImagePaths(markdown, depth) {
+  return markdown.replaceAll("docs/images/", "../".repeat(depth) + "images/");
+}
+
 const outDir = resolve(siteDir, "src/content/docs");
 rmSync(outDir, { recursive: true, force: true });
 mkdirSync(outDir, { recursive: true });
 
-function writePage(slug, title, description, body) {
+function writePage(slug, title, description, body, { depth = 1 } = {}) {
   const frontmatter = [
     "---",
     `title: ${JSON.stringify(title)}`,
@@ -47,7 +57,8 @@ function writePage(slug, title, description, body) {
     `<!-- Generated from ../../../../README.md by scripts/sync-readme.mjs — do not edit directly. -->`,
     "",
   ].join("\n");
-  writeFileSync(resolve(outDir, `${slug}.md`), frontmatter + convertAdmonitions(body) + "\n");
+  const processed = rewriteImagePaths(convertAdmonitions(body), depth);
+  writeFileSync(resolve(outDir, `${slug}.md`), frontmatter + processed + "\n");
 }
 
 const pages = [
@@ -99,7 +110,13 @@ for (const { marker, slug, title, description } of pages) {
 
 // contributing.md is a standalone root file (not a README marker).
 const contributing = readFileSync(resolve(rootDir, "contributing.md"), "utf8").trim();
-writePage("contributing", "Contributing", "How to contribute to the Boat Tech Directory.", contributing);
+writePage(
+  "contributing",
+  "Contributing",
+  "How to contribute to the Boat Tech Directory.",
+  contributing,
+  { depth: 1 },
+);
 
 // Home page: README's intro-text section plus the same short "Contribute" blurb and
 // "Sections" link list that the old docs/index.md carried (hand-authored here, not
@@ -130,6 +147,7 @@ writePage(
   "Boat Tech Directory",
   "A curated list of marine electronics, NMEA, SignalK, OpenCPN and other open source boat tech projects, vendor hardware and software, blogs and forums.",
   homeBody,
+  { depth: 0 },
 );
 
 // Images: one copy under src/assets (Astro's optimized, base-aware asset pipeline, for
