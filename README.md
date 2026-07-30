@@ -46,39 +46,39 @@ Personal sites for sailors and their boats with their tech projects. These are a
 - [Project Bob](https://www.projectbob.xyz) - Autonomous boat circumnavigation project.
 - [Seabits](https://seabits.com) - Pacific North West, Kristen 50 and Symbol Pilothouse motor yachts, SignalK, dashboards, Victron.
 - [SY Bockra](https://corbin39.org/wp-content/uploads/2025/06/BOCKRA-nav-system-notes-Spring-2025-DS-06-06-25.pdf) - 1981 Corbin 39, OpenCPN, Open Boat Projects, AvNav. One-off summary document of experiences.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [SY Sea Jade Boatstuff](https://sy-sea-jade.github.io/boatstuff/) - Checklists, equipment choices, passage planning templates and other tabular data.
-- [The Low Cost Sailor](https://www.thelowcostsailor.com) - Boat tech news and articles. English, French, Spanish. Also <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Spanish](https://www.youtube.com/@TheLowCostSailor) and <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [English](https://www.youtube.com/@lowcostsailor) YouTube channels.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [SY Sea Jade Boatstuff](https://sy-sea-jade.github.io/boatstuff/) - Checklists, equipment choices, passage planning templates and other tabular data.
+- [The Low Cost Sailor](https://www.thelowcostsailor.com) - Boat tech news and articles. English, French, Spanish. Also <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Spanish](https://www.youtube.com/@TheLowCostSailor) and <img src="docs/images/icons/youtube.ico" width="16" height="16"> [English](https://www.youtube.com/@lowcostsailor) YouTube channels.
 - [Zapped Myself](https://zappedmyself.com/projects/nmea2000/) - NMEA2000, AIS, ESP32 projects.
 
 ### Vlogs
 
 Video channels from YouTube and elsewhere for boat tech projects.
 
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [8-bit Sailing](https://www.youtube.com/@8bitsailing/) - Raspberry Pi, OpenPlotter and Raymarine.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Boating with the Baileys](https://www.youtube.com/@BoatingwiththeBaileys) -  Electrical and electronics projects on a 2000s Bavaria 36, including SignalK, KIP, Node-RED, OpenPlotter and SensESP.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Boats and Bits](https://www.youtube.com/@boatsandbits) - DIY boat tech, Raymarine networking, electrics, 3D printing.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [DIY Onboard](https://www.youtube.com/@DIYonboard-e4i) - Raspberry Pi and OpenPlotter.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Gary Woodruff](https://www.youtube.com/@garrywoodruff960) - Boat projects and HowTo guides for boat electrics and electronics, focus on Lowrance equipment.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Out Chasing Stars](https://www.youtube.com/@OutChasingStars) - OpenCPN and general boat electrics, electronics.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Pacific Yacht Systems](https://www.youtube.com/@PacificYachtSystems) - Last active in 2023, large back catalogue of instructional videos on marine electrics, electronics and networking.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Raspberry for Sailing](https://www.youtube.com/@Sir-Real) - OpenPlotter, SignalK, KIP projects on Raspberry Pi.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Smart Boat Innovations](https://www.youtube.com/@SmartBoatInnovations) - Raspberry Pi, HomeAssistant and SignalK boat projects.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [SV Apres](https://www.youtube.com/playlist?list=PLqHa5JFKHBLwxeCuc6uaa5TzAXVeqTyiD) - OpenPlotter, NMEA2000 and general boat tech.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [The Florida Captain](https://www.youtube.com/@TheFloridaCaptain) - Open source boat network and apps.
-- <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [Tom Seahorse](https://www.youtube.com/@Tom-seahorse/videos) - UK. Catamaran. Raspberry Pi, OpenCPN, Home Assistant.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [8-bit Sailing](https://www.youtube.com/@8bitsailing/) - Raspberry Pi, OpenPlotter and Raymarine.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Boating with the Baileys](https://www.youtube.com/@BoatingwiththeBaileys) -  Electrical and electronics projects on a 2000s Bavaria 36, including SignalK, KIP, Node-RED, OpenPlotter and SensESP.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Boats and Bits](https://www.youtube.com/@boatsandbits) - DIY boat tech, Raymarine networking, electrics, 3D printing.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [DIY Onboard](https://www.youtube.com/@DIYonboard-e4i) - Raspberry Pi and OpenPlotter.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Gary Woodruff](https://www.youtube.com/@garrywoodruff960) - Boat projects and HowTo guides for boat electrics and electronics, focus on Lowrance equipment.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Out Chasing Stars](https://www.youtube.com/@OutChasingStars) - OpenCPN and general boat electrics, electronics.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Pacific Yacht Systems](https://www.youtube.com/@PacificYachtSystems) - Last active in 2023, large back catalogue of instructional videos on marine electrics, electronics and networking.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Raspberry for Sailing](https://www.youtube.com/@Sir-Real) - OpenPlotter, SignalK, KIP projects on Raspberry Pi.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Smart Boat Innovations](https://www.youtube.com/@SmartBoatInnovations) - Raspberry Pi, HomeAssistant and SignalK boat projects.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [SV Apres](https://www.youtube.com/playlist?list=PLqHa5JFKHBLwxeCuc6uaa5TzAXVeqTyiD) - OpenPlotter, NMEA2000 and general boat tech.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [The Florida Captain](https://www.youtube.com/@TheFloridaCaptain) - Open source boat network and apps.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Tom Seahorse](https://www.youtube.com/@Tom-seahorse/videos) - UK. Catamaran. Raspberry Pi, OpenCPN, Home Assistant.
 
 ### Forums
 
 *All active as of 2026*
 
 - [boatdesign.net](https://www.boatdesign.net/forums/onboard-electronics-controls/) - Electronics and Controls forum.
-- <img src="https://www.facebook.com/favicon.ico" width="16" height="16"> [Boat Electrical and Electronic Q&A](https://www.facebook.com/groups/5844662375630348) - Private Facebook group, >70k members, avg post per day.
-- <img src="https://www.facebook.com/favicon.ico" width="16" height="16"> [NMEA 2000 Support Group](https://www.facebook.com/groups/380510566227511/) - Public Facebook group.
-- <img src="https://www.facebook.com/favicon.ico" width="16" height="16"> [NMEA 2000 Technical Forum](https://www.facebook.com/groups/699562237256639/) - Private Facebook group.
-- <img src="https://www.facebook.com/favicon.ico" width="16" height="16"> [OpenCPN Users](https://www.facebook.com/groups/2405863179652854/) - Private Facebook group, >12k members, dozen or two posts a month.
+- <img src="docs/images/icons/facebook.ico" width="16" height="16"> [Boat Electrical and Electronic Q&A](https://www.facebook.com/groups/5844662375630348) - Private Facebook group, >70k members, avg post per day.
+- <img src="docs/images/icons/facebook.ico" width="16" height="16"> [NMEA 2000 Support Group](https://www.facebook.com/groups/380510566227511/) - Public Facebook group.
+- <img src="docs/images/icons/facebook.ico" width="16" height="16"> [NMEA 2000 Technical Forum](https://www.facebook.com/groups/699562237256639/) - Private Facebook group.
+- <img src="docs/images/icons/facebook.ico" width="16" height="16"> [OpenCPN Users](https://www.facebook.com/groups/2405863179652854/) - Private Facebook group, >12k members, dozen or two posts a month.
 - [OpenMarine](https://forum.openmarine.net) - Marine electronics and networking, focus on Macarthur HAT, PyPilot, OpenPlotter and Node RED.
 - [Panbo](https://panbo.com/marineelectronicsforum/) -  Marine electronics and networking.
-- <img src="https://www.facebook.com/favicon.ico" width="16" height="16"> [Raspberry Pi for Boats](https://www.facebook.com/groups/1666364153609573/) - Private Facebook group, >17k members, couple dozen posts per month.
+- <img src="docs/images/icons/facebook.ico" width="16" height="16"> [Raspberry Pi for Boats](https://www.facebook.com/groups/1666364153609573/) - Private Facebook group, >17k members, couple dozen posts per month.
 - [SignalK Google Group](https://groups.google.com/g/signalk) - Active as of end 2025.
 - [The Hull Truth](https://www.thehulltruth.com/marine-electronics-forum-19/) - Marine electronics forum.
 
@@ -91,7 +91,7 @@ Open source, crowd-sourced and volunteer chart sources.
 
 - [Antares Charts](https://www.antarescharts.co.uk) - Volunteer project for charting and pilotage of West Coast Scotland.
 - [Mapterhorn](https://mapterhorn.com) - Open Source terrain tiles for interactive web map visualizations.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Nautical Chart Catalogs](https://chartcatalogs.github.io) - Machine readable index of free to use nautical charts.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Nautical Chart Catalogs](https://chartcatalogs.github.io) - Machine readable index of free to use nautical charts.
 - [OpenSeaMap](https://www.openseamap.org/index.php?id=openseamap&L=1) - Open sourced charts, in English, German, Spanish, French, Italian, Russian and Arabic.
 <!-- --8<-- [end:charts] -->
 
@@ -100,45 +100,45 @@ Open source, crowd-sourced and volunteer chart sources.
 
 Software projects for boats, with recent commits as of 2026.
 
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [AIS-catcher](https://github.com/jvde-github/AIS-catcher) - AIS receiver for software defined radio (SDR) dongles.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [AIS-catcher](https://github.com/jvde-github/AIS-catcher) - AIS receiver for software defined radio (SDR) dongles.
 - [AvNav](https://www.wellenvogel.net/software/avnav/docs/beschreibung.html?lang=en) - Plotter with Android app and SignalK integration. German with English docs.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc plus open source hardware projects.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [BlueBridge](https://github.com/miniwinwm/BlueBridge) - Android app integration with NMEA data via MQTT and Bluetooth.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [BoatyPi](https://github.com/davedoesdemos/BoatyPi) - Open source hardware/software for boat ePaper display.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [BrineOMatic](https://github.com/hoeken/brineomatic) - Watermaker controller for ESP32, open source hardware and software, integrates with SignalK and Home Assistant.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [CAN Boat](https://github.com/canboat/canboat) - NMEA2000 and NMEA 0183 CLI utilities.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [d3kOS](https://github.com/SkipperDon/d3kOS) - Raspberry Pi based navigation and automation platform.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [DiscoTime](https://github.com/cr/discotime/) - Time and lat/long dashboard for long distance passages.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Galadriel Plotter](https://github.com/VladimirKalachikhin/Galadriel-map) - Raster based chartplotter for low power servers.
-- <img src="https://gitlab.com/favicon.ico" width="16" height="16"> [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc plus open source hardware projects.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [BlueBridge](https://github.com/miniwinwm/BlueBridge) - Android app integration with NMEA data via MQTT and Bluetooth.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatyPi](https://github.com/davedoesdemos/BoatyPi) - Open source hardware/software for boat ePaper display.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [BrineOMatic](https://github.com/hoeken/brineomatic) - Watermaker controller for ESP32, open source hardware and software, integrates with SignalK and Home Assistant.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [CAN Boat](https://github.com/canboat/canboat) - NMEA2000 and NMEA 0183 CLI utilities.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [d3kOS](https://github.com/SkipperDon/d3kOS) - Raspberry Pi based navigation and automation platform.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [DiscoTime](https://github.com/cr/discotime/) - Time and lat/long dashboard for long distance passages.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Galadriel Plotter](https://github.com/VladimirKalachikhin/Galadriel-map) - Raster based chartplotter for low power servers.
+- <img src="docs/images/icons/gitlab.png" width="16" height="16"> [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
 - [GWeatherRouting](https://gweatherrouting.org) - Navigation and automated routing, Python/GTK4.
 - [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
-- <img src="https://gitlab.com/favicon.ico" width="16" height="16"> [imud](https://github.com/richcreations/imud) - IMU (Inertial Measurement Unit)/Magnetometer multiplexer with NMEA stream for chartplotters.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
+- <img src="docs/images/icons/gitlab.png" width="16" height="16"> [imud](https://github.com/richcreations/imud) - IMU (Inertial Measurement Unit)/Magnetometer multiplexer with NMEA stream for chartplotters.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
 - [KPlex](https://www.stripydog.com/kplex/) - NMEA0183 multiplexer for Linux, Unix, macOS and OpenWRT. ([Google Group](https://groups.google.com/g/kplex)).
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [libWeatherRouting](https://dakk.github.io/libweatherrouting/) - Python weather routing library with linear iso-routing and shortest path routes.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Maiana](https://github.com/peterantypas/maiana) - AIS Transponder open hardware/software.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Marine Chart Viewer](https://github.com/wholybee/chartplotter) - QT6 based chart plotter for Windows, Linux and macOS. Displays ENC and CM93 charts and GSHHG basemap.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [MarineYachtRadar](https://github.com/MarineYachtRadar) - *MaYaRa* server, display, OpenCPN and SignalK integration as open alternative to commercial radar processing.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [libWeatherRouting](https://dakk.github.io/libweatherrouting/) - Python weather routing library with linear iso-routing and shortest path routes.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Maiana](https://github.com/peterantypas/maiana) - AIS Transponder open hardware/software.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Marine Chart Viewer](https://github.com/wholybee/chartplotter) - QT6 based chart plotter for Windows, Linux and macOS. Displays ENC and CM93 charts and GSHHG basemap.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [MarineYachtRadar](https://github.com/MarineYachtRadar) - *MaYaRa* server, display, OpenCPN and SignalK integration as open alternative to commercial radar processing.
 - [Marinux](https://marinux.tuxfamily.org) - *Muplex* NMEA multiplexer, *OSD Depth* echo-sounder display.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [nm2k](https://github.com/svalentinf/nm2k) - NMEA0183 and NMEA2000 web based visualization and analysis.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [nm2k](https://github.com/svalentinf/nm2k) - NMEA0183 and NMEA2000 web based visualization and analysis.
 - [OpenCPN](https://opencpn.org) - Chart Plotter for macOS, Windows, Linux, Raspi and Android.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Open Marine Systems](https://github.com/OpenMarineSystems) - Home Assistant add-ons for navigation and anchor watch, installed via HACS.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Open Marine Systems](https://github.com/OpenMarineSystems) - Home Assistant add-ons for navigation and anchor watch, installed via HACS.
 - [Open Boat Projects](https://open-boat-projects.org/en/) - DIY hardware and open source projects, English and German.
 - [OpenFairWind](https://github.com/OpenFairWind) - Alternative user interface, QT based, *FairwindSK* for SignalK on macOS, Windows, Linux, Android, iPhoje and iPad.
 - [OpenPlotter](https://openplotter.readthedocs.io/) - Combined project of SignalK, OpenCPN, PyPilot etc.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [PyGPSClient](https://github.com/semuconsulting/PyGPSClient) - Python GPS/GNSS testing, diagnostic and configuration, incl NMEA integration.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [PyGPSClient](https://github.com/semuconsulting/PyGPSClient) - Python GPS/GNSS testing, diagnostic and configuration, incl NMEA integration.
 - [PyPilot](https://pypilot.org) - Python based auto-pilot.
-- <img src="https://github.com/favicon.ico" width="16" height="16">[Rhizomatics](https://github.com/rhizomatics) - SignalK and Home Assistant plug-ins and associated apps.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [ROB](https://github.com/OlivierLD/ROB) - Raspberry Pi On Board, Java and Python navigation utilities.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Sail-O-Vision](https://github.com/adam-gol/sail-o-vision) - Obstacle and wildlife detection with camera and NVIDIA Jetson.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Sailtrack](https://metisvela.github.io/sailtrack/) - Modular racing performance tracker using MQTT.
+- <img src="docs/images/icons/github.ico" width="16" height="16">[Rhizomatics](https://github.com/rhizomatics) - SignalK and Home Assistant plug-ins and associated apps.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [ROB](https://github.com/OlivierLD/ROB) - Raspberry Pi On Board, Java and Python navigation utilities.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Sail-O-Vision](https://github.com/adam-gol/sail-o-vision) - Obstacle and wildlife detection with camera and NVIDIA Jetson.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Sailtrack](https://metisvela.github.io/sailtrack/) - Modular racing performance tracker using MQTT.
 - [SignalK](https://signalk.org) - Node.js pluggable framework for boat data distribution and analysis.
 - [Smart Boat Innovations](https://smartboatinnovations.com) - Videos and articles on building a Raspberry Pi and Home Assistant based smart boat.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [TwoCan](https://github.com/TwoCanPlugIn/TwoCanPlugIn) - NMEA2000 integration for OpenCPN.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Venus](https://github.com/victronenergy/venus) - Victron Energy's open source OS for their GX products, available for self-hosting on Raspberry Pi.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [Xilje](https://github.com/Djaahny) - Garmin integration projects, incl plotter display of local web apps and PyPilot integration.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [TwoCan](https://github.com/TwoCanPlugIn/TwoCanPlugIn) - NMEA2000 integration for OpenCPN.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Venus](https://github.com/victronenergy/venus) - Victron Energy's open source OS for their GX products, available for self-hosting on Raspberry Pi.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Xilje](https://github.com/Djaahny) - Garmin integration projects, incl plotter display of local web apps and PyPilot integration.
 
 ### NMEA
 
@@ -151,7 +151,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 
 #### C and C++
 
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [minmea](https://github.com/kosma/minmea) - GPS NMEA0183 parser in C.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [minmea](https://github.com/kosma/minmea) - GPS NMEA0183 parser in C.
 
 #### C#
 
@@ -159,28 +159,28 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 
 #### ESP32
 
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [ESP32 NMEA2000](https://github.com/wellenvogel/esp32-nmea2000) - NMEA2000 integration with USB, Wifi, 0183 on M5 Atom CAN and compatible with other ESP32.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA2000](https://github.com/ttlappalainen/NMEA2000) - Arduino NMEA2000 interfacing library used in several commercial products.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA2000_ais_wifi_gw](https://github.com/sailingfree/NMEA2000_ais_wifi_gw) -  ESP32 based NMEA2000 gateway.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA2000_esp32](https://github.com/ttlappalainen/NMEA2000_esp32) - ESP32 objects for use with NMEA2000 library.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [ESP32 NMEA2000](https://github.com/wellenvogel/esp32-nmea2000) - NMEA2000 integration with USB, Wifi, 0183 on M5 Atom CAN and compatible with other ESP32.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000](https://github.com/ttlappalainen/NMEA2000) - Arduino NMEA2000 interfacing library used in several commercial products.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000_ais_wifi_gw](https://github.com/sailingfree/NMEA2000_ais_wifi_gw) -  ESP32 based NMEA2000 gateway.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000_esp32](https://github.com/ttlappalainen/NMEA2000_esp32) - ESP32 objects for use with NMEA2000 library.
 - [Sens32](https://signalk.org/SensESP/) - ESP32 based sensors for SignalK.
 
 #### GoLang
 
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [go-nmea](https://github.com/adrianmo/go-nmea) - NMEA 0183 sentence parser.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [nmea0183](https://github.com/martinmarsh/nmea0183) - NMEA 0183 sentence parser, with Actisense integration examples.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [go-nmea](https://github.com/adrianmo/go-nmea) - NMEA 0183 sentence parser.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [nmea0183](https://github.com/martinmarsh/nmea0183) - NMEA 0183 sentence parser, with Actisense integration examples.
 
 #### JavaScript
 
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [canboatjs](https://github.com/canboat/canboatjs) - Native CAN Bus / NMEA 2000 interfacing.
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [nmea-simple](https://github.com/101100/nmea-simple) - NMEA 0183 sentence parser. Fork of the now deprecated `nmea` package.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [canboatjs](https://github.com/canboat/canboatjs) - Native CAN Bus / NMEA 2000 interfacing.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [nmea-simple](https://github.com/101100/nmea-simple) - NMEA 0183 sentence parser. Fork of the now deprecated `nmea` package.
 
 #### Python
 
 Lots more libraries and tools can be found on PyPI, for example [NMEA](https://pypi.org/search/?q=nmea)-related.
 
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [pynmea2](https://github.com/Knio/pynmea2) - NMEA 0183 sentence parser.
-- <img src="https://gitlab.com/favicon.ico" width="16" height="16"> [nmeasim](https://gitlab.com/nmeasim/nmeasim) - NMEA/GNSS receiver simulator.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [pynmea2](https://github.com/Knio/pynmea2) - NMEA 0183 sentence parser.
+- <img src="docs/images/icons/gitlab.png" width="16" height="16"> [nmeasim](https://gitlab.com/nmeasim/nmeasim) - NMEA/GNSS receiver simulator.
 
 #### Rust
 
@@ -188,7 +188,7 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 
 #### Swift
 
-- <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEAParser](https://github.com/sindreoyen/NMEAParser) - iOS and macOS NMEA 0183 parser and validator.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEAParser](https://github.com/sindreoyen/NMEAParser) - iOS and macOS NMEA 0183 parser and validator.
 <!-- --8<-- [end:open-source-projects] -->
 
 <!-- --8<-- [start:protocols] -->
@@ -196,15 +196,15 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 
 ### Industry Standards
 
-- <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [IEC61162](https://en.wikipedia.org/wiki/IEC_61162) - International Electrotechnical Commission standards, partly wrapping NMEA standards (IEC 61162-1 is NMEA0183 and IEC 61162-3 is NMEA2000).
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [IEC61162](https://en.wikipedia.org/wiki/IEC_61162) - International Electrotechnical Commission standards, partly wrapping NMEA standards (IEC 61162-1 is NMEA0183 and IEC 61162-3 is NMEA2000).
 - [LoRaWan](https://lora-alliance.org) - Long range wireless networking for IoT devices, including remote boat monitoring.
-- <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [NMEA0183](https://en.wikipedia.org/wiki/NMEA_0183) - RS-422 based wiring layer with proprietary information protocol.
-- <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K.
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [NMEA0183](https://en.wikipedia.org/wiki/NMEA_0183) - RS-422 based wiring layer with proprietary information protocol.
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K.
 - [NMEA OneNet](https://www.nmea.org/nmea-onenet.html) - IPv6 Ethernet based wiring with proprietary information protocol, using M12 and RJ45 connectors.
 - [NMEA over IP](https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:manual_basic:set_options:connections:advanced) - Informal standard (with a formal IANA port assigned, `10110`) using TCP or UDP provided by several vendor and open source products, and consumed by Navionics, AngelNav, SavvyNavvy and more.
-- <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [SAE J1587/J1708](https://en.wikipedia.org/wiki/SAE_J1708) - Pair of older serial based engine networking standards, used by marine engines from 1990s and early 2000s.
-- <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [SAE J1939](https://en.wikipedia.org/wiki/SAE_J1939) - CAN Bus standard, using Deutsch connectors, commonly used for engines and engine instruments, including Volvo Penta and Yanmar.
-- <img src="https://www.wikipedia.org/favicon.ico" width="16" height="16"> [Shielded Twisted Pair Ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair) - Computing industry standard, commonly used for radars and other high bandwidth marine applications.
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [SAE J1587/J1708](https://en.wikipedia.org/wiki/SAE_J1708) - Pair of older serial based engine networking standards, used by marine engines from 1990s and early 2000s.
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [SAE J1939](https://en.wikipedia.org/wiki/SAE_J1939) - CAN Bus standard, using Deutsch connectors, commonly used for engines and engine instruments, including Volvo Penta and Yanmar.
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [Shielded Twisted Pair Ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair) - Computing industry standard, commonly used for radars and other high bandwidth marine applications.
 
 ### Open Source
 
@@ -247,7 +247,7 @@ Vendors offering full suite of products for modern boats, including plotters, in
 
 #### NMEA Interfacing
 
-See <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for comparison of available products.
+See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for comparison of available products.
 
 - [Actisense](https://actisense.com) - NMEA bridges and gateways.
 - [Chetco](http://www.chetcodigital.com) - NMEA bridges, marine PC, SeaGauge and SeaSmart.NET for Bluetooth, 4G and Wifi.
@@ -261,7 +261,7 @@ See <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA Wifi
 - [Marine Control Server](https://open-boat-projects.org/en/marine-control-server/) - Raspberry Pi based NMEA 0183 and NMEA 2000 interface with OpenPlotter and SignalK integration.
 - [Matsutec](http://www.matsutec.cn) - Chinese supplier of NMEA hardware, testers, gateways plus AIS and auto-pilots.
 - [MySmartBoat](https://mysmartboat.com/) -  Monitoring and integration hardware, electrical components, MySmartApp unified dashboard.
-- [Nauti-Control](https://nauti-control.com) - Seatalk and NMEA2000 wifi bridges and remote controls. Also on <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [YouTube](https://www.youtube.com/@Nauti-Control).
+- [Nauti-Control](https://nauti-control.com) - Seatalk and NMEA2000 wifi bridges and remote controls. Also on <img src="docs/images/icons/youtube.ico" width="16" height="16"> [YouTube](https://www.youtube.com/@Nauti-Control).
 - [Oceanav](https://ocenav.com) - Spanish vendor, with English info, of NMEA wifi gateways and auto-pilot remote control.
 - [Onwa](https://www.onwamarine.com/NMEA_Devices.html) - NMEA converters and multiplexers, and general marine electronics.
 - [OpenMarine](https://openmarine.net) - NMEA [MacArthur HAT](https://macarthur-hat-documentation.readthedocs.io)for Raspberry PI with OpenPlotter.
@@ -305,7 +305,7 @@ See <img src="https://github.com/favicon.ico" width="16" height="16"> [NMEA Wifi
 - [PCNautic](https://pcnautic.com) - Tiller auto-pilot with mobile apps, plus BoatController NMEA and Wifi interfacing and related instruments.
 - [Safiery](https://safiery.com/marine-new/) - Digital switching, monitoring, Victron and NMEA integration.
 - [Scadys](https://go.scadys.io) - MDD400 TFT display for NMEA 2000, NMEA 0183 and Seatalk data, usable as ST60 replacements. Kickstarter project by cruising sailor.
-- [Vakaros](https://www.vakaros.com) - Racing oriented instruments. Instruction videos on <img src="https://www.youtube.com/favicon.ico" width="16" height="16"> [YouTube channel](https://www.youtube.com/@Safiery).
+- [Vakaros](https://www.vakaros.com) - Racing oriented instruments. Instruction videos on <img src="docs/images/icons/youtube.ico" width="16" height="16"> [YouTube channel](https://www.youtube.com/@Safiery).
 - [Veratron](https://veratron.com/pages/marine) - NMEA instruments, gateways and sensors, displays.
 - [Wema](https://wema.co.uk) - NMEA instruments, gauges, bridges, analog to digital converters.
 
@@ -418,7 +418,7 @@ See also [Open Source](#open-source-projects).
 ### Reference
 
 - [NMEA FAQ](https://www.eoss.org/pubs/nmeafaq) - 2006 vintage, latest and remains relevant.
-- <img src="https://gitlab.com/favicon.ico" width="16" height="16"> [NMEA Revealed](https://gpsd.gitlab.io/gpsd/NMEA.html) - Detailed technical reference for NMEA0183, part of the gpsd project.
+- <img src="docs/images/icons/gitlab.png" width="16" height="16"> [NMEA Revealed](https://gpsd.gitlab.io/gpsd/NMEA.html) - Detailed technical reference for NMEA0183, part of the gpsd project.
 - [Seatalk Technical Reference](http://www.thomasknauf.de/seatalk.htm) - Unofficial documentation of Seatalk 1 protocol.
 
 #### Checklists

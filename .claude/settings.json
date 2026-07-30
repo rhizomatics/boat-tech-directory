@@ -3,7 +3,10 @@
     "allow": [
       "Bash(npx awesome-lint *)",
       "Bash(node scripts/sync-readme.mjs)",
-      "Bash(node scripts/copy-public.mjs)"
+      "Bash(node scripts/copy-public.mjs)",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/astro/package.json'\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/@astrojs/starlight/package.json'\\).version\\)\")",
+      "Bash(file *.ico)"
     ]
   }
 }
