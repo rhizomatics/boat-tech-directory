@@ -1,3 +1,7 @@
+[v1.0.2]
+
+- SignalK packaging fixes
+
 [v1.0.1]
 
 - SignalK packaging fixes
