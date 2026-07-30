@@ -1,0 +1,23 @@
+# build output
+dist/
+dist-signalk/
+# generated types
+.astro/
+
+# generated from ../README.md, ../contributing.md and ../docs/images by scripts/sync-readme.mjs
+src/content/docs/
+src/assets/images/
+public/images/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store

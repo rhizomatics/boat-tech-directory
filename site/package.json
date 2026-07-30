@@ -1,0 +1,22 @@
+{
+  "name": "boat-tech-directory-site",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-readme": "node scripts/sync-readme.mjs",
+    "predev": "npm run sync-readme",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "prebuild": "npm run sync-readme",
+    "build": "astro build",
+    "build:signalk": "ASTRO_BASE=/@rhizomatics/signalk-boat-tech-directory-plugin ASTRO_OUTDIR=dist-signalk npm run build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/starlight": "^0.41.5",
+    "astro": "^7.0.2"
+  }
+}

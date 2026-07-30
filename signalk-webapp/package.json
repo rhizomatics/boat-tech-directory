@@ -1,0 +1,39 @@
+{
+  "name": "@rhizomatics/signalk-boat-tech-directory-plugin",
+  "version": "1.0.0",
+  "description": "Curated directory of marine electronics, NMEA, SignalK, OpenCPN and other open source boat tech projects, vendor hardware and software, blogs and forums.",
+  "keywords": [
+    "signalk-webapp",
+    "signalk-category-utility",
+    "signalk-node-plugin",
+    "awesomonelist",
+    "signalk",
+    "nmea",
+    "directory"
+  ],
+  "homepage": "https://boat-tech-directory.rhizomatics.org.uk",
+  "bugs": {
+    "url": "https://github.com/rhizomatics/boat-tech-directory/issues"
+  },
+  "license": "CC0-1.0",
+  "author": "Jey Burrows",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhizomatics/boat-tech-directory.git",
+    "directory": "signalk-webapp"
+  },
+  "files": [
+    "public"
+  ],
+  "scripts": {
+    "build": "npm --prefix ../site run build:signalk && node scripts/copy-public.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "signalk": {
+    "displayName": "Boat Tech Directory",
+    "appIcon": "images/logo.jpg"
+  }
+}

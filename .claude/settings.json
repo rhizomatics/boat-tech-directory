@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx awesome-lint *)"
+      "Bash(npx awesome-lint *)",
+      "Bash(node scripts/sync-readme.mjs)",
+      "Bash(node scripts/copy-public.mjs)"
     ]
   }
 }
