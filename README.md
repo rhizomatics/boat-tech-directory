@@ -104,6 +104,7 @@ Software projects for boats, with recent commits as of 2026.
 - [AvNav](https://www.wellenvogel.net/software/avnav/docs/beschreibung.html?lang=en) - Plotter with Android app and SignalK integration. German with English docs.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc plus open source hardware projects.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BlueBridge](https://github.com/miniwinwm/BlueBridge) - Android app integration with NMEA data via MQTT and Bluetooth.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatOpenIO](https://github.com/bigbrainlabs/BoatOpenIO) - ESP-32 16-channel analog marine gateway for legacy VDO sensors, integrating analog instruments to MQTT and SignalK.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatyPi](https://github.com/davedoesdemos/BoatyPi) - Open source hardware/software for boat ePaper display.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BrineOMatic](https://github.com/hoeken/brineomatic) - Watermaker controller for ESP32, open source hardware and software, integrates with SignalK and Home Assistant.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [CAN Boat](https://github.com/canboat/canboat) - NMEA2000 and NMEA 0183 CLI utilities.
