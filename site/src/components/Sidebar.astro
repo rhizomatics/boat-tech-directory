@@ -1,0 +1,119 @@
+---
+// Overrides Starlight's default Sidebar to fold the current page's headings in as a nested
+// branch under its own nav entry, instead of a separate "On this page" panel in the right
+// column (disabled via `tableOfContents: false` in astro.config.mjs). The directory's own
+// sidebar config (astro.config.mjs) is a flat list of links — no groups — so this doesn't
+// need to handle Starlight's nested/collapsible group case that the stock SidebarSublist does.
+import SidebarPersister from "@astrojs/starlight/components/SidebarPersister.astro";
+import MobileMenuFooter from "virtual:starlight/components/MobileMenuFooter";
+
+const { sidebar, headings = [] } = Astro.locals.starlightRoute;
+
+// Same depth range as Starlight's default right-hand TOC (h2/h3) — deep enough to be useful,
+// shallow enough not to bloat the left nav for the busiest pages (~10 headings at most here).
+const pageHeadings = headings.filter((heading) => heading.depth >= 2 && heading.depth <= 3);
+---
+
+<SidebarPersister>
+  <ul class="top-level">
+    {
+      sidebar.map((entry) =>
+        entry.type === "link" ? (
+          <li>
+            <a href={entry.href} aria-current={entry.isCurrent ? "page" : undefined} class="large">
+              <span>{entry.label}</span>
+            </a>
+            {entry.isCurrent && pageHeadings.length > 0 && (
+              <ul class="page-toc">
+                {pageHeadings.map((heading) => (
+                  <li class={`depth-${heading.depth}`}>
+                    <a href={`#${heading.slug}`}>{heading.text}</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ) : (
+          <li>
+            <span class="large">{entry.label}</span>
+          </li>
+        ),
+      )
+    }
+  </ul>
+</SidebarPersister>
+
+<div class="md:sl-hidden">
+  <MobileMenuFooter />
+</div>
+
+<style>
+  @layer starlight.core {
+    ul {
+      --sl-sidebar-item-padding-inline: 0.5rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      overflow-wrap: anywhere;
+    }
+
+    .top-level > li + li {
+      margin-top: 0.75rem;
+    }
+
+    .large {
+      font-size: var(--sl-text-lg);
+      font-weight: 600;
+      color: var(--sl-color-white);
+    }
+
+    a {
+      display: block;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      color: var(--sl-color-gray-2);
+      padding: 0.3em var(--sl-sidebar-item-padding-inline);
+      line-height: 1.4;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--sl-color-white);
+    }
+
+    [aria-current="page"],
+    [aria-current="page"]:hover,
+    [aria-current="page"]:focus {
+      font-weight: 600;
+      color: var(--sl-color-text-invert);
+      background-color: var(--sl-color-text-accent);
+    }
+
+    .page-toc {
+      margin-inline-start: var(--sl-sidebar-item-padding-inline);
+      border-inline-start: 1px solid var(--sl-color-hairline-light);
+      padding-inline-start: var(--sl-sidebar-item-padding-inline);
+      margin-top: 0.25rem;
+    }
+
+    .page-toc a {
+      font-size: var(--sl-text-xs);
+      color: var(--sl-color-gray-3);
+    }
+
+    .page-toc .depth-3 a {
+      padding-inline-start: 1rem;
+    }
+
+    @media (min-width: 50rem) {
+      .top-level > li + li {
+        margin-top: 0.5rem;
+      }
+      .large {
+        font-size: var(--sl-text-base);
+      }
+    }
+  }
+</style>

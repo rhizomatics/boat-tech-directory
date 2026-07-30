@@ -17,3 +17,7 @@ npm install @rhizomatics/signalk-boat-tech-directory-plugin
 ```
 
 (run from the server's SignalK data directory, e.g. `~/.signalk`), then restart the server.
+
+## Techie
+
+The main list is an `awesome-list` formatted `README.md`, which is built as a more navigable web site using *Astro Starlight*, and then packaged as a SignalK webapp. Links are automatically validated as part of the build.

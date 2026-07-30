@@ -1,3 +1,7 @@
+[v1.0.3]
+
+- Improved layout for smaller screens
+
 [v1.0.2]
 
 - SignalK packaging fixes

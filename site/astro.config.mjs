@@ -17,6 +17,12 @@ export default defineConfig({
       description:
         "A curated list of marine electronics, NMEA, SignalK, OpenCPN and other open source boat tech projects, vendor hardware and software, blogs and forums.",
       plugins: [agentready(),starlightLlmsTxt()],
+      // Right-hand "On this page" panel is folded into the left nav instead (see
+      // src/components/Sidebar.astro) to avoid two side rails on a link-dense directory page.
+      tableOfContents: false,
+      components: {
+        Sidebar: "./src/components/Sidebar.astro",
+      },
       social: [
         {
           icon: "github",
