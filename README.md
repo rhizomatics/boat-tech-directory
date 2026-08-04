@@ -270,6 +270,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 - [Quark](https://www.quark-elec.com) - NMEA devices, sensors, internet gateways, gauges and remote monitoring.
 - [Rosuku](https://www.rusoku.com) - TouCAN Marine NMEA2000 USB adaptor.
 - [SailorGuard](https://www.sailorguard.com) - Micro-controller minimal implementation of SignalK for performance and low power, and windlass integration with mobile app ([AnchorGuard](https://www.sailorguard.com/anchor-guard)).
+- [SailServer](https://sailserver.com) - NMEA 2000 interfaced box for automatic logbook, anchor watch and remote tracking, including via NoForeignLand and racing performance. Danish vendor, with English info.
 - [See Sailing](https://www.see-sailing.com) - NMEA data visualization for yacht race analysis and NMEA to Bluetooth hardware.
 - [Shipmodul](https://shipmodul.com) - NMEA/Seatalk multiplexers and LAN gateways, macOS and Windows configuration client ([workaround for Linux](https://www.cricalix.net/2023/05/07/miniplex-and-linux/)).
 - [SK Pang Electronics](https://www.skpang.co.uk) - Raspberry Pi boards and HATs for CAN-Bus integration, NMEA2000 simulators, GPS modules, LCD displays.
@@ -313,6 +314,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 #### Boat Integration and Remote Monitoring
 
 - [BoatMonitor32](https://www.boatmonitor32.co.uk) - Mobile app and boat hardware hub with Victron integration.
+- [EasyHub](https://dpnav.de/) - German vendor (DPNav) WiFi gateway with NMEA2000 integration and remote tracking, with cloud service.
 - [Hello Sailor](https://hello-sailor.co.uk) - LTE/SMS based remote boat monitoring, subscription-free.
 - [iNav4u](https://www.inav4u.com) - **Zora** integrated monitoring, navigation, dashboards.
 - [Maretron](https://www.maretron.com) - Integrated monitoring and visualization, NMEA bridges and sensors.
@@ -327,6 +329,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 - [Sensar Marine](https://sensarmarine.com) - Subscription-based remote monitoring with app, SMS and NMEA integration.
 - [Siren Marine](https://sirenmarine.com/) - Remote boat monitoring.
 - [Smartboatia](https://smartboatia.com) - Smart boat hub with anchor alarm, remote monitoring, logging and AI-based trim suggestions.
+- [Smart Boat Systems](https://www.smartboatsystem.com) - Dominican Republic based integrator, supplies package of ODroid based hubs running open source packages with 4G Hub and Zigbee sensors.
 - [Vesscomm](https://vesscomm.com) - Mobile data (2G/4G) based monitoring hubs and mobile apps.
 - [Victron](https://www.victronenergy.com) - Power devices with associated monitoring, integration, power sensors, displays.
 - [Vircru](https://www.vircru.com) - Remote boat monitoring with mobile app.
@@ -344,6 +347,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 - [Peplink](https://www.peplink.com/) - Marine antennas and routers for 5G.
 - [Sailor Hat for Raspberry Pi](https://docs.hatlabs.fi/sh-rpi/) - Power Pi from NMEA2000 bus, safe shutdown, glitch protection.
 - [Simarine](https://simarine.net) - Slovenian company supplying battery monitors, control panels, switching, sensors and accessories.
+- [SmartDock](https://www.smartdock.de/en) - Dock boat remotely via mobile app using engines and thrusters. German vendor with English info.
 - [Topargee](https://www.topargee.com.au/) - Bluetooth enabled water and fuel flow meters, automated shut-off valves.
 - [Yacht Controller](https://www.yachtcontroller.com) - Handheld engine & steering remote control for docking.
 - [Weatherdock](https://www.easyais.com) - German supplier of AIS transceivers and splitters, personal trackers and beacons, boat monitoring.
@@ -363,8 +367,10 @@ See also [Open Source](#open-source-projects).
 - [Meltemus](https://www.meltemus.com/index.php/en/) - Navigation, weather and charts for Android, iOS, Windows, macOS and Linux. **qtVLM** weather and chart viewer free on some platforms.
 - [Maintenance ROS](https://maintenanceros.com) - Boat maintenance management.
 - [Navigatrix](https://navigatrix.net/nx/) - Custom Linux distribution for navigation. Free.
+- [Navily](https://www.navily.com) - Map with guidance and reviews for marinas, anchorages, mooring buoys.
 - [Navimetrix](https://navimetrix.com) - Integrated navigation, weather, charting, routing for Android, Windows, iOS and macOS.
 - [Navstation](https://navstation.net) - **MacENCx64Integrate** plotting, navigation, charts and NMEA integration for macOS.
+- [NoForeignLand](https://www.noforeignland.com) - Social website and mobile apps, for boat tracking, forums, anchorage advice.
 - [NMEA 2000 Solutions](https://www.nmea2000solutions.com) - NMEA BridgeBuilder and NMEA Gateway packages, consultancy.
 - [Ocean Signal](https://oceansignal.com) - PLBs, EPIRBs, AIS alarms, VHF and radar transponders.
 - [OsmAnd](https://osmand.net/) - Offline mobile apps for OpenStreetMap, with nautical support in Pro and higher.
@@ -376,8 +382,10 @@ See also [Open Source](#open-source-projects).
 - [SailTrack](https://www.angelnav.co.uk) - **AngelNav** plotter app for mobile and PC with charts and traditional charting techniques and NMEA integration.
 - [SavvyNavvy](https://www.savvy-navvy.com) - Plotter app for mobile with integrated weather, AIS, charting and NMEA integration.
 - [SeaIQ](https://seaiq.com) - Navigation for pilots, on Windows, macOS, iOS, iPadOS. Lower price version for recreational sailors.
+- [SeaPeople](https://seapeopleapp.com) - Boat tracking and social networking website and mobile apps.
 - [SKipper](https://www.skipperapp.net) - SignalK instrumentation display app for iOS, Android, Linux, Windows, macOS and Raspberry Pi.
 - [Skippo](https://www.skippo.se) - Swedish navigation app for iOS, Android and web.
+- [The Boat App](https://theboatapp.com) - Boat management app, web, iOS and Android.
 - [TimeZero](https://mytimezero.com) - Software based full-featured chart plotter.
 - [Vessel Vault](https://vesselvault.app) - Boat maintenance management.
 - [WilhemSK](https://www.wilhelmsk.com) - SignalK dashboard app for iPhone, iPad, macOS, Apple Watch and Apple TV.
@@ -402,6 +410,7 @@ See also [Open Source](#open-source-projects).
 - [Marine Electronics Journal](https://www.marineelectronicsjournal-digital.com) - Digital magazine published by NMEA.
 - [Panbo](https://panbo.com) - Marine tech news.
 - [SmartBoats](https://smartboats.org) - Vendor directory and reviews.
+- [Yacht](https://www.yacht.de/en/equipment/electronics/) - German magazine with English site, news and reviews of boat equipment.
 
 ### Education
 
@@ -431,6 +440,7 @@ These are openly shared lists, specific to boats, however useful as a starting p
 - [Lille Ø](https://handbook.lille-oe.de/checklists/01_before_sailing/) - 1979 Amigo 40, German Flagged. Anchoring, before/after sailing, mast stepping etc plus boat documentation.
 - [Salty Lass](http://www.saltylass.co.uk/resources) - 2002 Bavaria 36, British flagged. Sailing, laying up, buying a boat checklists plus logbook template.
 - [Sea Jade](https://sy-sea-jade.github.io/boatstuff/checklists) - 2011 Bavaria Cruiser 36, British flagged. Before/after sailing, storm prep etc plus navigation templates.
+- [The Boat App](https://theboatapp.com/checklists) - Dozens of checklists for maintenance and at sea.
 
 
 <!-- --8<-- [end:education] -->
