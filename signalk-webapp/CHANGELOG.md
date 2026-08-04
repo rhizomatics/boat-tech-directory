@@ -1,3 +1,7 @@
+
+[v1.0.4]
+- More content
+
 [v1.0.3]
 
 - Improved layout for smaller screens

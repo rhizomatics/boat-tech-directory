@@ -35,6 +35,7 @@ Personal sites for sailors and their boats with their tech projects. These are a
 
 - [Bergie](https://bergie.iki.fi) - Baltic sailor, boat projects and SignalK plugin developer ([meri-imperiumi](https://github.com/meri-imperiumi)) and [boat handbook with checklists](https://handbook.lille-oe.de).
 - [BoatHackers](https://boathackers.com) - Leopard 45, projects with Home Assistant, Starlink, NMEA2000, Victron.
+- [coelcanth](https://www.coelacanth.ch) - Hutting 40, Swiss owned, cruises Baltic and North Sea. Cruising blog posts, plus DIY hardware projects and beautifully produced [videos](https://www.youtube.com/@sy.coelacanth).
 - [Catalina 320 Log](https://www.yachtslog.com) - Raspberry Pi, NMEA, SignalK, VBA.
 - [Cricalix](https://www.cricalix.net) - Ireland, Victoria 34, NMEA, Python, Solar, Shipmodul Miniplex.
 - [Hacking Family](https://hackingfamily.com/Cruise_Info/Equipment/Equipment.htm) - Long term world cruisers on Wauquiez-designed catamaran with advice on electronics, software, mapping.
@@ -115,6 +116,7 @@ Software projects for boats, with recent commits as of 2026.
 - <img src="docs/images/icons/gitlab.png" width="16" height="16"> [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
 - [GWeatherRouting](https://gweatherrouting.org) - Navigation and automated routing, Python/GTK4.
 - [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
+- [Ilma](https://ilma.sailorslog.io) - Software based Navtex receiver for Raspberry Pi or similar.
 - <img src="docs/images/icons/gitlab.png" width="16" height="16"> [imud](https://github.com/richcreations/imud) - IMU (Inertial Measurement Unit)/Magnetometer multiplexer with NMEA stream for chartplotters.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
 - [KPlex](https://www.stripydog.com/kplex/) - NMEA0183 multiplexer for Linux, Unix, macOS and OpenWRT. ([Google Group](https://groups.google.com/g/kplex)).
@@ -367,10 +369,8 @@ See also [Open Source](#open-source-projects).
 - [Meltemus](https://www.meltemus.com/index.php/en/) - Navigation, weather and charts for Android, iOS, Windows, macOS and Linux. **qtVLM** weather and chart viewer free on some platforms.
 - [Maintenance ROS](https://maintenanceros.com) - Boat maintenance management.
 - [Navigatrix](https://navigatrix.net/nx/) - Custom Linux distribution for navigation. Free.
-- [Navily](https://www.navily.com) - Map with guidance and reviews for marinas, anchorages, mooring buoys.
 - [Navimetrix](https://navimetrix.com) - Integrated navigation, weather, charting, routing for Android, Windows, iOS and macOS.
 - [Navstation](https://navstation.net) - **MacENCx64Integrate** plotting, navigation, charts and NMEA integration for macOS.
-- [NoForeignLand](https://www.noforeignland.com) - Social website and mobile apps, for boat tracking, forums, anchorage advice.
 - [NMEA 2000 Solutions](https://www.nmea2000solutions.com) - NMEA BridgeBuilder and NMEA Gateway packages, consultancy.
 - [Ocean Signal](https://oceansignal.com) - PLBs, EPIRBs, AIS alarms, VHF and radar transponders.
 - [OsmAnd](https://osmand.net/) - Offline mobile apps for OpenStreetMap, with nautical support in Pro and higher.
@@ -382,7 +382,6 @@ See also [Open Source](#open-source-projects).
 - [SailTrack](https://www.angelnav.co.uk) - **AngelNav** plotter app for mobile and PC with charts and traditional charting techniques and NMEA integration.
 - [SavvyNavvy](https://www.savvy-navvy.com) - Plotter app for mobile with integrated weather, AIS, charting and NMEA integration.
 - [SeaIQ](https://seaiq.com) - Navigation for pilots, on Windows, macOS, iOS, iPadOS. Lower price version for recreational sailors.
-- [SeaPeople](https://seapeopleapp.com) - Boat tracking and social networking website and mobile apps.
 - [SKipper](https://www.skipperapp.net) - SignalK instrumentation display app for iOS, Android, Linux, Windows, macOS and Raspberry Pi.
 - [Skippo](https://www.skippo.se) - Swedish navigation app for iOS, Android and web.
 - [The Boat App](https://theboatapp.com) - Boat management app, web, iOS and Android.
@@ -391,6 +390,13 @@ See also [Open Source](#open-source-projects).
 - [WilhemSK](https://www.wilhelmsk.com) - SignalK dashboard app for iPhone, iPad, macOS, Apple Watch and Apple TV.
 - [Yachtara](https://yachtara.com) - Weather routing and boat management app for cruising sailors: multi-model weather comparison, weather routing, anchor watch, maintenance logs and manuals, crew management. Builds offline regional forecast packs.
 - [Zapfware](https://www.zapfware.de) - Mobile apps including *NMEARemote* dashboard, *NMEAConnect* bridging and ORC racing.
+
+#### Social
+
+- [Navily](https://www.navily.com) - Map with guidance and reviews for marinas, anchorages, mooring buoys.
+- [NoForeignLand](https://www.noforeignland.com) - Social website and mobile apps, for boat tracking, forums, anchorage advice. Owned and run by a long-term cruising couple.
+- [SailorsLog](https://www.sailorslog.io) - Social sailing journal for Apple devices.
+- [SeaPeople](https://seapeopleapp.com) - Boat tracking and social networking website and mobile apps.
 
 ### Consultants
 
