@@ -47,6 +47,12 @@ const outDir = resolve(siteDir, "src/content/docs");
 rmSync(outDir, { recursive: true, force: true });
 mkdirSync(outDir, { recursive: true });
 
+// Starlight already renders the frontmatter `title` as the page's h1, so a leading
+// `#`/`##` heading carried over from the README/contributing source would duplicate it.
+function stripLeadingHeading(markdown) {
+  return markdown.replace(/^#{1,2}\s+.*\n+/, "");
+}
+
 function writePage(slug, title, description, body, { depth = 1 } = {}) {
   const frontmatter = [
     "---",
@@ -57,7 +63,7 @@ function writePage(slug, title, description, body, { depth = 1 } = {}) {
     `<!-- Generated from ../../../../README.md by scripts/sync-readme.mjs — do not edit directly. -->`,
     "",
   ].join("\n");
-  const processed = rewriteImagePaths(convertAdmonitions(body), depth);
+  const processed = stripLeadingHeading(rewriteImagePaths(convertAdmonitions(body), depth));
   writeFileSync(resolve(outDir, `${slug}.md`), frontmatter + processed + "\n");
 }
 
@@ -83,7 +89,7 @@ const pages = [
   {
     marker: "protocols",
     slug: "protocols",
-    title: "Protocols",
+    title: "Standards and Protocols",
     description: "NMEA, Seatalk, SAE and other marine networking standards.",
   },
   {
@@ -92,11 +98,23 @@ const pages = [
     title: "Vendors",
     description: "Hardware and software vendors, and specialist consultants.",
   },
+    {
+    marker: "news",
+    slug: "news",
+    title: "News",
+    description: "News",
+  },
   {
     marker: "education",
     slug: "education",
-    title: "News, Education and Reference",
-    description: "News, Courses, tutorials and technical references.",
+    title: "Education",
+    description: "Education sites and vendors.",
+  },
+    {
+    marker: "reference",
+    slug: "reference",
+    title: "Reference",
+    description: "Reference material, including checklists.",
   },
 ];
 

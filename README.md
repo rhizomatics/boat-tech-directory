@@ -7,7 +7,7 @@
 
 Boat tech includes all things NMEA and Seatalk, marine internet, open source projects, hardware vendors, educational resources, blogs, vlogs and forums.
 
-This listing is presented as best endeavours and in the public domain (Creative Commons CC0 1.0 Universal licence), contains no advertisements, paid placements or referrals.
+This listing is presented as best endeavours and with public license ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en)), contains no advertisements, paid placements or referrals.
 
 <!-- --8<-- [end:intro-text] -->
 
@@ -17,9 +17,11 @@ This listing is presented as best endeavours and in the public domain (Creative 
 - [Social Media](#social-media)
 - [Charts](#charts)
 - [Open Source Projects](#open-source-projects)
-- [Protocols](#protocols)
+- [Standards and Protocols](#standards-and-protocols)
 - [Vendors](#vendors)
-- [News, Education and Reference](#news-education-and-reference)
+- [News](#news)
+- [Education](#education)
+- [Reference](#reference)
 <!--lint enable double-link-->
 
 ### Contribute
@@ -195,19 +197,15 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 <!-- --8<-- [end:open-source-projects] -->
 
 <!-- --8<-- [start:protocols] -->
-## Protocols
+## Standards and Protocols
 
-### Industry Standards
+### Marine Industry Standards
 
 - <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [IEC61162](https://en.wikipedia.org/wiki/IEC_61162) - International Electrotechnical Commission standards, partly wrapping NMEA standards (IEC 61162-1 is NMEA0183 and IEC 61162-3 is NMEA2000).
-- [LoRaWan](https://lora-alliance.org) - Long range wireless networking for IoT devices, including remote boat monitoring.
 - <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [NMEA0183](https://en.wikipedia.org/wiki/NMEA_0183) - RS-422 based wiring layer with proprietary information protocol.
 - <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K.
 - [NMEA OneNet](https://www.nmea.org/nmea-onenet.html) - IPv6 Ethernet based wiring with proprietary information protocol, using M12 and RJ45 connectors.
 - [NMEA over IP](https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:manual_basic:set_options:connections:advanced) - Informal standard (with a formal IANA port assigned, `10110`) using TCP or UDP provided by several vendor and open source products, and consumed by Navionics, AngelNav, SavvyNavvy and more.
-- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [SAE J1587/J1708](https://en.wikipedia.org/wiki/SAE_J1708) - Pair of older serial based engine networking standards, used by marine engines from 1990s and early 2000s.
-- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [SAE J1939](https://en.wikipedia.org/wiki/SAE_J1939) - CAN Bus standard, using Deutsch connectors, commonly used for engines and engine instruments, including Volvo Penta and Yanmar.
-- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [Shielded Twisted Pair Ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair) - Computing industry standard, commonly used for radars and other high bandwidth marine applications.
 
 ### Open Source
 
@@ -225,6 +223,22 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 - [Seatalk 1](https://www.raymarine.com/en-us/our-products/networking-and-accessories/seatalk) - Raymarine proprietary daisy-chain combined data and power, ubiquitously deployed with ST60 instruments.
 - [Seatalk NG](https://www.raymarine.com/en-gb/our-products/networking-and-accessories/seatalk-ng-and-nmea-2000) - Raymarine's implementation of NMEA2000, compatible at data layer with a proprietary 6 pin connection to incorporate SeaTalk 1 data.
 - [SimNet](https://www.simrad-yachting.com/help--support/?contentTitle=Whats-the-difference-between-SimNet-and-NMEA2000&contentId=023_008-016) - Simrad variant of NMEA2000 with different connectors and supporting daisy chaining.
+
+### Other Industry Standards on Boats
+
+- [BLE](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) - *Bluetooth Low Energy*, a special form of Bluetooth for low power devices, on boats usually using the *Generic Attribute Profile* or GATT to exchange small quantities of data, like solar panel statistics or temperature. Uses the same 2.4Ghz frequency band as most WiFi.
+  - Many SignalK plugins are available for BLE, including [bt-sensors-plugin](https://github.com/naugehyde/bt-sensors-plugin-sk) for general device reading, [eInk Labels](https://rhizomatics.github.io/signalk-einklabel-plugin/) to send boat data to an electronic shelf label, plus vendor specific plugins for [Victron](https://github.com/stefanor/signalk-victron-ble), [Bluetti](https://github.com/rhizomatics/signalk-bluetti-plugin) and others.
+- [LoRaWan](https://lora-alliance.org) - Long range wireless networking for IoT devices, including remote boat monitoring.
+- [MQTT](https://en.wikipedia.org/wiki/MQTT) - Lightweight publish/subscribe networking used extensively in home and industrial automation. Devices can publish data without being aware of what is reading the data, and clients can subscribe to data that was published before they started up.
+  - Several SignalK plugins are available to expose boat data over MQTT, or pull MQTT data into SignalK, for example reading temperature sensors
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [SAE J1587/J1708](https://en.wikipedia.org/wiki/SAE_J1708) - Pair of older serial based engine networking standards, used by marine engines from 1990s and early 2000s.
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [SAE J1939](https://en.wikipedia.org/wiki/SAE_J1939) - CAN Bus standard, using Deutsch connectors, commonly used for engines and engine instruments, including Volvo Penta and Yanmar.
+  - Several [vendors](#nmea-interfacing) provide interfaces to pull J1939 data onto the NMEA bus and there are standard NMEA 2000 PGNs for engine data, and related battery or fuel levels.
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [Shielded Twisted Pair Ethernet](https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair) - Computing industry standard, commonly used for radars and other high bandwidth marine applications.
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) - Network protocol used for NMEA data distribution, to set up a session between a NMEA gateway and a client like OpenCPN or Navionics. Data is checked for receipt and retried if failed, so this is more reliable than UDP and also slower and more work for the gateway, hence commonly limited to how many clients can be supported at one time.
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) - Network protocol commonly used for NMEA data distribution, either passively (send out UDP packets to all clients that attach to a port) or actively ( forward on data to a list of listening client IP addresses/ports ), and either way as 'fire-and-forget'. Navionics, OpenCPN, AngelNav, SavvyNavvy and other apps will use this (or TCP) to subscribe to NMEA data.
+- [Zigbee](https://signalk.org/2025/signalk-zigbee-sensors/) - Common mesh network for sensors, alarms, switches and other home automation uses. Bi-directional (so for example, the device battery can be remotely read), designed for low power devices, and uses the same 2.4Ghz spectrum as Bluetooth and Wifi. Becoming more common on boats since home automation scale drives down the costs, and where [Home Assistant](https://www.home-assistant.io) is used in conjunction with SignalK.
+
 
 <!-- --8<-- [end:protocols] -->
 
@@ -269,7 +283,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 - [Onwa](https://www.onwamarine.com/NMEA_Devices.html) - NMEA converters and multiplexers, and general marine electronics.
 - [OpenMarine](https://openmarine.net) - NMEA [MacArthur HAT](https://macarthur-hat-documentation.readthedocs.io)for Raspberry PI with OpenPlotter.
 - [Pitufino](https://pitufino.com) - Wifi gateway for NMEA0183 and NMEA2000 with optional Seatalk 1 and cloud access.
-- [Quark](https://www.quark-elec.com) - NMEA devices, sensors, internet gateways, gauges and remote monitoring.
+- [Quark](https://www.quark-elec.com) - NMEA devices, sensors, internet gateways, gauges and remote monitoring, including both J1939 and analogue integration for engines.
 - [Rosuku](https://www.rusoku.com) - TouCAN Marine NMEA2000 USB adaptor.
 - [SailorGuard](https://www.sailorguard.com) - Micro-controller minimal implementation of SignalK for performance and low power, and windlass integration with mobile app ([AnchorGuard](https://www.sailorguard.com/anchor-guard)).
 - [SailServer](https://sailserver.com) - NMEA 2000 interfaced box for automatic logbook, anchor watch and remote tracking, including via NoForeignLand and racing performance. Danish vendor, with English info.
@@ -280,7 +294,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 - [Veinland](https://veinland.net) - German vendor, with English info, of commercial NMEA multiplexers, embedded PCs and instruments.
 - [Vela Navgea](https://www.vela-navega.com) - Portuguese sailor who builds *NMEA4Wifi* range of multiplexers for NMEA0183, N2K and Seatalk.
 - [Wegmatt](https://wegmatt.com) - *dAISy* AIS receivers and NMEA0183 interfacing.
-- [Yacht Devices](https://www.yachtd.com) - NMEA bridges, gateways and sensors.
+- [Yacht Devices](https://www.yachtd.com) - NMEA bridges, gateways and sensors including engine gateways for J1939 or J1708 digital interfaces and spark plug sensors for older outboards.
 - [Yakbitz](https://yakbitz.com) - Seatalk, NMEA, AIS and Autopilot interfaces.
 
 #### Marine PCs and Components
@@ -322,6 +336,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 - [Maretron](https://www.maretron.com) - Integrated monitoring and visualization, NMEA bridges and sensors.
 - [Nautic Alert](https://nauticalert.com) - Remote GPS tracking, bilge and power monitoring.
 - [Navigation Laptops](https://navigationlaptops.com) - Laptops setup for navigation with instrument packages.
+- [Oceanic Systems](https://osukl.com) -  Sensors, relays, probes, gateways, displays for remote monitoring and security, including J1939 engine interface.
 - [Orca](https://getorca.com/orca-core/) - Data hub for NMEA, auto-pilot, radar with chart plotter and remote monitoring.
 - [PAJ GPS](https://www.paj-gps.co.uk) - UK remote GPS tracking hardware and app.
 - [Philippi](https://www.philippi-online.de/) - German supplier of monitoring, sensors and electrical power components, including refit panels for Bavaria yachts.
@@ -407,18 +422,18 @@ See also [Open Source](#open-source-projects).
 - [Tweeds Marine](https://tweedsmarine.nz/) - New Zealand. Consultancy plus free articles, news and calculators online.
 <!-- --8<-- [end:vendors] -->
 
-<!-- --8<-- [start:education] -->
-## News, Education and Reference
-
-### News
+<!-- --8<-- [start:news] -->
+## News
 
 - [Actisense Media](https://actisense.com/media/) - Vendor blog, with self-help and industry news.
 - [Marine Electronics Journal](https://www.marineelectronicsjournal-digital.com) - Digital magazine published by NMEA.
 - [Panbo](https://panbo.com) - Marine tech news.
 - [SmartBoats](https://smartboats.org) - Vendor directory and reviews.
 - [Yacht](https://www.yacht.de/en/equipment/electronics/) - German magazine with English site, news and reviews of boat equipment.
+<!-- --8<-- [end:news] -->
 
-### Education
+<!-- --8<-- [start:education] -->
+## Education
 
 - [Actisense Hub](https://actisense.com/actisense-hub/) - Free tutorials, online books and reference from Actisense.
 - [AllThingzSailing](https://allthingzsailing.com/) - Catalog of sailing related websites, blogs, videos and apps.
@@ -431,8 +446,12 @@ See also [Open Source](#open-source-projects).
 - [NMEA Conference and Expo](https://expo.nmea.org) - Annual vendor event in USA.
 - [Ocean Science Technology](https://www.oceansciencetechnology.com/suppliers/data-communication-systems/) - NMEA 0183 and 2000 tutorials.
 - [Seably](https://www.seably.com/explore/topics/electronics-2) - Electronics courses, including Actisense accreditation.
+- [Toolbox Talks](https://boatingwiththebaileys.com/toolbox-talks/) - Instructional videos and articles on electrics, electronics and engines.
 
-### Reference
+<!-- --8<-- [end:education] -->
+
+<!-- --8<-- [start:reference] -->
+## Reference
 
 - [NMEA FAQ](https://www.eoss.org/pubs/nmeafaq) - 2006 vintage, latest and remains relevant.
 - <img src="docs/images/icons/gitlab.png" width="16" height="16"> [NMEA Revealed](https://gpsd.gitlab.io/gpsd/NMEA.html) - Detailed technical reference for NMEA0183, part of the gpsd project.
@@ -449,9 +468,12 @@ These are openly shared lists, specific to boats, however useful as a starting p
 - [The Boat App](https://theboatapp.com/checklists) - Dozens of checklists for maintenance and at sea.
 
 
-<!-- --8<-- [end:education] -->
+<!-- --8<-- [end:reference] -->
 
 <!--lint disable no-repeat-punctuation code-block-style-->
 ??? warning
 
     The term 'awesome' is used here in its American sense, and because 'awesome list' is a thing, and not in its British sense of actually involving awe.
+
+
+<a href="https://boat-tech-directory.rhizomatics.org.uk">Boat Tech Directory</a> © 2025 by <a href="https://github.com/jeyrb">J R Burrows</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
