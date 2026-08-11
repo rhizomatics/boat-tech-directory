@@ -10,6 +10,6 @@ updates:
     schedule:
       interval: "weekly"
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/signalk-site/" # Location of package manifests
+    directory: "/site/" # Location of package manifests
     schedule:
       interval: "weekly"
