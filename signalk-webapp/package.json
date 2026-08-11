@@ -1,6 +1,6 @@
 {
   "name": "@rhizomatics/signalk-boat-tech-directory-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Offline curated directory of marine electronics, NMEA, SignalK, OpenCPN and other open source projects, vendors, blogs and forums.",
   "keywords": [
     "signalk-webapp",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/rhizomatics/boat-tech-directory/issues"
   },
-  "license": "CC0-1.0",
+  "license": "CC-BY-SA-4.0",
   "author": "Jey Burrows",
   "repository": {
     "type": "git",
