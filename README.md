@@ -170,7 +170,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000](https://github.com/ttlappalainen/NMEA2000) - Arduino NMEA2000 interfacing library used in several commercial products.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000_ais_wifi_gw](https://github.com/sailingfree/NMEA2000_ais_wifi_gw) -  ESP32 based NMEA2000 gateway.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000_esp32](https://github.com/ttlappalainen/NMEA2000_esp32) - ESP32 objects for use with NMEA2000 library.
-- [Sens32](https://signalk.org/SensESP/) - ESP32 based sensors for SignalK.
+- [Sens32](https://signalk.org/SensESP/) - Sensor development framework for ESP32 based sensors by SignalK.
 
 #### GoLang
 
