@@ -23,7 +23,8 @@
     "directory": "signalk-webapp"
   },
   "files": [
-    "public"
+    "public",
+    "assets"
   ],
   "scripts": {
     "build": "npm --prefix ../site run build:signalk && node scripts/copy-public.mjs",
@@ -34,6 +35,9 @@
   },
   "signalk": {
     "displayName": "Boat Tech Directory",
-    "appIcon": "images/logo.jpg"
+    "appIcon": "images/logo.jpg",
+    "screenshots": [
+      "assets/screenshots/home_page.png"
+    ]
   }
 }
