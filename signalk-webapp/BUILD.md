@@ -5,8 +5,8 @@
 ```bash
 npm login
 git tag -f latest
-git tag -f v1.0.0
-git push --tags
+git tag -f latest v1.0.0
+git push --tags --force
 npm publish --tag latest --access public
 ```
 
