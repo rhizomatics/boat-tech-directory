@@ -1,3 +1,8 @@
+[v1.2.0]
+
+- Add index page
+- Correct search results count
+
 [v1.1.0]
 
 - Improved usability of search

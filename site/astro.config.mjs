@@ -49,6 +49,7 @@ export default defineConfig({
         { label: "News", link: "/news/" },
         { label: "Education", link: "/education/" },
         { label: "Reference", link: "/reference/" },
+        { label: "Index", link: "/index-of-terms/" },
         { label: "Contributing", link: "/contributing/" },
       ],
     }),

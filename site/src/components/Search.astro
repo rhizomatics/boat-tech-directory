@@ -238,7 +238,12 @@ if (project.trailingSlash === 'never') dataAttributes['data-strip-trailing-slash
 						? `<p class="sl-search-result__excerpt">${fragment.excerpt}</p>`
 						: '';
 
-				return `
+				// Count individual matched entries, not pages — a directory site's
+				// "N results" should mean N matching vendors/protocols/etc, not N
+				// pages they happen to be listed on.
+				const count = entries.length + (rootExcerptHtml ? 1 : 0);
+
+				const html = `
 					<li class="sl-search-result">
 						<a class="sl-search-result__link sl-search-result__link--page" href="${escapeHtml(pageUrl)}">${escapeHtml(fragment.meta?.title ?? '')}</a>
 						${rootExcerptHtml}
@@ -251,6 +256,7 @@ if (project.trailingSlash === 'never') dataAttributes['data-strip-trailing-slash
 						}
 					</li>
 				`;
+				return { html, count };
 			};
 
 			let searchId = 0;
@@ -264,14 +270,15 @@ if (project.trailingSlash === 'never') dataAttributes['data-strip-trailing-slash
 				const fragments = await Promise.all(search.results.map((r: any) => r.data()));
 				if (localId !== searchId) return;
 
-				const count = fragments.length;
+				const pages = fragments.map(renderPage);
+				const count = pages.reduce((sum, p) => sum + p.count, 0);
 				messageEl.textContent =
 					count === 0
 						? t('zero_results').replace('[SEARCH_TERM]', term)
 						: (count === 1 ? t('one_result') : t('many_results'))
 								.replace('[COUNT]', String(count))
 								.replace('[SEARCH_TERM]', term);
-				resultsList.innerHTML = fragments.map(renderPage).join('');
+				resultsList.innerHTML = pages.map((p) => p.html).join('');
 			};
 
 			let debounceTimer: ReturnType<typeof setTimeout>;
