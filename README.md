@@ -17,7 +17,7 @@ This listing is presented as best endeavours and with public license ([CC BY-SA 
 
 <!--lint disable double-link-->
 - [Social Media](#social-media)
-- [Charts](#charts)
+- [Charts and Data](#charts-and-data)
 - [Open Source Projects](#open-source-projects)
 - [Standards and Protocols](#standards-and-protocols)
 - [Vendors](#vendors)
@@ -90,14 +90,20 @@ Video channels from YouTube and elsewhere for boat tech projects.
 <!-- --8<-- [end:social_media] -->
 
 <!-- --8<-- [start:charts] -->
-## Charts
+## Charts and Data
 
-Open source, crowd-sourced and volunteer chart sources.
+Open source, crowd-sourced and volunteer charts and other data sources.
 
 - [Antares Charts](https://www.antarescharts.co.uk) - Volunteer project for charting and pilotage of West Coast Scotland.
+- [Citizen Sea](https://www.hubocean.earth/citizen-sea) - Citizen science marine biology app, iOS and Android.
 - [Mapterhorn](https://mapterhorn.com) - Open Source terrain tiles for interactive web map visualizations.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Nautical Chart Catalogs](https://chartcatalogs.github.io) - Machine readable index of free to use nautical charts.
+- [OpenBathy](https://www.openbathy.org) - Open access bathymetry data.
+- [Open Earth](https://www.openearth.nl) - Dutch open marine data, including detailed Wadden Sea mapping.
 - [OpenSeaMap](https://www.openseamap.org/index.php?id=openseamap&L=1) - Open sourced charts, in English, German, Spanish, French, Italian, Russian and Arabic.
+- [OpenTide](https://opentide.io) - Crowd sourced tidal data, with SignalK plugin.
+- [OpenWaters](https://openwaters.io) - Open source mapping, tides and bathymetry.
+
 <!-- --8<-- [end:charts] -->
 
 <!-- --8<-- [start:open-source-projects] -->

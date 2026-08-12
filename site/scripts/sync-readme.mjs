@@ -77,7 +77,7 @@ const pages = [
   {
     marker: "charts",
     slug: "charts",
-    title: "Charts",
+    title: "Charts and Data",
     description: "Open and volunteer charting projects.",
   },
   {
@@ -154,7 +154,7 @@ Contributions welcome! Read the [contribution guidelines](./contributing/) first
 ## Sections
 
 - [Social Media](./social-media/) — Blogs, vlogs, video channels and forums.
-- [Charts](./charts/) — Open and volunteer charting projects
+- [Charts and Data](./charts/) — Open and volunteer charting projects
 - [Open Source Projects](./open-source-projects/) — Software and firmware, including NMEA libraries
 - [Protocols](./protocols/) — NMEA, Seatalk, SAE and other marine networking standards
 - [Vendors](./vendors/) — Hardware and software vendors, and specialist consultants.
