@@ -25,8 +25,13 @@ const docsDir = resolve(siteDir, "src/content/docs");
 // Not directory-listing pages — nothing to index.
 const SKIP_FILES = new Set(["contributing.md", "index-of-terms.md", "index.md"]);
 
+// Relative, not absolute — index-of-terms.md and e.g. vendors.md are sibling
+// top-level docs, so this must climb back out of /index-of-terms/ first. A
+// leading "/vendors/" would ignore Astro's configured `base`, which is fine
+// on the main site (served at domain root) but 404s on the SignalK plugin
+// build, which serves everything under a base path.
 function pageUrl(slug) {
-  return `/${slug}/`;
+  return `../${slug}/`;
 }
 
 function parseFrontmatter(raw) {

@@ -1,3 +1,7 @@
+[v1.2.1]
+
+- Correct index links for running as SignalK webapp
+
 [v1.2.0]
 
 - Add index page
