@@ -158,7 +158,10 @@ Contributions welcome! Read the [contribution guidelines](./contributing/) first
 - [Open Source Projects](./open-source-projects/) — Software and firmware, including NMEA libraries
 - [Protocols](./protocols/) — NMEA, Seatalk, SAE and other marine networking standards
 - [Vendors](./vendors/) — Hardware and software vendors, and specialist consultants.
-- [News, Education and Reference](./education/) — News, Courses, tutorials and technical references
+- [Education and Reference](./education/) — Courses, certification, tutorials
+- [News](./news/) — News and reviews
+- [Reference](./reference/) —Technical references
+
 `;
 writePage(
   "index",
