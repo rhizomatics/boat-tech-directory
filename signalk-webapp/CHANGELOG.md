@@ -1,3 +1,7 @@
+[v1.2.2]
+
+- Extended Charts section to cover open data
+
 [v1.2.1]
 
 - Correct index links for running as SignalK webapp
