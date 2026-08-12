@@ -6,7 +6,14 @@
       "Bash(node scripts/copy-public.mjs)",
       "Bash(node -e \"console.log\\(require\\('./node_modules/astro/package.json'\\).version\\)\")",
       "Bash(node -e \"console.log\\(require\\('./node_modules/@astrojs/starlight/package.json'\\).version\\)\")",
-      "Bash(file *.ico)"
+      "Bash(file *.ico)",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"astro preview\")",
+      "Bash(echo \"started $!\")",
+      "Bash(curl -sf http://localhost:4322/vendors/ -o /dev/null)",
+      "Bash(npx astro *)",
+      "Bash(node /private/tmp/claude-501/-Users-jey-Code-sailing-boat-tech-directory/6c09e389-26d8-448b-9623-fb03be92178c/scratchpad/test-search.mjs)",
+      "Bash(node .tmp-test-search.mjs)"
     ]
   }
 }

@@ -1,3 +1,6 @@
+[v1.1.0]
+
+- Improved usability of search
 
 [v1.0.5]
 - More content, improved navigation structure

@@ -254,7 +254,7 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 Vendors offering full suite of products for modern boats, including plotters, instruments and sensors.
 
 - [B&G](https://www.bandg.com) - Sensors, radars, plotters, displays for racing and cruising.
-- [Furono](https://www.furunousa.com/en) - Sensors, sonar, radar, plotters, autopilots.
+- [Furuno](https://www.furunousa.com/en) - Sensors, sonar, radar, plotters, autopilots.
 - [Garmin](https://www.garmin.com/) - Sensors, plotters, radars, sonar, displays, auto-pilots, charts, cameras and integration.
 - [Humminbird](https://humminbird.johnsonoutdoors.com/us) - Plotter, sonar, charts, apps, One-Boat network.
 - [Lowrance](https://www.lowrance.com) - Plotters, transducers, charts, trolling motors.

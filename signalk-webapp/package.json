@@ -1,6 +1,6 @@
 {
   "name": "@rhizomatics/signalk-boat-tech-directory-plugin",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Offline curated directory of marine electronics, NMEA, SignalK, OpenCPN and other open source projects, vendors, blogs and forums.",
   "keywords": [
     "signalk-webapp",

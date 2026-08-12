@@ -1,0 +1,538 @@
+---
+// Forked from @astrojs/starlight/components/Search.astro.
+//
+// This no longer uses Pagefind's packaged `PagefindUI` widget. That widget's
+// sub-result renderer (@pagefind/default-ui/svelte/result_with_subs.svelte)
+// hard-caps nested sub-results at 3 per page, with no config option to raise
+// it — so even with per-entry sub_results computed by
+// ../pagefind-sub-results.js, a page with many matching directory entries
+// (e.g. 8 "Seatalk" vendors) would still only ever show 3 of them. Talking
+// to Pagefind's raw JS API directly and rendering results ourselves removes
+// that cap.
+import { Icon } from '@astrojs/starlight/components';
+import project from 'virtual:starlight/project-context';
+
+const pagefindTranslations = {
+	placeholder: Astro.locals.t('search.label'),
+	...Object.fromEntries(
+		Object.entries(Astro.locals.t.all())
+			.filter(([key]) => key.startsWith('pagefind.'))
+			.map(([key, value]) => [key.replace('pagefind.', ''), value])
+	),
+};
+
+const dataAttributes: DOMStringMap = { 'data-translations': JSON.stringify(pagefindTranslations) };
+if (project.trailingSlash === 'never') dataAttributes['data-strip-trailing-slash'] = '';
+---
+
+<site-search class={Astro.props.class} {...dataAttributes}>
+	<button
+		data-open-modal
+		disabled
+		aria-label={Astro.locals.t('search.label')}
+		aria-keyshortcuts="Control+K"
+	>
+		<Icon name="magnifier" />
+		<span class="sl-hidden md:sl-block" aria-hidden="true">{Astro.locals.t('search.label')}</span>
+		<kbd class="sl-hidden md:sl-flex" style="display: none;">
+			<kbd>{Astro.locals.t('search.ctrlKey')}</kbd><kbd>K</kbd>
+		</kbd>
+	</button>
+
+	<dialog style="padding:0" aria-label={Astro.locals.t('search.label')}>
+		<div class="dialog-frame sl-flex">
+			{
+				/* TODO: Make the layout of this button flexible to accommodate different word lengths. Currently hard-coded for English: “Cancel” */
+			}
+			<button data-close-modal class="sl-flex md:sl-hidden">
+				{Astro.locals.t('search.cancelLabel')}
+			</button>
+			{
+				import.meta.env.DEV ? (
+					<div style="margin: auto; text-align: center; white-space: pre-line;" dir="ltr">
+						<p>{Astro.locals.t('search.devWarning')}</p>
+					</div>
+				) : (
+					<div class="search-container">
+						<div id="starlight__search">
+							<form id="starlight__search-form" role="search" aria-label={Astro.locals.t('search.label')}>
+								<input
+									id="starlight__search-input"
+									type="text"
+									autocapitalize="none"
+									enterkeyhint="search"
+									placeholder={Astro.locals.t('search.label')}
+									title={Astro.locals.t('search.label')}
+								/>
+								<button type="button" id="starlight__search-clear" hidden>
+									{Astro.locals.t('search.label')}
+								</button>
+							</form>
+							<div id="starlight__search-results-area" hidden>
+								<p id="starlight__search-message" role="status"></p>
+								<ol id="starlight__search-results"></ol>
+							</div>
+						</div>
+					</div>
+				)
+			}
+		</div>
+	</dialog>
+</site-search>
+
+{
+	/**
+	 * This is intentionally inlined to avoid briefly showing an invalid shortcut.
+	 * Purposely using the deprecated `navigator.platform` property to detect Apple devices, as the
+	 * user agent is spoofed by some browsers when opening the devtools.
+	 */
+}
+<script is:inline>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script>
+
+<script>
+	import { pagefindUserConfig } from 'virtual:starlight/pagefind-config';
+	import { calculateEntrySubResults } from '../pagefind-sub-results.js';
+
+	// Pagefind's documented default English strings for the keys we use
+	// (https://pagefind.app/docs/ui/#translations). Starlight only supplies
+	// overrides for these via `pagefindTranslations` when a project's i18n
+	// dictionary defines them, so we fall back to the same defaults Pagefind
+	// itself ships.
+	const DEFAULT_STRINGS = {
+		clear_search: 'Clear',
+		zero_results: 'No results for [SEARCH_TERM]',
+		many_results: '[COUNT] results for [SEARCH_TERM]',
+		one_result: '[COUNT] result for [SEARCH_TERM]',
+		searching: 'Searching for [SEARCH_TERM]...',
+	};
+
+	const ESCAPE_MAP = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+	const escapeHtml = (str) => String(str ?? '').replace(/[&<>"']/g, (c) => ESCAPE_MAP[c]);
+
+	const DEBOUNCE_MS = 300;
+	const EXCERPT_LENGTH = 30;
+
+	class SiteSearch extends HTMLElement {
+		constructor() {
+			super();
+			const openBtn = this.querySelector<HTMLButtonElement>('button[data-open-modal]')!;
+			const closeBtn = this.querySelector<HTMLButtonElement>('button[data-close-modal]')!;
+			const dialog = this.querySelector('dialog')!;
+			const dialogFrame = this.querySelector('.dialog-frame')!;
+
+			/** Close the modal if a user clicks on a link or outside of the modal. */
+			const onClick = (event: MouseEvent) => {
+				const isLink = 'href' in (event.target || {});
+				if (
+					isLink ||
+					(document.body.contains(event.target as Node) &&
+						!dialogFrame.contains(event.target as Node))
+				) {
+					closeModal();
+				}
+			};
+
+			const openModal = (event?: MouseEvent) => {
+				dialog.showModal();
+				document.body.toggleAttribute('data-search-modal-open', true);
+				this.querySelector('input')?.focus();
+				event?.stopPropagation();
+				window.addEventListener('click', onClick);
+			};
+
+			const closeModal = () => dialog.close();
+
+			openBtn.addEventListener('click', openModal);
+			openBtn.disabled = false;
+			closeBtn.addEventListener('click', closeModal);
+
+			dialog.addEventListener('close', () => {
+				document.body.toggleAttribute('data-search-modal-open', false);
+				window.removeEventListener('click', onClick);
+			});
+
+			// Listen for `ctrl + k` and `cmd + k` keyboard shortcuts.
+			window.addEventListener('keydown', (e) => {
+				if ((e.metaKey === true || e.ctrlKey === true) && e.key === 'k') {
+					dialog.open ? closeModal() : openModal();
+					e.preventDefault();
+				}
+			});
+
+			let translations: Record<string, string> = {};
+			try {
+				translations = JSON.parse(this.dataset.translations || '{}');
+			} catch {}
+			const t = (key: string) => translations[key] || DEFAULT_STRINGS[key] || '';
+
+			const shouldStrip = this.dataset.stripTrailingSlash !== undefined;
+			const stripTrailingSlash = (path: string) => path.replace(/(.)\/(#.*)?$/, '$1$2');
+			const formatURL = shouldStrip ? stripTrailingSlash : (path: string) => path;
+
+			if (import.meta.env.DEV) return;
+
+			const input = this.querySelector<HTMLInputElement>('#starlight__search-input')!;
+			const clearBtn = this.querySelector<HTMLButtonElement>('#starlight__search-clear')!;
+			const resultsArea = this.querySelector<HTMLElement>('#starlight__search-results-area')!;
+			const messageEl = this.querySelector<HTMLElement>('#starlight__search-message')!;
+			const resultsList = this.querySelector<HTMLOListElement>('#starlight__search-results')!;
+
+			let pagefind: any = null;
+			let pagefindReady: Promise<any> | null = null;
+			const ensurePagefind = () => {
+				if (!pagefindReady) {
+					pagefindReady = (async () => {
+						const bundlePath = import.meta.env.BASE_URL.replace(/\/$/, '') + '/pagefind/';
+						// @ts-expect-error — no types for the generated bundle.
+						const mod = await import(/* @vite-ignore */ `${bundlePath}pagefind.js`);
+						await mod.options({
+							baseUrl: import.meta.env.BASE_URL,
+							...pagefindUserConfig,
+						});
+						pagefind = mod;
+						return mod;
+					})();
+				}
+				return pagefindReady;
+			};
+			input.addEventListener('focus', ensurePagefind, { once: true });
+
+			// Directory entries are one short sentence, so the title *is* the
+			// excerpt — showing both a title line and an excerpt line below it
+			// just repeats the same text twice. Render a single line: the
+			// excerpt (already has the matched term wrapped in <mark>) as the
+			// link itself.
+			const renderEntry = (url: string, excerpt: string) => `
+				<li class="sl-search-result__entry sl-search-result__entry--nested">
+					<a class="sl-search-result__link" href="${escapeHtml(formatURL(url))}">${excerpt}</a>
+				</li>
+			`;
+
+			const renderPage = (fragment: any) => {
+				fragment.url = formatURL(fragment.url);
+				if (fragment.meta?.url) fragment.meta.url = formatURL(fragment.meta.url);
+				const pageUrl = fragment.meta?.url || fragment.url;
+
+				const subResults = calculateEntrySubResults(fragment, EXCERPT_LENGTH);
+				// Starlight renders every page's own <h1> as id="_top", so a match
+				// in the intro text right after it is anchored to the page title
+				// itself — treat that the same as an un-anchored "root" match
+				// rather than showing a nested entry that just repeats the title.
+				const hasRoot = subResults[0]?.url === pageUrl || subResults[0]?.anchor?.id === '_top';
+				const entries = hasRoot ? subResults.slice(1) : subResults;
+
+				const rootExcerptHtml =
+					hasRoot && fragment.excerpt
+						? `<p class="sl-search-result__excerpt">${fragment.excerpt}</p>`
+						: '';
+
+				return `
+					<li class="sl-search-result">
+						<a class="sl-search-result__link sl-search-result__link--page" href="${escapeHtml(pageUrl)}">${escapeHtml(fragment.meta?.title ?? '')}</a>
+						${rootExcerptHtml}
+						${
+							entries.length
+								? `<ol class="sl-search-result__entries">${entries
+										.map((sub: any) => renderEntry(sub.url, sub.excerpt))
+										.join('')}</ol>`
+								: ''
+						}
+					</li>
+				`;
+			};
+
+			let searchId = 0;
+			const runSearch = async (term: string) => {
+				const localId = ++searchId;
+				const mod = await ensurePagefind();
+				if (localId !== searchId) return;
+				messageEl.textContent = t('searching').replace('[SEARCH_TERM]', term);
+				const search = await mod.search(term);
+				if (localId !== searchId) return;
+				const fragments = await Promise.all(search.results.map((r: any) => r.data()));
+				if (localId !== searchId) return;
+
+				const count = fragments.length;
+				messageEl.textContent =
+					count === 0
+						? t('zero_results').replace('[SEARCH_TERM]', term)
+						: (count === 1 ? t('one_result') : t('many_results'))
+								.replace('[COUNT]', String(count))
+								.replace('[SEARCH_TERM]', term);
+				resultsList.innerHTML = fragments.map(renderPage).join('');
+			};
+
+			let debounceTimer: ReturnType<typeof setTimeout>;
+			input.addEventListener('input', () => {
+				const term = input.value.trim();
+				clearBtn.hidden = !term;
+				clearTimeout(debounceTimer);
+				if (!term) {
+					resultsArea.hidden = true;
+					resultsList.innerHTML = '';
+					messageEl.textContent = '';
+					return;
+				}
+				resultsArea.hidden = false;
+				debounceTimer = setTimeout(() => runSearch(term), DEBOUNCE_MS);
+			});
+
+			input.addEventListener('keydown', (e) => {
+				if (e.key === 'Escape') {
+					input.value = '';
+					input.dispatchEvent(new Event('input'));
+					input.blur();
+				}
+				if (e.key === 'Enter') e.preventDefault();
+			});
+
+			clearBtn.addEventListener('click', () => {
+				input.value = '';
+				input.dispatchEvent(new Event('input'));
+				input.focus();
+			});
+
+			clearBtn.textContent = t('clear_search');
+		}
+	}
+	customElements.define('site-search', SiteSearch);
+</script>
+
+<style>
+	@layer starlight.core {
+		site-search {
+			display: contents;
+		}
+		button[data-open-modal] {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			border: 0;
+			background-color: transparent;
+			color: var(--sl-color-gray-1);
+			cursor: pointer;
+			height: 2.5rem;
+			font-size: var(--sl-text-xl);
+		}
+
+		@media (min-width: 50rem) {
+			button[data-open-modal] {
+				border: 1px solid var(--sl-color-gray-5);
+				border-radius: 0.5rem;
+				padding-inline-start: 0.75rem;
+				padding-inline-end: 0.5rem;
+				background-color: var(--sl-color-black);
+				color: var(--sl-color-gray-2);
+				font-size: var(--sl-text-sm);
+				width: 100%;
+				max-width: 22rem;
+			}
+			button[data-open-modal]:hover {
+				border-color: var(--sl-color-gray-2);
+				color: var(--sl-color-white);
+			}
+
+			button[data-open-modal] > :last-child {
+				margin-inline-start: auto;
+			}
+		}
+
+		button > kbd {
+			border-radius: 0.25rem;
+			font-size: var(--sl-text-2xs);
+			gap: 0.25em;
+			padding-inline: 0.375rem;
+			background-color: var(--sl-color-gray-6);
+		}
+
+		kbd {
+			font-family: var(--__sl-font);
+		}
+
+		dialog {
+			margin: 0;
+			background-color: var(--sl-color-gray-6);
+			border: 1px solid var(--sl-color-gray-5);
+			width: 100%;
+			max-width: 100%;
+			height: 100%;
+			max-height: 100%;
+			box-shadow: var(--sl-shadow-lg);
+		}
+		dialog[open] {
+			display: flex;
+		}
+
+		dialog::backdrop {
+			background-color: var(--sl-color-backdrop-overlay);
+			-webkit-backdrop-filter: blur(0.25rem);
+			backdrop-filter: blur(0.25rem);
+		}
+
+		.dialog-frame {
+			position: relative;
+			overflow: auto;
+			flex-direction: column;
+			flex-grow: 1;
+			gap: 1rem;
+			padding: 1rem;
+		}
+
+		button[data-close-modal] {
+			position: absolute;
+			z-index: 1;
+			align-items: center;
+			align-self: flex-end;
+			height: 3.25rem;
+			padding: 0.25rem;
+			border: 0;
+			background: transparent;
+			cursor: pointer;
+			color: var(--sl-color-text-accent);
+		}
+
+		@media (min-width: 50rem) {
+			dialog {
+				margin: 4rem auto auto;
+				border-radius: 0.5rem;
+				width: 90%;
+				max-width: 40rem;
+				height: max-content;
+				min-height: 15rem;
+				max-height: calc(100% - 8rem);
+			}
+
+			.dialog-frame {
+				padding: 1.5rem;
+			}
+		}
+	}
+</style>
+
+<style is:global>
+	@layer starlight.core {
+		[data-search-modal-open] {
+			overflow: hidden;
+		}
+
+		#starlight__search-form {
+			position: relative;
+			display: flex;
+			align-items: center;
+		}
+
+		#starlight__search-input {
+			width: 100%;
+			padding: 0.75rem 1rem;
+			font-family: var(--__sl-font);
+			font-size: var(--sl-text-base);
+			color: var(--sl-color-white);
+			background-color: var(--sl-color-black);
+			border: 1px solid var(--sl-color-gray-5);
+			border-radius: 0.5rem;
+		}
+		#starlight__search-input:focus {
+			outline: none;
+			border-color: var(--sl-color-accent);
+		}
+
+		#starlight__search-clear {
+			position: absolute;
+			inset-inline-end: 0.5rem;
+			padding: 0.25rem 0.5rem;
+			font-size: var(--sl-text-xs);
+			color: var(--sl-color-gray-2);
+			background: transparent;
+			border: 0;
+			cursor: pointer;
+		}
+		#starlight__search-clear:hover {
+			color: var(--sl-color-white);
+		}
+
+		#starlight__search-results-area {
+			margin-top: 1rem;
+		}
+
+		#starlight__search-message {
+			margin: 0 0 0.75rem;
+			font-size: var(--sl-text-sm);
+			color: var(--sl-color-gray-2);
+		}
+
+		#starlight__search-results {
+			display: flex;
+			flex-direction: column;
+			gap: 1.25rem;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.sl-search-result {
+			padding-top: 1rem;
+			border-top: 1px solid var(--sl-color-gray-5);
+		}
+		.sl-search-result:first-child {
+			padding-top: 0;
+			border-top: 0;
+		}
+
+		.sl-search-result__link {
+			color: var(--sl-color-white);
+			font-weight: 600;
+			text-decoration: none;
+		}
+		.sl-search-result__link:hover {
+			text-decoration: underline;
+		}
+		.sl-search-result__link--page {
+			font-size: var(--sl-text-lg);
+		}
+
+		.sl-search-result__excerpt {
+			margin: 0.25rem 0 0;
+			font-size: var(--sl-text-sm);
+			color: var(--sl-color-gray-2);
+			overflow-wrap: anywhere;
+		}
+
+		.sl-search-result__entries {
+			display: flex;
+			flex-direction: column;
+			gap: 0.75rem;
+			margin: 0.75rem 0 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.sl-search-result__entry--nested {
+			padding-inline-start: 1rem;
+			border-inline-start: 2px solid var(--sl-color-gray-5);
+		}
+		.sl-search-result__entry--nested .sl-search-result__link {
+			font-size: var(--sl-text-sm);
+			font-weight: 500;
+		}
+
+		mark {
+			color: inherit;
+			background-color: transparent;
+			font-weight: 700;
+			text-decoration: underline;
+			text-decoration-color: var(--sl-color-accent);
+		}
+	}
+</style>
