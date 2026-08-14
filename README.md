@@ -387,6 +387,7 @@ See also [Open Source](#open-source-projects).
 - [AggSoft](https://www.aggsoft.com) - Windows based data loggers/aggregators for NMEA, ModBus, GPS, USB etc.
 - [DeepBlue](https://deepblue.app/) - Yacht management app.
 - [Expedition Marine](https://www.expeditionmarine.com) - Windows-based navigation, weather routing and racing app, official supplier to The Volvo Ocean Race, Americas Cup, Sail GP etc.
+- [Go Pottie](https://gopottie.app) - Crowd-sourced lobster pot location sharing for British Isles, iOS and Android mobile apps.
 - [Guardian Digital](https://www.guardiandigital.tech/) - Soft plotter / MFD for Apple devices.
 - [LuckGRIB](https://luckgrib.com) - Weather data download, view and routing.
 - [Meltemus](https://www.meltemus.com/index.php/en/) - Navigation, weather and charts for Android, iOS, Windows, macOS and Linux. **qtVLM** weather and chart viewer free on some platforms.
