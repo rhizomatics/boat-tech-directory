@@ -122,6 +122,7 @@ Software projects for boats, with recent commits as of 2026.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [d3kOS](https://github.com/SkipperDon/d3kOS) - Raspberry Pi based navigation and automation platform.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [DiscoTime](https://github.com/cr/discotime/) - Time and lat/long dashboard for long distance passages.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label.
+- [FrothFet](https://frothfet.com) - Open source hardware and software for digital switching boat DC loads.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Galadriel Plotter](https://github.com/VladimirKalachikhin/Galadriel-map) - Raster based chartplotter for low power servers.
 - <img src="docs/images/icons/gitlab.png" width="16" height="16"> [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
 - [GWeatherRouting](https://gweatherrouting.org) - Navigation and automated routing, Python/GTK4.
