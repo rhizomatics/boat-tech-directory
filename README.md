@@ -400,6 +400,7 @@ See also [Open Source](#open-source-projects).
 - [Ocean Signal](https://oceansignal.com) - PLBs, EPIRBs, AIS alarms, VHF and radar transponders.
 - [OsmAnd](https://osmand.net/) - Offline mobile apps for OpenStreetMap, with nautical support in Pro and higher.
 - [Rose Point](https://www.rosepoint.com) - Navigation software, North America gazatteer, NMEA gateway.
+- [SailKick](https://www.sailkick.io) - Offline webapp and mobile app for boat metrics, with weather, climatology and basic routing, optional cloud sync for metrics, polars, public page. SignalK integration.
 - [Sail Logger](https://saillogger.com) - Logbook for mobiles, with NMEA integration.
 - [Sailing Performance](https://www.sailingperformance.com) - Racing performance analysis.
 - [SailRouter](https://sailrouter.org) - AI based routing for onboard Raspberry Pi with NMEA and SignalK integration. Community Edition with planned commercial and SaaS versions.
