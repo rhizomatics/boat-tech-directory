@@ -102,7 +102,7 @@ Open source, crowd-sourced and volunteer charts and other data sources.
 - [Open Earth](https://www.openearth.nl) - Dutch open marine data, including detailed Wadden Sea mapping.
 - [OpenSeaMap](https://www.openseamap.org/index.php?id=openseamap&L=1) - Open sourced charts, in English, German, Spanish, French, Italian, Russian and Arabic.
 - [OpenTide](https://opentide.io) - Crowd sourced tidal data, with SignalK plugin.
-- [OpenWaters](https://openwaters.io) - Open source mapping, tides and bathymetry.
+- [OpenWaters](https://openwaters.io) - Open source nautical web map tiles: [Seamap](https://openwaters.io/charts/seamap), a chart style rendered weekly from OpenStreetMap seamarks, and [Seascape](https://openwaters.io/charts/seascape), global bathymetry merged from GEBCO and regional open sources. Plus tide predictions.
 
 <!-- --8<-- [end:charts] -->
 
