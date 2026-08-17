@@ -1,5 +1,5 @@
 <!--lint disable awesome-git-repo-age-->
-# Awesome Boat Tech 
+# Awesome Boat Tech
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>
 
 <!--lint enable awesome-git-repo-age-->

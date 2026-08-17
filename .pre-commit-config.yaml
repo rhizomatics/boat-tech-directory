@@ -5,7 +5,7 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.2
+    rev: v2.4.3
     hooks:
       - id: codespell
         args:
@@ -19,7 +19,7 @@ repos:
       - id: awesome-lint
         files: ^README\.md$
   - repo: https://github.com/lycheeverse/lychee.git
-    rev: lychee-v0.24.2
+    rev: nightly
     hooks:
       - id: lychee
         # Optionally include additional CLI arguments
