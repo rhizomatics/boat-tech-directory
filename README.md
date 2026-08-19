@@ -152,7 +152,9 @@ Software projects for boats, with recent commits as of 2026.
 - [Smart Boat Innovations](https://smartboatinnovations.com) - Videos and articles on building a Raspberry Pi and Home Assistant based smart boat.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [TwoCan](https://github.com/TwoCanPlugIn/TwoCanPlugIn) - NMEA2000 integration for OpenCPN.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Venus](https://github.com/victronenergy/venus) - Victron Energy's open source OS for their GX products, available for self-hosting on Raspberry Pi.
+- [X Engineering](https://xengineering.net) - Open-source alternator regulator for lithium battery systems. Open hardware, [Github project](https://github.com/markliquid1/Regulator2026-public).
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Xilje](https://github.com/Djaahny) - Garmin integration projects, incl plotter display of local web apps and PyPilot integration.
+
 
 ### NMEA
 
@@ -356,6 +358,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 - [Siren Marine](https://sirenmarine.com/) - Remote boat monitoring.
 - [Smartboatia](https://smartboatia.com) - Smart boat hub with anchor alarm, remote monitoring, logging and AI-based trim suggestions.
 - [Smart Boat Systems](https://www.smartboatsystem.com) - Dominican Republic based integrator, supplies package of ODroid based hubs running open source packages with 4G Hub and Zigbee sensors.
+- [Sway](https://sway-sailing.com/) - Wifi integration for NMEA2000, data recording to local storage, remote tracking. Mobile app for iOS and Android, social voyage sharing.
 - [Vesscomm](https://vesscomm.com) - Mobile data (2G/4G) based monitoring hubs and mobile apps.
 - [Victron](https://www.victronenergy.com) - Power devices with associated monitoring, integration, power sensors, displays.
 - [Vircru](https://www.vircru.com) - Remote boat monitoring with mobile app.
