@@ -51,6 +51,7 @@ Personal sites for sailors and their boats with their tech projects. These are a
 - [Project Bob](https://www.projectbob.xyz) - Autonomous boat circumnavigation project.
 - [Seabits](https://seabits.com) - Pacific North West, Kristen 50 and Symbol Pilothouse motor yachts, SignalK, dashboards, Victron.
 - [SY Bockra](https://corbin39.org/wp-content/uploads/2025/06/BOCKRA-nav-system-notes-Spring-2025-DS-06-06-25.pdf) - 1981 Corbin 39, OpenCPN, Open Boat Projects, AvNav. One-off summary document of experiences.
+- [SV Sabado](https://svsabado.com) - US Lagoon 42. Blog articles and videos, some Home Assistant and SignalK material.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [SY Sea Jade Boatstuff](https://sy-sea-jade.github.io/boatstuff/) - Checklists, equipment choices, passage planning templates and other tabular data.
 - [The Low Cost Sailor](https://www.thelowcostsailor.com) - Boat tech news and articles. English, French, Spanish. Also <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Spanish](https://www.youtube.com/@TheLowCostSailor) and <img src="docs/images/icons/youtube.ico" width="16" height="16"> [English](https://www.youtube.com/@lowcostsailor) YouTube channels.
 - [Zapped Myself](https://zappedmyself.com/projects/nmea2000/) - NMEA2000, AIS, ESP32 projects.
