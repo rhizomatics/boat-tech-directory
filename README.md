@@ -1,5 +1,5 @@
 <!--lint disable awesome-git-repo-age-->
-# Awesome Boat Tech 
+# Awesome Boat Tech
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>
 
 <!--lint enable awesome-git-repo-age-->
@@ -116,7 +116,7 @@ Software projects for boats, with recent commits as of 2026.
 - [AvNav](https://www.wellenvogel.net/software/avnav/docs/beschreibung.html?lang=en) - Plotter with Android app and SignalK integration. German with English docs.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc plus open source hardware projects.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BlueBridge](https://github.com/miniwinwm/BlueBridge) - Android app integration with NMEA data via MQTT and Bluetooth.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatHacks](https://github.com/BoatHacks) - SignalK and ESP32 projects, including Ollama for local AI
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatHacks](https://github.com/BoatHacks) - SignalK and ESP32 projects, including Ollama for local AI.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatOpenIO](https://github.com/bigbrainlabs/BoatOpenIO) - ESP-32 16-channel analog marine gateway for legacy VDO sensors, integrating analog instruments to MQTT and SignalK.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatyPi](https://github.com/davedoesdemos/BoatyPi) - Open source hardware/software for boat ePaper display.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BrineOMatic](https://github.com/hoeken/brineomatic) - Watermaker controller for ESP32, open source hardware and software, integrates with SignalK and Home Assistant.
@@ -154,7 +154,7 @@ Software projects for boats, with recent commits as of 2026.
 - [Smart Boat Innovations](https://smartboatinnovations.com) - Videos and articles on building a Raspberry Pi and Home Assistant based smart boat.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [TwoCan](https://github.com/TwoCanPlugIn/TwoCanPlugIn) - NMEA2000 integration for OpenCPN.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Venus](https://github.com/victronenergy/venus) - Victron Energy's open source OS for their GX products, available for self-hosting on Raspberry Pi.
-- [X Engineering](https://xengineering.net) - Open-source alternator regulator for lithium battery systems. Open hardware, [Github project](https://github.com/markliquid1/Regulator2026-public).
+- [X Engineering](https://xengineering.net) - Open-source alternator regulator for lithium battery systems. Open hardware, [GitHub project](https://github.com/markliquid1/Regulator2026-public).
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Xilje](https://github.com/Djaahny) - Garmin integration projects, incl plotter display of local web apps and PyPilot integration.
 
 
