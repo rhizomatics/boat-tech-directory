@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://boat-tech-directory.rhizomatics.org.uk/sitemap-index.xml
+Sitemap: https://boat-tech-directory.rhizomatics.org.uk/sitemap.xml

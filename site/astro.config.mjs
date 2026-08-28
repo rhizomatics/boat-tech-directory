@@ -6,6 +6,29 @@ import agentready from 'starlight-agentready';
 import starlightLlmsTxt from 'starlight-llms-txt';
 import { unified } from "@astrojs/markdown-remark";
 import rehypeEntryIds from "./src/rehype-entry-ids.mjs";
+import { copyFile, access } from "node:fs/promises";
+import { fileURLToPath } from "node:url";
+
+// @astrojs/sitemap always names its output `sitemap-index.xml`, fanning URLs out into
+// `sitemap-0.xml`, `sitemap-1.xml`, etc., with no config option to call it `sitemap.xml`.
+// Some tools (Google Search Console included) expect the conventional /sitemap.xml path
+// to hold the actual <url> entries, not an index pointing elsewhere. This site is small
+// enough to stay on a single shard, so mirror that shard's full contents as sitemap.xml;
+// if it ever grows past one shard, fall back to aliasing the index instead.
+const aliasSitemap = {
+  name: "alias-sitemap-xml",
+  hooks: {
+    "astro:build:done": async ({ dir }) => {
+      const outDir = fileURLToPath(dir);
+      const hasSecondShard = await access(`${outDir}/sitemap-1.xml`).then(
+        () => true,
+        () => false,
+      );
+      const source = hasSecondShard ? "sitemap-index.xml" : "sitemap-0.xml";
+      await copyFile(`${outDir}/${source}`, `${outDir}/sitemap.xml`);
+    },
+  },
+};
 
 // AgentReady submits the built site to an external indexing webhook on every
 // `astro:build:done`, consuming one of a limited monthly quota of refreshes. Only run it
@@ -27,6 +50,7 @@ export default defineConfig({
   },
   integrations: [
     sitemap(),
+    aliasSitemap,
     starlight({
       title: "Boat Tech Directory",
       description:
