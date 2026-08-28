@@ -1,0 +1,31 @@
+name: Auto Assign
+
+on:
+  issues:
+    types: [opened, reopened]
+  pull_request_target:
+    types: [opened, reopened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign issue
+        if: github.event_name == 'issues'
+        run: gh issue edit "$NUMBER" --add-assignee jeyrb
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+
+      - name: Assign pull request
+        if: github.event_name == 'pull_request_target'
+        run: gh pr edit "$NUMBER" --add-assignee jeyrb
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
