@@ -1,3 +1,6 @@
+[v1.2.3]
+- Links added, and Social Media renamed
+
 [v1.2.2]
 
 - Extended Charts section to cover open data
