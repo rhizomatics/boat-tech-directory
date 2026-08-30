@@ -232,7 +232,7 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 - [Garmin BlueNet](https://www8.garmin.com/manuals/webhelp/GUID-C3D5DCE9-C0FF-4AC4-B759-D5B34E1EB78E/EN-US/GUID-A1161F2C-CEB3-4E87-9388-EE6F69DFD026.html) - Current Ethernet based netwoking, with proprietary connector.
 - [Garmin Marine Network](https://www.garmin.com/en-GB/c/networking-hardware/) - Previous generation of Ethernet networking, using RJ45 connectors.
 <!--lint disable awesome-list-item-->
-- **MicroNet** - Raymarine owned proprietary wireless protocol for instrument telemetry, originally known as *TackTick* before the original vendor acquired. Gateways available for two-way interfacing to regular NMEA 0183.
+- **MicroNet** - Raymarine owned proprietary wireless protocol for instrument telemetry, originally known as *TackTick* before the original vendor acquired. Gateways available for two-way interfacing to regular Seatalk NG and NMEA 0183.
 <!--lint enable awesome-list-item-->
 - [Nexus](https://support.garmin.com/en-US/?productID=165155&tab=manuals) - Sensor protocol, acquired by Garmin and used for their wind instruments and depth transducer, with NMEA2000 bridge.
 - [RayNet](https://www.raymarine.com/en-gb/our-products/networking-and-accessories/raynet) - Raymarine's Ethernet implementation, using a proprietary connector.
@@ -246,7 +246,7 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
   - Many SignalK plugins are available for BLE, including [bt-sensors-plugin](https://github.com/naugehyde/bt-sensors-plugin-sk) for general device reading, [eInk Labels](https://rhizomatics.github.io/signalk-einklabel-plugin/) to send boat data to an electronic shelf label, plus vendor specific plugins for [Victron](https://github.com/stefanor/signalk-victron-ble), [Bluetti](https://github.com/rhizomatics/signalk-bluetti-plugin) and others.
 - [CAN Bus](https://www.can-cia.org/can-knowledge) - 'Control Area Network' specification and industry alliance, basis of J1939 and NMEA2000.
 - [LoRaWan](https://lora-alliance.org) - Long range wireless networking for IoT devices, including remote boat monitoring.
-- [ModBus](https://www.modbus.org/specifications) - ModBus specifications and industry alliance, used in marine multiplexers, routers and control systems.
+- [ModBus](https://www.modbus.org/specifications) - Communication protocol for automation, used also in marine multiplexers, routers and control systems. Specifications and industry alliance.
 - [MQTT](https://en.wikipedia.org/wiki/MQTT) - Lightweight publish/subscribe networking used extensively in home and industrial automation. Devices can publish data without being aware of what is reading the data, and clients can subscribe to data that was published before they started up.
   - Several SignalK plugins are available to expose boat data over MQTT, or pull MQTT data into SignalK, for example reading temperature sensors
 - <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [SAE J1587/J1708](https://en.wikipedia.org/wiki/SAE_J1708) - Pair of older serial based engine networking standards, used by marine engines from 1990s and early 2000s.
