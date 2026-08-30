@@ -85,7 +85,7 @@ Video channels from YouTube and elsewhere for boat tech projects.
 - [OpenMarine](https://forum.openmarine.net) - Marine electronics and networking, focus on Macarthur HAT, PyPilot, OpenPlotter and Node RED.
 - [Panbo](https://panbo.com/marineelectronicsforum/) -  Marine electronics and networking.
 - <img src="docs/images/icons/facebook.ico" width="16" height="16"> [Raspberry Pi for Boats](https://www.facebook.com/groups/1666364153609573/) - Private Facebook group, >17k members, couple dozen posts per month.
-- [Segeln-Forum](https://www.segeln-forum.de) - German language sailboat forum
+- [Segeln-Forum Boot & Technik](https://www.segeln-forum.de/board/194-boot-technik/) - German language sailboat forum.
 - [SignalK Google Group](https://groups.google.com/g/signalk) - Active as of end 2025.
 - [The Hull Truth](https://www.thehulltruth.com/marine-electronics-forum-19/) - Marine electronics forum.
 
