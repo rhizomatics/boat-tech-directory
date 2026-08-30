@@ -45,6 +45,11 @@ export default defineConfig({
   site: "https://boat-tech-directory.rhizomatics.org.uk",
   base: process.env.ASTRO_BASE ?? "/",
   outDir: process.env.ASTRO_OUTDIR ?? "dist",
+  // "Social Media" was renamed to "Social"; keep old inbound links/search hits working.
+  redirects: {
+    "/social-media/": "/social/",
+    "/social_media/": "/social/",
+  },
   markdown: {
     processor: unified({ rehypePlugins: [rehypeEntryIds] }),
   },

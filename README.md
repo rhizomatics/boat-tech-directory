@@ -30,7 +30,7 @@ This listing is presented as best endeavours and with public license ([CC BY-SA 
 
 Contributions welcome! Read the [contribution guidelines](contributing.md) first.
 
-<!-- --8<-- [start:social_media] -->
+<!-- --8<-- [start:social] -->
 ## Social
 
 ### Blogs
@@ -90,7 +90,7 @@ Video channels from YouTube and elsewhere for boat tech projects.
 - [SignalK Google Group](https://groups.google.com/g/signalk) - Active as of end 2025.
 - [The Hull Truth](https://www.thehulltruth.com/marine-electronics-forum-19/) - Marine electronics forum.
 
-<!-- --8<-- [end:social_media] -->
+<!-- --8<-- [end:social] -->
 
 <!-- --8<-- [start:charts] -->
 ## Charts and Data
@@ -244,7 +244,9 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 
 - [BLE](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) - *Bluetooth Low Energy*, a special form of Bluetooth for low power devices, on boats usually using the *Generic Attribute Profile* or GATT to exchange small quantities of data, like solar panel statistics or temperature. Uses the same 2.4Ghz frequency band as most WiFi.
   - Many SignalK plugins are available for BLE, including [bt-sensors-plugin](https://github.com/naugehyde/bt-sensors-plugin-sk) for general device reading, [eInk Labels](https://rhizomatics.github.io/signalk-einklabel-plugin/) to send boat data to an electronic shelf label, plus vendor specific plugins for [Victron](https://github.com/stefanor/signalk-victron-ble), [Bluetti](https://github.com/rhizomatics/signalk-bluetti-plugin) and others.
+- [CAN Bus](https://www.can-cia.org/can-knowledge) - 'Control Area Network' specification and industry alliance, basis of J1939 and NMEA2000.
 - [LoRaWan](https://lora-alliance.org) - Long range wireless networking for IoT devices, including remote boat monitoring.
+- [ModBus](https://www.modbus.org/specifications) - ModBus specifications and industry alliance, used in marine multiplexers, routers and control systems.
 - [MQTT](https://en.wikipedia.org/wiki/MQTT) - Lightweight publish/subscribe networking used extensively in home and industrial automation. Devices can publish data without being aware of what is reading the data, and clients can subscribe to data that was published before they started up.
   - Several SignalK plugins are available to expose boat data over MQTT, or pull MQTT data into SignalK, for example reading temperature sensors
 - <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [SAE J1587/J1708](https://en.wikipedia.org/wiki/SAE_J1708) - Pair of older serial based engine networking standards, used by marine engines from 1990s and early 2000s.
