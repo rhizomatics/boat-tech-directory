@@ -156,7 +156,7 @@ Contributions welcome! Read the [contribution guidelines](./contributing/) first
 - [Social](./social/) — Blogs, vlogs, video channels and forums.
 - [Charts and Data](./charts/) — Open and volunteer charting projects
 - [Open Source Projects](./open-source-projects/) — Software and firmware, including NMEA libraries
-- [Protocols](./protocols/) — NMEA, Seatalk, SAE and other marine networking standards
+- [Protocols](./protocols/) — NMEA, Seatalk, CANBus, SAE and other marine networking standards
 - [Vendors](./vendors/) — Hardware and software vendors, and specialist consultants.
 - [Education and Reference](./education/) — Courses, certification, tutorials
 - [News](./news/) — News and reviews
