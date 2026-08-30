@@ -72,7 +72,7 @@ export default defineConfig({
       ],
       sidebar: [
         { label: "Home", link: "/" },
-        { label: "Social Media", link: "/social-media/" },
+        { label: "Social", link: "/social/" },
         { label: "Charts and Data", link: "/charts/" },
         { label: "Open Source Projects", link: "/open-source-projects/" },
         { label: "Protocols", link: "/protocols/" },

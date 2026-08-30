@@ -69,9 +69,9 @@ function writePage(slug, title, description, body, { depth = 1 } = {}) {
 
 const pages = [
   {
-    marker: "social_media",
-    slug: "social-media",
-    title: "Social Media",
+    marker: "social",
+    slug: "social",
+    title: "Social",
     description: "Blogs, vlogs, video channels and forums.",
   },
   {
@@ -153,7 +153,7 @@ Contributions welcome! Read the [contribution guidelines](./contributing/) first
 
 ## Sections
 
-- [Social Media](./social-media/) — Blogs, vlogs, video channels and forums.
+- [Social](./social/) — Blogs, vlogs, video channels and forums.
 - [Charts and Data](./charts/) — Open and volunteer charting projects
 - [Open Source Projects](./open-source-projects/) — Software and firmware, including NMEA libraries
 - [Protocols](./protocols/) — NMEA, Seatalk, SAE and other marine networking standards

@@ -16,7 +16,7 @@ This listing is presented as best endeavours and with public license ([CC BY-SA 
 ## Contents
 
 <!--lint disable double-link-->
-- [Social Media](#social-media)
+- [Social](#social)
 - [Charts and Data](#charts-and-data)
 - [Open Source Projects](#open-source-projects)
 - [Standards and Protocols](#standards-and-protocols)
@@ -31,7 +31,7 @@ This listing is presented as best endeavours and with public license ([CC BY-SA 
 Contributions welcome! Read the [contribution guidelines](contributing.md) first.
 
 <!-- --8<-- [start:social_media] -->
-## Social Media
+## Social
 
 ### Blogs
 
