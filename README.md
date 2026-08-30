@@ -244,7 +244,7 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 
 - [BLE](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) - *Bluetooth Low Energy*, a special form of Bluetooth for low power devices, on boats usually using the *Generic Attribute Profile* or GATT to exchange small quantities of data, like solar panel statistics or temperature. Uses the same 2.4Ghz frequency band as most WiFi.
   - Many SignalK plugins are available for BLE, including [bt-sensors-plugin](https://github.com/naugehyde/bt-sensors-plugin-sk) for general device reading, [eInk Labels](https://rhizomatics.github.io/signalk-einklabel-plugin/) to send boat data to an electronic shelf label, plus vendor specific plugins for [Victron](https://github.com/stefanor/signalk-victron-ble), [Bluetti](https://github.com/rhizomatics/signalk-bluetti-plugin) and others.
-- [CAN Bus](https://www.can-cia.org/can-knowledge) - 'Control Area Network' specification and industry alliance, basis of J1939 and NMEA2000.
+- [CAN Bus](https://www.can-cia.org/can-knowledge) - *Control Area Network* specification and industry alliance, basis of J1939 and NMEA2000.
 - [LoRaWan](https://lora-alliance.org) - Long range wireless networking for IoT devices, including remote boat monitoring.
 - [ModBus](https://www.modbus.org/specifications) - Communication protocol for automation, used also in marine multiplexers, routers and control systems. Specifications and industry alliance.
 - [MQTT](https://en.wikipedia.org/wiki/MQTT) - Lightweight publish/subscribe networking used extensively in home and industrial automation. Devices can publish data without being aware of what is reading the data, and clients can subscribe to data that was published before they started up.
