@@ -37,6 +37,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 Personal sites for sailors and their boats with their tech projects. These are all reasonably live as of 2026.
 
+- [Agile4Life](https://agile4life.blog/tag/technical/) - Jeanneau Sun Odyssey 49. Spanish/French family. Boat electronics, electrics, RasPi,  and generally sailing posts.
 - [Bergie](https://bergie.iki.fi) - Baltic sailor, boat projects and SignalK plugin developer ([meri-imperiumi](https://github.com/meri-imperiumi)) and [boat handbook with checklists](https://handbook.lille-oe.de).
 - [BoatHackers](https://boathackers.com) - Leopard 45, projects with Home Assistant, Starlink, NMEA2000, Victron.
 - [coelcanth](https://www.coelacanth.ch) - Hutting 40, Swiss owned, cruises Baltic and North Sea. Cruising blog posts, plus DIY hardware projects and beautifully produced [videos](https://www.youtube.com/@sy.coelacanth).
@@ -54,6 +55,7 @@ Personal sites for sailors and their boats with their tech projects. These are a
 - [SV Sabado](https://svsabado.com) - US Lagoon 42. Blog articles, technical docs and videos, some Home Assistant, ESP Home and SignalK material. Some material only for paid subscribers.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [SY Sea Jade Boatstuff](https://sy-sea-jade.github.io/boatstuff/) - Checklists, equipment choices, passage planning templates and other tabular data.
 - [The Low Cost Sailor](https://www.thelowcostsailor.com) - Boat tech news and articles. English, French, Spanish. Also <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Spanish](https://www.youtube.com/@TheLowCostSailor) and <img src="docs/images/icons/youtube.ico" width="16" height="16"> [English](https://www.youtube.com/@lowcostsailor) YouTube channels.
+- [Trouper](https://trouper.uk) - Swan 43, English Channel. Electronics upgrades and eBay finds.
 - [Zapped Myself](https://zappedmyself.com/projects/nmea2000/) - NMEA2000, AIS, ESP32 projects.
 
 ### Vlogs
@@ -100,6 +102,7 @@ Open source, crowd-sourced and volunteer charts and other data sources.
 
 - [Antares Charts](https://www.antarescharts.co.uk) - Volunteer project for charting and pilotage of West Coast Scotland.
 - [Citizen Sea](https://www.hubocean.earth/citizen-sea) - Citizen science marine biology app, iOS and Android.
+- [C-Map](https://www.c-map.com/) - Global coastal, ocean, inland mapping and bathymetry. Mobile plotter, weather, route plotting mobile app for iOS and Android with free and premium options.
 - [Mapterhorn](https://mapterhorn.com) - Open Source terrain tiles for interactive web map visualizations.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Nautical Chart Catalogs](https://chartcatalogs.github.io) - Machine readable index of free to use nautical charts.
 - [OpenBathy](https://www.openbathy.org) - Open access bathymetry data.
@@ -233,6 +236,9 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 
 ### Vendor Proprietary
 
+<!--lint disable awesome-list-item-->
+- **B&G Fastnet** - Proprietary serial bus network. No vendor documentation. Reverse engineered docs, C code and interface specs at [B&G FastNet Notes](https://github.com/trlafleur/Fastnet) and [Oppedjik Blog](https://www.oppedijk.com/bandg/fastnet.html).
+<!--lint enable awesome-list-item-->
 - [Garmin BlueNet](https://www8.garmin.com/manuals/webhelp/GUID-C3D5DCE9-C0FF-4AC4-B759-D5B34E1EB78E/EN-US/GUID-A1161F2C-CEB3-4E87-9388-EE6F69DFD026.html) - Current Ethernet based netwoking, with proprietary connector.
 - [Garmin Marine Network](https://www.garmin.com/en-GB/c/networking-hardware/) - Previous generation of Ethernet networking, using RJ45 connectors.
 <!--lint disable awesome-list-item-->
@@ -332,6 +338,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 
 #### Instruments and Autopilots
 
+- [A+T](https://www.aandtinstruments.com) - Wind sensors, *Sailing Processor* boat server, displays, valves. South coast of England based. Repairs, and integration for superyachts and racing boats.
 - [Airmar](https://www.airmar.com/) - Transducers, sensors, NMEA bridging, weather instruments and apps.
 - [Cyclops Marine](https://www.cyclopsmarine.com) - Smart load sensors and displays.
 - [Daniamant](https://daniamant.com) - Forward looking sonar (previously *EchoPilot*), alarms and other safety related products.
