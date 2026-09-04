@@ -200,8 +200,10 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 
 #### Python
 
-Lots more libraries and tools can be found on PyPI, for example [NMEA](https://pypi.org/search/?q=nmea)-related.
+Lots more libraries and tools can be found on PyPI, for example [NMEA](https://pypi.org/search/?q=nmea)-related. Selection limited to ones recently active in 2026.
 
+- <img src="docs/images/icons/pypi.ico" width="16" height="16"> [nmea2000](https://pypi.org/project/nmea2000/) - NMEA 2000 encoder and decoder.
+- <img src="docs/images/icons/pypi.ico" width="16" height="16"> [pyais](https://pypi.org/project/pyais/) - AIS specific NMEA 0183 parser and encoder, with streaming server.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [pynmea2](https://github.com/Knio/pynmea2) - NMEA 0183 sentence parser.
 - <img src="docs/images/icons/gitlab.png" width="16" height="16"> [nmeasim](https://gitlab.com/nmeasim/nmeasim) - NMEA/GNSS receiver simulator.
 
@@ -221,7 +223,7 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 
 - <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [IEC61162](https://en.wikipedia.org/wiki/IEC_61162) - International Electrotechnical Commission standards, partly wrapping NMEA standards (IEC 61162-1 is NMEA0183 and IEC 61162-3 is NMEA2000).
 - <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [NMEA0183](https://en.wikipedia.org/wiki/NMEA_0183) - RS-422 based wiring layer with proprietary information protocol.
-- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K.
+- <img src="docs/images/icons/wikipedia.ico" width="16" height="16"> [NMEA2000](https://en.wikipedia.org/wiki/NMEA_2000) - CAN Bus based wiring with proprietary information protocol. Also known as N2K. Open source reverse engineered documentation by [canboat](https://canboat.github.io/canboat/canboat.html).
 - [NMEA OneNet](https://www.nmea.org/nmea-onenet.html) - IPv6 Ethernet based wiring with proprietary information protocol, using M12 and RJ45 connectors.
 - [NMEA over IP](https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:manual_basic:set_options:connections:advanced) - Informal standard (with a formal IANA port assigned, `10110`) using TCP or UDP provided by several vendor and open source products, and consumed by Navionics, AngelNav, SavvyNavvy and more.
 
