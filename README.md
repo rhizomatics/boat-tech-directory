@@ -126,7 +126,7 @@ Software projects for boats, with recent commits as of 2026.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [CAN Boat](https://github.com/canboat/canboat) - NMEA2000 and NMEA 0183 CLI utilities.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [d3kOS](https://github.com/SkipperDon/d3kOS) - Raspberry Pi based navigation and automation platform.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [DiscoTime](https://github.com/cr/discotime/) - Time and lat/long dashboard for long distance passages.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label using simple SVG templates. Optional add-on plugin for AI generated screens.
 - [FrothFet](https://frothfet.com) - Open source hardware and software for digital switching boat DC loads.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Galadriel Plotter](https://github.com/VladimirKalachikhin/Galadriel-map) - Raster based chartplotter for low power servers.
 - <img src="docs/images/icons/gitlab.png" width="16" height="16"> [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
@@ -149,11 +149,12 @@ Software projects for boats, with recent commits as of 2026.
 - [OpenPlotter](https://openplotter.readthedocs.io/) - Combined project of SignalK, OpenCPN, PyPilot etc.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [PyGPSClient](https://github.com/semuconsulting/PyGPSClient) - Python GPS/GNSS testing, diagnostic and configuration, incl NMEA integration.
 - [PyPilot](https://pypilot.org) - Python based auto-pilot.
-- <img src="docs/images/icons/github.ico" width="16" height="16">[Rhizomatics](https://github.com/rhizomatics) - SignalK and Home Assistant plug-ins and associated apps.
+- <img src="docs/images/icons/github.ico" width="16" height="16">[Rhizomatics Sailing](https://www.rhizomatics.org.uk/sailing/) - SignalK and Home Assistant plug-ins and associated apps, including integrations for eInk Electronic Shelf Labels, Teltonika modems and Bluetti power stations.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [ROB](https://github.com/OlivierLD/ROB) - Raspberry Pi On Board, Java and Python navigation utilities.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Sail-O-Vision](https://github.com/adam-gol/sail-o-vision) - Obstacle and wildlife detection with camera and NVIDIA Jetson.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Sailtrack](https://metisvela.github.io/sailtrack/) - Modular racing performance tracker using MQTT.
 - [SignalK](https://signalk.org) - Node.js pluggable framework for boat data distribution and analysis.
+- <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalk-cli](https://pypi.org/project/signalk-cli/) - Command line interface to explore and extract data from SignalK, including the History API and Deltas streaming. Exports to CSV, JSON, raw and Apache Arrow Feather dataframes.
 - [Smart Boat Innovations](https://smartboatinnovations.com) - Videos and articles on building a Raspberry Pi and Home Assistant based smart boat.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [TwoCan](https://github.com/TwoCanPlugIn/TwoCanPlugIn) - NMEA2000 integration for OpenCPN.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Venus](https://github.com/victronenergy/venus) - Victron Energy's open source OS for their GX products, available for self-hosting on Raspberry Pi.
