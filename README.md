@@ -67,8 +67,9 @@ Video channels from YouTube and elsewhere for boat tech projects.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Gary Woodruff](https://www.youtube.com/@garrywoodruff960) - Boat projects and HowTo guides for boat electrics and electronics, focus on Lowrance equipment.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Out Chasing Stars](https://www.youtube.com/@OutChasingStars) - OpenCPN and general boat electrics, electronics.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Pacific Yacht Systems](https://www.youtube.com/@PacificYachtSystems) - Last active in 2023, large back catalogue of instructional videos on marine electrics, electronics and networking.
-- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Raspberry for Sailing](https://www.youtube.com/@Sir-Real) - OpenPlotter, SignalK, KIP projects on Raspberry Pi.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Raspberry4Sailing](https://www.youtube.com/@Sir-Real) - OpenPlotter, SignalK, KIP projects on Raspberry Pi.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Smart Boat Innovations](https://www.youtube.com/@SmartBoatInnovations) - Raspberry Pi, HomeAssistant and SignalK boat projects.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Surf n Turf](https://www.youtube.com/playlist?list=PLK_IzlFMWDRA) - Tutorials on OpenCPN and SignalK and general boat life.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [SV Apres](https://www.youtube.com/playlist?list=PLqHa5JFKHBLwxeCuc6uaa5TzAXVeqTyiD) - OpenPlotter, NMEA2000 and general boat tech.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [The Florida Captain](https://www.youtube.com/@TheFloridaCaptain) - Open source boat network and apps.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Tom Seahorse](https://www.youtube.com/@Tom-seahorse/videos) - UK. Catamaran. Raspberry Pi, OpenCPN, Home Assistant.
@@ -441,6 +442,7 @@ See also [Open Source](#open-source-projects).
 - [Pacific Yacht Systems](https://www.pysystems.com) - Electrical and electronics consultancy, retail and educational articles & videos.
 - [Seatech Systems](https://seatech.systems) - Marine electronics consultancy, with free advice articles on marine internet.
 - [Tweeds Marine](https://tweedsmarine.nz/) - New Zealand. Consultancy plus free articles, news and calculators online.
+- [VesselSense](https://vesselsense.io) - California. Consultancy for navigation and monitoring systems integration, plus [YouTube videos](https://www.youtube.com/@VesselSense-io) on SignalK, Raspi, WaveShare.
 <!-- --8<-- [end:vendors] -->
 
 <!-- --8<-- [start:news] -->
