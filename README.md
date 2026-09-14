@@ -110,6 +110,7 @@ Open source, crowd-sourced and volunteer charts and other data sources.
 - [OpenSeaMap](https://www.openseamap.org/index.php?id=openseamap&L=1) - Open sourced charts, in English, German, Spanish, French, Italian, Russian and Arabic.
 - [OpenTide](https://opentide.io) - Crowd sourced tidal data, with SignalK plugin.
 - [OpenWaters](https://openwaters.io) - Open source nautical web map tiles: [Seamap](https://openwaters.io/charts/seamap), a chart style rendered weekly from OpenStreetMap seamarks, and [Seascape](https://openwaters.io/charts/seascape), global bathymetry merged from GEBCO and regional open sources. Plus tide predictions.
+- [S-100](https://iho.int/en/s-100-universal-hydrographic-data-model) - Universal hydrographic data model, from the IHO (International Hydrographic Organization).
 
 <!-- --8<-- [end:charts] -->
 
@@ -135,6 +136,7 @@ Software projects for boats, with recent commits as of 2026.
 - <img src="docs/images/icons/gitlab.png" width="16" height="16"> [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
 - [GWeatherRouting](https://gweatherrouting.org) - Navigation and automated routing, Python/GTK4.
 - [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Helm](https://github.com/StevenRidder/helm-public) - Clean-room re-engineered OpenCPN equivalent, alpha as of Q3/2026.
 - [Ilma](https://ilma.sailorslog.io) - Software based Navtex receiver for Raspberry Pi or similar.
 - <img src="docs/images/icons/gitlab.png" width="16" height="16"> [imud](https://github.com/richcreations/imud) - IMU (Inertial Measurement Unit)/Magnetometer multiplexer with NMEA stream for chartplotters.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
