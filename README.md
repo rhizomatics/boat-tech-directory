@@ -362,6 +362,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 
 - [BoatMonitor32](https://www.boatmonitor32.co.uk) - Mobile app and boat hardware hub with Victron integration.
 - [EasyHub](https://dpnav.de/) - German vendor (DPNav) WiFi gateway with NMEA2000 integration and remote tracking, with cloud service.
+- [Galvanic Works](https://galvanicworks.com) - Voice alert devices, crew pulse wristbands, mobile app for MOB, AIS collisions, anchor alarm, watch management, remote monitoring. Sailer owned company in Balearics, with English/French/Spanish/Italian/German language on-line shop.
 - [Hello Sailor](https://hello-sailor.co.uk) - LTE/SMS based remote boat monitoring, subscription-free.
 - [iNav4u](https://www.inav4u.com) - **Zora** integrated monitoring, navigation, dashboards.
 - [Maretron](https://www.maretron.com) - Integrated monitoring and visualization, NMEA bridges and sensors.
