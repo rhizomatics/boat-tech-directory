@@ -9,7 +9,7 @@
 
 Boat tech includes all things NMEA and Seatalk, marine internet, open source projects, hardware vendors, educational resources, blogs, vlogs and forums.
 
-This listing is presented as best endeavours and with public license ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en)), contains no advertisements, paid placements or referrals.
+This directory is presented as best endeavours, by sailors for sailors. It has an open Creative Commons license ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en)), contains no advertisements, paid placements or referrals. No recommendation is implied of any vendor, nor is this directory exhaustive or authoritative.
 
 <!-- --8<-- [end:intro-text] -->
 
