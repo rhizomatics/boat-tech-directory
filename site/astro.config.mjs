@@ -60,6 +60,39 @@ export default defineConfig({
       title: "Boat Tech Directory",
       description:
         "A curated list of marine electronics, NMEA, SignalK, OpenCPN and other open source boat tech projects, vendor hardware and software, blogs and forums.",
+      favicon: "/favicon.svg",
+      // Starlight has no built-in og:image option; link-preview crawlers (iMessage,
+      // Slack, etc.) fall back to guessing an icon from the host when this is absent.
+      head: [
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image",
+            content:
+              "https://boat-tech-directory.rhizomatics.org.uk/images/social-preview.jpg",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: { property: "og:image:width", content: "1536" },
+        },
+        {
+          tag: "meta",
+          attrs: { property: "og:image:height", content: "1024" },
+        },
+        {
+          tag: "meta",
+          attrs: { name: "twitter:card", content: "summary_large_image" },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "twitter:image",
+            content:
+              "https://boat-tech-directory.rhizomatics.org.uk/images/social-preview.jpg",
+          },
+        },
+      ],
       plugins,
       // Right-hand "On this page" panel is folded into the left nav instead (see
       // src/components/Sidebar.astro) to avoid two side rails on a link-dense directory page.
