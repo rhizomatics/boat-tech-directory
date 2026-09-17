@@ -1,3 +1,6 @@
+[v1.2.4]
+- Links added and dependencies refreshed
+
 [v1.2.3]
 - Links added, and Social Media renamed
 
