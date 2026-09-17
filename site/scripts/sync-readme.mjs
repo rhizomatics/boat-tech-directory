@@ -53,11 +53,12 @@ function stripLeadingHeading(markdown) {
   return markdown.replace(/^#{1,2}\s+.*\n+/, "");
 }
 
-function writePage(slug, title, description, body, { depth = 1 } = {}) {
+function writePage(slug, title, description, body, { depth = 1, extra = {} } = {}) {
   const frontmatter = [
     "---",
     `title: ${JSON.stringify(title)}`,
     `description: ${JSON.stringify(description)}`,
+    ...Object.entries(extra).map(([key, value]) => `${key}: ${JSON.stringify(value)}`),
     "---",
     "",
     `<!-- Generated from ../../../../README.md by scripts/sync-readme.mjs — do not edit directly. -->`,
@@ -169,6 +170,16 @@ writePage(
   "A curated list of marine electronics, NMEA, SignalK, OpenCPN and other open source boat tech projects, vendor hardware and software, blogs and forums.",
   homeBody,
   { depth: 0 },
+);
+
+// Starlight looks up a "404" docs entry to let it override the default 404 page's
+// content; hand-authored here since there's no corresponding README section.
+writePage(
+  "404",
+  "Page Not Found",
+  "The page you're looking for doesn't exist.",
+  "The page you're looking for doesn't exist.",
+  { depth: 0, extra: { template: "splash", editUrl: false } },
 );
 
 // Images: one copy under src/assets (Astro's optimized, base-aware asset pipeline, for
