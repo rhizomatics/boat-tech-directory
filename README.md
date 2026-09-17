@@ -240,6 +240,7 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 
 ### Vendor Proprietary
 
+- [ANT/ANT+](https://developer.garmin.com/ant-program/overview/) - Garmin protocol for low power devices, including linking watches to autopilots and chart plotters. Retirement announced by vendor in 2025, replacing with BLE.
 <!--lint disable awesome-list-item-->
 - **B&G Fastnet** - Proprietary serial bus network. No vendor documentation. Reverse engineered docs, C code and interface specs at [B&G FastNet Notes](https://github.com/trlafleur/Fastnet) and [Oppedjik Blog](https://www.oppedijk.com/bandg/fastnet.html).
 <!--lint enable awesome-list-item-->
