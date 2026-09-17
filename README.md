@@ -100,9 +100,11 @@ Video channels from YouTube and elsewhere for boat tech projects.
 
 Open source, crowd-sourced and volunteer charts and other data sources.
 
+- [Admiralty Datahub](https://datahub.admiralty.co.uk) - API portal for the UK Hydrographic Office.
 - [Antares Charts](https://www.antarescharts.co.uk) - Volunteer project for charting and pilotage of West Coast Scotland.
 - [Citizen Sea](https://www.hubocean.earth/citizen-sea) - Citizen science marine biology app, iOS and Android.
 - [C-Map](https://www.c-map.com/) - Global coastal, ocean, inland mapping and bathymetry. Mobile plotter, weather, route plotting mobile app for iOS and Android with free and premium options.
+- [ENC Coverage Catalogue](https://iho.maps.arcgis.com) - Global catalogue of ENC (Electronic Navigation Chart) references.
 - [Mapterhorn](https://mapterhorn.com) - Open Source terrain tiles for interactive web map visualizations.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Nautical Chart Catalogs](https://chartcatalogs.github.io) - Machine readable index of free to use nautical charts.
 - [OpenBathy](https://www.openbathy.org) - Open access bathymetry data.
