@@ -189,6 +189,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 
 #### ESP32
 
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [ESP32 NMEA2000 Multiprotocol Gateway](https://github.com/JaCharer/ESP32_NMEA2000_Multiprotocol_Gateway) - Broadcast N2K as Signal K, NMEA 0183, and Actisense Binary. WebGUI. Begun in 2026.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [ESP32 NMEA2000](https://github.com/wellenvogel/esp32-nmea2000) - NMEA2000 integration with USB, Wifi, 0183 on M5 Atom CAN and compatible with other ESP32.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000](https://github.com/ttlappalainen/NMEA2000) - Arduino NMEA2000 interfacing library used in several commercial products.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000_ais_wifi_gw](https://github.com/sailingfree/NMEA2000_ais_wifi_gw) -  ESP32 based NMEA2000 gateway.
@@ -306,7 +307,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 - [Digital Yacht](https://digitalyacht.co.uk) - NMEA multiplexers, sensors, gateways plus AIS and 4G/5G.
 - [Gadget Pool](http://www.gadgetpool.de) - German vendor, with English info, of NMEA and Seatalk interfaces and displays.
 - [gedad](https://www.gedad.de) - German vendor, *Marine Control Server* for NMEA0183, NMEA2000 and i2c, with SignalK support.
-- [HAT Labs](https://hatlabs.fi) - Open Source NMEA2000, ESP32 and RasPi hardware, including the [Halos](https://github.com/halos-org/halos) containerized marine OS for Raspberry Pi.
+- [HAT Labs](https://hatlabs.fi) - Open Source NMEA2000, ESP32 and RasPi hardware, including the [Halos](https://github.com/halos-org/halos) containerized marine OS for Raspberry Pi and [HALPI2](https://shop.hatlabs.fi/products/halpi2-computer) marinized Raspberry Pi.
 - [Luissa 351](https://www.ebay.co.uk/usr/luissa.351) - NMEA gateways, multiplexers and Wifi integration. Portugal selling internationally through eBay.
 - [Marine Control Server](https://open-boat-projects.org/en/marine-control-server/) - Raspberry Pi based NMEA 0183 and NMEA 2000 interface with OpenPlotter and SignalK integration.
 - [Matsutec](http://www.matsutec.cn) - Chinese supplier of NMEA hardware, testers, gateways plus AIS and auto-pilots.
