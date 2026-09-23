@@ -117,6 +117,8 @@ export default defineConfig({
         { label: "Vendors", link: "/vendors/" },
         { label: "News", link: "/news/" },
         { label: "Education", link: "/education/" },
+        { label: "Servicing and Spares", link: "/servicing/" },
+        { label: "Checklists", link: "/checklists/" },
         { label: "Reference", link: "/reference/" },
         { label: "Index", link: "/index-of-terms/" },
         { label: "Contributing", link: "/contributing/" },

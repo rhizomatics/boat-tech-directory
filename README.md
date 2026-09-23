@@ -23,6 +23,8 @@ This directory is presented as best endeavours, by sailors for sailors. It has a
 - [Vendors](#vendors)
 - [News](#news)
 - [Education](#education)
+- [Servicing and Spares](#servicing-and-spares)
+- [Checklists](#checklists)
 - [Reference](#reference)
 <!--lint enable double-link-->
 
@@ -487,18 +489,38 @@ See also [Open Source](#open-source-projects).
 - [NMEA Conference and Expo](https://expo.nmea.org) - Annual vendor event in USA.
 - [Ocean Science Technology](https://www.oceansciencetechnology.com/suppliers/data-communication-systems/) - NMEA 0183 and 2000 tutorials.
 - [Seably](https://www.seably.com/explore/topics/electronics-2) - Electronics courses, including Actisense accreditation.
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [SVB Technical Advice](https://www.youtube.com/@SVBteam/videos) - Advice and product reviews in English, French, German, Italian and Spanish.
 - [Toolbox Talks](https://boatingwiththebaileys.com/toolbox-talks/) - Instructional videos and articles on electrics, electronics and engines.
 
 <!-- --8<-- [end:education] -->
 
-<!-- --8<-- [start:reference] -->
-## Reference
+<!-- --8<-- [start:servicing] -->
+## Servicing and Spares
 
-- [NMEA FAQ](https://www.eoss.org/pubs/nmeafaq) - 2006 vintage, latest and remains relevant.
-- <img src="docs/images/icons/gitlab.png" width="16" height="16"> [NMEA Revealed](https://gpsd.gitlab.io/gpsd/NMEA.html) - Detailed technical reference for NMEA0183, part of the gpsd project.
-- [Seatalk Technical Reference](http://www.thomasknauf.de/seatalk.htm) - Unofficial documentation of Seatalk 1 protocol.
+### Bavaria
+- [SVB Bavaria Shop](https://www.svb24.com/en/brands/bavaria.html) - Official spares supplier for Bavaria sailing and motor boats.
+### Beneteau
+- Official spares only via the [Dealer Network](https://www.beneteau.com/dealer-network)
+### Dufour
+- Official spares only via [Owner Requests](https://www.dufour-yachts.com/en/owner-requests/) or [Dealer Network](https://www.dufour-yachts.com/en/dealers/)
+### Jenneau
+- Official spares only via the [Dealer Network](https://www.jeanneau.com/agencies)
+### Hallberg-Rassy
+- [Hallberg-Rassy Parts Shop](https://shop.hallberg-rassy.com/?srsltid=AU7gw4X7sMSdmEuTFw3vpj4b6Z-iX_P834xgUbIEVUvS7upJwSYd3LVY)
+### Hanse
+- [Hanse UK Spares](https://www.hanseyachts.co.uk/our-services/spares)
+- [Dealer Network](https://hanseyachts.com/gb/dealers/)
+### Lagoon
+- [Service Centres](https://www.catamarans-lagoon.com/service-centers)
+### Leopard
+- [Service Centres](https://www.leopardcatamarans.com/uk/contact-us/service-centers)
+### Moody
+- [Moody UK Spares](https://www.moody-yachts.co.uk/our-services/spares) - Post 2007 boats only.
 
-#### Checklists
+<!-- --8<-- [end:servicing] -->
+
+<!-- --8<-- [start:checklists] -->
+## Checklists
 
 These are openly shared lists, specific to boats, however useful as a starting point, reference or cross-check for your own. See also the [World Cruising Wiki](https://www.cruiserswiki.org/wiki/Boat_Check_List) examples.
 
@@ -508,6 +530,14 @@ These are openly shared lists, specific to boats, however useful as a starting p
 - [Sea Jade](https://sy-sea-jade.github.io/boatstuff/checklists) - 2011 Bavaria Cruiser 36, British flagged. Before/after sailing, storm prep etc plus navigation templates.
 - [The Boat App](https://theboatapp.com/checklists) - Dozens of checklists for maintenance and at sea.
 
+<!-- --8<-- [end:checklists] -->
+
+<!-- --8<-- [start:reference] -->
+## Reference
+
+- [NMEA FAQ](https://www.eoss.org/pubs/nmeafaq) - 2006 vintage, latest and remains relevant.
+- <img src="docs/images/icons/gitlab.png" width="16" height="16"> [NMEA Revealed](https://gpsd.gitlab.io/gpsd/NMEA.html) - Detailed technical reference for NMEA0183, part of the gpsd project.
+- [Seatalk Technical Reference](http://www.thomasknauf.de/seatalk.htm) - Unofficial documentation of Seatalk 1 protocol.
 
 <!-- --8<-- [end:reference] -->
 

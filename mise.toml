@@ -1,0 +1,5 @@
+[tools]
+lychee = "latest"
+node = "latest"
+npm = "latest"
+pre-commit = "latest"

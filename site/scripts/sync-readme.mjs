@@ -112,6 +112,18 @@ const pages = [
     description: "Education sites and vendors.",
   },
     {
+    marker: "checklists",
+    slug: "checklists",
+    title: "Checklists",
+    description: "Reusable and example checklists.",
+  },
+    {
+    marker: "servicing",
+    slug: "servicing",
+    title: "Servicing and Spares",
+    description: "Servicing and Spares.",
+  },
+    {
     marker: "reference",
     slug: "reference",
     title: "Reference",
