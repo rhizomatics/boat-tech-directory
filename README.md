@@ -355,6 +355,7 @@ See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi O
 - [LCJ Capteurs](https://lcjcapteurs.com/en/categorie-girouette-anemometres-capteur-vent/marine-en/) - Wind and weather instruments, StatMETEO wind data recording software.
 - [MAPTATTOO](https://www.maptattoo.com) - eInk chart plotter.
 - [NASA Marine](https://www.nasamarine.com) - Instruments, monitors, AIS, displays.
+- [Nauticsense](https://nautic-sense.com) - ESP32 based deck instruments with NMEA 2000, SignalK and BLE integration.
 - [Nautinect](https://nautinect.com) - Open source hardware design and mobile app, controller with wheel or tiller drive.
 - [Navinet](https://www.navinet-autopilot.com/) - SmartSail autopilot with OpenCPN and NMEA integration.
 - [PCNautic](https://pcnautic.com) - Tiller auto-pilot with mobile apps, plus BoatController NMEA and Wifi interfacing and related instruments.
