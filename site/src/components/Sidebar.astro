@@ -9,9 +9,21 @@ import MobileMenuFooter from "virtual:starlight/components/MobileMenuFooter";
 
 const { sidebar, headings = [] } = Astro.locals.starlightRoute;
 
-// Same depth range as Starlight's default right-hand TOC (h2/h3) — deep enough to be useful,
-// shallow enough not to bloat the left nav for the busiest pages (~10 headings at most here).
-const pageHeadings = headings.filter((heading) => heading.depth >= 2 && heading.depth <= 3);
+// Wide enough to catch every heading depth actually used across content pages (some use
+// h2/h3 for sections, others h3/h4), shallow enough not to bloat the left nav for the
+// busiest pages. Content pages only ever use one or two heading depths, so nest the
+// second depth found under the nearest preceding heading of the first (shallowest) depth,
+// giving three nav levels overall: top-level entry, section heading, subsection heading.
+const pageHeadings = headings.filter((heading) => heading.depth >= 2 && heading.depth <= 4);
+const topHeadingDepth = pageHeadings.length > 0 ? Math.min(...pageHeadings.map((heading) => heading.depth)) : 0;
+const headingTree = [];
+for (const heading of pageHeadings) {
+  if (heading.depth === topHeadingDepth) {
+    headingTree.push({ heading, children: [] });
+  } else if (headingTree.length > 0) {
+    headingTree[headingTree.length - 1].children.push(heading);
+  }
+}
 ---
 
 <SidebarPersister>
@@ -23,11 +35,20 @@ const pageHeadings = headings.filter((heading) => heading.depth >= 2 && heading.
             <a href={entry.href} aria-current={entry.isCurrent ? "page" : undefined} class="large">
               <span>{entry.label}</span>
             </a>
-            {entry.isCurrent && pageHeadings.length > 0 && (
+            {entry.isCurrent && headingTree.length > 0 && (
               <ul class="page-toc">
-                {pageHeadings.map((heading) => (
-                  <li class={`depth-${heading.depth}`}>
+                {headingTree.map(({ heading, children }) => (
+                  <li>
                     <a href={`#${heading.slug}`}>{heading.text}</a>
+                    {children.length > 0 && (
+                      <ul class="page-toc-sub">
+                        {children.map((child) => (
+                          <li>
+                            <a href={`#${child.slug}`}>{child.text}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -103,8 +124,11 @@ const pageHeadings = headings.filter((heading) => heading.depth >= 2 && heading.
       color: var(--sl-color-gray-3);
     }
 
-    .page-toc .depth-3 a {
-      padding-inline-start: 1rem;
+    .page-toc-sub {
+      margin-inline-start: var(--sl-sidebar-item-padding-inline);
+      border-inline-start: 1px solid var(--sl-color-hairline-light);
+      padding-inline-start: var(--sl-sidebar-item-padding-inline);
+      margin-top: 0.15rem;
     }
 
     @media (min-width: 50rem) {
