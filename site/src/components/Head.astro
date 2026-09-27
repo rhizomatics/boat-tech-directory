@@ -1,0 +1,15 @@
+---
+// Overrides Starlight's default Head to advertise the raw-Markdown twin of the current
+// page (served by src/pages/[...slug].md.ts) via a <link rel="alternate">, so agents that
+// follow standard discovery hints can fetch Markdown instead of scraping rendered HTML.
+import Default from "@astrojs/starlight/components/Head.astro";
+
+const { id } = Astro.locals.starlightRoute;
+const mdSlug = id === "" ? "index" : id;
+// BASE_URL is normalized with a leading slash but not always a trailing one
+// (e.g. the signalk-webapp build's "/@rhizomatics/signalk-boat-tech-directory-plugin").
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+---
+
+<Default />
+<link rel="alternate" type="text/markdown" href={`${base}${mdSlug}.md`} />
