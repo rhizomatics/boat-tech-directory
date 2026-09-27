@@ -125,7 +125,7 @@ export function calculateEntrySubResults(fragment, excerptLength = 30) {
         const withSlash = /^\//.test(anchoredUrl) ? anchoredUrl : `/${anchoredUrl}`;
         const fqUrl = new URL(`https://example.com${withSlash}`);
         fqUrl.hash = nextAnchor.id;
-        anchoredUrl = fqUrl.toString().replace(/^https:\/\/example\.com/, "");
+        anchoredUrl = fqUrl.toString().replace(/^https:\/\/example\.com(?=\/|$)/, "");
       }
     } catch {
       // Keep the un-anchored URL if it couldn't be parsed.
