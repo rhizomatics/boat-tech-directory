@@ -191,11 +191,13 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 
 #### ESP32
 
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [espos-ble-gateway](https://github.com/dirkwa/espos-ble-gateway) - SignalK BLE Gateway for ESP32 devices with 16Mb or more memory.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [ESP32 NMEA2000 Multiprotocol Gateway](https://github.com/JaCharer/ESP32_NMEA2000_Multiprotocol_Gateway) - Broadcast N2K as Signal K, NMEA 0183, and Actisense Binary. WebGUI. Begun in 2026.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [ESP32 NMEA2000](https://github.com/wellenvogel/esp32-nmea2000) - NMEA2000 integration with USB, Wifi, 0183 on M5 Atom CAN and compatible with other ESP32.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000](https://github.com/ttlappalainen/NMEA2000) - Arduino NMEA2000 interfacing library used in several commercial products.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000_ais_wifi_gw](https://github.com/sailingfree/NMEA2000_ais_wifi_gw) -  ESP32 based NMEA2000 gateway.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000_esp32](https://github.com/ttlappalainen/NMEA2000_esp32) - ESP32 objects for use with NMEA2000 library.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA 2000 Display on ESP32S3](https://github.com/FrancisSailor/NMEA2000-DISPLAY-on-ESP32S3) - Wind, speed, autopilot and alarms, designed for Waveshare ESP32-S3-Touch-LCD-4 display.
 - [Sens32](https://signalk.org/SensESP/) - Sensor development framework for ESP32 based sensors by SignalK.
 
 #### GoLang
