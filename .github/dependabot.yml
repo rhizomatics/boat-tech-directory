@@ -1,34 +1,51 @@
 # Dependency updates. Shape shared across rhizomatics repos: see templates/README.md in rhizomatics/.github.
+# Version updates run on the 1st and 15th; security updates are raised as soon as an alert opens.
 version: 2
 updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: cron
+      cronjob: "0 6 1,15 * *"
     cooldown:
       default-days: 7
     groups:
-      github-actions:
+      # Trusted: auto-merged by admin-dependabot-automerge.yml once checks pass.
+      astral:
+        patterns: ["astral-sh/*"]
+      actions:
+        patterns: ["*"]
+        update-types: [minor, patch]
+      actions-security:
+        applies-to: security-updates
         patterns: ["*"]
 
   - package-ecosystem: npm
     directory: /signalk-webapp
     schedule:
-      interval: weekly
+      interval: cron
+      cronjob: "0 6 1,15 * *"
     cooldown:
       default-days: 7
     groups:
-      webapp-minor-patch:
+      webapp:
         patterns: ["*"]
         update-types: [minor, patch]
+      webapp-security:
+        applies-to: security-updates
+        patterns: ["*"]
 
   - package-ecosystem: npm
     directory: /site
     schedule:
-      interval: weekly
+      interval: cron
+      cronjob: "0 6 1,15 * *"
     cooldown:
       default-days: 7
     groups:
-      site-minor-patch:
+      site:
         patterns: ["*"]
         update-types: [minor, patch]
+      site-security:
+        applies-to: security-updates
+        patterns: ["*"]
