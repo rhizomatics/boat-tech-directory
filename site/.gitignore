@@ -9,6 +9,9 @@ src/content/docs/
 src/assets/images/
 public/images/
 
+# generated from spreadsheets/*.xlsx by scripts/build-spreadsheets.mjs
+public/downloads/
+
 # dependencies
 node_modules/
 

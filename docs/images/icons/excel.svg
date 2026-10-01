@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Generic spreadsheet file icon (Excel-style green); not the Microsoft Excel logo. -->
+  <path d="M7 2h13l7 7v19a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="#1d6f42"/>
+  <path d="M20 2v5a2 2 0 0 0 2 2h5z" fill="#7fbf96"/>
+  <rect x="9" y="13" width="14" height="12" rx="1" fill="#fff"/>
+  <path d="M9 17h14M9 21h14M14 13v12M19 13v12" stroke="#1d6f42" stroke-width="1.4"/>
+</svg>

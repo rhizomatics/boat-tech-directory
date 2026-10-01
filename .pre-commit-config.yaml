@@ -25,3 +25,14 @@ repos:
         # Optionally include additional CLI arguments
         args: ["--no-progress", "--max-cache-age","7d","--exclude", "file://LICENSE"]
         stages: [manual]
+  - repo: local
+    hooks:
+      # Converts the maintainer's Apple Numbers originals into site/spreadsheets/*.xlsx and
+      # stages them. Sources only exist on the maintainer's Mac; elsewhere this is a no-op.
+      - id: sync-spreadsheets
+        name: Sync spreadsheets from Numbers
+        entry: python site/scripts/sync_spreadsheets.py --stage
+        language: python
+        additional_dependencies: ["numbers-parser>=4.19", "openpyxl>=3.1"]
+        always_run: true
+        pass_filenames: false

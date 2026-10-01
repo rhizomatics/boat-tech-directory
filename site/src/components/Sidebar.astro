@@ -4,6 +4,7 @@
 // column (disabled via `tableOfContents: false` in astro.config.mjs). The directory's own
 // sidebar config (astro.config.mjs) is a flat list of links — no groups — so this doesn't
 // need to handle Starlight's nested/collapsible group case that the stock SidebarSublist does.
+// A link with `attrs: { class: "sub-entry" }` is shown indented under the entry before it.
 import SidebarPersister from "@astrojs/starlight/components/SidebarPersister.astro";
 import MobileMenuFooter from "virtual:starlight/components/MobileMenuFooter";
 
@@ -32,7 +33,7 @@ for (const heading of pageHeadings) {
       sidebar.map((entry) =>
         entry.type === "link" ? (
           <li>
-            <a href={entry.href} aria-current={entry.isCurrent ? "page" : undefined} class="large">
+            <a href={entry.href} aria-current={entry.isCurrent ? "page" : undefined} class:list={["large", entry.attrs?.class]}>
               <span>{entry.label}</span>
             </a>
             {entry.isCurrent && headingTree.length > 0 && (
@@ -88,6 +89,15 @@ for (const heading of pageHeadings) {
       font-size: var(--sl-text-lg);
       font-weight: 600;
       color: var(--sl-color-white);
+    }
+
+    .large.sub-entry {
+      font-size: var(--sl-text-base);
+      margin-inline-start: 1rem;
+    }
+
+    .top-level > li:has(> .sub-entry) {
+      margin-top: 0.25rem;
     }
 
     a {

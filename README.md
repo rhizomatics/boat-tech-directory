@@ -24,7 +24,7 @@ This directory is presented as best endeavours, by sailors for sailors. It has a
 - [News](#news)
 - [Education](#education)
 - [Servicing and Spares](#servicing-and-spares)
-- [Checklists](#checklists)
+- [Checklists and Templates](#checklists-and-templates)
 - [Reference](#reference)
 <!--lint enable double-link-->
 
@@ -55,7 +55,6 @@ Personal sites for sailors and their boats with their tech projects. These are a
 - [Seabits](https://seabits.com) - Pacific North West, Kristen 50 and Symbol Pilothouse motor yachts, SignalK, dashboards, Victron.
 - [SY Bockra](https://corbin39.org/wp-content/uploads/2025/06/BOCKRA-nav-system-notes-Spring-2025-DS-06-06-25.pdf) - 1981 Corbin 39, OpenCPN, Open Boat Projects, AvNav. One-off summary document of experiences.
 - [SV Sabado](https://svsabado.com) - US Lagoon 42. Blog articles, technical docs and videos, some Home Assistant, ESP Home and SignalK material. Some material only for paid subscribers.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [SY Sea Jade Boatstuff](https://sy-sea-jade.github.io/boatstuff/) - Checklists, equipment choices, passage planning templates and other tabular data.
 - [The Low Cost Sailor](https://www.thelowcostsailor.com) - Boat tech news and articles. English, French, Spanish. Also <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Spanish](https://www.youtube.com/@TheLowCostSailor) and <img src="docs/images/icons/youtube.ico" width="16" height="16"> [English](https://www.youtube.com/@lowcostsailor) YouTube channels.
 - [Trouper](https://trouper.uk) - Swan 43, English Channel. Electronics upgrades and eBay finds.
 - [Zapped Myself](https://zappedmyself.com/projects/nmea2000/) - NMEA2000, AIS, ESP32 projects.
@@ -302,7 +301,7 @@ Vendors offering full suite of products for modern boats, including plotters, in
 
 #### NMEA Interfacing
 
-See <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA Wifi Options](https://sy-sea-jade.github.io/boatstuff/nmea_wifi) for comparison of available products.
+See [NMEA Wi-Fi Gateways](https://boat-tech-directory.rhizomatics.org.uk/downloads/nmea-wifi-gateways/) for a comparison of available products.
 
 - [Actisense](https://actisense.com) - NMEA bridges and gateways.
 - [Chetco](http://www.chetcodigital.com) - NMEA bridges, marine PC, SeaGauge and SeaSmart.NET for Bluetooth, 4G and Wifi.
@@ -524,15 +523,20 @@ See also [Open Source](#open-source-projects).
 <!-- --8<-- [end:servicing] -->
 
 <!-- --8<-- [start:checklists] -->
-## Checklists
+## Checklists and Templates
 
-These are openly shared lists, specific to boats, however useful as a starting point, reference or cross-check for your own. See also the [World Cruising Wiki](https://www.cruiserswiki.org/wiki/Boat_Check_List) examples.
+These are openly shared spreadsheets and PDFs, specific to boats, however useful as a starting point, reference or cross-check for your own. See also the [World Cruising Wiki](https://www.cruiserswiki.org/wiki/Boat_Check_List) examples.
 
+### Checklists
+
+- [Bavaria Cruiser 36](https://boat-tech-directory.rhizomatics.org.uk/downloads/example-checklists/) - 2011, British flagged. Before/after sailing, heavy weather, storm prep, laying up and haul-out, as printable PDFs and a spreadsheet.
 - [Caladh](https://www.thesailingnomads.com/blog/pre-and-post-sailing-checklists/) - 1990 Victoria 34, British flagged. Pre and post sailing checklists.
 - [Lille Ø](https://handbook.lille-oe.de/checklists/01_before_sailing/) - 1979 Amigo 40, German Flagged. Anchoring, before/after sailing, mast stepping etc plus boat documentation.
 - [Salty Lass](http://www.saltylass.co.uk/resources) - 2002 Bavaria 36, British flagged. Sailing, laying up, buying a boat checklists plus logbook template.
-- [Sea Jade](https://sy-sea-jade.github.io/boatstuff/checklists) - 2011 Bavaria Cruiser 36, British flagged. Before/after sailing, storm prep etc plus navigation templates.
 - [The Boat App](https://theboatapp.com/checklists) - Dozens of checklists for maintenance and at sea.
+
+### Templates
+- [Tidal Planner](https://boat-tech-directory.rhizomatics.org.uk/downloads/navigation-templates/) - Passage planning for tidal gates.
 
 <!-- --8<-- [end:checklists] -->
 

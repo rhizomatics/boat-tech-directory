@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Generic PDF file icon (red document); matches excel.svg. -->
+  <path d="M7 2h13l7 7v19a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="#c8102e"/>
+  <path d="M20 2v5a2 2 0 0 0 2 2h5z" fill="#ec8a98"/>
+  <rect x="6.5" y="15" width="19" height="9" rx="1.5" fill="#fff"/>
+  <text x="16" y="22.4" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.6" font-weight="700" fill="#c8102e">PDF</text>
+</svg>

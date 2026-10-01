@@ -114,8 +114,8 @@ const pages = [
     {
     marker: "checklists",
     slug: "checklists",
-    title: "Checklists",
-    description: "Reusable and example checklists.",
+    title: "Checklists and Templates",
+    description: "Reusable and example checklists and passage planning templates.",
   },
     {
     marker: "servicing",
