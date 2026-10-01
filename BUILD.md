@@ -46,7 +46,7 @@ npm run preview   # serve site/dist/
    - copies of the `.xlsx` files, also into `public/downloads/`
 3. `build-terms-index`: `scripts/build-terms-index.mjs` builds the A–Z index page from every directory entry.
 
-Generated pages are flat links in the sidebar (`astro.config.mjs`). A link with `attrs: { class: "sub-entry" }` is indented under the entry before it.
+The section list, in order, lives in `site/sections.mjs`. Both the sidebar (`astro.config.mjs`) and the home page's "Sections" list are generated from it, so add or rename a section there. A section's `children` appear indented under it in both.
 
 ### Publishing
 

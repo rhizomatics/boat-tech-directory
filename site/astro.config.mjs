@@ -6,6 +6,7 @@ import agentready from 'starlight-agentready';
 import starlightLlmsTxt from 'starlight-llms-txt';
 import { unified } from "@astrojs/markdown-remark";
 import rehypeEntryIds from "./src/rehype-entry-ids.mjs";
+import { sections } from "./sections.mjs";
 import { copyFile, access } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 
@@ -109,24 +110,13 @@ export default defineConfig({
           href: "https://github.com/rhizomatics/boat-tech-directory",
         },
       ],
+      // Generated from sections.mjs, shared with the home page's "Sections" list.
       sidebar: [
         { label: "Home", link: "/" },
-        { label: "Social", link: "/social/" },
-        { label: "Charts and Data", link: "/charts/" },
-        { label: "Open Source Projects", link: "/open-source-projects/" },
-        { label: "Protocols", link: "/protocols/" },
-        { label: "Vendors", link: "/vendors/" },
-        { label: "News", link: "/news/" },
-        { label: "Education", link: "/education/" },
-        { label: "Servicing and Spares", link: "/servicing/" },
-        { label: "Checklists and Templates", link: "/checklists/" },
-        { label: "Reference", link: "/reference/" },
-        { label: "Index", link: "/index-of-terms/" },
-        { label: "Contributing", link: "/contributing/" },
-        { label: "Downloads", link: "/downloads/" },
-        { label: "Example Checklists", link: "/downloads/example-checklists/", attrs: { class: "sub-entry" } },
-        { label: "Navigation Templates", link: "/downloads/navigation-templates/", attrs: { class: "sub-entry" } },
-        { label: "NMEA Wi-Fi Gateways", link: "/downloads/nmea-wifi-gateways/", attrs: { class: "sub-entry" } },
+        ...sections.flatMap(({ label, slug, children = [] }) => [
+          { label, link: `/${slug}/` },
+          ...children.map((child) => ({ label: child.label, link: `/${child.slug}/`, attrs: { class: "sub-entry" } })),
+        ]),
       ],
     }),
   ],

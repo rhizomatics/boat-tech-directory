@@ -373,6 +373,42 @@ async function buildNavigation() {
     ],
   });
 
+  // On-page preview as an HTML table rather than an embedded PDF, which many browsers (and all
+  // phones) won't render inline. Same source as the PDF: column widths, shading and the
+  // From/To title line, with a few blank rows to show the layout.
+  const PREVIEW_ROWS = 6;
+  const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const cellStyle = (ri, ci) => {
+    const fill = fillColour(ws.getRow(ri + 1).getCell(ci + 1)) ?? (ri === 0 ? "#C4C6C6" : "#FFFFFF");
+    return `background:${fill};color:#1d2430;border:1px solid #9a9a9a;padding:3px 4px;vertical-align:top;font-size:0.7rem;line-height:1.2;white-space:normal;overflow-wrap:normal`;
+  };
+  // Auto layout so no heading word overflows its cell; spreadsheet widths as proportions.
+  const colgroup = raw.map((w) => `<col style="width:${((w / total) * 100).toFixed(1)}%">`).join("");
+  const headerRow = rows[0]
+    .map((h, ci) => `<th style="${cellStyle(0, ci)};font-weight:700;text-align:left">${esc(h)}</th>`)
+    .join("");
+  const bodyRows = rows
+    .slice(1, 1 + PREVIEW_ROWS)
+    .map((r, i) => `<tr style="height:1.8rem">${r.map((t, ci) => `<td style="${cellStyle(i + 1, ci)}">${esc(t)}</td>`).join("")}</tr>`)
+    .join("\n");
+  const titleLine = title
+    .split(/\s+/)
+    .map((t) => `<span style="flex:1">${esc(t)}</span>`)
+    .join("");
+  const htmlPreview = `<figure style="margin:1rem 0;min-width:0;max-width:100%">
+<div style="display:flex;padding:0 0 0.5rem 15%;font-size:0.9rem">${titleLine}</div>
+<div style="overflow-x:auto;max-width:100%">
+<table style="display:table;width:100%;border-collapse:collapse;table-layout:auto;margin:0">
+<colgroup>${colgroup}</colgroup>
+<thead><tr>${headerRow}</tr></thead>
+<tbody>
+${bodyRows}
+</tbody>
+</table>
+</div>
+<figcaption style="font-size:0.8rem;color:var(--sl-color-gray-3)">Preview: first ${PREVIEW_ROWS} of ${rows.length - 1} rows. The PDF prints the full template on one A4 landscape page.</figcaption>
+</figure>`;
+
   writePage(
     slug,
     "Navigation Templates",
@@ -386,11 +422,7 @@ Used to find viable departure days and times for tight tidal gates such as the M
 
 ${pdfLink(slug, pdf, "Print the tidal planner (PDF)")} or adapt the ${xlsxLink(slug, xlsx, "spreadsheet (.xlsx)")}.
 
-<iframe src="${DOWNLOADS}/${pdf}" title="Tidal planner template" width="100%" height="640" style="border: 1px solid var(--sl-color-gray-5);"></iframe>
-
-### Columns
-
-${mdTable(["Column"], rows[0].filter(Boolean).map((h) => [h]))}
+${htmlPreview}
 `,
   );
   return {

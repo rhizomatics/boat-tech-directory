@@ -4,6 +4,7 @@
 import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { sections as siteSections } from "../sections.mjs";
 
 const siteDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const rootDir = resolve(siteDir, "..");
@@ -156,6 +157,13 @@ const introText = sections.get("intro-text");
 if (!introText) {
   throw new Error(`README.md is missing the "intro-text" --8<-- marker`);
 }
+// Same sections, order and nesting as the sidebar (both come from ../sections.mjs).
+const sectionList = siteSections
+  .flatMap(({ label, slug, description, children = [] }) => [
+    `- [${label}](./${slug}/) — ${description}`,
+    ...children.map((c) => `  - [${c.label}](./${c.slug}/) — ${c.description}`),
+  ])
+  .join("\n");
 const homeBody = `${introText}
 
 ![Boat Tech Directory logo](../../assets/images/social-preview.jpg)
@@ -166,14 +174,7 @@ Contributions welcome! Read the [contribution guidelines](./contributing/) first
 
 ## Sections
 
-- [Social](./social/) — Blogs, vlogs, video channels and forums.
-- [Charts and Data](./charts/) — Open and volunteer charting projects
-- [Open Source Projects](./open-source-projects/) — Software and firmware, including NMEA libraries
-- [Protocols](./protocols/) — NMEA, Seatalk, CANBus, SAE and other marine networking standards
-- [Vendors](./vendors/) — Hardware and software vendors, and specialist consultants.
-- [Education and Reference](./education/) — Courses, certification, tutorials
-- [News](./news/) — News and reviews
-- [Reference](./reference/) —Technical references
+${sectionList}
 
 `;
 writePage(
