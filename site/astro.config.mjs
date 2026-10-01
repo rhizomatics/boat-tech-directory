@@ -39,11 +39,34 @@ const plugins = [];
 if (process.env.AGENTREADY_SUBMIT === "true") {
   plugins.push(agentready({ domain: "boat-tech-directory.rhizomatics.org.uk" }));
 }
-plugins.push(starlightLlmsTxt());
+// llms.txt by default only links the full/small corpus dumps; list each section's
+// Markdown twin (src/pages/[...slug].md.ts) and the JSON export too, so an agent can
+// fetch just the part it needs. Absolute against the public site, like directory.json.
+const site = "https://boat-tech-directory.rhizomatics.org.uk";
+const sectionLink = ({ label, slug, description }) => `- [${label}](${site}/${slug}.md): ${description}`;
+const llmsDetails = [
+  "Each entry is a link with a one-line description, grouped by section and category. Each section is available as Markdown:",
+  sections
+    .flatMap((section) => [
+      sectionLink(section),
+      ...(section.children ?? []).map((child) => `  ${sectionLink(child)}`),
+    ])
+    .join("\n"),
+  `For structured lookups, [directory.json](${site}/directory.json) lists every entry with its name, link, description, section and category.`,
+].join("\n\n");
+
+plugins.push(
+  starlightLlmsTxt({
+    details: llmsDetails,
+    // The A-Z index repeats every entry from the other sections; leave it out of the
+    // abridged corpus.
+    exclude: ["index-of-terms"],
+  }),
+);
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://boat-tech-directory.rhizomatics.org.uk",
+  site,
   base: process.env.ASTRO_BASE ?? "/",
   outDir: process.env.ASTRO_OUTDIR ?? "dist",
   // "Social Media" was renamed to "Social"; keep old inbound links/search hits working.
@@ -70,7 +93,7 @@ export default defineConfig({
           attrs: {
             property: "og:image",
             content:
-              "https://boat-tech-directory.rhizomatics.org.uk/images/social-preview.jpg",
+              `${site}/images/social-preview.jpg`,
           },
         },
         {
@@ -90,7 +113,7 @@ export default defineConfig({
           attrs: {
             name: "twitter:image",
             content:
-              "https://boat-tech-directory.rhizomatics.org.uk/images/social-preview.jpg",
+              `${site}/images/social-preview.jpg`,
           },
         },
       ],

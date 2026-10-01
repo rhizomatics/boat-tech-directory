@@ -2,14 +2,84 @@
 // Overrides Starlight's default Head to advertise the raw-Markdown twin of the current
 // page (served by src/pages/[...slug].md.ts) via a <link rel="alternate">, so agents that
 // follow standard discovery hints can fetch Markdown instead of scraping rendered HTML.
+//
+// Also emits schema.org JSON-LD for search engines: WebSite on the home page, and a
+// BreadcrumbList elsewhere, plus an ItemList of the page's entries on directory pages.
+// URLs are absolute against `site`, the public canonical domain (see directory.json.ts).
 import Default from "@astrojs/starlight/components/Head.astro";
+import { extractEntries, isDirectoryPage } from "../directory-entries.mjs";
+import { sections } from "../../sections.mjs";
 
-const { id } = Astro.locals.starlightRoute;
+const { id, entry } = Astro.locals.starlightRoute;
 const mdSlug = id === "" ? "index" : id;
 // BASE_URL is normalized with a leading slash but not always a trailing one
 // (e.g. the signalk-webapp build's "/@rhizomatics/signalk-boat-tech-directory-plugin").
 const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+
+const abs = (path: string) => new URL(path, Astro.site).href;
+const siteName = "Boat Tech Directory";
+const pageUrl = abs(id === "" ? "/" : `/${id}/`);
+
+const graph: object[] = [];
+if (id === "" || id === "index") {
+  graph.push({
+    "@type": "WebSite",
+    name: siteName,
+    url: abs("/"),
+    description: entry.data.description,
+    inLanguage: "en",
+    license: "https://creativecommons.org/licenses/by-sa/4.0/",
+  });
+} else if (id !== "404") {
+  const parent = sections.find((s) => s.children?.some((c) => c.slug === id));
+  const crumbs = [
+    { name: siteName, url: abs("/") },
+    ...(parent ? [{ name: parent.label, url: abs(`/${parent.slug}/`) }] : []),
+    { name: entry.data.title, url: pageUrl },
+  ];
+  graph.push({
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((crumb, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: crumb.name,
+      item: crumb.url,
+    })),
+  });
+
+  if (isDirectoryPage(id)) {
+    const entries = extractEntries(entry.body ?? "");
+    graph.push({
+      "@type": "CollectionPage",
+      name: entry.data.title,
+      description: entry.data.description,
+      url: pageUrl,
+      isPartOf: { "@type": "WebSite", name: siteName, url: abs("/") },
+      mainEntity: {
+        "@type": "ItemList",
+        numberOfItems: entries.length,
+        itemListElement: entries.map((e, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          url: `${pageUrl}#${e.anchorId}`,
+          item: {
+            "@type": "Thing",
+            name: e.name,
+            ...(e.href ? { url: new URL(e.href, pageUrl).href } : {}),
+            ...(e.description ? { description: e.description } : {}),
+          },
+        })),
+      },
+    });
+  }
+}
+
+// Escape "<" so entry text can never close the <script> element early.
+const jsonLd = graph.length
+  ? JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c")
+  : null;
 ---
 
 <Default />
 <link rel="alternate" type="text/markdown" href={`${base}${mdSlug}.md`} />
+{jsonLd && <script type="application/ld+json" set:html={jsonLd} />}

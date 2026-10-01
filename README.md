@@ -509,14 +509,14 @@ See also [Open Source](#open-source-projects).
 ### Jenneau
 - Official spares only via the [Dealer Network](https://www.jeanneau.com/agencies)
 ### Hallberg-Rassy
-- [Hallberg-Rassy Parts Shop](https://shop.hallberg-rassy.com/?srsltid=AU7gw4X7sMSdmEuTFw3vpj4b6Z-iX_P834xgUbIEVUvS7upJwSYd3LVY)
+- [Hallberg-Rassy Parts Shop](https://shop.hallberg-rassy.com/?srsltid=AU7gw4X7sMSdmEuTFw3vpj4b6Z-iX_P834xgUbIEVUvS7upJwSYd3LVY) - Official HR shop.
 ### Hanse
-- [Hanse UK Spares](https://www.hanseyachts.co.uk/our-services/spares)
-- [Dealer Network](https://hanseyachts.com/gb/dealers/)
+- [Hanse UK Spares](https://www.hanseyachts.co.uk/our-services/spares) - Official Hanse UK Shop.
+- [Dealer Network](https://hanseyachts.com/gb/dealers/) - Hanse global site.
 ### Lagoon
-- [Service Centres](https://www.catamarans-lagoon.com/service-centers)
+- [Service Centres](https://www.catamarans-lagoon.com/service-centers) - Lagoon global site.
 ### Leopard
-- [Service Centres](https://www.leopardcatamarans.com/uk/contact-us/service-centers)
+- [Service Centres](https://www.leopardcatamarans.com/uk/contact-us/service-centers) - Robertson and Caine global site.
 ### Moody
 - [Moody UK Spares](https://www.moody-yachts.co.uk/our-services/spares) - Post 2007 boats only.
 
