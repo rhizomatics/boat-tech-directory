@@ -1,3 +1,7 @@
+[v1.2.6]
+- Links added
+- Downloads now integrated, previously on boat-stuff repo
+
 [v1.2.4]
 - Links added and dependencies refreshed
 
