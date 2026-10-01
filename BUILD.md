@@ -46,7 +46,7 @@ npm run preview   # serve site/dist/
    - copies of the `.xlsx` files, also into `public/downloads/`
 3. `build-terms-index`: `scripts/build-terms-index.mjs` builds the A–Z index page from every directory entry.
 
-The section list, in order, lives in `site/sections.mjs`. Both the sidebar (`astro.config.mjs`) and the home page's "Sections" list are generated from it, so add or rename a section there. A section's `children` appear indented under it in both.
+The section list, in order, lives in `site/sections.mjs`. Both the sidebar (`astro.config.mjs`) and the home page's "Sections" list are generated from it, so add or rename a section there. A section's `children` appear indented under it in the sidebar; the home page lists top-level sections only.
 
 ### Publishing
 

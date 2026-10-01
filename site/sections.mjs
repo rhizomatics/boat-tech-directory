@@ -1,6 +1,7 @@
 // The site's sections, in navigation order. Single source for both the sidebar
 // (astro.config.mjs) and the home page's "Sections" list (scripts/sync-readme.mjs), so the
-// two can't drift apart. `children` are shown indented under their parent in both.
+// two can't drift apart. `children` are shown indented under their parent in the sidebar;
+// the home page lists top-level sections only.
 export const sections = [
   { label: "Social", slug: "social", description: "Blogs, vlogs, video channels and forums." },
   { label: "Charts and Data", slug: "charts", description: "Open and volunteer charting projects." },

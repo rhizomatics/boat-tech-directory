@@ -157,12 +157,10 @@ const introText = sections.get("intro-text");
 if (!introText) {
   throw new Error(`README.md is missing the "intro-text" --8<-- marker`);
 }
-// Same sections, order and nesting as the sidebar (both come from ../sections.mjs).
+// Same sections and order as the sidebar (both come from ../sections.mjs). Top level only:
+// child pages are reached from their section's own page.
 const sectionList = siteSections
-  .flatMap(({ label, slug, description, children = [] }) => [
-    `- [${label}](./${slug}/) — ${description}`,
-    ...children.map((c) => `  - [${c.label}](./${c.slug}/) — ${c.description}`),
-  ])
+  .map(({ label, slug, description }) => `- [${label}](./${slug}/) — ${description}`)
   .join("\n");
 const homeBody = `${introText}
 
