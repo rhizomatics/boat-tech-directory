@@ -68,7 +68,7 @@ Video channels from YouTube and elsewhere for boat tech projects.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Boats and Bits](https://www.youtube.com/@boatsandbits) - DIY boat tech, Raymarine networking, electrics, 3D printing.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [DIY Onboard](https://www.youtube.com/@DIYonboard-e4i) - Raspberry Pi and OpenPlotter.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Gary Woodruff](https://www.youtube.com/@garrywoodruff960) - Boat projects and HowTo guides for boat electrics and electronics, focus on Lowrance equipment.
-- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [L Matrix](https://www.youtube.com/channel/UCuityzeoFdHxPP-D1FrO5bg) - Long term conversations with ChatGPT for big boat sail racing, from [The Mariner](https://csmthemariner.com)
+- <img src="docs/images/icons/youtube.ico" width="16" height="16"> [L Matrix](https://www.youtube.com/@lmatrixcorpus) - Long term conversations with ChatGPT for big boat sail racing, from [The Mariner](https://csmthemariner.com)
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Out Chasing Stars](https://www.youtube.com/@OutChasingStars) - OpenCPN and general boat electrics, electronics.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Pacific Yacht Systems](https://www.youtube.com/@PacificYachtSystems) - Last active in 2023, large back catalogue of instructional videos on marine electrics, electronics and networking.
 - <img src="docs/images/icons/youtube.ico" width="16" height="16"> [Raspberry4Sailing](https://www.youtube.com/@Sir-Real) - OpenPlotter, SignalK, KIP projects on Raspberry Pi.
