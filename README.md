@@ -198,6 +198,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000_ais_wifi_gw](https://github.com/sailingfree/NMEA2000_ais_wifi_gw) -  ESP32 based NMEA2000 gateway.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000_esp32](https://github.com/ttlappalainen/NMEA2000_esp32) - ESP32 objects for use with NMEA2000 library.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA 2000 Display on ESP32S3](https://github.com/FrancisSailor/NMEA2000-DISPLAY-on-ESP32S3) - Wind, speed, autopilot and alarms, designed for Waveshare ESP32-S3-Touch-LCD-4 display.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Outlook Guardian](https://github.com/OpenFairWind/S3-Outlook-Guardian) - Read SignalK vessel alarms out loud.
 - [Sens32](https://signalk.org/SensESP/) - Sensor development framework for ESP32 based sensors by SignalK.
 
 #### GoLang
@@ -359,7 +360,7 @@ See [NMEA Wi-Fi Gateways](https://boat-tech-directory.rhizomatics.org.uk/downloa
 - [NASA Marine](https://www.nasamarine.com) - Instruments, monitors, AIS, displays.
 - [Nauticsense](https://nautic-sense.com) - ESP32 based deck instruments with NMEA 2000, SignalK and BLE integration. Open source projects at [Sail-Tech](https://github.com/Sail-Tech) on GitHub.
 - [Nautinect](https://nautinect.com) - Open source hardware design and mobile app, controller with wheel or tiller drive.
-- [Navinet](https://www.navinet-autopilot.com/) - SmartSail autopilot with OpenCPN and NMEA integration.
+- [Navinet](https://www.navinet-autopilot.com/) - SmartSail autopilot with OpenCPN and NMEA integration, and N2K-AL smart alarm system.
 - [PCNautic](https://pcnautic.com) - Tiller auto-pilot with mobile apps, plus BoatController NMEA and Wifi interfacing and related instruments.
 - [Safiery](https://safiery.com/marine-new/) - Digital switching, monitoring, Victron and NMEA integration.
 - [Scadys](https://go.scadys.io) - MDD400 TFT display for NMEA 2000, NMEA 0183 and Seatalk data, usable as ST60 replacements. Kickstarter project by cruising sailor.
