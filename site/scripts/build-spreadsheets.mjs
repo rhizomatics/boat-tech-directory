@@ -84,7 +84,7 @@ function fillColour(cell) {
 // ---------- markdown helpers ----------
 
 function mdEscape(text) {
-  return String(text).replace(/\|/g, "\\|").replace(/\n/g, " ");
+  return String(text).replace(/\\/g, "\\\\").replace(/\|/g, "\\|").replace(/\n/g, " ");
 }
 
 function mdTable(header, rows) {
