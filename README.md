@@ -121,7 +121,7 @@ Open source, crowd-sourced and volunteer charts and other data sources.
 <!-- --8<-- [start:open-source-projects] -->
 ## Open Source Projects
 
-Software projects for boats, with recent commits as of 2026.
+Software projects for boats, with recent commits as of 2026. See also the [ESP32](#esp32) section for open hardware projects.
 
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [AIS-catcher](https://github.com/jvde-github/AIS-catcher) - AIS receiver for software defined radio (SDR) dongles.
 - [AvNav](https://www.wellenvogel.net/software/avnav/docs/beschreibung.html?lang=en) - Plotter with Android app and SignalK integration. German with English docs.
@@ -161,11 +161,14 @@ Software projects for boats, with recent commits as of 2026.
 ### SignalK
 
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label using simple SVG templates. Optional add-on plugin for AI generated screens.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Homebridge SignalK](https://github.com/Krillle/homebridge-signalk) - Homebridge plugin exposing SignalK batteries, tanks, temperatures and switching to Apple HomeKit.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
 - [OpenFairWind](https://github.com/OpenFairWind) - Alternative user interface, QT based, *FairwindSK* for SignalK on macOS, Windows, Linux, Android, iPhoje and iPad.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [pysk](https://github.com/ph1l/pysk) - Terminal (ncurses) client to display streaming SignalK data, last updated 2022.
 - <img src="docs/images/icons/github.ico" width="16" height="16">[Rhizomatics Sailing](https://www.rhizomatics.org.uk/sailing/) - SignalK and Home Assistant plug-ins and associated apps, including integrations for eInk Electronic Shelf Labels, Teltonika modems and Bluetti power stations.
 - [SignalK](https://signalk.org) - Specification, implementation and community for boat data distribution and analysis.
 - [SignalK Applications and Solutions](https://signalk.org/solutions/) - SignalK Project's list of apps and other products with SignalK support.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Signal K Mobile](https://github.com/itemir/signalk_mobile) - Open source Ionic mobile app for iOS and Android, last updated 2018.
 - [SignalK Plugins](https://www.npmjs.com/search?q=keywords:signalk-node-server-plugin) - Over 570 plugins, and over 170 web apps, available on the public NPM registry. Install via the SignalK built-in *App Store*.
 - <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalk-server](https://github.com/SignalK/signalk-server) - Node.js pluggable framework implementing the SignalK specification.
 - <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalk-cli](https://pypi.org/project/signalk-cli/) - Command line interface to explore and extract data from SignalK, including the History API and Deltas streaming. Exports to CSV, JSON, raw and Apache Arrow Feather dataframes.
@@ -339,6 +342,7 @@ See [NMEA Wi-Fi Gateways](https://boat-tech-directory.rhizomatics.org.uk/downloa
 - [Tinley](https://www.tinleyelectronics.com/) - NMEA interfaces, sensors, multiplexers, converters.
 - [Veinland](https://veinland.net) - German vendor, with English info, of commercial NMEA multiplexers, embedded PCs and instruments.
 - [Vela Navgea](https://www.vela-navega.com) - Portuguese sailor who builds *NMEA4Wifi* range of multiplexers for NMEA0183, N2K and Seatalk.
+- [vyacht](http://vyacht.net) - Open source wireless boat router for NMEA 2000/0183 and Seatalk, with built-in SignalK instrument panel.
 - [Wegmatt](https://wegmatt.com) - *dAISy* AIS receivers and NMEA0183 interfacing.
 - [Yacht Devices](https://www.yachtd.com) - NMEA bridges, gateways and sensors including engine gateways for J1939 or J1708 digital interfaces and spark plug sensors for older outboards.
 - [Yakbitz](https://yakbitz.com) - Seatalk, NMEA, AIS and Autopilot interfaces.
@@ -427,7 +431,9 @@ See also [Open Source](#open-source-projects).
 <!--lint enable double-link-->
 
 - [Adrena](https://www.adrena-software.com) - Navigation and route optimization packages specialized for cruisers or racing.
+- [AFTrack](http://afischer-online.de/and/aftrack/) - Android GPS tracking and navigation with offline maps, logging, wind routing, AIS and SignalK support.
 - [AggSoft](https://www.aggsoft.com) - Windows based data loggers/aggregators for NMEA, ModBus, GPS, USB etc.
+- [Aqua Map](https://www.globalaquamaps.com) - Navigation app for iOS and Android with charts, and NMEA/SignalK input over WiFi.
 - [DeepBlue](https://deepblue.app/) - Yacht management app.
 - [Expedition Marine](https://www.expeditionmarine.com) - Windows-based navigation, weather routing and racing app, official supplier to The Volvo Ocean Race, Americas Cup, Sail GP etc.
 - [Go Pottie](https://gopottie.app) - Crowd-sourced lobster pot location sharing for British Isles, iOS and Android mobile apps.
@@ -445,6 +451,7 @@ See also [Open Source](#open-source-projects).
 - [SailKick](https://www.sailkick.io) - Offline webapp and mobile app for boat metrics, with weather, climatology and basic routing, optional cloud sync for metrics, polars, public page. SignalK integration.
 - [Sail Logger](https://saillogger.com) - Logbook for mobiles, with NMEA integration.
 - [Sailing Performance](https://www.sailingperformance.com) - Racing performance analysis.
+- [SailRacer](http://sailracer.net) - Tactical racing app for iOS, Android, watch and eInk displays, with polars, charts, wind graphs and SignalK integration.
 - [SailRouter](https://sailrouter.org) - AI based routing for onboard Raspberry Pi with NMEA and SignalK integration. Community Edition with planned commercial and SaaS versions.
 - [SailSense](https://sailsense.xyz) - Local GenAI assisted analysis, advice and alarms. SignalK based.
 - [SailTrack](https://www.angelnav.co.uk) - **AngelNav** plotter app for mobile and PC with charts and traditional charting techniques and NMEA integration.
