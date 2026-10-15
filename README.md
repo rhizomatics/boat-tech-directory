@@ -165,6 +165,7 @@ Software projects for boats, with recent commits as of 2026.
 - [OpenFairWind](https://github.com/OpenFairWind) - Alternative user interface, QT based, *FairwindSK* for SignalK on macOS, Windows, Linux, Android, iPhoje and iPad.
 - <img src="docs/images/icons/github.ico" width="16" height="16">[Rhizomatics Sailing](https://www.rhizomatics.org.uk/sailing/) - SignalK and Home Assistant plug-ins and associated apps, including integrations for eInk Electronic Shelf Labels, Teltonika modems and Bluetti power stations.
 - [SignalK](https://signalk.org) - Specification, implementation and community for boat data distribution and analysis.
+- [SignalK Applications and Solutions](https://signalk.org/solutions/) - SignalK Project's list of apps and other products with SignalK support.
 - [SignalK Plugins](https://www.npmjs.com/search?q=keywords:signalk-node-server-plugin) - Over 570 plugins, and over 170 web apps, available on the public NPM registry. Install via the SignalK built-in *App Store*.
 - <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalk-server](https://github.com/SignalK/signalk-server) - Node.js pluggable framework implementing the SignalK specification.
 - <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalk-cli](https://pypi.org/project/signalk-cli/) - Command line interface to explore and extract data from SignalK, including the History API and Deltas streaming. Exports to CSV, JSON, raw and Apache Arrow Feather dataframes.
