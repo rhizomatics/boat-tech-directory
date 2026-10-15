@@ -128,42 +128,29 @@ Software projects for boats, with recent commits as of 2026.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc plus open source hardware projects.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BlueBridge](https://github.com/miniwinwm/BlueBridge) - Android app integration with NMEA data via MQTT and Bluetooth.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatHacks](https://github.com/BoatHacks) - SignalK and ESP32 projects, including Ollama for local AI.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatOpenIO](https://github.com/bigbrainlabs/BoatOpenIO) - ESP-32 16-channel analog marine gateway for legacy VDO sensors, integrating analog instruments to MQTT and SignalK.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatyPi](https://github.com/davedoesdemos/BoatyPi) - Open source hardware/software for boat ePaper display.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [BrineOMatic](https://github.com/hoeken/brineomatic) - Watermaker controller for ESP32, open source hardware and software, integrates with SignalK and Home Assistant.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [CAN Boat](https://github.com/canboat/canboat) - NMEA2000 and NMEA 0183 CLI utilities.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [d3kOS](https://github.com/SkipperDon/d3kOS) - Raspberry Pi based navigation and automation platform.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [DiscoTime](https://github.com/cr/discotime/) - Time and lat/long dashboard for long distance passages.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label using simple SVG templates. Optional add-on plugin for AI generated screens.
 - [FrothFet](https://frothfet.com) - Open source hardware and software for digital switching boat DC loads.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Galadriel Plotter](https://github.com/VladimirKalachikhin/Galadriel-map) - Raster based chartplotter for low power servers.
-- <img src="docs/images/icons/gitlab.png" width="16" height="16"> [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
 - [GWeatherRouting](https://gweatherrouting.org) - Navigation and automated routing, Python/GTK4.
-- [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Helm](https://github.com/StevenRidder/helm-public) - Clean-room re-engineered OpenCPN equivalent, alpha as of Q3/2026.
 - [Ilma](https://ilma.sailorslog.io) - Software based Navtex receiver for Raspberry Pi or similar.
 - <img src="docs/images/icons/gitlab.png" width="16" height="16"> [imud](https://github.com/richcreations/imud) - IMU (Inertial Measurement Unit)/Magnetometer multiplexer with NMEA stream for chartplotters.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
-- [KPlex](https://www.stripydog.com/kplex/) - NMEA0183 multiplexer for Linux, Unix, macOS and OpenWRT. ([Google Group](https://groups.google.com/g/kplex)).
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [libWeatherRouting](https://dakk.github.io/libweatherrouting/) - Python weather routing library with linear iso-routing and shortest path routes.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Maiana](https://github.com/peterantypas/maiana) - AIS Transponder open hardware/software.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Marine Chart Viewer](https://github.com/wholybee/chartplotter) - QT6 based chart plotter for Windows, Linux and macOS. Displays ENC and CM93 charts and GSHHG basemap.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [MarineYachtRadar](https://github.com/MarineYachtRadar) - *MaYaRa* server, display, OpenCPN and SignalK integration as open alternative to commercial radar processing.
-- [Marinux](https://marinux.tuxfamily.org) - *Muplex* NMEA multiplexer, *OSD Depth* echo-sounder display.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [nm2k](https://github.com/svalentinf/nm2k) - NMEA0183 and NMEA2000 web based visualization and analysis.
+- [Marinux](https://marinux.tuxfamily.org) - *Muplex* NMEA multiplexer, *Xinutop* marine Linux distro, *OSD Depth* echo-sounder display.
 - [OpenCPN](https://opencpn.org) - Chart Plotter for macOS, Windows, Linux, Raspi and Android.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Open Marine Systems](https://github.com/OpenMarineSystems) - Home Assistant add-ons for navigation and anchor watch, installed via HACS.
 - [Open Boat Projects](https://open-boat-projects.org/en/) - DIY hardware and open source projects, English and German.
-- [OpenFairWind](https://github.com/OpenFairWind) - Alternative user interface, QT based, *FairwindSK* for SignalK on macOS, Windows, Linux, Android, iPhoje and iPad.
 - [OpenPlotter](https://openplotter.readthedocs.io/) - Combined project of SignalK, OpenCPN, PyPilot etc.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [PyGPSClient](https://github.com/semuconsulting/PyGPSClient) - Python GPS/GNSS testing, diagnostic and configuration, incl NMEA integration.
 - [PyPilot](https://pypilot.org) - Python based auto-pilot.
-- <img src="docs/images/icons/github.ico" width="16" height="16">[Rhizomatics Sailing](https://www.rhizomatics.org.uk/sailing/) - SignalK and Home Assistant plug-ins and associated apps, including integrations for eInk Electronic Shelf Labels, Teltonika modems and Bluetti power stations.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [ROB](https://github.com/OlivierLD/ROB) - Raspberry Pi On Board, Java and Python navigation utilities.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Sail-O-Vision](https://github.com/adam-gol/sail-o-vision) - Obstacle and wildlife detection with camera and NVIDIA Jetson.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Sailtrack](https://metisvela.github.io/sailtrack/) - Modular racing performance tracker using MQTT.
-- [SignalK](https://signalk.org) - Node.js pluggable framework for boat data distribution and analysis.
-- <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalk-cli](https://pypi.org/project/signalk-cli/) - Command line interface to explore and extract data from SignalK, including the History API and Deltas streaming. Exports to CSV, JSON, raw and Apache Arrow Feather dataframes.
 - [Smart Boat Innovations](https://smartboatinnovations.com) - Videos and articles on building a Raspberry Pi and Home Assistant based smart boat.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [TwoCan](https://github.com/TwoCanPlugIn/TwoCanPlugIn) - NMEA2000 integration for OpenCPN.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Venus](https://github.com/victronenergy/venus) - Victron Energy's open source OS for their GX products, available for self-hosting on Raspberry Pi.
@@ -171,6 +158,15 @@ Software projects for boats, with recent commits as of 2026.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Xilje](https://github.com/Djaahny) - Garmin integration projects, incl plotter display of local web apps and PyPilot integration.
 - [Yacht Management Software (YMS)](https://yms.hoogi.de) - Open-source, self-hosted yacht management software for sailing boats, designed for Raspberry Pi/Linux and offline operation.
 
+### SignalK
+
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
+- [OpenFairWind](https://github.com/OpenFairWind) - Alternative user interface, QT based, *FairwindSK* for SignalK on macOS, Windows, Linux, Android, iPhoje and iPad.
+- <img src="docs/images/icons/github.ico" width="16" height="16">[Rhizomatics Sailing](https://www.rhizomatics.org.uk/sailing/) - SignalK and Home Assistant plug-ins and associated apps, including integrations for eInk Electronic Shelf Labels, Teltonika modems and Bluetti power stations.
+- [SignalK](https://signalk.org) - Specification, implementation and community for boat data distribution and analysis.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label using simple SVG templates. Optional add-on plugin for AI generated screens.
+- <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalK-server](https://github.com/SignalK/signalk-server) - Node.js pluggable framework implementing the SignalK specification.
+- <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalk-cli](https://pypi.org/project/signalk-cli/) - Command line interface to explore and extract data from SignalK, including the History API and Deltas streaming. Exports to CSV, JSON, raw and Apache Arrow Feather dataframes.
 
 ### NMEA
 
@@ -181,6 +177,14 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
     A tiny subset of NMEA 0183 is used for GPS integration on almost all devices that handle GPS, including mobile phones, and so has vastly more usage than marine NMEA use cases. Hence, not everything labelled 'NMEA' may be useful in a boating context.
 <!--lint enable no-repeat-punctuation code-block-style-->
 
+#### Tools and CLIs
+
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [CAN Boat](https://github.com/canboat/canboat) - NMEA2000 and NMEA 0183 CLI utilities.
+- <img src="docs/images/icons/gitlab.png" width="16" height="16"> [gpsd](https://gpsd.gitlab.io/gpsd/index.html) - GPS and AIS daemon wrapping NMEA0183 in its own simpler format. C, Python. Ubiquitous.
+- [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
+- [KPlex](https://www.stripydog.com/kplex/) - NMEA0183 multiplexer for Linux, Unix, macOS and OpenWRT. ([Google Group](https://groups.google.com/g/kplex)).
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [nm2k](https://github.com/svalentinf/nm2k) - NMEA0183 and NMEA2000 web based visualization and analysis.
+
 #### C and C++
 
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [minmea](https://github.com/kosma/minmea) - GPS NMEA0183 parser in C.
@@ -190,7 +194,8 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - [OpenSkipper](https://openskipper.org) - C# based NMEA2000, NMEA0183 and AIS integration, last updated 2023.
 
 #### ESP32
-
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatOpenIO](https://github.com/bigbrainlabs/BoatOpenIO) - ESP-32 16-channel analog marine gateway for legacy VDO sensors, integrating analog instruments to MQTT and SignalK.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [BrineOMatic](https://github.com/hoeken/brineomatic) - Watermaker controller for ESP32, open source hardware and software, integrates with SignalK and Home Assistant.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [espos-ble-gateway](https://github.com/dirkwa/espos-ble-gateway) - SignalK BLE Gateway for ESP32 devices with 16Mb or more memory.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [ESP32 NMEA2000 Multiprotocol Gateway](https://github.com/JaCharer/ESP32_NMEA2000_Multiprotocol_Gateway) - Broadcast N2K as Signal K, NMEA 0183, and Actisense Binary. WebGUI. Begun in 2026.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [ESP32 NMEA2000](https://github.com/wellenvogel/esp32-nmea2000) - NMEA2000 integration with USB, Wifi, 0183 on M5 Atom CAN and compatible with other ESP32.
