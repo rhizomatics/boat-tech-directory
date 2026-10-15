@@ -160,12 +160,13 @@ Software projects for boats, with recent commits as of 2026.
 
 ### SignalK
 
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label using simple SVG templates. Optional add-on plugin for AI generated screens.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
 - [OpenFairWind](https://github.com/OpenFairWind) - Alternative user interface, QT based, *FairwindSK* for SignalK on macOS, Windows, Linux, Android, iPhoje and iPad.
 - <img src="docs/images/icons/github.ico" width="16" height="16">[Rhizomatics Sailing](https://www.rhizomatics.org.uk/sailing/) - SignalK and Home Assistant plug-ins and associated apps, including integrations for eInk Electronic Shelf Labels, Teltonika modems and Bluetti power stations.
 - [SignalK](https://signalk.org) - Specification, implementation and community for boat data distribution and analysis.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label using simple SVG templates. Optional add-on plugin for AI generated screens.
-- <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalK-server](https://github.com/SignalK/signalk-server) - Node.js pluggable framework implementing the SignalK specification.
+- [SignalK Plugins](https://www.npmjs.com/search?q=keywords:signalk-node-server-plugin) - Over 570 plugins, and over 170 web apps, available on the public NPM registry. Install via the SignalK built-in *App Store*.
+- <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalk-server](https://github.com/SignalK/signalk-server) - Node.js pluggable framework implementing the SignalK specification.
 - <img src="docs/images/icons/pypi.ico" width="16" height="16"> [signalk-cli](https://pypi.org/project/signalk-cli/) - Command line interface to explore and extract data from SignalK, including the History API and Deltas streaming. Exports to CSV, JSON, raw and Apache Arrow Feather dataframes.
 
 ### NMEA
