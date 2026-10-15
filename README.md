@@ -40,6 +40,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 Personal sites for sailors and their boats with their tech projects. These are all reasonably live as of 2026.
 
 - [Agile4Life](https://agile4life.blog/tag/technical/) - Jeanneau Sun Odyssey 49. Spanish/French family. Boat electronics, electrics, RasPi,  and generally sailing posts.
+- [The Automated Boat](https://automatedboat.substack.com) - Substack newsletter and website on SignalK, NMEA and related boat tech topics.
 - [Bergie](https://bergie.iki.fi) - Baltic sailor, boat projects and SignalK plugin developer ([meri-imperiumi](https://github.com/meri-imperiumi)) and [boat handbook with checklists](https://handbook.lille-oe.de).
 - [BoatHackers](https://boathackers.com) - Leopard 45, projects with Home Assistant, Starlink, NMEA2000, Victron.
 - [coelcanth](https://www.coelacanth.ch) - Hutting 40, Swiss owned, cruises Baltic and North Sea. Cruising blog posts, plus DIY hardware projects and beautifully produced [videos](https://www.youtube.com/@sy.coelacanth).
