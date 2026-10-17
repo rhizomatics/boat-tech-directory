@@ -201,6 +201,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - [OpenSkipper](https://openskipper.org) - C# based NMEA2000, NMEA0183 and AIS integration, last updated 2023.
 
 #### ESP32
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Boating with the Baileys](https://github.com/Boatingwiththebaileys) - ESP32 projects for marine displays and engine monitor interfacing with SignalK and NMEA2000.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatOpenIO](https://github.com/bigbrainlabs/BoatOpenIO) - ESP-32 16-channel analog marine gateway for legacy VDO sensors, integrating analog instruments to MQTT and SignalK.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BrineOMatic](https://github.com/hoeken/brineomatic) - Watermaker controller for ESP32, open source hardware and software, integrates with SignalK and Home Assistant.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [espos-ble-gateway](https://github.com/dirkwa/espos-ble-gateway) - SignalK BLE Gateway for ESP32 devices with 16Mb or more memory.
