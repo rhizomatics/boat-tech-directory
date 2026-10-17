@@ -134,6 +134,7 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [DiscoTime](https://github.com/cr/discotime/) - Time and lat/long dashboard for long distance passages.
 - [FrothFet](https://frothfet.com) - Open source hardware and software for digital switching boat DC loads.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Galadriel Plotter](https://github.com/VladimirKalachikhin/Galadriel-map) - Raster based chartplotter for low power servers.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Head-UP Marine Display](https://github.com/MikeP-NZ/Head-up-display) - ESP32 and HUB75 LED matrix panel based display for use as on-mast racing performance data.
 - [GWeatherRouting](https://gweatherrouting.org) - Navigation and automated routing, Python/GTK4.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Helm](https://github.com/StevenRidder/helm-public) - Clean-room re-engineered OpenCPN equivalent, alpha as of Q3/2026.
 - [Ilma](https://ilma.sailorslog.io) - Software based Navtex receiver for Raspberry Pi or similar.
