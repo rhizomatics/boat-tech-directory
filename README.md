@@ -212,6 +212,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA2000_esp32](https://github.com/ttlappalainen/NMEA2000_esp32) - ESP32 objects for use with NMEA2000 library.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [NMEA 2000 Display on ESP32S3](https://github.com/FrancisSailor/NMEA2000-DISPLAY-on-ESP32S3) - Wind, speed, autopilot and alarms, designed for Waveshare ESP32-S3-Touch-LCD-4 display.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Outlook Guardian](https://github.com/OpenFairWind/S3-Outlook-Guardian) - Read SignalK vessel alarms out loud.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [pico-ble-proxy](https://github.com/rhizomatics/pico-ble-proxy) - A minimal BLE proxy suitable for remote monitoring of BLE sensors like Victron, temperature etc on boats using Home Assistant.
 - [Sens32](https://signalk.org/SensESP/) - Sensor development framework for ESP32 based sensors by SignalK.
 
 #### GoLang
