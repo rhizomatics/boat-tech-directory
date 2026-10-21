@@ -153,6 +153,7 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [ROB](https://github.com/OlivierLD/ROB) - Raspberry Pi On Board, Java and Python navigation utilities.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Sail-O-Vision](https://github.com/adam-gol/sail-o-vision) - Obstacle and wildlife detection with camera and NVIDIA Jetson.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Sailtrack](https://metisvela.github.io/sailtrack/) - Modular racing performance tracker using MQTT.
+- [Seamark](https://seamark.app/?utm_source=boat-tech-directory&utm_medium=listing&utm_campaign=awesome-list) - Self-hostable voyage logbook (one Bun process, one SQLite file, MIT): imports GPX tracks into cleaned statistics, countries and sea areas, with an MCP server for AI assistants.
 - [Smart Boat Innovations](https://smartboatinnovations.com) - Videos and articles on building a Raspberry Pi and Home Assistant based smart boat.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [TwoCan](https://github.com/TwoCanPlugIn/TwoCanPlugIn) - NMEA2000 integration for OpenCPN.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Venus](https://github.com/victronenergy/venus) - Victron Energy's open source OS for their GX products, available for self-hosting on Raspberry Pi.
