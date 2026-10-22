@@ -53,6 +53,7 @@ Personal sites for sailors and their boats with their tech projects. These are a
 - [Ole W. Saastad](https://www.homelinux.no) - Raspberry Pi boat integration.
 - [Pyssel](https://pysselilivet.blogspot.com) - Boat projects and news, including Home Assistant, OpenPlotter, ESP32.
 - [Project Bob](https://www.projectbob.xyz) - Autonomous boat circumnavigation project.
+- [Sailing KSF](https://sailingksf.com) - Articles, iPad and Mac apps, autopilot project, forums. German, English, Swedish, Danish, Norwegian, Spanish.
 - [Seabits](https://seabits.com) - Pacific North West, Kristen 50 and Symbol Pilothouse motor yachts, SignalK, dashboards, Victron.
 - [SY Bockra](https://corbin39.org/wp-content/uploads/2025/06/BOCKRA-nav-system-notes-Spring-2025-DS-06-06-25.pdf) - 1981 Corbin 39, OpenCPN, Open Boat Projects, AvNav. One-off summary document of experiences.
 - [SV Sabado](https://svsabado.com) - US Lagoon 42. Blog articles, technical docs and videos, some Home Assistant, ESP Home and SignalK material. Some material only for paid subscribers.
