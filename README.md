@@ -40,12 +40,13 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 Personal sites for sailors and their boats with their tech projects. These are all reasonably live as of 2026.
 
 - [Agile4Life](https://agile4life.blog/tag/technical/) - Jeanneau Sun Odyssey 49. Spanish/French family. Boat electronics, electrics, RasPi,  and generally sailing posts.
-- [The Automated Boat](https://automatedboat.substack.com) - Substack newsletter and website on SignalK, NMEA and related boat tech topics.
+- <img src="docs/images/icons/substack.ico" width="16" height="16"> [The Automated Boat](https://automatedboat.substack.com) - Substack newsletter and website on SignalK, NMEA and related boat tech topics.
 - [Bergie](https://bergie.iki.fi) - Baltic sailor, boat projects and SignalK plugin developer ([meri-imperiumi](https://github.com/meri-imperiumi)) and [boat handbook with checklists](https://handbook.lille-oe.de).
 - [BoatHackers](https://boathackers.com) - Leopard 45, projects with Home Assistant, Starlink, NMEA2000, Victron.
 - [coelcanth](https://www.coelacanth.ch) - Hutting 40, Swiss owned, cruises Baltic and North Sea. Cruising blog posts, plus DIY hardware projects and beautifully produced [videos](https://www.youtube.com/@sy.coelacanth).
 - [Catalina 320 Log](https://www.yachtslog.com) - Raspberry Pi, NMEA, SignalK, VBA.
 - [Cricalix](https://www.cricalix.net) - Ireland, Victoria 34, NMEA, Python, Solar, Shipmodul Miniplex.
+- <img src="docs/images/icons/substack.ico" width="16" height="16"> [First Shift Sailing](https://firstshiftsailing.substack.com/) - Racing news and analysis, incl instrumentation, podcast.
 - [Hacking Family](https://hackingfamily.com/Cruise_Info/Equipment/Equipment.htm) - Long term world cruisers on Wauquiez-designed catamaran with advice on electronics, software, mapping.
 - [Lille Ø](https://lille-oe.de/boat/) - German owner (English language site), Amigo 40, open source software and hardware projects, LoRa, videos.
 - [Navigation Mac & Co](https://www.navigation-mac.fr) - French, with English translation. News and articles, focus on weather data, macOS and iPad navigation.
