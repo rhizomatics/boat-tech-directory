@@ -130,7 +130,7 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 - [AvNav](https://www.wellenvogel.net/software/avnav/docs/beschreibung.html?lang=en) - Plotter with Android app and SignalK integration. German with English docs.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc plus open source hardware projects.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BlueBridge](https://github.com/miniwinwm/BlueBridge) - Android app integration with NMEA data via MQTT and Bluetooth.
-- <img src="docs/images/icons/github.ico" width="16" height="16"> [Boat Instrument](https://github.com/philseeley/boatinstrument) - Cross platform instrument for display SignalK data on Android, iOS, Linux(ARM/X86/AMD/RPi), MacOS and Windows.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Boat Instrument](https://github.com/philseeley/boatinstrument) - Cross platform instrument for display SignalK data on Android, iOS, Linux(ARM/X86/AMD/RPi), macOS and Windows.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatHacks](https://github.com/BoatHacks) - SignalK and ESP32 projects, including Ollama for local AI.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [BoatyPi](https://github.com/davedoesdemos/BoatyPi) - Open source hardware/software for boat ePaper display.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [d3kOS](https://github.com/SkipperDon/d3kOS) - Raspberry Pi based navigation and automation platform.
@@ -157,6 +157,7 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Sail-O-Vision](https://github.com/adam-gol/sail-o-vision) - Obstacle and wildlife detection with camera and NVIDIA Jetson.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Sailtrack](https://metisvela.github.io/sailtrack/) - Modular racing performance tracker using MQTT.
 - [Seamark](https://seamark.app/?utm_source=boat-tech-directory&utm_medium=listing&utm_campaign=awesome-list) - Self-hostable voyage logbook (one Bun process, one SQLite file, MIT): imports GPX tracks into cleaned statistics, countries and sea areas, with an MCP server for AI assistants.
+- <img src="docs/images/icons/github.ico" width="16" height="16"> [Shipboard Situational Awareness](https://github.com/shipboard-sa) - Software stack for monitoring and automating a boat, based on SignalK and ESP32.
 - [Smart Boat Innovations](https://smartboatinnovations.com) - Videos and articles on building a Raspberry Pi and Home Assistant based smart boat.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [TwoCan](https://github.com/TwoCanPlugIn/TwoCanPlugIn) - NMEA2000 integration for OpenCPN.
 - <img src="docs/images/icons/github.ico" width="16" height="16"> [Venus](https://github.com/victronenergy/venus) - Victron Energy's open source OS for their GX products, available for self-hosting on Raspberry Pi.
