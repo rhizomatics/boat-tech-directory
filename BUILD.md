@@ -39,7 +39,7 @@ npm run preview   # serve site/dist/
 
 `dev` and `build` first run, in order:
 
-1. `sync-readme`: `scripts/sync-readme.mjs` wipes `src/content/docs/` and regenerates a page per README section. It also generates the contributing page from `contributing.md`, the home page from the README intro, and the 404 page, and copies `docs/images/`.
+1. `sync-readme`: `scripts/sync-readme.mjs` wipes `src/content/docs/` and regenerates a page per README section. It also generates the contributing page from `contributing.md`, the home page from the README intro, and the 404 page, and copies `docs/images/`. It adds a favicon from `docs/images/icons/` in front of every link to a known host (GitHub, GitLab, YouTube, Facebook, Wikipedia, PyPI, Substack); the mapping is `FAVICONS` in the script. Don't put icons in `README.md` itself.
 2. `build-spreadsheets`: `scripts/build-spreadsheets.mjs` reads `spreadsheets/*.xlsx` and writes:
    - the Downloads section: an index page `downloads` plus `downloads/example-checklists`, `downloads/navigation-templates` and `downloads/nmea-wifi-gateways`
    - PDFs into `public/downloads/`: one per checklist, all checklists combined, and the tidal planner, which takes its column widths, shading and row heights from the spreadsheet

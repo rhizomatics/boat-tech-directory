@@ -34,8 +34,46 @@ function convertAdmonitions(markdown) {
   );
 }
 
-// README uses raw HTML `<img src="docs/images/...">` for inline favicons (e.g. the
-// GitHub/YouTube icons next to blog links). Astro's asset pipeline only optimizes/rewrites
+// Favicons for well-known hosts, keyed by registrable domain. Any link whose hostname is
+// that domain or a subdomain of it (e.g. `www.youtube.com`, `foo.github.io`) gets the icon.
+const FAVICONS = [
+  ["github.com", "github.ico"],
+  ["github.io", "github.ico"],
+  ["gitlab.com", "gitlab.png"],
+  ["gitlab.io", "gitlab.png"],
+  ["youtube.com", "youtube.ico"],
+  ["youtu.be", "youtube.ico"],
+  ["facebook.com", "facebook.ico"],
+  ["wikipedia.org", "wikipedia.ico"],
+  ["pypi.org", "pypi.ico"],
+  ["substack.com", "substack.ico"],
+];
+
+function faviconFor(url) {
+  let host;
+  try {
+    host = new URL(url).hostname;
+  } catch {
+    return undefined;
+  }
+  return FAVICONS.find(([domain]) => host === domain || host.endsWith(`.${domain}`))?.[1];
+}
+
+// Prefix each markdown link `[text](https://...)` to a known host with its favicon, as raw
+// HTML using the same `docs/images/` path convention as the README so `rewriteImagePaths`
+// resolves it. Image links (`![...]`) are left alone.
+function addFavicons(markdown) {
+  return markdown.replace(
+    /(^|[^!\]])\[([^\]]*)\]\((https?:\/\/[^)\s]+)\)/g,
+    (match, before, text, url) => {
+      const icon = faviconFor(url);
+      if (!icon) return match;
+      return `${before}<img src="docs/images/icons/${icon}" alt="" width="16" height="16"> [${text}](${url})`;
+    },
+  );
+}
+
+// Favicons are injected as raw HTML `<img src="docs/images/...">` (see addFavicons). Astro's asset pipeline only optimizes/rewrites
 // markdown-syntax `![]()` images, not raw HTML, so these need a literal path that resolves
 // from wherever the generated page actually lives — `public/images/...` (raw, unhashed,
 // works the same under either `base`) reached via a plain relative `../` climb, not the
@@ -137,7 +175,7 @@ for (const { marker, slug, title, description } of pages) {
   if (!body) {
     throw new Error(`README.md is missing the "${marker}" --8<-- marker`);
   }
-  writePage(slug, title, description, body);
+  writePage(slug, title, description, addFavicons(body));
 }
 
 // contributing.md is a standalone root file (not a README marker).
