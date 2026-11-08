@@ -19,7 +19,7 @@ repos:
       - id: awesome-lint
         files: ^README\.md$
   - repo: https://github.com/lycheeverse/lychee.git
-    rev: nightly
+    rev: lychee-v0.24.2
     hooks:
       - id: lychee
         # Optionally include additional CLI arguments
