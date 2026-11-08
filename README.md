@@ -128,24 +128,19 @@ Open source, crowd-sourced and volunteer charts and other data sources.
 
 Software projects for boats, with recent commits as of 2026. See also the [ESP32](#esp32) section for open hardware projects.
 
-- [AIS-catcher](https://github.com/jvde-github/AIS-catcher) - AIS receiver for software defined radio (SDR) dongles.
 - [AvNav](https://www.wellenvogel.net/software/avnav/docs/beschreibung.html?lang=en) - Plotter with Android app and SignalK integration. German with English docs.
-- [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc plus open source hardware projects.
 - [BlueBridge](https://github.com/miniwinwm/BlueBridge) - Android app integration with NMEA data via MQTT and Bluetooth.
-- [Boat Instrument](https://github.com/philseeley/boatinstrument) - Cross platform instrument for display SignalK data on Android, iOS, Linux(ARM/X86/AMD/RPi), macOS and Windows.
 - [BoatHacks](https://github.com/BoatHacks) - SignalK and ESP32 projects, including Ollama for local AI.
 - [BoatyPi](https://github.com/davedoesdemos/BoatyPi) - Open source hardware/software for boat ePaper display.
 - [d3kOS](https://github.com/SkipperDon/d3kOS) - Raspberry Pi based navigation and automation platform.
 - [DiscoTime](https://github.com/cr/discotime/) - Time and lat/long dashboard for long distance passages.
 - [FrothFet](https://frothfet.com) - Open source hardware and software for digital switching boat DC loads.
 - [Galadriel Plotter](https://github.com/VladimirKalachikhin/Galadriel-map) - Raster based chartplotter for low power servers.
-- [Head-UP Marine Display](https://github.com/MikeP-NZ/Head-up-display) - ESP32 and HUB75 LED matrix panel based display for use as on-mast racing performance data.
 - [GWeatherRouting](https://gweatherrouting.org) - Navigation and automated routing, Python/GTK4.
 - [Helm](https://github.com/StevenRidder/helm-public) - Clean-room re-engineered OpenCPN equivalent, alpha as of Q3/2026.
 - [Ilma](https://ilma.sailorslog.io) - Software based Navtex receiver for Raspberry Pi or similar.
 - [imud](https://github.com/richcreations/imud) - IMU (Inertial Measurement Unit)/Magnetometer multiplexer with NMEA stream for chartplotters.
 - [libWeatherRouting](https://dakk.github.io/libweatherrouting/) - Python weather routing library with linear iso-routing and shortest path routes.
-- [Maiana](https://github.com/peterantypas/maiana) - AIS Transponder open hardware/software.
 - [Marine Chart Viewer](https://github.com/wholybee/chartplotter) - QT6 based chart plotter for Windows, Linux and macOS. Displays ENC and CM93 charts and GSHHG basemap.
 - [MarineYachtRadar](https://github.com/MarineYachtRadar) - *MaYaRa* server, display, OpenCPN and SignalK integration as open alternative to commercial radar processing.
 - [Marinux](https://marinux.tuxfamily.org) - *Muplex* NMEA multiplexer, *Xinutop* marine Linux distro, *OSD Depth* echo-sounder display.
@@ -162,13 +157,21 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 - [Seamark](https://seamark.app/?utm_source=boat-tech-directory&utm_medium=listing&utm_campaign=awesome-list) - Self-hostable voyage logbook (one Bun process, one SQLite file, MIT): imports GPX tracks into cleaned statistics, countries and sea areas, with an MCP server for AI assistants.
 - [Shipboard Situational Awareness](https://github.com/shipboard-sa) - Software stack for monitoring and automating a boat, based on SignalK and ESP32.
 - [Smart Boat Innovations](https://smartboatinnovations.com) - Videos and articles on building a Raspberry Pi and Home Assistant based smart boat.
-- [TwoCan](https://github.com/TwoCanPlugIn/TwoCanPlugIn) - NMEA2000 integration for OpenCPN.
-- [Venus](https://github.com/victronenergy/venus) - Victron Energy's open source OS for their GX products, available for self-hosting on Raspberry Pi.
 - [X Engineering](https://xengineering.net) - Open-source alternator regulator for lithium battery systems. Open hardware, [GitHub project](https://github.com/markliquid1/Regulator2026-public).
 - [Xilje](https://github.com/Djaahny) - Garmin integration projects, incl plotter display of local web apps and PyPilot integration.
 - [Yacht Management Software (YMS)](https://yms.hoogi.de) - Open-source, self-hosted yacht management software for sailing boats, designed for Raspberry Pi/Linux and offline operation.
 
+
+### AIS
+
+- [AIS-catcher](https://github.com/jvde-github/AIS-catcher) - AIS receiver for software defined radio (SDR) dongles.
+- [AIStk](https://github.com/irmina-d/AIStk) - AIS data analysis toolkit. Python library.
+- [Maiana](https://github.com/peterantypas/maiana) - AIS Transponder open hardware/software.
+- [OpenAIS](https://open-ais.org/) - tools, database and blog for spatial analysis of AIS data, [code](https://gitlab.com/openais).
+- [pico-ais-reporter](https://github.com/rhizomatics/pico-ais-reporter) - Tiny AIS reporter in shell script, suitable for running on a GPS equipped router.
+
 ### ESP32
+
 <!--lint disable double-link-->
 - [Boating with the Baileys](https://github.com/Boatingwiththebaileys) - ESP32 projects for marine displays and engine monitor interfacing with SignalK and NMEA2000. Source code to accompany [vlog](https://www.youtube.com/@BoatingwiththeBaileys)
 <!--lint enable double-link-->
@@ -177,6 +180,7 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 - [espos-ble-gateway](https://github.com/dirkwa/espos-ble-gateway) - SignalK BLE Gateway for ESP32 devices with 16Mb or more memory.
 - [ESP32 NMEA2000 Multiprotocol Gateway](https://github.com/JaCharer/ESP32_NMEA2000_Multiprotocol_Gateway) - Broadcast N2K as Signal K, NMEA 0183, and Actisense Binary. WebGUI. Begun in 2026.
 - [ESP32 NMEA2000](https://github.com/wellenvogel/esp32-nmea2000) - NMEA2000 integration with USB, Wifi, 0183 on M5 Atom CAN and compatible with other ESP32.
+- [Head-UP Marine Display](https://github.com/MikeP-NZ/Head-up-display) - ESP32 and HUB75 LED matrix panel based display for use as on-mast racing performance data.
 - [NMEA2000](https://github.com/ttlappalainen/NMEA2000) - Arduino NMEA2000 interfacing library used in several commercial products.
 - [NMEA2000_ais_wifi_gw](https://github.com/sailingfree/NMEA2000_ais_wifi_gw) -  ESP32 based NMEA2000 gateway.
 - [NMEA2000_esp32](https://github.com/ttlappalainen/NMEA2000_esp32) - ESP32 objects for use with NMEA2000 library.
@@ -186,8 +190,14 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 - [Sens32](https://signalk.org/SensESP/) - Sensor development framework for ESP32 based sensors by SignalK.
 - [SkippersWatch](https://github.com/mkvesala/ESP32-Waveshare-SkippersWatch) - Waveshare ESP32 based wristwatch for SignalK data.
 
+### Operating Systems
+- [Bareboat Necessities](https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html) - All in one operating system, incorporating OpenCPN, SignalK, PyPilot etc plus open source hardware projects.
+- [BoatOS](https://github.com/bigbrainlabs/BoatOS) - Marine operating system for Raspberry Pi, navigation, AIS, engine monitoring, logbook and weather.
+- [Venus](https://github.com/victronenergy/venus) - Victron Energy's open source OS for their GX products, available for self-hosting on Raspberry Pi.
+
 ### SignalK
 
+- [Boat Instrument](https://github.com/philseeley/boatinstrument) - Cross platform instrument for display SignalK data on Android, iOS, Linux(ARM/X86/AMD/RPi), macOS and Windows.
 - [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label using simple SVG templates. Optional add-on plugin for AI generated screens.
 - [Homebridge SignalK](https://github.com/Krillle/homebridge-signalk) - Homebridge plugin exposing SignalK batteries, tanks, temperatures and switching to Apple HomeKit.
 - [Kip](https://github.com/mxtommy/Kip) - SignalK dashboard / instrument display.
@@ -202,12 +212,15 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 
 ### NMEA
 
-See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_software:nmea_instruments).
-
 <!--lint disable no-repeat-punctuation code-block-style-->
 !!! note "Not all NMEA is what it seems"
     A tiny subset of NMEA 0183 is used for GPS integration on almost all devices that handle GPS, including mobile phones, and so has vastly more usage than marine NMEA use cases. Hence, not everything labelled 'NMEA' may be useful in a boating context.
 <!--lint enable no-repeat-punctuation code-block-style-->
+
+#### Plotter Integration
+
+See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_software:nmea_instruments).
+- [TwoCan](https://github.com/TwoCanPlugIn/TwoCanPlugIn) - NMEA2000 integration for OpenCPN.
 
 #### Tools and CLIs
 
@@ -216,6 +229,7 @@ See also [OpenCPN NMEA Tools](https://opencpn.org/wiki/dokuwiki/doku.php?id=open
 - [gypsy](https://gypsy.freedesktop.org) - Multiplexer for GPS NMEA data, daemon and C library, alternative to gpsd.
 - [KPlex](https://www.stripydog.com/kplex/) - NMEA0183 multiplexer for Linux, Unix, macOS and OpenWRT. ([Google Group](https://groups.google.com/g/kplex)).
 - [nm2k](https://github.com/svalentinf/nm2k) - NMEA0183 and NMEA2000 web based visualization and analysis.
+
 
 #### C and C++
 
@@ -425,6 +439,7 @@ See [NMEA Wi-Fi Gateways](https://boat-tech-directory.rhizomatics.org.uk/downloa
 
 - [Aquatic AV](https://www.aquaticav.com/pages/environments-marine) - Speakers, amplifiers, head units.
 - [Avtex](https://avtex.co.uk) - 12V TVs popular on boats.
+- [BlueBoat](https://bluerobotics.com/product-category/boat/) - Components and open source software for marine robotics.
 - [Blue Sea](https://www.bluesea.com) - Electrical components, meters, cable glands and enclosures, on-line and mobile calculators, monitoring.
 - [Crimp](https://crimp.studio) - On-line DC diagram editor with simulation and validation.
 - [Cruising Solutions](https://www.cruisingsolutions.com/collections/communication) - 'Marriage Savers' intercom headsets.
