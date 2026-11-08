@@ -1,7 +1,10 @@
+[settings]
+# Cooldown for tool upgrades (policies/project_standards.md in rhizomatics/hq)
+minimum_release_age = "7d"
+
 [tools]
 lychee = "latest"
 node = "latest"
 npm = "latest"
-pre-commit = "latest"
 prek = "latest"
-uv = "latest"
+uv = { version = "latest", minimum_release_age = "2d" }
