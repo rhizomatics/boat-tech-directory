@@ -539,6 +539,7 @@ See also [Open Source](#open-source-projects).
 - [Seably](https://www.seably.com/explore/topics/electronics-2) - Electronics courses, including Actisense accreditation.
 - [SVB Technical Advice](https://www.youtube.com/@SVBteam/videos) - Advice and product reviews in English, French, German, Italian and Spanish.
 - [Toolbox Talks](https://boatingwiththebaileys.com/toolbox-talks/) - Instructional videos and articles on electrics, electronics and engines.
+- [Troubleshooting BLE on SignalK](https://signalk-einklabel.rhizomatics.org.uk/bluetooth/#stuck-bluetooth-adapters) - Choosing an adapter, dealing with connection issues, bluetooth terminology and common issues. Including use of the BLE Manager added in 2026.
 
 <!-- --8<-- [end:education] -->
 
