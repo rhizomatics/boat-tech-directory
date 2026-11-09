@@ -20,11 +20,11 @@ Everything under `site/src/content/docs/`, `site/public/images/`, `site/public/d
 
 ## Tools
 
-[mise](https://mise.jdx.dev) installs the tool versions in `mise.toml` (node, npm, uv, pre-commit, lychee):
+[mise](https://mise.jdx.dev) installs the tool versions in `mise.toml` (node, npm, uv, prek, lychee):
 
 ```bash
 mise install
-pre-commit install
+prek install
 ```
 
 ## Web site
@@ -63,7 +63,7 @@ Builds from the publish workflow on `main` also set `AGENTREADY_SUBMIT=true`, wh
 Lychee checks links. It's a manual pre-commit stage because it is slow and hits every linked site:
 
 ```bash
-pre-commit run lychee --hook-stage manual --all-files
+prek run lychee --hook-stage manual --all-files
 ```
 
 ## Spreadsheets
