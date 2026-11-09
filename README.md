@@ -533,6 +533,7 @@ See also [Open Source](#open-source-projects).
 - [GPS NMEA 0183 Messaging Protocol 101](https://docs.arduino.cc/learn/communication/gps-nmea-data-101/) - Arduino tutorial with general applicability.
 - [Meco Training](https://www.mecotraining.com) - On-line marine electrics and electronics courses.
 - [Mr Lopez](https://www.mrlopezclasses.com) - Books and online classes on marine electrics, Spanish and English.
+- [NavCraft COLREG Trainer](https://smartnavtools.com/colreg-trainer) - COLREG study app for iPhone, iPad, and Mac with interactive vessel lights, sound signals, night encounters, and mock exams.
 - [NMEA Certification and Training](https://www.nmea.org/training.html) - Official NMEA organization courses.
 - [NMEA Conference and Expo](https://expo.nmea.org) - Annual vendor event in USA.
 - [Ocean Science Technology](https://www.oceansciencetechnology.com/suppliers/data-communication-systems/) - NMEA 0183 and 2000 tutorials.

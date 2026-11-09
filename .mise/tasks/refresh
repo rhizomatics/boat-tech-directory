@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#MISE description="Refresh tools and dependencies"
+# Shared copy, kept in step by rhizomatics/.github scripts/sync-admin.sh: change it there, not here.
+set -euo pipefail
+
+git pull
+# 7-day cooldown on hook updates (policies/project_standards.md in rhizomatics/hq)
+prek autoupdate --cooldown-days 7
+mise upgrade --local
+npm update
