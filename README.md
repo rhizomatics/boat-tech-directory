@@ -410,6 +410,7 @@ See [NMEA Wi-Fi Gateways](https://boat-tech-directory.rhizomatics.org.uk/downloa
 #### Boat Integration and Remote Monitoring
 
 - [BoatCommand](https://boatcommand.com) - Vessel tracking and remote monitoring, aimed at commercial fishermen, also used by yacht sailors. US-based, part of [ViaTrax](https://www.viatrax.com).
+- [BoatKit](https://boatkit.io) - Navigation, monitoring, NMEA aggregation. Apple and Android mobile, Docker and RaspPi server installs. Cloud accounts, integration with MQTT, Sonos, Windy and more.
 - [BoatMonitor32](https://www.boatmonitor32.co.uk) - Mobile app and boat hardware hub with Victron integration.
 - [EasyHub](https://dpnav.de/) - German vendor (DPNav) WiFi gateway with NMEA2000 integration and remote tracking, with cloud service.
 - [Galvanic Works](https://galvanicworks.com) - Voice alert devices, crew pulse wristbands, mobile app for MOB, AIS collisions, anchor alarm, watch management, remote monitoring. Sailer owned company in Balearics, with English/French/Spanish/Italian/German language on-line shop.
