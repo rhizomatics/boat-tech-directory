@@ -580,6 +580,7 @@ These are openly shared spreadsheets and PDFs, specific to boats, however useful
 - [Bavaria Cruiser 36](https://boat-tech-directory.rhizomatics.org.uk/downloads/example-checklists/) - 2011, British flagged. Before/after sailing, heavy weather, storm prep, laying up and haul-out, as printable PDFs and a spreadsheet.
 - [Caladh](https://www.thesailingnomads.com/blog/pre-and-post-sailing-checklists/) - 1990 Victoria 34, British flagged. Pre and post sailing checklists.
 - [Lille Ø](https://handbook.lille-oe.de/checklists/01_before_sailing/) - 1979 Amigo 40, German Flagged. Anchoring, before/after sailing, mast stepping etc plus boat documentation.
+- [Sailing Weather Passage Brief](https://sailing-weather.com/passage-brief/) - Free browser tool for recording checked marine products, UTC timings, constraints and open questions, with TXT/PDF export and optional local drafts/trip records. Russian server, 9 languages including English, French and Spanish.
 - [Salty Lass](http://www.saltylass.co.uk/resources) - 2002 Bavaria 36, British flagged. Sailing, laying up, buying a boat checklists plus logbook template.
 - [The Boat App](https://theboatapp.com/checklists) - Dozens of checklists for maintenance and at sea.
 
