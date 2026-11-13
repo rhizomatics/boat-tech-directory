@@ -464,6 +464,7 @@ See also [Open Source](#open-source-projects).
 - [AFTrack](http://afischer-online.de/and/aftrack/) - Android GPS tracking and navigation with offline maps, logging, wind routing, AIS and SignalK support.
 - [AggSoft](https://www.aggsoft.com) - Windows based data loggers/aggregators for NMEA, ModBus, GPS, USB etc.
 - [Aqua Map](https://www.globalaquamaps.com) - Navigation app for iOS and Android with charts, and NMEA/SignalK input over WiFi.
+- [Deeck](https://deeck.app) - iPhone, Apple Watch and CarPlay dashboard for the boat's power system: Victron devices over Bluetooth Instant Readout, lithium battery BMS and tank sensors, with an optional Venus OS add-on for remote access through VRM.
 - [DeepBlue](https://deepblue.app/) - Yacht management app.
 - [Expedition Marine](https://www.expeditionmarine.com) - Windows-based navigation, weather routing and racing app, official supplier to The Volvo Ocean Race, Americas Cup, Sail GP etc.
 - [Go Pottie](https://gopottie.app) - Crowd-sourced lobster pot location sharing for British Isles, iOS and Android mobile apps.
