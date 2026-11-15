@@ -5,10 +5,13 @@
 //
 // Also emits schema.org JSON-LD for search engines: WebSite on the home page, and a
 // BreadcrumbList elsewhere, plus an ItemList of the page's entries on directory pages.
+//
+// And loads Google Tag Manager on the public production site (see ../gtm.mjs).
 // URLs are absolute against `site`, the public canonical domain (see directory.json.ts).
 import Default from "@astrojs/starlight/components/Head.astro";
 import { extractEntries, isDirectoryPage } from "../directory-entries.mjs";
 import { sections } from "../../sections.mjs";
+import { gtmId } from "../gtm.mjs";
 
 const { id, entry } = Astro.locals.starlightRoute;
 const mdSlug = id === "" ? "index" : id;
@@ -80,6 +83,17 @@ const jsonLd = graph.length
   : null;
 ---
 
+{
+  gtmId && (
+    <script is:inline define:vars={{ gtmId }}>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer',gtmId);
+    </script>
+  )
+}
 <Default />
 <link rel="alternate" type="text/markdown" href={`${base}${mdSlug}.md`} />
 {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
