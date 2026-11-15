@@ -125,7 +125,6 @@ export default defineConfig({
         Sidebar: "./src/components/Sidebar.astro",
         Search: "./src/components/Search.astro",
         Head: "./src/components/Head.astro",
-        SkipLink: "./src/components/SkipLink.astro",
       },
       social: [
         {
