@@ -10,6 +10,7 @@ import { sections } from "./sections.mjs";
 import { copyFile, access } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 
+// google tag GTM-WFK4QB2K
 // @astrojs/sitemap always names its output `sitemap-index.xml`, fanning URLs out into
 // `sitemap-0.xml`, `sitemap-1.xml`, etc., with no config option to call it `sitemap.xml`.
 // Some tools (Google Search Console included) expect the conventional /sitemap.xml path
