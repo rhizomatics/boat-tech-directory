@@ -85,5 +85,7 @@ const jsonLd = graph.length
 
 {goatcounterUrl && <script is:inline async data-goatcounter={goatcounterUrl} src="https://gc.zgo.at/count.js" />}
 <Default />
+{/* iOS/iPadOS ignore SVG favicons; without this, "Add to Home Screen" uses a page screenshot. */}
+<link rel="apple-touch-icon" sizes="180x180" href={`${base}apple-touch-icon.png`} />
 <link rel="alternate" type="text/markdown" href={`${base}${mdSlug}.md`} />
 {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
