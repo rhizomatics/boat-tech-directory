@@ -87,5 +87,7 @@ const jsonLd = graph.length
 <Default />
 {/* iOS/iPadOS ignore SVG favicons; without this, "Add to Home Screen" uses a page screenshot. */}
 <link rel="apple-touch-icon" sizes="180x180" href={`${base}apple-touch-icon.png`} />
+{/* Home-screen label; otherwise iOS uses the page <title> (e.g. "Plotters | Boat Tech Directory"), truncated. */}
+<meta name="apple-mobile-web-app-title" content="Boat Tech" />
 <link rel="alternate" type="text/markdown" href={`${base}${mdSlug}.md`} />
 {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
