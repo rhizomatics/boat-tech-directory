@@ -8,3 +8,8 @@ node = "latest"
 npm = "latest"
 prek = "latest"
 uv = { version = "latest", minimum_release_age = "2d" }
+
+[tasks.site-preview]
+description = "Build the docs site and serve it locally (stop with: npx --prefix site astro preview stop)"
+dir = "site"
+run = ["npm ci", "npm run build", "npm run preview"]

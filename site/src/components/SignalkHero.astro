@@ -1,0 +1,108 @@
+---
+// Home page hero for the SignalK webapp plugin (see ../../../signalk-webapp/). Rendered by
+// ./PageTitle.astro on the public site only.
+import { Icon } from "@astrojs/starlight/components";
+
+const points = [
+  {
+    icon: "download",
+    title: "Entirely offline",
+    text: "Every page of the directory is installed on your SignalK server, so it loads over the boat's own network with no internet connection.",
+  },
+  {
+    icon: "magnifier",
+    title: "Fully searchable",
+    text: "The search index is installed too, so every entry can be found locally without a connection.",
+  },
+  {
+    icon: "external",
+    title: "Links go straight to the source",
+    text: "No redirects, trackers or intermediate pages. When you do have a connection, data is only spent on the site you actually want.",
+  },
+] as const;
+---
+
+<section class="signalk-hero not-content" aria-labelledby="signalk-hero-title">
+  <p class="eyebrow">SignalK plugin</p>
+  <h2 id="signalk-hero-title">Take the whole directory to sea</h2>
+  <p class="lede">
+    Install the Boat Tech Directory on your boat's <a href="https://signalk.org/">SignalK</a> server
+    and use it underway, at anchor or anywhere with a slow, expensive or missing connection.
+    In the SignalK Admin UI, open the <strong>Appstore</strong> and search for “Boat Tech Directory”.
+  </p>
+  <ul class="points">
+    {
+      points.map(({ icon, title, text }) => (
+        <li>
+          <Icon name={icon} size="1rem" class="point-icon" />
+          <div>
+            <strong>{title}</strong>
+            <span>{text}</span>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  .signalk-hero {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--sl-color-accent);
+    border-radius: 0.5rem;
+    background:
+      linear-gradient(135deg, var(--sl-color-accent-low), transparent 70%),
+      var(--sl-color-bg-nav);
+    font-size: var(--sl-text-xs);
+    line-height: 1.4;
+  }
+  .eyebrow {
+    margin: 0;
+    font-size: var(--sl-text-2xs, 0.6875rem);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sl-color-text-accent);
+  }
+  h2 {
+    margin: 0.125rem 0 0.25rem;
+    font-size: var(--sl-text-base);
+    line-height: var(--sl-line-height-headings);
+    font-weight: 600;
+    color: var(--sl-color-white);
+  }
+  .lede {
+    margin: 0;
+    max-width: 48rem;
+    color: var(--sl-color-gray-2);
+  }
+  .lede a {
+    color: var(--sl-color-text-accent);
+  }
+  .points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 0.5rem 1rem;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .points li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  .points :global(.point-icon) {
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+    color: var(--sl-color-text-accent);
+  }
+  .points strong {
+    display: block;
+    color: var(--sl-color-white);
+  }
+  .points span {
+    color: var(--sl-color-gray-2);
+  }
+</style>
