@@ -476,6 +476,7 @@ See also [Open Source](#open-source-projects).
 - [Navimetrix](https://navimetrix.com) - Integrated navigation, weather, charting, routing for Android, Windows, iOS and macOS.
 - [Navstation](https://navstation.net) - **MacENCx64Integrate** plotting, navigation, charts and NMEA integration for macOS.
 - [NMEA 2000 Solutions](https://www.nmea2000solutions.com) - NMEA BridgeBuilder and NMEA Gateway packages, consultancy.
+- [Ocean Depth Map](https://depth.hertzmc.com/) - Free web and Android app showing the approximate sea depth at your GPS position on a depth-shaded chart, from the GEBCO grid (cells about 450 m) with NOAA survey depths in US coastal waters; not for navigation.
 - [Ocean Signal](https://oceansignal.com) - PLBs, EPIRBs, AIS alarms, VHF and radar transponders.
 - [OsmAnd](https://osmand.net/) - Offline mobile apps for OpenStreetMap, with nautical support in Pro and higher.
 - [Rose Point](https://www.rosepoint.com) - Navigation software, North America gazatteer, NMEA gateway.
