@@ -495,6 +495,7 @@ See also [Open Source](#open-source-projects).
 - [TimeZero](https://mytimezero.com) - Software based full-featured chart plotter.
 - [Tremate](https://tremate.com) - Inventory and maintenance records. Mobile app for iOS and Android.
 - [Vessel Vault](https://vesselvault.app) - Boat maintenance management.
+- [VoltPlan](https://voltplan.app) - Free browser-based wiring diagram planner for 12V and 24V boat electrics, sizes cables and fuses per circuit, with wire gauge, battery bank and solar calculators and an open source MCP server.
 - [WilhemSK](https://www.wilhelmsk.com) - SignalK dashboard app for iPhone, iPad, macOS, Apple Watch and Apple TV.
 - [Yachtara](https://yachtara.com) - Weather routing and boat management app for cruising sailors: multi-model weather comparison, weather routing, anchor watch, maintenance logs and manuals, crew management. Builds offline regional forecast packs.
 - [Zapfware](https://www.zapfware.de) - Mobile apps including *NMEARemote* dashboard, *NMEAConnect* bridging and ORC racing.
