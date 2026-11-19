@@ -206,7 +206,7 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 - [SignalK](https://signalk.org) - Specification, implementation and community for boat data distribution and analysis.
 - [SignalK Applications and Solutions](https://signalk.org/solutions/) - SignalK Project's list of apps and other products with SignalK support.
 - [Signal K Mobile](https://github.com/itemir/signalk_mobile) - Open source Ionic mobile app for iOS and Android, last updated 2018.
-- [SignalK Plugins](https://www.npmjs.com/search?q=keywords:signalk-node-server-plugin) - Over 570 plugins, and over 170 web apps, available on the public NPM registry. Install via the SignalK built-in *App Store*.
+- [SignalK Plugins](https://boat-tech-directory.rhizomatics.org.uk/signalk-plugins/) - Over 700 plugins and web apps from the SignalK *App Store*, by category, with registry scores. Rebuilt weekly from npm and the [SignalK Plugin Registry](https://signalk.org/signalk-plugin-registry/). Install via the SignalK built-in *App Store*.
 - [signalk-server](https://github.com/SignalK/signalk-server) - Node.js pluggable framework implementing the SignalK specification.
 - [signalk-cli](https://pypi.org/project/signalk-cli/) - Command line interface to explore and extract data from SignalK, including the History API and Deltas streaming. Exports to CSV, JSON, raw and Apache Arrow Feather dataframes.
 
