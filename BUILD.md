@@ -44,9 +44,14 @@ npm run preview   # serve site/dist/
    - the Downloads section: an index page `downloads` plus `downloads/example-checklists`, `downloads/navigation-templates` and `downloads/nmea-wifi-gateways`
    - PDFs into `public/downloads/`: one per checklist, all checklists combined, and the tidal planner, which takes its column widths, shading and row heights from the spreadsheet
    - copies of the `.xlsx` files, also into `public/downloads/`
-3. `build-terms-index`: `scripts/build-terms-index.mjs` builds the A–Z index page from every directory entry.
+3. `build-signalk-plugins`: `scripts/build-signalk-plugins.mjs` fetches every SignalK plugin and webapp from npm (the same keyword searches the SignalK App Store uses) and joins on scores from the [SignalK Plugin Registry](https://signalk.org/signalk-plugin-registry/). It writes:
+   - `signalk-plugins`, an index of categories, and a page per App Store category under `signalk-plugins/`, plus an "Official" page for `@signalk/` packages and an "Uncategorized" page for packages with no category. Deprecated packages are left out.
+   - `public/signalk-plugins.json`, the same data with badges and test status, for agents (linked from `llms.txt`) and for the pages' schema.org JSON-LD (`src/components/Head.astro`)
 
-The section list, in order, lives in `site/sections.mjs`. Both the sidebar (`astro.config.mjs`) and the home page's "Sections" list are generated from it, so add or rename a section there. A section's `children` appear indented under it in the sidebar; the home page lists top-level sections only.
+   Categories follow the server's own rules, ported into `src/signalk-categories.mjs`, which also sets the page order used by the sidebar. Re-port it if the server's `src/categories.ts` changes. If the fetch fails, it writes a placeholder page and the build carries on. These pages aren't directory entries, so they're left out of the A–Z index, `directory.json` and `llms-small.txt`.
+4. `build-terms-index`: `scripts/build-terms-index.mjs` builds the A–Z index page from every directory entry.
+
+The section list, in order, lives in `site/sections.mjs`. Both the sidebar (`astro.config.mjs`) and the home page's "Sections" list are generated from it, so add or rename a section there. A section's `children` appear indented under it in the sidebar, and can nest one level further (as the SignalK Plugins categories do); the home page lists top-level sections only.
 
 ### Publishing
 
@@ -54,9 +59,11 @@ The section list, in order, lives in `site/sections.mjs`. Both the sidebar (`ast
 
 1. runs `awesome-lint` on `README.md`
 2. runs `npm ci && npm run build` in `site/`
-3. on pushes to `main` only, deploys `site/dist/` to GitHub Pages at <https://boat-tech-directory.rhizomatics.org.uk>
+3. on pushes to `main`, and on a weekly schedule (Mondays 04:17 UTC) or manual run, deploys `site/dist/` to GitHub Pages at <https://boat-tech-directory.rhizomatics.org.uk>
 
-Builds from the publish workflow on `main` also set `AGENTREADY_SUBMIT=true`, which submits the site to the AgentReady index. That has a limited monthly quota, so local and pull request builds never submit.
+The weekly run refreshes the SignalK Plugins pages. The offline copy in the SignalK webapp plugin only refreshes when the plugin is released.
+
+Builds from the publish workflow on pushes to `main` also set `AGENTREADY_SUBMIT=true`, which submits the site to the AgentReady index. That has a limited monthly quota, so local and pull request builds never submit.
 
 ### Link checking
 

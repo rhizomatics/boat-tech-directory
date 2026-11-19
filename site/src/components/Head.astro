@@ -4,10 +4,13 @@
 // follow standard discovery hints can fetch Markdown instead of scraping rendered HTML.
 //
 // Also emits schema.org JSON-LD for search engines: WebSite on the home page, and a
-// BreadcrumbList elsewhere, plus an ItemList of the page's entries on directory pages.
+// BreadcrumbList elsewhere, plus an ItemList of the page's entries on directory pages, and
+// of the plugins (as SoftwareApplication) on the generated SignalK Plugins pages.
 // URLs are absolute against `site`, the public canonical domain (see directory.json.ts).
 //
 // And loads GoatCounter analytics on the public production site (see ../analytics.mjs).
+import { existsSync, readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import Default from "@astrojs/starlight/components/Head.astro";
 import { extractEntries, isDirectoryPage } from "../directory-entries.mjs";
 import { sections } from "../../sections.mjs";
@@ -23,6 +26,36 @@ const abs = (path: string) => new URL(path, Astro.site).href;
 const siteName = "Boat Tech Directory";
 const pageUrl = abs(id === "" ? "/" : `/${id}/`);
 
+// Parent of a page, for breadcrumbs: the section it's listed under in sections.mjs, or for a
+// nested page not in the sidebar (signalk-plugins/ais), the page its path sits under.
+type Section = { label: string; slug: string; children?: Section[] };
+const labels = new Map<string, string>();
+const parents = new Map<string, string>();
+const addSections = (list: Section[], parent?: string) => {
+  for (const section of list) {
+    labels.set(section.slug, section.label);
+    if (parent) parents.set(section.slug, parent);
+    addSections(section.children ?? [], section.slug);
+  }
+};
+addSections(sections);
+function parentOf(slug: string): string | undefined {
+  if (parents.has(slug)) return parents.get(slug);
+  const prefix = slug.includes("/") ? slug.slice(0, slug.lastIndexOf("/")) : undefined;
+  return prefix && labels.has(prefix) ? prefix : undefined;
+}
+function ancestors(slug: string): string[] {
+  const parent = parentOf(slug);
+  return parent ? [...ancestors(parent), parent] : [];
+}
+
+// Written by scripts/build-signalk-plugins.mjs; absent if its fetch failed.
+const SIGNALK_PREFIX = "signalk-plugins";
+const isSignalkPage = id === SIGNALK_PREFIX || id.startsWith(`${SIGNALK_PREFIX}/`);
+const signalkDataPath = resolve(process.cwd(), "public/signalk-plugins.json");
+const signalkData =
+  isSignalkPage && existsSync(signalkDataPath) ? JSON.parse(readFileSync(signalkDataPath, "utf8")) : null;
+
 const graph: object[] = [];
 if (id === "" || id === "index") {
   graph.push({
@@ -34,10 +67,9 @@ if (id === "" || id === "index") {
     license: "https://creativecommons.org/licenses/by-sa/4.0/",
   });
 } else if (id !== "404") {
-  const parent = sections.find((s) => s.children?.some((c) => c.slug === id));
   const crumbs = [
     { name: siteName, url: abs("/") },
-    ...(parent ? [{ name: parent.label, url: abs(`/${parent.slug}/`) }] : []),
+    ...ancestors(id).map((slug) => ({ name: labels.get(slug), url: abs(`/${slug}/`) })),
     { name: entry.data.title, url: pageUrl },
   ];
   graph.push({
@@ -50,15 +82,64 @@ if (id === "" || id === "index") {
     })),
   });
 
-  if (isDirectoryPage(id)) {
+  const collectionPage = (mainEntity: object) => ({
+    "@type": "CollectionPage",
+    name: entry.data.title,
+    description: entry.data.description,
+    url: pageUrl,
+    isPartOf: { "@type": "WebSite", name: siteName, url: abs("/") },
+    ...(signalkData ? { dateModified: signalkData.generated } : {}),
+    mainEntity,
+  });
+
+  if (signalkData && id === SIGNALK_PREFIX) {
+    graph.push(
+      collectionPage({
+        "@type": "ItemList",
+        numberOfItems: signalkData.categories.length,
+        itemListElement: signalkData.categories.map((c: { name: string; url: string }, i: number) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: c.name,
+          url: c.url,
+        })),
+      }),
+    );
+  } else if (signalkData && isSignalkPage) {
+    // Each entry's link text is the package name; join it to the data for the structured
+    // fields, and to the page for the entry's anchor.
+    const plugins = new Map(signalkData.plugins.map((p: { name: string }) => [p.name, p]));
+    const entries = extractEntries(entry.body ?? "").filter((e) => plugins.has(e.name));
+    graph.push(
+      collectionPage({
+        "@type": "ItemList",
+        numberOfItems: entries.length,
+        itemListElement: entries.map((e, i) => {
+          const p = plugins.get(e.name);
+          return {
+            "@type": "ListItem",
+            position: i + 1,
+            url: `${pageUrl}#${e.anchorId}`,
+            item: {
+              "@type": "SoftwareApplication",
+              name: p.name,
+              url: p.npmUrl,
+              ...(p.description ? { description: p.description } : {}),
+              softwareVersion: p.version,
+              ...(p.published ? { dateModified: p.published } : {}),
+              applicationCategory: "SignalK server plugin",
+              applicationSubCategory: p.categories.join(", "),
+              operatingSystem: "SignalK server",
+              ...(p.sourceUrl ? { sameAs: p.sourceUrl } : {}),
+            },
+          };
+        }),
+      }),
+    );
+  } else if (isDirectoryPage(id)) {
     const entries = extractEntries(entry.body ?? "");
-    graph.push({
-      "@type": "CollectionPage",
-      name: entry.data.title,
-      description: entry.data.description,
-      url: pageUrl,
-      isPartOf: { "@type": "WebSite", name: siteName, url: abs("/") },
-      mainEntity: {
+    graph.push(
+      collectionPage({
         "@type": "ItemList",
         numberOfItems: entries.length,
         itemListElement: entries.map((e, i) => ({
@@ -72,8 +153,8 @@ if (id === "" || id === "index") {
             ...(e.description ? { description: e.description } : {}),
           },
         })),
-      },
-    });
+      }),
+    );
   }
 }
 

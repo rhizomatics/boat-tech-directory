@@ -43,26 +43,34 @@ if (process.env.AGENTREADY_SUBMIT === "true") {
 // Markdown twin (src/pages/[...slug].md.ts) and the JSON export too, so an agent can
 // fetch just the part it needs. Absolute against the public site, like directory.json.
 const site = "https://boat-tech-directory.rhizomatics.org.uk";
-const sectionLink = ({ label, slug, description }) => `- [${label}](${site}/${slug}.md): ${description}`;
+const sectionLinks = (list, depth = 0) =>
+  list.flatMap(({ label, slug, description, children = [] }) => [
+    `${"  ".repeat(depth)}- [${label}](${site}/${slug}.md): ${description}`,
+    ...sectionLinks(children, depth + 1),
+  ]);
 const llmsDetails = [
   "Each entry is a link with a one-line description, grouped by section and category. Each section is available as Markdown:",
-  sections
-    .flatMap((section) => [
-      sectionLink(section),
-      ...(section.children ?? []).map((child) => `  ${sectionLink(child)}`),
-    ])
-    .join("\n"),
+  sectionLinks(sections).join("\n"),
   `For structured lookups, [directory.json](${site}/directory.json) lists every entry with its name, link, description, section and category.`,
+  `[signalk-plugins.json](${site}/signalk-plugins.json) lists every SignalK server plugin and webapp in the SignalK App Store, with its categories, version, publish date, SignalK Plugin Registry score and badges. It is refreshed weekly.`,
 ].join("\n\n");
 
 plugins.push(
   starlightLlmsTxt({
     details: llmsDetails,
-    // The A-Z index repeats every entry from the other sections; leave it out of the
-    // abridged corpus.
-    exclude: ["index-of-terms"],
+    // The A-Z index repeats every entry from the other sections, and the SignalK Plugins
+    // category pages are a large generated catalogue (signalk-plugins.json has the same data);
+    // leave both out of the abridged corpus.
+    exclude: ["index-of-terms", "signalk-plugins/**"],
   }),
 );
+
+const SIDEBAR_INDENT = [undefined, "sub-entry", "sub-sub-entry"];
+const sidebarLinks = (list, depth = 0) =>
+  list.flatMap(({ label, slug, children = [] }) => [
+    { label, link: `/${slug}/`, ...(depth ? { attrs: { class: SIDEBAR_INDENT[depth] } } : {}) },
+    ...sidebarLinks(children, depth + 1),
+  ]);
 
 // https://astro.build/config
 export default defineConfig({
@@ -135,13 +143,8 @@ export default defineConfig({
         },
       ],
       // Generated from sections.mjs, shared with the home page's "Sections" list.
-      sidebar: [
-        { label: "Home", link: "/" },
-        ...sections.flatMap(({ label, slug, children = [] }) => [
-          { label, link: `/${slug}/` },
-          ...children.map((child) => ({ label: child.label, link: `/${child.slug}/`, attrs: { class: "sub-entry" } })),
-        ]),
-      ],
+      // Nested children are flattened, with a class giving their indent (see Sidebar.astro).
+      sidebar: [{ label: "Home", link: "/" }, ...sidebarLinks(sections)],
     }),
   ],
 });

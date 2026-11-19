@@ -9,6 +9,10 @@ src/content/docs/
 src/assets/images/
 public/images/
 
+# generated from npm and the SignalK Plugin Registry by scripts/build-signalk-plugins.mjs
+# (its pages are under src/content/docs/, above)
+public/signalk-plugins.json
+
 # generated from spreadsheets/*.xlsx by scripts/build-spreadsheets.mjs
 public/downloads/
 
