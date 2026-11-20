@@ -1,3 +1,6 @@
+[v1.3.2]
+- Fix release version
+
 [v1.3.1]
 - Release automated, with checks, using Github Actions
 
