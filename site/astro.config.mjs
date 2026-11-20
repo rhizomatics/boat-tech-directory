@@ -65,12 +65,10 @@ plugins.push(
   }),
 );
 
-const SIDEBAR_INDENT = [undefined, "sub-entry", "sub-sub-entry"];
-const sidebarLinks = (list, depth = 0) =>
-  list.flatMap(({ label, slug, children = [] }) => [
-    { label, link: `/${slug}/`, ...(depth ? { attrs: { class: SIDEBAR_INDENT[depth] } } : {}) },
-    ...sidebarLinks(children, depth + 1),
-  ]);
+// Flattened, in nav order. Only drives Starlight's prev/next page links: the nav itself is
+// rendered from sections.mjs by src/components/Sidebar.astro.
+const sidebarLinks = (list) =>
+  list.flatMap(({ label, slug, children = [] }) => [{ label, link: `/${slug}/` }, ...sidebarLinks(children)]);
 
 // https://astro.build/config
 export default defineConfig({
@@ -93,6 +91,7 @@ export default defineConfig({
       description:
         "A curated list of marine electronics, NMEA, SignalK, OpenCPN and other open source boat tech projects, vendor hardware and software, blogs and forums.",
       favicon: "/favicon.svg",
+      customCss: ["./src/styles/custom.css"],
       // Starlight has no built-in og:image option; link-preview crawlers (iMessage,
       // Slack, etc.) fall back to guessing an icon from the host when this is absent.
       head: [
@@ -143,7 +142,6 @@ export default defineConfig({
         },
       ],
       // Generated from sections.mjs, shared with the home page's "Sections" list.
-      // Nested children are flattened, with a class giving their indent (see Sidebar.astro).
       sidebar: [{ label: "Home", link: "/" }, ...sidebarLinks(sections)],
     }),
   ],

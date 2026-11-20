@@ -1,0 +1,113 @@
+---
+// One level of the left nav built by ./Sidebar.astro, rendering itself for each nested
+// level. A node is either a page (sections.mjs) or a heading in a page's outline.
+export interface Node {
+  label: string;
+  href: string;
+  kind: "page" | "heading";
+  current?: boolean;
+  children: Node[];
+}
+
+interface Props {
+  nodes: Node[];
+  level?: number;
+}
+
+const { nodes, level = 0 } = Astro.props;
+---
+
+<ul class:list={[level === 0 ? "top-level" : "nested"]}>
+  {
+    nodes.map((node) => (
+      <li>
+        <a
+          href={node.href}
+          aria-current={node.current ? "page" : undefined}
+          class:list={[node.kind, { large: level === 0 }]}
+        >
+          <span>{node.label}</span>
+        </a>
+        {node.children.length > 0 && <Astro.self nodes={node.children} level={level + 1} />}
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  @layer starlight.core {
+    ul {
+      --sl-sidebar-item-padding-inline: 0.5rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      overflow-wrap: anywhere;
+    }
+
+    .top-level > li + li {
+      margin-top: 0.75rem;
+    }
+
+    .nested {
+      margin-inline-start: var(--sl-sidebar-item-padding-inline);
+      border-inline-start: 1px solid var(--sl-color-hairline-light);
+      padding-inline-start: var(--sl-sidebar-item-padding-inline);
+      margin-top: 0.15rem;
+    }
+
+    a {
+      display: block;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      color: var(--sl-color-gray-2);
+      padding: 0.3em var(--sl-sidebar-item-padding-inline);
+      line-height: 1.4;
+    }
+
+    .large {
+      font-size: var(--sl-text-lg);
+      font-weight: 600;
+      color: var(--sl-color-white);
+    }
+
+    /* Pages below the top level: lighter than sections, heavier than page headings. */
+    .nested .page {
+      font-size: var(--sl-text-sm);
+      font-weight: 600;
+      color: var(--sl-color-gray-1);
+    }
+
+    .nested .nested .page {
+      font-weight: 400;
+    }
+
+    .heading {
+      font-size: var(--sl-text-xs);
+      color: var(--sl-color-gray-3);
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--sl-color-white);
+    }
+
+    [aria-current="page"],
+    [aria-current="page"]:hover,
+    [aria-current="page"]:focus {
+      font-weight: 600;
+      color: var(--sl-color-text-invert);
+      background-color: var(--sl-color-text-accent);
+    }
+
+    @media (min-width: 50rem) {
+      .top-level > li + li {
+        margin-top: 0.5rem;
+      }
+      .large {
+        font-size: var(--sl-text-base);
+      }
+    }
+  }
+</style>

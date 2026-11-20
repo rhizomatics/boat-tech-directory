@@ -5,6 +5,7 @@ import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs"
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { sections as siteSections } from "../sections.mjs";
+import { faviconFor } from "../src/favicons.mjs";
 
 const siteDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const rootDir = resolve(siteDir, "..");
@@ -34,31 +35,6 @@ function convertAdmonitions(markdown) {
   );
 }
 
-// Favicons for well-known hosts, keyed by registrable domain. Any link whose hostname is
-// that domain or a subdomain of it (e.g. `www.youtube.com`, `foo.github.io`) gets the icon.
-const FAVICONS = [
-  ["github.com", "github.ico"],
-  ["github.io", "github.ico"],
-  ["gitlab.com", "gitlab.png"],
-  ["gitlab.io", "gitlab.png"],
-  ["youtube.com", "youtube.ico"],
-  ["youtu.be", "youtube.ico"],
-  ["facebook.com", "facebook.ico"],
-  ["wikipedia.org", "wikipedia.ico"],
-  ["pypi.org", "pypi.ico"],
-  ["substack.com", "substack.ico"],
-];
-
-function faviconFor(url) {
-  let host;
-  try {
-    host = new URL(url).hostname;
-  } catch {
-    return undefined;
-  }
-  return FAVICONS.find(([domain]) => host === domain || host.endsWith(`.${domain}`))?.[1];
-}
-
 // Prefix each markdown link `[text](https://...)` to a known host with its favicon, as raw
 // HTML using the same `docs/images/` path convention as the README so `rewriteImagePaths`
 // resolves it. Image links (`![...]`) are left alone.
@@ -66,7 +42,7 @@ function addFavicons(markdown) {
   return markdown.replace(
     /(^|[^!\]])\[([^\]]*)\]\((https?:\/\/[^)\s]+)\)/g,
     (match, before, text, url) => {
-      const icon = faviconFor(url);
+      const icon = faviconFor(url)?.icon;
       if (!icon) return match;
       return `${before}<img src="docs/images/icons/${icon}" alt="" width="16" height="16"> [${text}](${url})`;
     },

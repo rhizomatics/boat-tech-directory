@@ -39,7 +39,7 @@ npm run preview   # serve site/dist/
 
 `dev` and `build` first run, in order:
 
-1. `sync-readme`: `scripts/sync-readme.mjs` wipes `src/content/docs/` and regenerates a page per README section. It also generates the contributing page from `contributing.md`, the home page from the README intro, and the 404 page, and copies `docs/images/`. It adds a favicon from `docs/images/icons/` in front of every link to a known host (GitHub, GitLab, YouTube, Facebook, Wikipedia, PyPI, Substack); the mapping is `FAVICONS` in the script. Don't put icons in `README.md` itself.
+1. `sync-readme`: `scripts/sync-readme.mjs` wipes `src/content/docs/` and regenerates a page per README section. It also generates the contributing page from `contributing.md`, the home page from the README intro, and the 404 page, and copies `docs/images/`. It adds a favicon from `docs/images/icons/` in front of every link to a known host (GitHub, GitLab, Codeberg, npm, YouTube, Facebook, Wikipedia, PyPI, Substack); the mapping is `FAVICONS` in `src/favicons.mjs`, shared with the SignalK Plugins pages. `src/styles/custom.css` keeps these icons inline. Don't put icons in `README.md` itself.
 2. `build-spreadsheets`: `scripts/build-spreadsheets.mjs` reads `spreadsheets/*.xlsx` and writes:
    - the Downloads section: an index page `downloads` plus `downloads/example-checklists`, `downloads/navigation-templates` and `downloads/nmea-wifi-gateways`
    - PDFs into `public/downloads/`: one per checklist, all checklists combined, and the tidal planner, which takes its column widths, shading and row heights from the spreadsheet
@@ -51,7 +51,7 @@ npm run preview   # serve site/dist/
    Categories follow the server's own rules, ported into `src/signalk-categories.mjs`, which also sets the page order used by the sidebar. Re-port it if the server's `src/categories.ts` changes. If the fetch fails, it writes a placeholder page and the build carries on. These pages aren't directory entries, so they're left out of the A–Z index, `directory.json` and `llms-small.txt`.
 4. `build-terms-index`: `scripts/build-terms-index.mjs` builds the A–Z index page from every directory entry.
 
-The section list, in order, lives in `site/sections.mjs`. Both the sidebar (`astro.config.mjs`) and the home page's "Sections" list are generated from it, so add or rename a section there. A section's `children` appear indented under it in the sidebar, and can nest one level further (as the SignalK Plugins categories do); the home page lists top-level sections only.
+The section list, in order, lives in `site/sections.mjs`. Both the sidebar (`astro.config.mjs`) and the home page's "Sections" list are generated from it, so add or rename a section there. A section's `children` appear indented under it in the sidebar, and can nest further. A child with `heading` is shown under that heading of its parent's outline instead, and the parent's outline stays open while you're on any page below it, as SignalK Plugins is under Open Source Projects' SignalK heading. The nav is rendered by `src/components/Sidebar.astro`; the home page lists top-level sections only.
 
 ### Publishing
 
