@@ -42,6 +42,21 @@ export function escapeMarkdown(text) {
   return flat.replace(/[\\`*_[\]<>|#&~!]/g, "\\$&");
 }
 
+// The App Store's own keywords are shown as `webapp` and `categories` instead.
+const STRUCTURAL_KEYWORDS = new Set(["signalk-node-server-plugin", "signalk-webapp", "signalk-embeddable-webapp"]);
+const KEYWORD = /^[a-z0-9][a-z0-9 .+#-]{0,39}$/;
+
+// An npm package's keywords, reduced to short lowercase tokens, for agents and structured data
+// in place of free-text descriptions (see build-signalk-plugins.mjs).
+export function cleanKeywords(keywords) {
+  if (!Array.isArray(keywords)) return [];
+  const clean = keywords
+    .filter((k) => typeof k === "string")
+    .map((k) => k.trim().toLowerCase())
+    .filter((k) => KEYWORD.test(k) && !STRUCTURAL_KEYWORDS.has(k) && !k.startsWith("signalk-category-"));
+  return [...new Set(clean)].slice(0, 15);
+}
+
 export const escapeHtml = (text) =>
   String(text).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 

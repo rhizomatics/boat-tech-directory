@@ -62,7 +62,8 @@ function ancestors(slug: string): string[] {
 // Written by scripts/build-signalk-plugins.mjs; absent if its fetch failed.
 const SIGNALK_PREFIX = "signalk-plugins";
 const isSignalkPage = id === SIGNALK_PREFIX || id.startsWith(`${SIGNALK_PREFIX}/`);
-const signalkDataPath = resolve(process.cwd(), "public/signalk-plugins.json");
+// The unpublished copy, which keeps package descriptions for search engines.
+const signalkDataPath = resolve(process.cwd(), "generated/signalk-plugins.json");
 const signalkData =
   isSignalkPage && existsSync(signalkDataPath) ? JSON.parse(readFileSync(signalkDataPath, "utf8")) : null;
 
@@ -135,6 +136,7 @@ if (id === "" || id === "index") {
               name: p.name,
               url: p.npmUrl,
               ...(p.description ? { description: p.description } : {}),
+              ...(p.keywords.length ? { keywords: p.keywords.join(", ") } : {}),
               softwareVersion: p.version,
               ...(p.published ? { dateModified: p.published } : {}),
               applicationCategory: "SignalK server plugin",

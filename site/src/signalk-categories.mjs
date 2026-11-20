@@ -37,6 +37,10 @@ export const SIGNALK_GROUPS = [
   { name: "Uncategorized", slug: "uncategorized", description: "Packages that don't declare an App Store category." },
 ];
 
+// Page title for a group, phrased the way people search ("AIS SignalK Plugins"). Also used by
+// astro.config.mjs to find these pages in llms-full.txt.
+export const signalkPageTitle = (name) => `${name} SignalK Plugins`;
+
 // Packages the server categorises itself when their package.json has no category keyword.
 export const DEFAULT_MODULE_CAT_KEYWORDS = {
   "@signalk/vedirect-serial-usb": ["signalk-category-hardware"],
