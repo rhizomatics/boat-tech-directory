@@ -1,5 +1,8 @@
+[v1.3.1]
+- Release automated, with checks, using Github Actions
+
 [v1.3.0]
-- Links add
+- Links added
 - SignalK plugins integrated, categorized using standard keywords, omitting deprecated
 
 [v1.2.6]
