@@ -1,3 +1,7 @@
+[v1.3.0]
+- Links add
+- SignalK plugins integrated, categorized using standard keywords, omitting deprecated
+
 [v1.2.6]
 - Links added
 - Downloads now integrated, previously on boat-stuff repo
