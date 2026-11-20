@@ -17,6 +17,7 @@ import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { CATEGORIES, DEFAULT_MODULE_CAT_KEYWORDS, DEPRECATED, SIGNALK_GROUPS } from "../src/signalk-categories.mjs";
+import { faviconFor } from "../src/favicons.mjs";
 
 const siteDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const docsDir = resolve(siteDir, "src/content/docs");
@@ -74,19 +75,41 @@ function escapeMarkdown(text) {
 
 const dateFormat = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
-function formatEntry(plugin, { showOfficial = true } = {}) {
-  const { name, description, version, date, webapp, score, githubUrl } = plugin;
+// npm repository fields come in several forms ("git+https://github.com/x/y.git",
+// "git@github.com:x/y.git", "github:x/y"); normalise to a browsable https URL, or null.
+function sourceUrl(repository) {
+  if (!repository) return null;
+  const url = repository
+    .replace(/^git\+/, "")
+    .replace(/^git@([^:]+):/, "https://$1/")
+    .replace(/^github:/, "https://github.com/")
+    .replace(/^git:\/\//, "https://")
+    .replace(/\.git$/, "");
+  return /^https?:\/\//.test(url) ? url : null;
+}
+
+// Category pages are two levels deep (/signalk-plugins/ais/), and public/images/ is copied
+// from docs/images/ by sync-readme.mjs. Raw HTML, like sync-readme's favicons, so Astro
+// doesn't try to resolve it as an optimised asset.
+const icon = (file, alt) => `<img src="../../images/icons/${file}" alt="${alt}" width="16" height="16">`;
+
+function formatEntry(plugin) {
+  const { name, shortName, scope, description, version, date, webapp, score, sourceUrl } = plugin;
   const npmUrl = `https://www.npmjs.com/package/${name}`;
   const facts = [
-    showOfficial && plugin.official ? "official" : null,
     webapp ? "webapp" : null,
     `v${version}`,
-    date ? `published ${dateFormat.format(date)}` : null,
+    date ? `updated ${dateFormat.format(date)}` : null,
     score === undefined ? "not yet scored" : `score ${score}`,
   ].filter(Boolean);
-  const source = githubUrl ? ` · [source](${githubUrl})` : "";
   const text = description ? ` - ${escapeMarkdown(description)}` : "";
-  return `- [${name}](${npmUrl})${text} *(${facts.join(", ")})*${source}`;
+  const publisher = scope ? ` Published by ${escapeMarkdown(scope)}.` : "";
+  let source = "";
+  if (sourceUrl) {
+    const host = faviconFor(sourceUrl);
+    source = host ? ` <a href="${sourceUrl}">${icon(host.icon, `Source on ${host.site}`)}</a>` : ` [Source](${sourceUrl})`;
+  }
+  return `- ${icon("npm.svg", "")} [${shortName}](${npmUrl})${text} *(${facts.join(", ")})*${publisher}${source}`;
 }
 
 function writePage(path, title, description, body) {
@@ -126,8 +149,11 @@ async function loadPlugins() {
     if (categories === null) continue; // deprecated
     const keywords = pkg.keywords ?? [];
     const scored = scores.get(pkg.name);
+    const [, scope, shortName] = pkg.name.match(/^(?:@([^/]+)\/)?(.+)$/);
     plugins.push({
       name: pkg.name,
+      shortName,
+      scope: scope ?? null,
       description: pkg.description ?? "",
       version: pkg.version,
       date: pkg.date ? new Date(pkg.date) : null,
@@ -136,13 +162,12 @@ async function loadPlugins() {
       score: scored?.composite_stable,
       badges: scored?.badges_stable ?? [],
       testStatus: scored?.test_status,
-      githubUrl: scored?.github_url,
+      sourceUrl: sourceUrl(scored?.github_url ?? pkg.links?.repository),
       categories,
     });
   }
-  // Sort by name ignoring the npm scope, so "@signalk/charts-plugin" files under C.
-  const sortKey = (name) => name.replace(/^@[^/]+\//, "");
-  plugins.sort((a, b) => sortKey(a.name).localeCompare(sortKey(b.name), "en", { sensitivity: "base" }));
+  // Sort by the name shown, without the npm scope, so "@signalk/charts-plugin" files under C.
+  plugins.sort((a, b) => a.shortName.localeCompare(b.shortName, "en", { sensitivity: "base" }) || a.name.localeCompare(b.name));
   return { plugins, registry };
 }
 
@@ -196,7 +221,7 @@ for (const group of groups) {
     "",
     `[All categories](../): ${otherCategories}`,
     "",
-    members.map((p) => formatEntry(p, { showOfficial: slug !== OFFICIAL.slug })).join("\n"),
+    members.map(formatEntry).join("\n"),
   ].join("\n");
   writePage(resolve(pagesDir, `${slug}.md`), pageTitle(name), pageDescription(group), body);
 }
@@ -213,8 +238,6 @@ The list is rebuilt every week from npm and the [SignalK Plugin Registry](${REGI
 A package can belong to more than one category, so it may appear on more than one page. Packages the SignalK server marks as deprecated are left out.
 
 The same data is available as JSON at [signalk-plugins.json](../signalk-plugins.json).
-
-## Categories
 
 ${categoryList}
 `;
@@ -246,6 +269,7 @@ const json = {
   })),
   plugins: plugins.map((p) => ({
     name: p.name,
+    scope: p.scope,
     description: p.description,
     version: p.version,
     published: p.date?.toISOString() ?? null,
@@ -256,7 +280,7 @@ const json = {
     badges: p.badges,
     testStatus: p.testStatus ?? null,
     npmUrl: `https://www.npmjs.com/package/${p.name}`,
-    sourceUrl: p.githubUrl ?? null,
+    sourceUrl: p.sourceUrl,
   })),
 };
 writeFileSync(dataPath, JSON.stringify(json, null, 2) + "\n");

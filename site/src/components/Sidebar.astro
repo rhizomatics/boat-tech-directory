@@ -1,164 +1,104 @@
 ---
-// Overrides Starlight's default Sidebar to fold the current page's headings in as a nested
-// branch under its own nav entry, instead of a separate "On this page" panel in the right
-// column (disabled via `tableOfContents: false` in astro.config.mjs). The directory's own
-// sidebar config (astro.config.mjs) is a flat list of links — no groups — so this doesn't
-// need to handle Starlight's nested/collapsible group case that the stock SidebarSublist does.
-// A link with `attrs: { class: "sub-entry" }` is shown indented under the entry before it,
-// and `sub-sub-entry` one level further.
+// Overrides Starlight's default Sidebar with a tree built from sections.mjs, folding page
+// outlines (headings) into the nav instead of a separate "On this page" panel in the right
+// column (disabled via `tableOfContents: false` in astro.config.mjs).
+//
+// - Every section is listed, with its child pages indented under it.
+// - The current page shows its outline: its headings, two levels deep.
+// - A child page can be attached to a heading of its parent with `heading: "<slug>"` in
+//   sections.mjs (SignalK Plugins sits under Open Source Projects' "SignalK" heading). The
+//   parent's outline then stays open while on the parent or anywhere below that child, with
+//   the child, and its own children, nested under that heading.
+// - Children of child pages are only listed while their branch is open.
+//
+// Starlight's own `sidebar` config (astro.config.mjs) is still used for prev/next links.
+import { getEntry, render } from "astro:content";
 import SidebarPersister from "@astrojs/starlight/components/SidebarPersister.astro";
 import MobileMenuFooter from "virtual:starlight/components/MobileMenuFooter";
+import { sections } from "../../sections.mjs";
+import SidebarTree, { type Node } from "./SidebarTree.astro";
 
-const { sidebar, headings = [] } = Astro.locals.starlightRoute;
+type Section = { label: string; slug: string; heading?: string; children?: Section[] };
+type Heading = { depth: number; slug: string; text: string };
+
+const { id, headings: currentHeadings = [] } = Astro.locals.starlightRoute;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const pageHref = (slug: string) => `${base}${slug}/`;
+
+const contains = (section: Section): boolean =>
+  section.slug === id || (section.children ?? []).some(contains);
 
 // Wide enough to catch every heading depth actually used across content pages (some use
-// h2/h3 for sections, others h3/h4), shallow enough not to bloat the left nav for the
-// busiest pages. Content pages only ever use one or two heading depths, so nest the
-// second depth found under the nearest preceding heading of the first (shallowest) depth,
-// giving three nav levels overall: top-level entry, section heading, subsection heading.
-const pageHeadings = headings.filter((heading) => heading.depth >= 2 && heading.depth <= 4);
-const topHeadingDepth = pageHeadings.length > 0 ? Math.min(...pageHeadings.map((heading) => heading.depth)) : 0;
-const headingTree = [];
-for (const heading of pageHeadings) {
-  if (heading.depth === topHeadingDepth) {
-    headingTree.push({ heading, children: [] });
-  } else if (headingTree.length > 0) {
-    headingTree[headingTree.length - 1].children.push(heading);
+// h2/h3 for sections, others h3/h4), shallow enough not to bloat the nav for the busiest
+// pages. Content pages only use one or two heading depths, so nest the second depth found
+// under the nearest preceding heading of the first (shallowest) depth.
+function headingTree(headings: Heading[]) {
+  const pageHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 4);
+  const topDepth = Math.min(...pageHeadings.map((h) => h.depth));
+  const tree: { heading: Heading; children: Heading[] }[] = [];
+  for (const heading of pageHeadings) {
+    if (heading.depth === topDepth) tree.push({ heading, children: [] });
+    else tree.at(-1)?.children.push(heading);
   }
+  return tree;
 }
+
+async function headingsOf(slug: string): Promise<Heading[]> {
+  if (slug === id) return currentHeadings;
+  const entry = await getEntry("docs", slug);
+  return entry ? (await render(entry)).headings : [];
+}
+
+async function pageNode(section: Section, depth: number, branchOpen: boolean): Promise<Node> {
+  const current = section.slug === id;
+  const open = branchOpen || contains(section);
+  const children = section.children ?? [];
+  const attached = children.filter((child) => child.heading);
+  const placed = new Set<Section>();
+  const node: Node = { label: section.label, href: pageHref(section.slug), kind: "page", current, children: [] };
+
+  if (current || attached.some(contains)) {
+    const href = (slug: string) => (current ? `#${slug}` : `${pageHref(section.slug)}#${slug}`);
+    const under = async (headingSlug: string) => {
+      const nodes: Node[] = [];
+      for (const child of attached.filter((c) => c.heading === headingSlug)) {
+        placed.add(child);
+        nodes.push(await pageNode(child, depth + 1, true));
+      }
+      return nodes;
+    };
+    const headingNode = async (heading: Heading, subs: Node[] = []): Promise<Node> => ({
+      label: heading.text,
+      href: href(heading.slug),
+      kind: "heading",
+      children: [...(await under(heading.slug)), ...subs],
+    });
+    for (const { heading, children: subs } of headingTree(await headingsOf(section.slug))) {
+      const subNodes = [];
+      for (const sub of subs) subNodes.push(await headingNode(sub));
+      node.children.push(await headingNode(heading, subNodes));
+    }
+  }
+
+  // Child pages not placed under a heading (e.g. the outline isn't showing).
+  if (depth === 0 || open) {
+    for (const child of children) {
+      if (!placed.has(child)) node.children.push(await pageNode(child, depth + 1, false));
+    }
+  }
+  return node;
+}
+
+const nodes: Node[] = [
+  { label: "Home", href: base, kind: "page", current: id === "" || id === "index", children: [] },
+];
+for (const section of sections) nodes.push(await pageNode(section, 0, false));
 ---
 
 <SidebarPersister>
-  <ul class="top-level">
-    {
-      sidebar.map((entry) =>
-        entry.type === "link" ? (
-          <li>
-            <a href={entry.href} aria-current={entry.isCurrent ? "page" : undefined} class:list={["large", entry.attrs?.class]}>
-              <span>{entry.label}</span>
-            </a>
-            {entry.isCurrent && headingTree.length > 0 && (
-              <ul class="page-toc">
-                {headingTree.map(({ heading, children }) => (
-                  <li>
-                    <a href={`#${heading.slug}`}>{heading.text}</a>
-                    {children.length > 0 && (
-                      <ul class="page-toc-sub">
-                        {children.map((child) => (
-                          <li>
-                            <a href={`#${child.slug}`}>{child.text}</a>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        ) : (
-          <li>
-            <span class="large">{entry.label}</span>
-          </li>
-        ),
-      )
-    }
-  </ul>
+  <SidebarTree nodes={nodes} />
 </SidebarPersister>
 
 <div class="md:sl-hidden">
   <MobileMenuFooter />
 </div>
-
-<style>
-  @layer starlight.core {
-    ul {
-      --sl-sidebar-item-padding-inline: 0.5rem;
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      overflow-wrap: anywhere;
-    }
-
-    .top-level > li + li {
-      margin-top: 0.75rem;
-    }
-
-    .large {
-      font-size: var(--sl-text-lg);
-      font-weight: 600;
-      color: var(--sl-color-white);
-    }
-
-    .large.sub-entry {
-      font-size: var(--sl-text-base);
-      margin-inline-start: 1rem;
-    }
-
-    .large.sub-sub-entry {
-      font-size: var(--sl-text-sm);
-      font-weight: 400;
-      margin-inline-start: 2rem;
-    }
-
-    .top-level > li:has(> .sub-entry) {
-      margin-top: 0.25rem;
-    }
-
-    .top-level > li:has(> .sub-sub-entry) {
-      margin-top: 0;
-    }
-
-    a {
-      display: block;
-      border-radius: 0.25rem;
-      text-decoration: none;
-      color: var(--sl-color-gray-2);
-      padding: 0.3em var(--sl-sidebar-item-padding-inline);
-      line-height: 1.4;
-    }
-
-    a:hover,
-    a:focus {
-      color: var(--sl-color-white);
-    }
-
-    [aria-current="page"],
-    [aria-current="page"]:hover,
-    [aria-current="page"]:focus {
-      font-weight: 600;
-      color: var(--sl-color-text-invert);
-      background-color: var(--sl-color-text-accent);
-    }
-
-    .page-toc {
-      margin-inline-start: var(--sl-sidebar-item-padding-inline);
-      border-inline-start: 1px solid var(--sl-color-hairline-light);
-      padding-inline-start: var(--sl-sidebar-item-padding-inline);
-      margin-top: 0.25rem;
-    }
-
-    .page-toc a {
-      font-size: var(--sl-text-xs);
-      color: var(--sl-color-gray-3);
-    }
-
-    .page-toc-sub {
-      margin-inline-start: var(--sl-sidebar-item-padding-inline);
-      border-inline-start: 1px solid var(--sl-color-hairline-light);
-      padding-inline-start: var(--sl-sidebar-item-padding-inline);
-      margin-top: 0.15rem;
-    }
-
-    @media (min-width: 50rem) {
-      .top-level > li + li {
-        margin-top: 0.5rem;
-      }
-      .large {
-        font-size: var(--sl-text-base);
-      }
-    }
-  }
-</style>

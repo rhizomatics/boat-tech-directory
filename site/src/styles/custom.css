@@ -1,0 +1,13 @@
+/* Site-wide additions to Starlight's styles (registered as `customCss` in astro.config.mjs). */
+
+/* Favicons in front of links (scripts/sync-readme.mjs, scripts/build-signalk-plugins.mjs).
+   Starlight makes content images block-level; keep these inline with the text. */
+.sl-markdown-content img[src*="images/icons/"] {
+  display: inline;
+  vertical-align: -0.15em;
+}
+
+/* GitHub's mark is black, so it disappears on the dark theme. */
+:root[data-theme="dark"] .sl-markdown-content img[src$="icons/github.ico"] {
+  filter: invert(1);
+}

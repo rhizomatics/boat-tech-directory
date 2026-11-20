@@ -106,16 +106,16 @@ if (id === "" || id === "index") {
       }),
     );
   } else if (signalkData && isSignalkPage) {
-    // Each entry's link text is the package name; join it to the data for the structured
-    // fields, and to the page for the entry's anchor.
-    const plugins = new Map(signalkData.plugins.map((p: { name: string }) => [p.name, p]));
-    const entries = extractEntries(entry.body ?? "").filter((e) => plugins.has(e.name));
+    // Each entry links first to its npm page; join on that URL for the structured fields,
+    // and to the page for the entry's anchor. (Names alone can repeat across npm scopes.)
+    const plugins = new Map(signalkData.plugins.map((p: { npmUrl: string }) => [p.npmUrl, p]));
+    const entries = extractEntries(entry.body ?? "").filter((e) => e.href && plugins.has(e.href));
     graph.push(
       collectionPage({
         "@type": "ItemList",
         numberOfItems: entries.length,
         itemListElement: entries.map((e, i) => {
-          const p = plugins.get(e.name);
+          const p = plugins.get(e.href);
           return {
             "@type": "ListItem",
             position: i + 1,
