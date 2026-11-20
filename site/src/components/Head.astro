@@ -26,6 +26,16 @@ const abs = (path: string) => new URL(path, Astro.site).href;
 const siteName = "Boat Tech Directory";
 const pageUrl = abs(id === "" ? "/" : `/${id}/`);
 
+// Starlight builds the canonical link and og:url from the request path, which in the SignalK
+// plugin build includes its base path ("/@rhizomatics/signalk-boat-tech-directory-plugin/"),
+// a URL that doesn't exist on the public site. Point both at the public page instead. (No
+// change on the public site, where the two are already the same.)
+for (const { tag, attrs } of Astro.locals.starlightRoute.head) {
+  if (!attrs) continue;
+  if (tag === "link" && attrs.rel === "canonical") attrs.href = pageUrl;
+  if (tag === "meta" && attrs.property === "og:url") attrs.content = pageUrl;
+}
+
 // Parent of a page, for breadcrumbs: the section it's listed under in sections.mjs, or for a
 // nested page not in the sidebar (signalk-plugins/ais), the page its path sits under.
 type Section = { label: string; slug: string; children?: Section[] };
