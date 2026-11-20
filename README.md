@@ -180,6 +180,7 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 - [espos-ble-gateway](https://github.com/dirkwa/espos-ble-gateway) - SignalK BLE Gateway for ESP32 devices with 16Mb or more memory.
 - [ESP32 NMEA2000 Multiprotocol Gateway](https://github.com/JaCharer/ESP32_NMEA2000_Multiprotocol_Gateway) - Broadcast N2K as Signal K, NMEA 0183, and Actisense Binary. WebGUI. Begun in 2026.
 - [ESP32 NMEA2000](https://github.com/wellenvogel/esp32-nmea2000) - NMEA2000 integration with USB, Wifi, 0183 on M5 Atom CAN and compatible with other ESP32.
+- [espOS Zigbee Coordinator](https://github.com/dirkwa/espos-zigbee-coordinator) - Zigbee coordinator for Zigbee2MQTT on the boat's Wi-Fi, known to work on Waveshare ESP32-C5 with an C6 build, and with [signalk-zigbee](https://github.com/dirkwa/signalk-zigbee) plugin.
 - [Head-UP Marine Display](https://github.com/MikeP-NZ/Head-up-display) - ESP32 and HUB75 LED matrix panel based display for use as on-mast racing performance data.
 - [NMEA2000](https://github.com/ttlappalainen/NMEA2000) - Arduino NMEA2000 interfacing library used in several commercial products.
 - [NMEA2000_ais_wifi_gw](https://github.com/sailingfree/NMEA2000_ais_wifi_gw) -  ESP32 based NMEA2000 gateway.
