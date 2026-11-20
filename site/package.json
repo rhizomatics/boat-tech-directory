@@ -8,6 +8,7 @@
     "build-terms-index": "node scripts/build-terms-index.mjs",
     "build-spreadsheets": "node scripts/build-spreadsheets.mjs",
     "build-signalk-plugins": "node scripts/build-signalk-plugins.mjs",
+    "test": "node scripts/check-signalk-format.mjs",
     "sync-spreadsheets": "uv run scripts/sync_spreadsheets.py",
     "predev": "npm run sync-readme && npm run build-spreadsheets && npm run build-signalk-plugins && npm run build-terms-index",
     "dev": "astro dev",
