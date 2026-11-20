@@ -7,7 +7,8 @@ import starlightLlmsTxt from 'starlight-llms-txt';
 import { unified } from "@astrojs/markdown-remark";
 import rehypeEntryIds from "./src/rehype-entry-ids.mjs";
 import { sections } from "./sections.mjs";
-import { copyFile, access } from "node:fs/promises";
+import { SIGNALK_GROUPS, signalkPageTitle } from "./src/signalk-categories.mjs";
+import { copyFile, access, readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 
 // @astrojs/sitemap always names its output `sitemap-index.xml`, fanning URLs out into
@@ -43,25 +44,29 @@ if (process.env.AGENTREADY_SUBMIT === "true") {
 // Markdown twin (src/pages/[...slug].md.ts) and the JSON export too, so an agent can
 // fetch just the part it needs. Absolute against the public site, like directory.json.
 const site = "https://boat-tech-directory.rhizomatics.org.uk";
+// The SignalK Plugins category pages aren't listed: they repeat package descriptions, which
+// any npm author controls. Agents get signalk-plugins.json (names and keywords only) instead.
 const sectionLinks = (list, depth = 0) =>
   list.flatMap(({ label, slug, description, children = [] }) => [
     `${"  ".repeat(depth)}- [${label}](${site}/${slug}.md): ${description}`,
-    ...sectionLinks(children, depth + 1),
+    ...(slug === "signalk-plugins" ? [] : sectionLinks(children, depth + 1)),
   ]);
 const llmsDetails = [
   "Each entry is a link with a one-line description, grouped by section and category. Each section is available as Markdown:",
   sectionLinks(sections).join("\n"),
   `For structured lookups, [directory.json](${site}/directory.json) lists every entry with its name, link, description, section and category.`,
-  `[signalk-plugins.json](${site}/signalk-plugins.json) lists every SignalK server plugin and webapp in the SignalK App Store, with its categories, version, publish date, SignalK Plugin Registry score and badges. It is refreshed weekly.`,
+  `[signalk-plugins.json](${site}/signalk-plugins.json) lists every SignalK server plugin and webapp in the SignalK App Store, with its npm keywords, categories, version, publish date, SignalK Plugin Registry score and badges. It is refreshed weekly.`,
 ].join("\n\n");
 
 plugins.push(
   starlightLlmsTxt({
     details: llmsDetails,
-    // The A-Z index repeats every entry from the other sections, and the SignalK Plugins
-    // category pages are a large generated catalogue (signalk-plugins.json has the same data);
-    // leave both out of the abridged corpus.
+    // The A-Z index repeats every entry from the other sections; leave it out of the
+    // abridged corpus. The SignalK Plugins category pages repeat package descriptions, which
+    // any npm author controls: leave them out here, and (as llms-full.txt has no exclude
+    // option) sort them last there so `trimLlmsFull` below can cut them off.
     exclude: ["index-of-terms", "signalk-plugins/**"],
+    demote: ["signalk-plugins/**"],
   }),
 );
 
@@ -69,6 +74,20 @@ plugins.push(
 // rendered from sections.mjs by src/components/Sidebar.astro.
 const sidebarLinks = (list) =>
   list.flatMap(({ label, slug, children = [] }) => [{ label, link: `/${slug}/` }, ...sidebarLinks(children)]);
+
+// Cuts the SignalK Plugins category pages, demoted to the end, off llms-full.txt.
+const trimLlmsFull = {
+  name: "trim-llms-full",
+  hooks: {
+    "astro:build:done": async ({ dir }) => {
+      const path = `${fileURLToPath(dir)}/llms-full.txt`;
+      const text = await readFile(path, "utf8");
+      const starts = SIGNALK_GROUPS.map(({ name }) => text.indexOf(`\n# ${signalkPageTitle(name)}\n`)).filter((i) => i >= 0);
+      if (starts.length !== SIGNALK_GROUPS.length) return; // pages missing (fetch failed), nothing to cut
+      await writeFile(path, text.slice(0, Math.min(...starts)).trimEnd() + "\n");
+    },
+  },
+};
 
 // https://astro.build/config
 export default defineConfig({
@@ -86,6 +105,7 @@ export default defineConfig({
   integrations: [
     sitemap(),
     aliasSitemap,
+    trimLlmsFull,
     starlight({
       title: "Boat Tech Directory",
       description:

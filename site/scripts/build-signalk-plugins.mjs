@@ -16,15 +16,19 @@
 import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { CATEGORIES, DEFAULT_MODULE_CAT_KEYWORDS, DEPRECATED, SIGNALK_GROUPS } from "../src/signalk-categories.mjs";
-import { formatDate, formatEntry, isVersion, parseDate, parseName, parseScore, sourceUrl } from "../src/signalk-format.mjs";
+import { CATEGORIES, DEFAULT_MODULE_CAT_KEYWORDS, DEPRECATED, SIGNALK_GROUPS, signalkPageTitle } from "../src/signalk-categories.mjs";
+import { cleanKeywords, formatDate, formatEntry, isVersion, parseDate, parseName, parseScore, sourceUrl } from "../src/signalk-format.mjs";
 
 const siteDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const docsDir = resolve(siteDir, "src/content/docs");
 const pagesDir = resolve(docsDir, "signalk-plugins");
-// Structured copy of the same data, for agents (linked from llms.txt) and for the pages'
-// schema.org JSON-LD (src/components/Head.astro).
+// Structured copies of the same data:
+// - public/signalk-plugins.json, for agents (linked from llms.txt). Names and keywords only:
+//   no free-text descriptions, which any package author controls (prompt injection).
+// - generated/signalk-plugins.json, not published, with descriptions, for the pages'
+//   schema.org JSON-LD (src/components/Head.astro).
 const dataPath = resolve(siteDir, "public/signalk-plugins.json");
+const internalDataPath = resolve(siteDir, "generated/signalk-plugins.json");
 const SITE = "https://boat-tech-directory.rhizomatics.org.uk";
 
 const SEARCH_KEYWORDS = ["signalk-node-server-plugin", "signalk-embeddable-webapp", "signalk-webapp"];
@@ -116,6 +120,7 @@ async function loadPlugins() {
       name: pkg.name,
       ...parsed,
       description: typeof pkg.description === "string" ? pkg.description : "",
+      keywords: cleanKeywords(pkg.keywords),
       version: pkg.version,
       date: parseDate(pkg.date),
       official: pkg.name.startsWith("@signalk/"),
@@ -137,6 +142,8 @@ async function loadPlugins() {
 
 mkdirSync(pagesDir, { recursive: true });
 rmSync(dataPath, { force: true });
+rmSync(internalDataPath, { force: true });
+mkdirSync(dirname(internalDataPath), { recursive: true });
 const indexPath = resolve(docsDir, "signalk-plugins.md");
 
 let data;
@@ -166,7 +173,7 @@ const groups = SIGNALK_GROUPS.map((group) => ({
 }));
 
 // Page title and meta description, phrased the way people search ("SignalK AIS plugins").
-const pageTitle = (name) => `${name} SignalK Plugins`;
+const pageTitle = signalkPageTitle;
 const pageDescription = ({ name, description, plugins: members }) =>
   `${members.length} ${name === UNCATEGORIZED.name ? "uncategorized" : name} SignalK server plugins and webapps from the App Store. ${description}`;
 
@@ -219,10 +226,25 @@ writePage(
 const categoryNames = (plugin) =>
   plugin.categories.length ? plugin.categories.map((keyword) => CATEGORIES[keyword][0]) : [UNCATEGORIZED.name];
 
+const pluginJson = (p) => ({
+  name: p.name,
+  scope: p.scope,
+  keywords: p.keywords,
+  version: p.version,
+  published: p.date?.toISOString() ?? null,
+  official: p.official,
+  webapp: p.webapp,
+  categories: categoryNames(p),
+  score: p.score ?? null,
+  badges: p.badges,
+  testStatus: p.testStatus ?? null,
+  npmUrl: `https://www.npmjs.com/package/${p.name}`,
+  sourceUrl: p.sourceUrl,
+});
 const json = {
   name: "SignalK Plugins",
   description:
-    "SignalK server plugins and webapps from the SignalK App Store, with App Store categories and SignalK Plugin Registry scores. Deprecated packages are left out.",
+    "SignalK server plugins and webapps from the SignalK App Store, with App Store categories and SignalK Plugin Registry scores. Deprecated packages are left out. Package descriptions are left out; see each package's npm page.",
   homepage: `${SITE}/signalk-plugins/`,
   sources: ["https://registry.npmjs.org", REGISTRY_URL],
   generated: generated.toISOString(),
@@ -233,22 +255,12 @@ const json = {
     count: members.length,
     url: `${SITE}/signalk-plugins/${slug}/`,
   })),
-  plugins: plugins.map((p) => ({
-    name: p.name,
-    scope: p.scope,
-    description: p.description,
-    version: p.version,
-    published: p.date?.toISOString() ?? null,
-    official: p.official,
-    webapp: p.webapp,
-    categories: categoryNames(p),
-    score: p.score ?? null,
-    badges: p.badges,
-    testStatus: p.testStatus ?? null,
-    npmUrl: `https://www.npmjs.com/package/${p.name}`,
-    sourceUrl: p.sourceUrl,
-  })),
+  plugins: plugins.map(pluginJson),
 };
 writeFileSync(dataPath, JSON.stringify(json, null, 2) + "\n");
+writeFileSync(
+  internalDataPath,
+  JSON.stringify({ ...json, plugins: plugins.map((p) => ({ ...pluginJson(p), description: p.description })) }) + "\n",
+);
 
 console.log(`Wrote signalk-plugins pages: ${plugins.length} packages in ${groups.length} categories.`);

@@ -198,6 +198,14 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 
 ### SignalK
 
+<!--lint disable double-link-->
+> [!TIP]
+> **Looking for a SignalK plugin?**
+>
+> The [SignalK Plugins catalog](https://boat-tech-directory.rhizomatics.org.uk/signalk-plugins/) lists every plugin and webapp in the SignalK App Store, by category, with SignalK Plugin Registry scores. It's updated weekly.
+
+<!--lint enable double-link-->
+
 - [Boat Instrument](https://github.com/philseeley/boatinstrument) - Cross platform instrument for display SignalK data on Android, iOS, Linux(ARM/X86/AMD/RPi), macOS and Windows.
 - [eInk Labels for SignalK](https://github.com/rhizomatics/signalk-einklabel-plugin) - SignalK plugin to send SignalK path data or API results to an BLE eInk Electronic Shelf Label using simple SVG templates. Optional add-on plugin for AI generated screens.
 - [Homebridge SignalK](https://github.com/Krillle/homebridge-signalk) - Homebridge plugin exposing SignalK batteries, tanks, temperatures and switching to Apple HomeKit.
@@ -207,16 +215,18 @@ Software projects for boats, with recent commits as of 2026. See also the [ESP32
 - [SignalK](https://signalk.org) - Specification, implementation and community for boat data distribution and analysis.
 - [SignalK Applications and Solutions](https://signalk.org/solutions/) - SignalK Project's list of apps and other products with SignalK support.
 - [Signal K Mobile](https://github.com/itemir/signalk_mobile) - Open source Ionic mobile app for iOS and Android, last updated 2018.
+<!--lint disable double-link-->
 - [SignalK Plugins](https://boat-tech-directory.rhizomatics.org.uk/signalk-plugins/) - Over 700 plugins and web apps from the SignalK *App Store*, by category, with registry scores. Rebuilt weekly from npm and the [SignalK Plugin Registry](https://signalk.org/signalk-plugin-registry/). Install via the SignalK built-in *App Store*.
+<!--lint enable double-link-->
 - [signalk-server](https://github.com/SignalK/signalk-server) - Node.js pluggable framework implementing the SignalK specification.
 - [signalk-cli](https://pypi.org/project/signalk-cli/) - Command line interface to explore and extract data from SignalK, including the History API and Deltas streaming. Exports to CSV, JSON, raw and Apache Arrow Feather dataframes.
 
 ### NMEA
 
-<!--lint disable no-repeat-punctuation code-block-style-->
-!!! note "Not all NMEA is what it seems"
-    A tiny subset of NMEA 0183 is used for GPS integration on almost all devices that handle GPS, including mobile phones, and so has vastly more usage than marine NMEA use cases. Hence, not everything labelled 'NMEA' may be useful in a boating context.
-<!--lint enable no-repeat-punctuation code-block-style-->
+> [!NOTE]
+> **Not all NMEA is what it seems**
+>
+> A tiny subset of NMEA 0183 is used for GPS integration on almost all devices that handle GPS, including mobile phones, and so has vastly more usage than marine NMEA use cases. Hence, not everything labelled 'NMEA' may be useful in a boating context.
 
 #### Plotter Integration
 
@@ -601,10 +611,8 @@ These are openly shared spreadsheets and PDFs, specific to boats, however useful
 
 <!-- --8<-- [end:reference] -->
 
-<!--lint disable no-repeat-punctuation code-block-style-->
-??? warning
-
-    The term 'awesome' is used here in its American sense, and because 'awesome list' is a thing, and not in its British sense of actually involving awe.
+> [!WARNING]
+> The term 'awesome' is used here in its American sense, and because 'awesome list' is a thing, and not in its British sense of actually involving awe.
 
 
 <a href="https://boat-tech-directory.rhizomatics.org.uk">Boat Tech Directory</a> © 2025 by <a href="https://github.com/jeyrb">J R Burrows</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">

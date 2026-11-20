@@ -20,19 +20,35 @@ for (const match of readme.matchAll(
   sections.set(match[1], match[2].trim());
 }
 
-// mkdocs/pymdown admonitions (`!!! type "title"` / `??? type`, 4-space-indented body)
-// -> Starlight aside syntax (`:::type[title] ... :::`).
-const ASIDE_TYPES = { note: "note", tip: "tip", warning: "caution", danger: "danger" };
-function convertAdmonitions(markdown) {
+// GitHub alerts (`> [!NOTE]`, `> [!TIP]`, ...), which GitHub renders on the README itself,
+// -> Starlight asides (`:::note[title] ... :::`). A bold first line becomes the aside's title,
+// as GitHub shows it as one:
+//
+//   > [!NOTE]
+//   > **Not all NMEA is what it seems**
+//   > A tiny subset of NMEA 0183 ...
+const ASIDE_TYPES = { note: "note", tip: "tip", important: "note", warning: "caution", caution: "danger" };
+function convertAlerts(markdown) {
   return markdown.replace(
-    /^(?:!!!|\?\?\?\+?)\s+(\w+)(?:\s+"([^"]*)")?\n((?:(?: {4}|\t).*\n?)+)/gm,
-    (_match, type, title, body) => {
-      const asideType = ASIDE_TYPES[type.toLowerCase()] ?? "note";
-      const dedented = body.replace(/^(?: {4}|\t)/gm, "").trimEnd();
-      const header = title ? `:::${asideType}[${title}]` : `:::${asideType}`;
-      return `${header}\n${dedented}\n:::\n`;
+    /^> \[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\][ \t]*\n((?:>.*(?:\n|$))*)/gim,
+    (_match, type, quoted) => {
+      let body = quoted.replace(/^> ?/gm, "").trim();
+      const title = body.match(/^\*\*(.+?)\*\*[ \t]*(?:\n|$)/);
+      if (title) body = body.slice(title[0].length).trim();
+      const asideType = ASIDE_TYPES[type.toLowerCase()];
+      return `${title ? `:::${asideType}[${title[1]}]` : `:::${asideType}`}\n${body}\n:::\n`;
     },
   );
+}
+
+// The README links to the public site by absolute URL, which is what works on GitHub. On the
+// site, make those links relative so they also work in the SignalK plugin build, which is
+// served from the boat's own server under a different base path. Plain links only, not
+// images; contributing.md is left alone, as its badge snippet is for other sites to copy.
+const SITE_LINK = /(^|[^!])\[([^\]]*)\]\(https:\/\/boat-tech-directory\.rhizomatics\.org\.uk(?:\/([^)\s]*))?\)/g;
+function rewriteSiteLinks(markdown, depth) {
+  const prefix = depth === 0 ? "./" : "../".repeat(depth);
+  return markdown.replace(SITE_LINK, (_match, before, text, path = "") => `${before}[${text}](${prefix}${path})`);
 }
 
 // Prefix each markdown link `[text](https://...)` to a known host with its favicon, as raw
@@ -68,7 +84,7 @@ function stripLeadingHeading(markdown) {
   return markdown.replace(/^#{1,2}\s+.*\n+/, "");
 }
 
-function writePage(slug, title, description, body, { depth = 1, extra = {} } = {}) {
+function writePage(slug, title, description, body, { depth = 1, extra = {}, siteLinks = true } = {}) {
   const frontmatter = [
     "---",
     `title: ${JSON.stringify(title)}`,
@@ -79,7 +95,8 @@ function writePage(slug, title, description, body, { depth = 1, extra = {} } = {
     `<!-- Generated from ../../../../README.md by scripts/sync-readme.mjs — do not edit directly. -->`,
     "",
   ].join("\n");
-  const processed = stripLeadingHeading(rewriteImagePaths(convertAdmonitions(body), depth));
+  let processed = stripLeadingHeading(rewriteImagePaths(convertAlerts(body), depth));
+  if (siteLinks) processed = rewriteSiteLinks(processed, depth);
   writeFileSync(resolve(outDir, `${slug}.md`), frontmatter + processed + "\n");
 }
 
@@ -161,7 +178,7 @@ writePage(
   "Contributing",
   "How to contribute to the Boat Tech Directory.",
   contributing,
-  { depth: 1 },
+  { depth: 1, siteLinks: false },
 );
 
 // Home page: README's intro-text section plus the same short "Contribute" blurb and
