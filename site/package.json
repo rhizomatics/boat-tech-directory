@@ -14,7 +14,7 @@
     "start": "astro dev",
     "prebuild": "npm run sync-readme && npm run build-spreadsheets && npm run build-signalk-plugins && npm run build-terms-index",
     "build": "astro build",
-    "build:signalk": "ASTRO_BASE=/@rhizomatics/signalk-boat-tech-directory-plugin ASTRO_OUTDIR=dist-signalk npm run build",
+    "build:signalk": "SIGNALK_PLUGIN_BUILD=true ASTRO_BASE=/@rhizomatics/signalk-boat-tech-directory-plugin ASTRO_OUTDIR=dist-signalk npm run build",
     "preview": "astro preview",
     "astro": "astro"
   },

@@ -3,13 +3,13 @@
 // home page title. The home page body is regenerated from README.md (scripts/sync-readme.mjs),
 // so the hero lives here rather than in the content.
 //
-// Only on the public site: the SignalK plugin build (non-root BASE_URL) *is* the plugin,
-// so advertising it there would be pointless.
+// Only on the public site: the SignalK plugin build (`npm run build:signalk`, which sets
+// SIGNALK_PLUGIN_BUILD) *is* the plugin, so advertising it there would be pointless.
 import Default from "@astrojs/starlight/components/PageTitle.astro";
 import SignalkHero from "./SignalkHero.astro";
 
 const { id } = Astro.locals.starlightRoute;
-const showHero = (id === "" || id === "index") && import.meta.env.BASE_URL === "/";
+const showHero = (id === "" || id === "index") && process.env.SIGNALK_PLUGIN_BUILD !== "true";
 ---
 
 <Default />

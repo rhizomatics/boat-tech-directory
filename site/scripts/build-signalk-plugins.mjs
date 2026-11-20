@@ -226,12 +226,14 @@ for (const group of groups) {
   writePage(resolve(pagesDir, `${slug}.md`), pageTitle(name), pageDescription(group), body);
 }
 
+// Don't recommend the SignalK plugin from inside it (`npm run build:signalk`).
+const offlineNote = process.env.SIGNALK_PLUGIN_BUILD === "true" ? "" : ", including offline in the Boat Tech Directory's SignalK plugin";
 const active = plugins.filter((p) => p.date && p.date.getTime() >= activeSince).length;
 const categoryList = groups
   .map(({ name, slug, description, plugins: members }) => `- [${name}](./${slug}/) - ${description} (${members.length})`)
   .join("\n");
 
-const indexBody = `The SignalK server's **Appstore** lists ${plugins.length} plugins and webapps, but only inside the Admin UI. These pages list the same packages, grouped by the Appstore's own categories, so you can browse them from anywhere, including offline in the Boat Tech Directory's SignalK plugin.
+const indexBody = `The SignalK server's **Appstore** lists ${plugins.length} plugins and webapps, but only inside the Admin UI. These pages list the same packages, grouped by the Appstore's own categories, so you can browse them from anywhere${offlineNote}.
 
 The list is rebuilt every week from npm and the [SignalK Plugin Registry](${REGISTRY_PAGE}). This copy is as of ${asOf}. ${active} packages were published in the last ${ACTIVE_DAYS} days.
 

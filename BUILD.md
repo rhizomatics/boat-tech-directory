@@ -106,7 +106,7 @@ npm run build
 
 This runs, in order:
 
-1. `npm --prefix ../site run build:signalk`: the normal site build (including all the pre-build steps above), with `ASTRO_BASE=/@rhizomatics/signalk-boat-tech-directory-plugin` and output to `site/dist-signalk/`
+1. `npm --prefix ../site run build:signalk`: the normal site build (including all the pre-build steps above), with `ASTRO_BASE=/@rhizomatics/signalk-boat-tech-directory-plugin` and output to `site/dist-signalk/`. It also sets `SIGNALK_PLUGIN_BUILD=true`, which leaves out content recommending the plugin: the home page hero (`src/components/PageTitle.astro`) and a line on the SignalK Plugins index page.
 2. `scripts/copy-public.mjs`: copies `site/dist-signalk/` into `signalk-webapp/public/`, which is what gets published
 
 Internal links in generated pages are relative, not root-absolute, so they work under either base path. The downloads (PDFs and spreadsheets) are included, so they are available offline too.
