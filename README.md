@@ -401,6 +401,7 @@ See [NMEA Wi-Fi Gateways](https://boat-tech-directory.rhizomatics.org.uk/downloa
 
 - [A+T](https://www.aandtinstruments.com) - Wind sensors, *Sailing Processor* boat server, displays, valves. South coast of England based. Repairs, and integration for superyachts and racing boats.
 - [Airmar](https://www.airmar.com/) - Transducers, sensors, NMEA bridging, weather instruments and apps.
+- [Calypso Instruments](https://www.calypsoinstruments.com/sailing) - Ultra-sonic wind instruments, portable and mast-head.
 - [Cyclops Marine](https://www.cyclopsmarine.com) - Smart load sensors and displays.
 - [Daniamant](https://daniamant.com) - Forward looking sonar (previously *EchoPilot*), alarms and other safety related products.
 - [em-trak](https://em-trak.com) - VHF and AIS.
