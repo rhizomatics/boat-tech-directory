@@ -17,7 +17,7 @@ import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { CATEGORIES, DEFAULT_MODULE_CAT_KEYWORDS, DEPRECATED, SIGNALK_GROUPS } from "../src/signalk-categories.mjs";
-import { faviconFor } from "../src/favicons.mjs";
+import { formatDate, formatEntry, isVersion, parseDate, parseName, parseScore, sourceUrl } from "../src/signalk-format.mjs";
 
 const siteDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const docsDir = resolve(siteDir, "src/content/docs");
@@ -59,57 +59,13 @@ async function searchNpm(keyword) {
 
 // App Store category names for a package, following getCategories() in signalk-server.
 function categoryKeywords(pkg) {
-  const defaults = DEFAULT_MODULE_CAT_KEYWORDS[pkg.name] ?? [];
+  // Own-property checks: a keyword or package name like "constructor" mustn't match the
+  // objects' inherited properties.
+  const defaults = Object.hasOwn(DEFAULT_MODULE_CAT_KEYWORDS, pkg.name) ? DEFAULT_MODULE_CAT_KEYWORDS[pkg.name] : [];
   if (defaults.includes(DEPRECATED)) return null;
-  const own = (pkg.keywords ?? []).filter((keyword) => keyword in CATEGORIES);
-  return [...new Set(own.length ? own : defaults.filter((keyword) => keyword in CATEGORIES))];
-}
-
-// Escape characters that would turn a free-text npm description into Markdown or HTML.
-function escapeMarkdown(text) {
-  return text
-    .replace(/\s+/g, " ")
-    .trim()
-    .replace(/[\\`*_[\]<>|#]/g, "\\$&");
-}
-
-const dateFormat = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
-
-// npm repository fields come in several forms ("git+https://github.com/x/y.git",
-// "git@github.com:x/y.git", "github:x/y"); normalise to a browsable https URL, or null.
-function sourceUrl(repository) {
-  if (!repository) return null;
-  const url = repository
-    .replace(/^git\+/, "")
-    .replace(/^git@([^:]+):/, "https://$1/")
-    .replace(/^github:/, "https://github.com/")
-    .replace(/^git:\/\//, "https://")
-    .replace(/\.git$/, "");
-  return /^https?:\/\//.test(url) ? url : null;
-}
-
-// Category pages are two levels deep (/signalk-plugins/ais/), and public/images/ is copied
-// from docs/images/ by sync-readme.mjs. Raw HTML, like sync-readme's favicons, so Astro
-// doesn't try to resolve it as an optimised asset.
-const icon = (file, alt) => `<img src="../../images/icons/${file}" alt="${alt}" width="16" height="16">`;
-
-function formatEntry(plugin) {
-  const { name, shortName, scope, description, version, date, webapp, score, sourceUrl } = plugin;
-  const npmUrl = `https://www.npmjs.com/package/${name}`;
-  const facts = [
-    webapp ? "webapp" : null,
-    `v${version}`,
-    date ? `updated ${dateFormat.format(date)}` : null,
-    score === undefined ? "not yet scored" : `score ${score}`,
-  ].filter(Boolean);
-  const text = description ? ` - ${escapeMarkdown(description)}` : "";
-  const publisher = scope ? ` Published by ${escapeMarkdown(scope)}.` : "";
-  let source = "";
-  if (sourceUrl) {
-    const host = faviconFor(sourceUrl);
-    source = host ? ` <a href="${sourceUrl}">${icon(host.icon, `Source on ${host.site}`)}</a>` : ` [Source](${sourceUrl})`;
-  }
-  return `- ${icon("npm.svg", "")} [${shortName}](${npmUrl})${text} *(${facts.join(", ")})*${publisher}${source}`;
+  const isCategory = (keyword) => typeof keyword === "string" && Object.hasOwn(CATEGORIES, keyword);
+  const own = (Array.isArray(pkg.keywords) ? pkg.keywords : []).filter(isCategory);
+  return [...new Set(own.length ? own : defaults.filter(isCategory))];
 }
 
 function writePage(path, title, description, body) {
@@ -140,28 +96,36 @@ async function loadPlugins() {
   const scores = new Map((registry?.plugins ?? []).map((entry) => [entry.name, entry]));
   const packages = new Map();
   for (const { package: pkg } of searches.flat()) {
-    if (pkg?.name && !packages.has(pkg.name)) packages.set(pkg.name, pkg);
+    if (typeof pkg?.name === "string" && !packages.has(pkg.name)) packages.set(pkg.name, pkg);
   }
 
   const plugins = [];
   for (const pkg of packages.values()) {
+    // The feed is untrusted (see ../src/signalk-format.mjs): skip anything whose name or
+    // version npm itself wouldn't accept, as the App Store does for versions.
+    const parsed = parseName(pkg.name);
+    if (!parsed || !isVersion(pkg.version)) {
+      console.warn(`build-signalk-plugins: skipping invalid package ${JSON.stringify(pkg.name)}`);
+      continue;
+    }
     const categories = categoryKeywords(pkg);
     if (categories === null) continue; // deprecated
-    const keywords = pkg.keywords ?? [];
+    const keywords = Array.isArray(pkg.keywords) ? pkg.keywords : [];
     const scored = scores.get(pkg.name);
-    const [, scope, shortName] = pkg.name.match(/^(?:@([^/]+)\/)?(.+)$/);
     plugins.push({
       name: pkg.name,
-      shortName,
-      scope: scope ?? null,
-      description: pkg.description ?? "",
+      ...parsed,
+      description: typeof pkg.description === "string" ? pkg.description : "",
       version: pkg.version,
-      date: pkg.date ? new Date(pkg.date) : null,
+      date: parseDate(pkg.date),
       official: pkg.name.startsWith("@signalk/"),
-      webapp: scored?.webapp ?? (keywords.some((k) => WEBAPP_KEYWORDS.has(k)) && !keywords.includes("signalk-node-server-plugin")),
-      score: scored?.composite_stable,
-      badges: scored?.badges_stable ?? [],
-      testStatus: scored?.test_status,
+      webapp:
+        typeof scored?.webapp === "boolean"
+          ? scored.webapp
+          : keywords.some((k) => WEBAPP_KEYWORDS.has(k)) && !keywords.includes("signalk-node-server-plugin"),
+      score: parseScore(scored?.composite_stable),
+      badges: Array.isArray(scored?.badges_stable) ? scored.badges_stable.filter((b) => typeof b === "string") : [],
+      testStatus: typeof scored?.test_status === "string" ? scored.test_status : undefined,
       sourceUrl: sourceUrl(scored?.github_url ?? pkg.links?.repository),
       categories,
     });
@@ -190,8 +154,8 @@ try {
 }
 
 const { plugins, registry } = data;
-const generated = registry ? new Date(registry.generated) : new Date();
-const asOf = dateFormat.format(generated);
+const generated = parseDate(registry?.generated) ?? new Date();
+const asOf = formatDate(generated);
 const activeSince = Date.now() - ACTIVE_DAYS * 24 * 3600 * 1000;
 
 const groups = SIGNALK_GROUPS.map((group) => ({
