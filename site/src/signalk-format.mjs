@@ -14,9 +14,10 @@ import { faviconFor } from "./favicons.mjs";
 // npm package names: optional @scope/, then URL-safe characters only. Uppercase is allowed for
 // legacy packages; nothing that needs escaping in a URL path or Markdown link text.
 const NPM_NAME = /^(?:@([a-z0-9][a-z0-9._~-]*)\/)?([a-z0-9][a-z0-9._~-]*)$/i;
-// Semver, as npm requires on publish (and the App Store checks): digits, then optional
-// prerelease/build identifiers from [0-9A-Za-z-].
-const SEMVER = /^\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)*$/;
+// Semver, as npm requires on publish (and the App Store checks): digits, then an optional
+// prerelease and an optional build suffix, each from [0-9A-Za-z.-]. Each is at most one group,
+// so the pattern can't backtrack exponentially on a long, malformed version.
+const SEMVER = /^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$/;
 const MAX_DESCRIPTION = 300;
 
 /** @returns {{ scope: string | null, shortName: string } | null} */

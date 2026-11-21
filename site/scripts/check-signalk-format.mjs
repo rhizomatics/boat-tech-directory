@@ -46,6 +46,7 @@ for (const n of ["<b>x</b>", "x)](javascript:alert(1)", "@<s>/b", "a b", "", nul
 expect("name @a/b", JSON.stringify(f.parseName("@a/b")), JSON.stringify({ scope: "a", shortName: "b" }));
 for (const v of ["1.0.0<script>", "1.0", "", undefined]) expect(`version ${v}`, f.isVersion(v), false);
 expect("version prerelease", f.isVersion("1.0.0-beta.1+build"), true);
+expect("version long malformed", f.isVersion(`1.0.0-${"a-".repeat(50000)}!`), false);
 for (const u of ["javascript:alert(1)", "JaVaScRiPt:alert(1)", " javascript:alert(1)", "data:text/html,x", "git+javascript:alert(1)", "https://user:pw@github.com/a"])
   expect(`url ${u}`, f.sourceUrl(u), null);
 expect("url git+https", f.sourceUrl("git+https://github.com/a/b.git"), "https://github.com/a/b");
