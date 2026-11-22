@@ -1,7 +1,10 @@
-# Publishes the SignalK webapp (signalk-webapp/) to npm when a GitHub release is
-# published, using npm trusted publishing (OIDC) - no long-lived NPM_TOKEN secret
-# exists anywhere. npm attaches a provenance attestation linking the tarball to
-# this workflow run.
+# Releases the SignalK webapp (signalk-webapp/) when a version tag (v1.2.3,
+# v1.3.0-beta.1) is pushed - see policies/release_workflows.md in
+# rhizomatics/hq. The site's tests run on the tag, the GitHub release is
+# published with the version's notes from signalk-webapp/CHANGELOG.md, and then
+# the package is staged on npm, using npm trusted publishing (OIDC) - no
+# long-lived NPM_TOKEN secret exists anywhere. npm attaches a provenance
+# attestation linking the tarball to this workflow run.
 #
 # One-off setup on npmjs.com (package Settings -> Trusted Publisher):
 #   provider: GitHub Actions, org: rhizomatics, repo: boat-tech-directory,
@@ -10,9 +13,10 @@
 name: Release
 
 on:
-  release:
-    types: [published]
+  push:
+    tags: ["v*"]
 
+# Nothing by default; each job grants only what it needs (OpenSSF Scorecard Token-Permissions).
 permissions: {}
 
 concurrency:
@@ -20,12 +24,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  publish:
+  check:
+    name: Test the site
     runs-on: ubuntu-latest
-    environment: npm
     permissions:
       contents: read
-      id-token: write # OIDC token exchanged with npm for a short-lived publish credential
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -34,17 +37,13 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: "24"
-          # No registry-url: it makes setup-node write an .npmrc with
-          # _authToken=${NODE_AUTH_TOKEN}, and npm can send that (empty) token
-          # instead of exchanging the OIDC one. npm defaults to registry.npmjs.org.
-
-      # Staged publishing needs npm >= 11.15.0.
-      - run: npm install -g npm@latest
+          # nothing cached is used in a release
+          package-manager-cache: false
 
       - name: Check release tag matches package.json version
         working-directory: signalk-webapp
         env:
-          TAG: ${{ github.event.release.tag_name }}
+          TAG: ${{ github.ref_name }}
         run: |
           version="$(node -p 'require("./package.json").version')"
           if [ "$TAG" != "v$version" ]; then
@@ -60,6 +59,41 @@ jobs:
       - run: npm test
         working-directory: site
 
+  github-release:
+    needs: check
+    permissions:
+      contents: write
+    uses: ./.github/workflows/github-release.yml
+    with:
+      changelog: signalk-webapp/CHANGELOG.md
+
+  publish:
+    needs: github-release
+    runs-on: ubuntu-latest
+    environment: npm
+    permissions:
+      contents: read
+      id-token: write # OIDC token exchanged with npm for a short-lived publish credential
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+          package-manager-cache: false
+          # No registry-url: it makes setup-node write an .npmrc with
+          # _authToken=${NODE_AUTH_TOKEN}, and npm can send that (empty) token
+          # instead of exchanging the OIDC one. npm defaults to registry.npmjs.org.
+
+      # Staged publishing needs npm >= 11.15.0. An exact version, bumped by hand
+      # after the usual 7-day cooldown.
+      - run: npm install -g npm@11.21.2 # zizmor: ignore[adhoc-packages] exact version, for staged publishing
+
+      - run: npm ci --ignore-scripts
+        working-directory: site
+
       - name: Build webapp
         working-directory: signalk-webapp
         run: |
@@ -72,13 +106,13 @@ jobs:
       # `npm stage approve <stage-id>` with 2FA).
       # --ignore-scripts skips prepublishOnly, which would rerun the build above.
       # dist-tag follows the SignalK plugins' convention: alpha/beta/rc in the
-      # release tag picks that dist-tag; any other GitHub pre-release goes to
-      # `next` (npm needs an explicit tag for prerelease versions).
+      # release tag picks that dist-tag; any other pre-release goes to `next`
+      # (npm needs an explicit tag for prerelease versions).
       - name: Stage publish
         working-directory: signalk-webapp
         env:
-          TAG: ${{ github.event.release.tag_name }}
-          PRERELEASE: ${{ github.event.release.prerelease }}
+          TAG: ${{ github.ref_name }}
+          PRERELEASE: ${{ needs.github-release.outputs.prerelease }}
         run: |
           if [[ "$TAG" == *alpha* ]]; then
             dist_tag=alpha
