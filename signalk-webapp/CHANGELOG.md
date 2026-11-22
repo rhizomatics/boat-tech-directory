@@ -1,59 +1,59 @@
-[v1.3.2]
+# [v1.3.2]
 - Fix release version
 
-[v1.3.1]
+# [v1.3.1]
 - Release automated, with checks, using Github Actions
 
-[v1.3.0]
+# [v1.3.0]
 - Links added
 - SignalK plugins integrated, categorized using standard keywords, omitting deprecated
 
-[v1.2.6]
+# [v1.2.6]
 - Links added
 - Downloads now integrated, previously on boat-stuff repo
 
-[v1.2.4]
+# [v1.2.4]
 - Links added and dependencies refreshed
 
-[v1.2.3]
+# [v1.2.3]
 - Links added, and Social Media renamed
 
-[v1.2.2]
+# [v1.2.2]
 
 - Extended Charts section to cover open data
 
-[v1.2.1]
+# [v1.2.1]
 
 - Correct index links for running as SignalK webapp
 
-[v1.2.0]
+# [v1.2.0]
 
 - Add index page
 - Correct search results count
 
-[v1.1.0]
+# [v1.1.0]
 
 - Improved usability of search
 
-[v1.0.5]
+# [v1.0.5]
 - More content, improved navigation structure
 
-[v1.0.4]
+# [v1.0.4]
 - More content
 
-[v1.0.3]
+# [v1.0.3]
 
 - Improved layout for smaller screens
 
-[v1.0.2]
+# [v1.0.2]
 
 - SignalK packaging fixes
 
-[v1.0.1]
+# [v1.0.1]
 
 - SignalK packaging fixes
 - Maximize local files for better offline support
 
-[v1.0.0]
+# [v1.0.0]
 
 - First offline version of the directory
