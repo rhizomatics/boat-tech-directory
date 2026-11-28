@@ -314,6 +314,7 @@ Lots more libraries and tools can be found on PyPI, for example [NMEA](https://p
 
 - [BLE](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) - *Bluetooth Low Energy*, a special form of Bluetooth for low power devices, on boats usually using the *Generic Attribute Profile* or GATT to exchange small quantities of data, like solar panel statistics or temperature. Uses the same 2.4Ghz frequency band as most WiFi.
   - Many SignalK plugins are available for BLE, including [bt-sensors-plugin](https://github.com/naugehyde/bt-sensors-plugin-sk) for general device reading, [eInk Labels](https://rhizomatics.github.io/signalk-einklabel-plugin/) to send boat data to an electronic shelf label, plus vendor specific plugins for [Victron](https://github.com/stefanor/signalk-victron-ble), [Bluetti](https://github.com/rhizomatics/signalk-bluetti-plugin) and others.
+  - Hardware to rebroadcast NMEA2000 to BLE includes the [Veratron Go](https://veratron.com/products/veratron-go) Data and Plus models, and the bi-directional [Digital Yach Navlink Blue](https://digitalyacht.co.uk/product/navlinkblue/). Victron specific BLE ->NMEA2000 integration is offered by the [Digital Yacht veLink](https://digitalyacht.co.uk/product/velink/) and [SailTech NMEA 2000 Bridge](https://sailtech.dk/#products), the latter also able to broadcast NMEA2000 data to Garmin watches over BLE and has open [ESP32 firmware](https://github.com/sailtechdk/nmea2000-ble-bridge).
 - [CAN Bus](https://www.can-cia.org/can-knowledge) - *Control Area Network* specification and industry alliance, basis of J1939 and NMEA2000. Higher level protocols include modern [CANopen FD](https://www.can-cia.org/can-knowledge/canopen-fd-the-art-of-embedded-networking) and classic [CANopen CC](https://www.can-cia.org/can-knowledge/canopen).
 - [LoRaWan](https://lora-alliance.org) - Long range wireless networking for IoT devices, including remote boat monitoring.
 - [ModBus](https://www.modbus.org/specifications) - Communication protocol for automation, used also in marine multiplexers, routers and control systems. Specifications and industry alliance.
@@ -417,7 +418,7 @@ See [NMEA Wi-Fi Gateways](https://boat-tech-directory.rhizomatics.org.uk/downloa
 - [Safiery](https://safiery.com/marine-new/) - Digital switching, monitoring, Victron and NMEA integration.
 - [Scadys](https://go.scadys.io) - MDD400 TFT display for NMEA 2000, NMEA 0183 and Seatalk data, usable as ST60 replacements. Kickstarter project by cruising sailor.
 - [Vakaros](https://www.vakaros.com) - Racing oriented instruments. Instruction videos on [YouTube channel](https://www.youtube.com/@Safiery).
-- [Veratron](https://veratron.com/pages/marine) - NMEA instruments, gateways and sensors, displays.
+- [Veratron](https://veratron.com/pages/marine) - NMEA instruments, gateways and sensors, displays, including NMEA 2000 to BLE (Bluetooth Low Energy) interfacing.
 - [Wema](https://wema.co.uk) - NMEA instruments, gauges, bridges, analog to digital converters.
 
 #### Boat Integration and Remote Monitoring
